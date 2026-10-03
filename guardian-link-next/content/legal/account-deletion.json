@@ -1,0 +1,63 @@
+{
+ "title": "How to Delete Your Account",
+ "subtitle": null,
+ "updated": "Last updated: July 23, 2026",
+ "blocks": [
+  {
+   "type": "h2",
+   "text": "How to Delete Your Account"
+  },
+  {
+   "type": "p",
+   "text": "You may permanently delete your My Guardian Link account directly from the mobile app."
+  },
+  {
+   "type": "li",
+   "text": "Open the **My Guardian Link** mobile app.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Sign in to your account.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Tap **Profile** in the bottom navigation menu.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Scroll to **Account Deletion.**",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Tap **Account Deletion.**",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Tap **Delete Account.**",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Review the confirmation message.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Tap **Delete Account** again to confirm.",
+   "ordered": true
+  },
+  {
+   "type": "p",
+   "text": "Once confirmed, your account deletion request will be processed, and the personal information associated with your account will be deleted in accordance with our Privacy Policy and applicable legal requirements."
+  },
+  {
+   "type": "p",
+   "text": "**Important**: Account deletion is permanent and cannot be undone. Deleting your account does not automatically cancel any active membership or subscription unless specifically stated during the deletion process. You should cancel any active membership before deleting your account."
+  }
+ ]
+}

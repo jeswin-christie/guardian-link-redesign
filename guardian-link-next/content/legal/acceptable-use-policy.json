@@ -1,0 +1,1347 @@
+{
+ "title": "Acceptable Use Policy",
+ "subtitle": "My Guardian Link™",
+ "updated": "Last updated: May 1, 2025",
+ "blocks": [
+  {
+   "type": "h2",
+   "text": "Acceptable Use Policy"
+  },
+  {
+   "type": "p",
+   "text": "ACCEPTABLE USE POLICY"
+  },
+  {
+   "type": "p",
+   "text": "MY GUARDIAN LINK™"
+  },
+  {
+   "type": "p",
+   "text": "Effective Date: May 1, 2025"
+  },
+  {
+   "type": "p",
+   "text": "Company: Forward Move, LLC d/b/a My Guardian Link™"
+  },
+  {
+   "type": "p",
+   "text": "Website: myguardianlink.com"
+  },
+  {
+   "type": "p",
+   "text": "Contact: info@myguardianlink.com"
+  },
+  {
+   "type": "p",
+   "text": "This Acceptable Use Policy (“Policy”) governs the acceptable and prohibited use of the My Guardian Link™ website, mobile application, platform, urgent communication tools, trusted contact features, notification services, group plans, sponsor plans, referral plans, administrative tools, and related services (collectively, the “Services”)."
+  },
+  {
+   "type": "p",
+   "text": "This Policy applies to all users, including individual consumers, trusted contacts, emergency contacts, caregivers, group members, sponsor group members, referral group members, administrators, business customers, partners, vendors, response partners, and any other person or organization that accesses or uses the Services."
+  },
+  {
+   "type": "p",
+   "text": "By accessing or using the Services, you agree to comply with this Policy. This Policy is incorporated into the My Guardian Link Terms of Use, Privacy Policy, Master Services Agreement, Data Processing Addendum, Order Forms, Sponsor Group Addenda, Referral Group Addenda, and any other applicable agreements."
+  },
+  {
+   "type": "h2",
+   "text": "1. Purpose of this Policy"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link is designed to support urgent communication, trusted contact notification, location sharing, response coordination, and possible escalation to a third-party urgent response contact center, central station, public safety resource, roadside provider, caregiver, or other appropriate resource when available and appropriate."
+  },
+  {
+   "type": "p",
+   "text": "Because the Services may involve urgent signals, location data, personal information, trusted contacts, emergency contacts, response coordinators, central stations, and public safety resources, misuse of the Services can create serious consequences."
+  },
+  {
+   "type": "p",
+   "text": "This Policy exists to protect:"
+  },
+  {
+   "type": "li",
+   "text": "Users;"
+  },
+  {
+   "type": "li",
+   "text": "Trusted contacts;"
+  },
+  {
+   "type": "li",
+   "text": "Emergency contacts;"
+  },
+  {
+   "type": "li",
+   "text": "Caregivers;"
+  },
+  {
+   "type": "li",
+   "text": "Families;"
+  },
+  {
+   "type": "li",
+   "text": "Group members;"
+  },
+  {
+   "type": "li",
+   "text": "Administrators;"
+  },
+  {
+   "type": "li",
+   "text": "Response coordinators;"
+  },
+  {
+   "type": "li",
+   "text": "Contact centers;"
+  },
+  {
+   "type": "li",
+   "text": "Central stations;"
+  },
+  {
+   "type": "li",
+   "text": "Public safety resources;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link;"
+  },
+  {
+   "type": "li",
+   "text": "Service providers;"
+  },
+  {
+   "type": "li",
+   "text": "The public."
+  },
+  {
+   "type": "h2",
+   "text": "2. Important Emergency Service Notice"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link is not 911. My Guardian Link is not a police department, fire department, ambulance service, public safety answering point, government emergency service, emergency medical provider, security company, or law enforcement agency."
+  },
+  {
+   "type": "p",
+   "text": "The Services are intended to support urgent communication and response coordination. They do not replace calling 911 or local emergency services."
+  },
+  {
+   "type": "p",
+   "text": "If you can safely call 911 or local emergency services directly, you should do so."
+  },
+  {
+   "type": "p",
+   "text": "You may not use My Guardian Link in a way that falsely suggests, implies, or represents that My Guardian Link guarantees emergency response, police dispatch, rescue, prevention of harm, or any specific outcome."
+  },
+  {
+   "type": "h2",
+   "text": "3. Acceptable Uses"
+  },
+  {
+   "type": "p",
+   "text": "You may use My Guardian Link only for legitimate, good-faith purposes."
+  },
+  {
+   "type": "p",
+   "text": "Acceptable uses may include:"
+  },
+  {
+   "type": "li",
+   "text": "Activating Urgent Assist when you reasonably believe you are in danger or need urgent help;"
+  },
+  {
+   "type": "li",
+   "text": "Using a silent or loud urgent signal when you cannot safely speak;"
+  },
+  {
+   "type": "li",
+   "text": "Notifying trusted contacts of a real or reasonably perceived concern;"
+  },
+  {
+   "type": "li",
+   "text": "Sharing your location with trusted contacts during an urgent or safety-related situation;"
+  },
+  {
+   "type": "li",
+   "text": "Sending a See Something Say Something report about a legitimate concern;"
+  },
+  {
+   "type": "li",
+   "text": "Using Roadside Assistance communication tools for a legitimate roadside or vehicle-related situation;"
+  },
+  {
+   "type": "li",
+   "text": "Using caregiver, family, sponsor group, or trusted circle features for legitimate support;"
+  },
+  {
+   "type": "li",
+   "text": "Participating in approved onboarding, training, demo, or practice features;"
+  },
+  {
+   "type": "li",
+   "text": "Using the Services for personal protection, prevention, deterrence, communication, and documentation;"
+  },
+  {
+   "type": "li",
+   "text": "Managing a sponsor group, referral group, family group, or enterprise group in accordance with applicable agreements;"
+  },
+  {
+   "type": "li",
+   "text": "Receiving alerts as a trusted contact, emergency contact, caregiver, or authorized recipient;"
+  },
+  {
+   "type": "li",
+   "text": "Communicating with My Guardian Link support, response partners, or administrators for legitimate service reasons."
+  },
+  {
+   "type": "h2",
+   "text": "4. False, Prank, Malicious, or Improper Activations Are Prohibited"
+  },
+  {
+   "type": "p",
+   "text": "You may not activate or use the Services for false, prank, malicious, deceptive, harassing, abusive, unauthorized, or improper purposes."
+  },
+  {
+   "type": "p",
+   "text": "Prohibited activations include:"
+  },
+  {
+   "type": "li",
+   "text": "Fake urgent signals;"
+  },
+  {
+   "type": "li",
+   "text": "Prank alerts;"
+  },
+  {
+   "type": "li",
+   "text": "Malicious reports;"
+  },
+  {
+   "type": "li",
+   "text": "False See Something Say Something reports;"
+  },
+  {
+   "type": "li",
+   "text": "False Roadside Assistance requests;"
+  },
+  {
+   "type": "li",
+   "text": "Activations intended to scare, harass, embarrass, retaliate against, or inconvenience another person;"
+  },
+  {
+   "type": "li",
+   "text": "Activations intended to misuse response coordinators, trusted contacts, central stations, public safety resources, or service providers;"
+  },
+  {
+   "type": "li",
+   "text": "Repeated activations without a legitimate good-faith basis;"
+  },
+  {
+   "type": "li",
+   "text": "Activations intended to test the live system outside approved practice or demo features;"
+  },
+  {
+   "type": "li",
+   "text": "Activations using false identity, false location, false incident details, or misleading information."
+  },
+  {
+   "type": "p",
+   "text": "Misuse may be treated with the same seriousness as misuse of public emergency resources."
+  },
+  {
+   "type": "h2",
+   "text": "5. Practice, Demo, and Test Use"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link may provide approved practice, demo, onboarding, or training features."
+  },
+  {
+   "type": "p",
+   "text": "You may use practice or demo features only:"
+  },
+  {
+   "type": "li",
+   "text": "Through designated practice or demo tools;"
+  },
+  {
+   "type": "li",
+   "text": "As instructed by My Guardian Link;"
+  },
+  {
+   "type": "li",
+   "text": "For legitimate training or onboarding;"
+  },
+  {
+   "type": "li",
+   "text": "Without creating unnecessary burden on response coordinators, central stations, trusted contacts, or public safety resources."
+  },
+  {
+   "type": "p",
+   "text": "Any activation outside an approved practice or demo feature may be treated as a live urgent signal."
+  },
+  {
+   "type": "p",
+   "text": "Unauthorized testing of the live system is prohibited."
+  },
+  {
+   "type": "h2",
+   "text": "6. Prohibited Conduct"
+  },
+  {
+   "type": "p",
+   "text": "You may not use the Services to:"
+  },
+  {
+   "type": "li",
+   "text": "Violate any law, regulation, court order, or legal obligation;"
+  },
+  {
+   "type": "li",
+   "text": "Submit false, misleading, incomplete, deceptive, or unlawful information;"
+  },
+  {
+   "type": "li",
+   "text": "Impersonate another person or organization;"
+  },
+  {
+   "type": "li",
+   "text": "Use another person’s account, phone number, device, identity, or payment method without permission;"
+  },
+  {
+   "type": "li",
+   "text": "Add trusted contacts, emergency contacts, caregivers, parents, guardians, or group recipients without permission;"
+  },
+  {
+   "type": "li",
+   "text": "Harass, threaten, intimidate, stalk, track, control, exploit, or abuse another person;"
+  },
+  {
+   "type": "li",
+   "text": "Use the Services for domestic abuse, coercive control, surveillance, stalking, retaliation, or intimidation;"
+  },
+  {
+   "type": "li",
+   "text": "Interfere with public safety resources;"
+  },
+  {
+   "type": "li",
+   "text": "Waste emergency, response, central station, or coordinator resources;"
+  },
+  {
+   "type": "li",
+   "text": "Misuse SMS, phone, email, push notification, or trusted contact alert features;"
+  },
+  {
+   "type": "li",
+   "text": "Send spam, fraudulent messages, deceptive alerts, or unauthorized communications;"
+  },
+  {
+   "type": "li",
+   "text": "Upload, transmit, or distribute malware, spyware, viruses, or harmful code;"
+  },
+  {
+   "type": "li",
+   "text": "Attempt unauthorized access to systems, accounts, dashboards, data, or networks;"
+  },
+  {
+   "type": "li",
+   "text": "Probe, scan, or test the vulnerability of the Services without written authorization;"
+  },
+  {
+   "type": "li",
+   "text": "Bypass, disable, or interfere with security features;"
+  },
+  {
+   "type": "li",
+   "text": "Reverse engineer, decompile, copy, scrape, or misuse the Services;"
+  },
+  {
+   "type": "li",
+   "text": "Interfere with the operation, integrity, performance, or availability of the Services;"
+  },
+  {
+   "type": "li",
+   "text": "Use automated systems, bots, scripts, or scraping tools without written permission;"
+  },
+  {
+   "type": "li",
+   "text": "Access or use information you are not authorized to access;"
+  },
+  {
+   "type": "li",
+   "text": "Abuse, threaten, harass, or mistreat My Guardian Link personnel, Urgent Response Coordinators, support staff, vendors, trusted contacts, public safety personnel, or other users;"
+  },
+  {
+   "type": "li",
+   "text": "Use the Services for commercial resale, competing products, or unauthorized business purposes;"
+  },
+  {
+   "type": "li",
+   "text": "Misrepresent My Guardian Link’s capabilities, coverage, emergency role, dispatch capability, or service limitations;"
+  },
+  {
+   "type": "li",
+   "text": "Use the Services in a way that creates legal, safety, operational, privacy, security, or reputational risk for My Guardian Link or others."
+  },
+  {
+   "type": "h2",
+   "text": "7. Prohibited Tracking, Stalking, and Coercive Use"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link may include location sharing, trusted contact alerts, group features, caregiver features, and safety-related communications. These features must never be used to unlawfully track, monitor, stalk, control, threaten, coerce, exploit, or surveil another person."
+  },
+  {
+   "type": "p",
+   "text": "You may not:"
+  },
+  {
+   "type": "li",
+   "text": "Add another person as a user or contact without permission;"
+  },
+  {
+   "type": "li",
+   "text": "Use another person’s device to track their location;"
+  },
+  {
+   "type": "li",
+   "text": "Force another person to share location;"
+  },
+  {
+   "type": "li",
+   "text": "Use alerts to control or intimidate someone;"
+  },
+  {
+   "type": "li",
+   "text": "Use group features to monitor someone unlawfully;"
+  },
+  {
+   "type": "li",
+   "text": "Use the Services in connection with domestic violence, coercive control, stalking, harassment, workplace retaliation, or abuse."
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link may suspend or terminate accounts and preserve or disclose records if it suspects abusive, coercive, stalking, or unlawful use."
+  },
+  {
+   "type": "h2",
+   "text": "8. Trusted Contacts and Emergency Contacts"
+  },
+  {
+   "type": "p",
+   "text": "You are responsible for obtaining permission from any person you add as a trusted contact, emergency contact, caregiver, parent, guardian, group contact, or notification recipient."
+  },
+  {
+   "type": "p",
+   "text": "You may not:"
+  },
+  {
+   "type": "li",
+   "text": "Add a person without permission;"
+  },
+  {
+   "type": "li",
+   "text": "Add a fake contact;"
+  },
+  {
+   "type": "li",
+   "text": "Add someone to harass them;"
+  },
+  {
+   "type": "li",
+   "text": "Add someone to send unwanted messages;"
+  },
+  {
+   "type": "li",
+   "text": "Add a person using inaccurate contact information;"
+  },
+  {
+   "type": "li",
+   "text": "Use trusted contact alerts to threaten, embarrass, manipulate, or abuse another person."
+  },
+  {
+   "type": "p",
+   "text": "Trusted contacts may receive your name, phone number, alert type, location, map link, message, timestamp, incident details, or related information depending on the feature used."
+  },
+  {
+   "type": "h2",
+   "text": "9. Group Plans, Sponsor Groups, and Referral Groups"
+  },
+  {
+   "type": "p",
+   "text": "Customers, sponsors, referral partners, administrators, and group owners must use group features only for legitimate and authorized purposes."
+  },
+  {
+   "type": "p",
+   "text": "Administrators may not:"
+  },
+  {
+   "type": "li",
+   "text": "Add users without proper authorization;"
+  },
+  {
+   "type": "li",
+   "text": "Upload rosters without legal authority;"
+  },
+  {
+   "type": "li",
+   "text": "Use group data for unauthorized purposes;"
+  },
+  {
+   "type": "li",
+   "text": "Misrepresent user participation;"
+  },
+  {
+   "type": "li",
+   "text": "Access user information beyond what is permitted;"
+  },
+  {
+   "type": "li",
+   "text": "Use the Services to monitor employees, members, students, associates, contractors, or family members unlawfully;"
+  },
+  {
+   "type": "li",
+   "text": "Use group communications for spam, harassment, political messaging, unrelated marketing, or unauthorized solicitation;"
+  },
+  {
+   "type": "li",
+   "text": "Misrepresent My Guardian Link as guaranteed emergency service;"
+  },
+  {
+   "type": "li",
+   "text": "Misrepresent the group plan, pricing, sponsorship, referral arrangement, or billing responsibility;"
+  },
+  {
+   "type": "li",
+   "text": "Continue to access accounts or data after authority ends."
+  },
+  {
+   "type": "p",
+   "text": "Group owners and administrators are responsible for maintaining accurate rosters, removing ineligible users, managing administrator access, and complying with applicable privacy, employment, school, consumer, communications, and data protection laws."
+  },
+  {
+   "type": "h2",
+   "text": "10. Communications Policy"
+  },
+  {
+   "type": "p",
+   "text": "The Services may involve SMS/text messages, phone calls, emails, push notifications, in-app messages, trusted contact alerts, urgent communications, account notices, billing notices, service messages, and support communications."
+  },
+  {
+   "type": "p",
+   "text": "You may not use the Services to send or cause the sending of:"
+  },
+  {
+   "type": "li",
+   "text": "Spam;"
+  },
+  {
+   "type": "li",
+   "text": "Fraudulent messages;"
+  },
+  {
+   "type": "li",
+   "text": "Harassing messages;"
+  },
+  {
+   "type": "li",
+   "text": "Threatening messages;"
+  },
+  {
+   "type": "li",
+   "text": "Deceptive alerts;"
+  },
+  {
+   "type": "li",
+   "text": "Unauthorized marketing;"
+  },
+  {
+   "type": "li",
+   "text": "Impersonation messages;"
+  },
+  {
+   "type": "li",
+   "text": "Messages to people who have not agreed to receive them;"
+  },
+  {
+   "type": "li",
+   "text": "Messages that violate SMS, calling, email, consumer protection, or privacy laws."
+  },
+  {
+   "type": "p",
+   "text": "Opting out of certain communications may limit or disable important Services."
+  },
+  {
+   "type": "p",
+   "text": "Message and data rates may apply. Message frequency varies. Carriers are not liable for delayed or undelivered messages."
+  },
+  {
+   "type": "h2",
+   "text": "11. Data, Privacy, and Confidentiality Rules"
+  },
+  {
+   "type": "p",
+   "text": "You may not use the Services to collect, upload, transmit, access, or disclose personal information unlawfully."
+  },
+  {
+   "type": "p",
+   "text": "You may not:"
+  },
+  {
+   "type": "li",
+   "text": "Submit personal information without proper authority;"
+  },
+  {
+   "type": "li",
+   "text": "Submit information about minors without required parental or guardian consent;"
+  },
+  {
+   "type": "li",
+   "text": "Submit medical, disability, caregiver, or emergency information without proper authority;"
+  },
+  {
+   "type": "li",
+   "text": "Access another person’s personal information without permission;"
+  },
+  {
+   "type": "li",
+   "text": "Disclose user data outside permitted purposes;"
+  },
+  {
+   "type": "li",
+   "text": "Use urgent signal data, location data, incident records, trusted contact information, or group data for unauthorized purposes;"
+  },
+  {
+   "type": "li",
+   "text": "Sell, rent, disclose, or misuse user lists or individual personal information;"
+  },
+  {
+   "type": "li",
+   "text": "Attempt to extract, scrape, download, or copy personal information from the platform;"
+  },
+  {
+   "type": "li",
+   "text": "Use data from the Services to target, profile, manipulate, discriminate against, harass, or exploit another person."
+  },
+  {
+   "type": "p",
+   "text": "All use of personal information must comply with the Privacy Policy, Data Processing Addendum, applicable agreements, and applicable law."
+  },
+  {
+   "type": "h2",
+   "text": "12. Minor Users"
+  },
+  {
+   "type": "p",
+   "text": "The Services may be used by minors only where permitted by My Guardian Link, applicable law, and the applicable account structure."
+  },
+  {
+   "type": "p",
+   "text": "Children under 13 may not create accounts directly. A parent or legal guardian must create, manage, and consent to any child profile, minor account, or family-managed account for a child under 13."
+  },
+  {
+   "type": "p",
+   "text": "Users between 13 and 17 may use the Services only with the consent and supervision of a parent or legal guardian, unless otherwise permitted by law and approved by My Guardian Link."
+  },
+  {
+   "type": "p",
+   "text": "You may not use the Services to unlawfully track, monitor, discipline, control, or surveil minors."
+  },
+  {
+   "type": "h2",
+   "text": "13. Optional Medical, Caregiver, Disability, or Emergency Information"
+  },
+  {
+   "type": "p",
+   "text": "The Services may allow users to provide optional medical, caregiver, disability, cognitive, household, or emergency profile information."
+  },
+  {
+   "type": "p",
+   "text": "You may not submit such information about yourself or another person unless:"
+  },
+  {
+   "type": "li",
+   "text": "The information is accurate to the best of your knowledge;"
+  },
+  {
+   "type": "li",
+   "text": "You have the right to provide it;"
+  },
+  {
+   "type": "li",
+   "text": "You understand that it may be shared as part of urgent communication or response coordination;"
+  },
+  {
+   "type": "li",
+   "text": "Any required consent has been obtained."
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link is not a medical provider and does not provide medical diagnosis, treatment, monitoring, medical advice, or emergency medical services."
+  },
+  {
+   "type": "h2",
+   "text": "14. Security Rules"
+  },
+  {
+   "type": "p",
+   "text": "You are responsible for maintaining the security of your account, device, phone number, email account, password, app permissions, and administrator credentials."
+  },
+  {
+   "type": "p",
+   "text": "You may not:"
+  },
+  {
+   "type": "li",
+   "text": "Share account credentials with unauthorized persons;"
+  },
+  {
+   "type": "li",
+   "text": "Use weak or compromised passwords;"
+  },
+  {
+   "type": "li",
+   "text": "Access another person’s account;"
+  },
+  {
+   "type": "li",
+   "text": "Attempt to bypass login or security controls;"
+  },
+  {
+   "type": "li",
+   "text": "Disable or interfere with platform security;"
+  },
+  {
+   "type": "li",
+   "text": "Introduce malware or harmful code;"
+  },
+  {
+   "type": "li",
+   "text": "Use compromised devices to access the Services;"
+  },
+  {
+   "type": "li",
+   "text": "Allow unauthorized administrator access;"
+  },
+  {
+   "type": "li",
+   "text": "Fail to report known or suspected security issues involving your account."
+  },
+  {
+   "type": "p",
+   "text": "You must notify My Guardian Link promptly if you believe your account, device, credentials, phone number, trusted contacts, roster, or administrator access has been compromised."
+  },
+  {
+   "type": "h2",
+   "text": "15. Platform Integrity"
+  },
+  {
+   "type": "p",
+   "text": "You may not interfere with or misuse the My Guardian Link platform."
+  },
+  {
+   "type": "p",
+   "text": "Prohibited conduct includes:"
+  },
+  {
+   "type": "li",
+   "text": "Reverse engineering;"
+  },
+  {
+   "type": "li",
+   "text": "Decompiling;"
+  },
+  {
+   "type": "li",
+   "text": "Copying proprietary workflows;"
+  },
+  {
+   "type": "li",
+   "text": "Copying dashboards or templates;"
+  },
+  {
+   "type": "li",
+   "text": "Scraping data;"
+  },
+  {
+   "type": "li",
+   "text": "Automated access without permission;"
+  },
+  {
+   "type": "li",
+   "text": "Load testing without authorization;"
+  },
+  {
+   "type": "li",
+   "text": "Security testing without written approval;"
+  },
+  {
+   "type": "li",
+   "text": "Circumventing access controls;"
+  },
+  {
+   "type": "li",
+   "text": "Tampering with logs;"
+  },
+  {
+   "type": "li",
+   "text": "Altering incident records;"
+  },
+  {
+   "type": "li",
+   "text": "Manipulating timestamps;"
+  },
+  {
+   "type": "li",
+   "text": "Creating fake accounts;"
+  },
+  {
+   "type": "li",
+   "text": "Creating fraudulent activations;"
+  },
+  {
+   "type": "li",
+   "text": "Attempting to disrupt the Services."
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link may monitor platform activity for security, fraud prevention, misuse prevention, service integrity, and legal compliance."
+  },
+  {
+   "type": "h2",
+   "text": "16. Misrepresentation of My Guardian Link Is Prohibited"
+  },
+  {
+   "type": "p",
+   "text": "You may not misrepresent My Guardian Link, its capabilities, or its limitations."
+  },
+  {
+   "type": "p",
+   "text": "You may not state or imply that:"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link is 911;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link replaces 911;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link guarantees police dispatch;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link guarantees emergency response;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link guarantees rescue;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link guarantees prevention of harm;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link works everywhere;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link guarantees cellular, Wi-Fi, GPS, SMS, phone, or network availability;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link guarantees trusted contact response;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link guarantees coordinator response at a specific moment;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link is a government emergency service;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link is a law enforcement agency;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link is an emergency medical provider;"
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link provides medical diagnosis, treatment, or monitoring."
+  },
+  {
+   "type": "p",
+   "text": "Approved marketing materials, partner communications, group communications, influencer content, radio ads, website content, landing pages, and sales materials must be accurate, approved where required, and consistent with My Guardian Link’s legal disclaimers."
+  },
+  {
+   "type": "h2",
+   "text": "17. Connectivity and Device Requirements"
+  },
+  {
+   "type": "p",
+   "text": "Users are responsible for maintaining a compatible device, charged battery, active cellular data or Wi-Fi, current operating system, current app version, and required permissions."
+  },
+  {
+   "type": "p",
+   "text": "You may not blame, misrepresent, or misuse the Services where failure or limitation is caused by:"
+  },
+  {
+   "type": "li",
+   "text": "Dead battery;"
+  },
+  {
+   "type": "li",
+   "text": "Disabled permissions;"
+  },
+  {
+   "type": "li",
+   "text": "Disabled location;"
+  },
+  {
+   "type": "li",
+   "text": "Disabled notifications;"
+  },
+  {
+   "type": "li",
+   "text": "Airplane mode;"
+  },
+  {
+   "type": "li",
+   "text": "No cellular or Wi-Fi connection;"
+  },
+  {
+   "type": "li",
+   "text": "Poor signal;"
+  },
+  {
+   "type": "li",
+   "text": "Network outage;"
+  },
+  {
+   "type": "li",
+   "text": "GPS failure;"
+  },
+  {
+   "type": "li",
+   "text": "Device damage;"
+  },
+  {
+   "type": "li",
+   "text": "Outdated app;"
+  },
+  {
+   "type": "li",
+   "text": "Outdated operating system;"
+  },
+  {
+   "type": "li",
+   "text": "Incorrect phone number;"
+  },
+  {
+   "type": "li",
+   "text": "Incorrect account information;"
+  },
+  {
+   "type": "li",
+   "text": "Incorrect trusted contact information;"
+  },
+  {
+   "type": "li",
+   "text": "Carrier or third-party service failure."
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link does not guarantee coverage in every location."
+  },
+  {
+   "type": "h2",
+   "text": "18. Enforcement Rights"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link may investigate actual or suspected violations of this Policy."
+  },
+  {
+   "type": "p",
+   "text": "To the maximum extent permitted by law, My Guardian Link may take one or more of the following actions:"
+  },
+  {
+   "type": "li",
+   "text": "Issue a warning;"
+  },
+  {
+   "type": "li",
+   "text": "Restrict certain features;"
+  },
+  {
+   "type": "li",
+   "text": "Disable urgent signal features;"
+  },
+  {
+   "type": "li",
+   "text": "Suspend an account;"
+  },
+  {
+   "type": "li",
+   "text": "Terminate an account;"
+  },
+  {
+   "type": "li",
+   "text": "Remove a user from a group;"
+  },
+  {
+   "type": "li",
+   "text": "Remove an administrator;"
+  },
+  {
+   "type": "li",
+   "text": "Reject or remove content;"
+  },
+  {
+   "type": "li",
+   "text": "Disable access to dashboards or administrative tools;"
+  },
+  {
+   "type": "li",
+   "text": "Preserve records;"
+  },
+  {
+   "type": "li",
+   "text": "Disclose records to law enforcement, public safety agencies, regulators, courts, insurers, legal counsel, or affected parties where permitted or required;"
+  },
+  {
+   "type": "li",
+   "text": "Cooperate with investigations;"
+  },
+  {
+   "type": "li",
+   "text": "Seek reimbursement, damages, attorneys’ fees, or other remedies;"
+  },
+  {
+   "type": "li",
+   "text": "Refuse future service."
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link may act immediately and without notice where it believes there is risk to safety, security, privacy, public safety resources, the platform, users, trusted contacts, partners, or the public."
+  },
+  {
+   "type": "h2",
+   "text": "19. Records Preservation and Disclosure"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link may preserve and disclose records relating to actual or suspected misuse, including:"
+  },
+  {
+   "type": "li",
+   "text": "Account information;"
+  },
+  {
+   "type": "li",
+   "text": "User information;"
+  },
+  {
+   "type": "li",
+   "text": "Trusted contact information;"
+  },
+  {
+   "type": "li",
+   "text": "Location information;"
+  },
+  {
+   "type": "li",
+   "text": "Alert details;"
+  },
+  {
+   "type": "li",
+   "text": "Message content;"
+  },
+  {
+   "type": "li",
+   "text": "Incident records;"
+  },
+  {
+   "type": "li",
+   "text": "Call records;"
+  },
+  {
+   "type": "li",
+   "text": "SMS records;"
+  },
+  {
+   "type": "li",
+   "text": "Coordinator notes;"
+  },
+  {
+   "type": "li",
+   "text": "Escalation records;"
+  },
+  {
+   "type": "li",
+   "text": "Device information;"
+  },
+  {
+   "type": "li",
+   "text": "IP address;"
+  },
+  {
+   "type": "li",
+   "text": "Timestamps;"
+  },
+  {
+   "type": "li",
+   "text": "Administrator actions;"
+  },
+  {
+   "type": "li",
+   "text": "Billing information;"
+  },
+  {
+   "type": "li",
+   "text": "Security logs;"
+  },
+  {
+   "type": "li",
+   "text": "Customer support records."
+  },
+  {
+   "type": "p",
+   "text": "Records may be used or disclosed for service delivery, safety, fraud prevention, misuse investigation, legal compliance, law enforcement cooperation, public safety requests, insurance, legal defense, dispute resolution, account enforcement, and protection of rights, safety, property, or security."
+  },
+  {
+   "type": "h2",
+   "text": "20. Reporting Misuse"
+  },
+  {
+   "type": "p",
+   "text": "You should promptly report suspected misuse, unauthorized access, false activations, abusive use, stalking, harassment, privacy concerns, security issues, or other violations of this Policy."
+  },
+  {
+   "type": "p",
+   "text": "Reports may be sent to:"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link™ Support"
+  },
+  {
+   "type": "p",
+   "text": "Email: support@myguardianlink.com"
+  },
+  {
+   "type": "p",
+   "text": "Security Email: support@myguardianlink.com"
+  },
+  {
+   "type": "p",
+   "text": "Privacy Email: info@myguardianlink.com"
+  },
+  {
+   "type": "p",
+   "text": "Phone: (920)461-4188 WhatsApp"
+  },
+  {
+   "type": "p",
+   "text": "Website: myguardianlink.com"
+  },
+  {
+   "type": "p",
+   "text": "If you are in immediate danger, call 911 or local emergency services when safe and able."
+  },
+  {
+   "type": "h2",
+   "text": "21. Consequences for Misuse"
+  },
+  {
+   "type": "p",
+   "text": "Misuse of My Guardian Link may result in:"
+  },
+  {
+   "type": "li",
+   "text": "Account suspension;"
+  },
+  {
+   "type": "li",
+   "text": "Account termination;"
+  },
+  {
+   "type": "li",
+   "text": "Loss of access without refund;"
+  },
+  {
+   "type": "li",
+   "text": "Removal from a group plan;"
+  },
+  {
+   "type": "li",
+   "text": "Disablement of urgent features;"
+  },
+  {
+   "type": "li",
+   "text": "Disclosure of records;"
+  },
+  {
+   "type": "li",
+   "text": "Referral to law enforcement;"
+  },
+  {
+   "type": "li",
+   "text": "Civil liability;"
+  },
+  {
+   "type": "li",
+   "text": "Administrative penalties;"
+  },
+  {
+   "type": "li",
+   "text": "Criminal consequences;"
+  },
+  {
+   "type": "li",
+   "text": "Reimbursement claims;"
+  },
+  {
+   "type": "li",
+   "text": "Legal action;"
+  },
+  {
+   "type": "li",
+   "text": "Attorneys’ fees and costs."
+  },
+  {
+   "type": "p",
+   "text": "Misuse of urgent communication tools may be treated with the same seriousness as misuse of emergency services."
+  },
+  {
+   "type": "h2",
+   "text": "22. Relationship to Other Agreements"
+  },
+  {
+   "type": "p",
+   "text": "This Policy supplements and is incorporated into applicable My Guardian Link agreements and policies, including:"
+  },
+  {
+   "type": "li",
+   "text": "Terms of Use;"
+  },
+  {
+   "type": "li",
+   "text": "Privacy Policy;"
+  },
+  {
+   "type": "li",
+   "text": "Master Services Agreement;"
+  },
+  {
+   "type": "li",
+   "text": "Data Processing Addendum;"
+  },
+  {
+   "type": "li",
+   "text": "Order Forms;"
+  },
+  {
+   "type": "li",
+   "text": "Sponsor Group Addenda;"
+  },
+  {
+   "type": "li",
+   "text": "Referral Group Addenda;"
+  },
+  {
+   "type": "li",
+   "text": "SMS/Text Messaging Terms;"
+  },
+  {
+   "type": "li",
+   "text": "Subscription, Cancellation, and Refund Terms;"
+  },
+  {
+   "type": "li",
+   "text": "Coverage and 911 Disclaimer;"
+  },
+  {
+   "type": "li",
+   "text": "Any other applicable agreement or policy."
+  },
+  {
+   "type": "p",
+   "text": "If there is a conflict between this Policy and another signed agreement, the signed agreement controls only to the extent of the conflict."
+  },
+  {
+   "type": "h2",
+   "text": "23. Updates to this Policy"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link may update this Policy from time to time."
+  },
+  {
+   "type": "p",
+   "text": "The updated Policy will be posted on the website, app, account portal, or another reasonable location. The “Effective Date” will show when the Policy was last updated."
+  },
+  {
+   "type": "p",
+   "text": "Continued use of the Services after an updated Policy becomes effective means you accept the updated Policy."
+  },
+  {
+   "type": "h2",
+   "text": "ACCEPTABLE USE ACKNOWLEDGMENT"
+  },
+  {
+   "type": "p",
+   "text": "ACCEPTABLE USE ACKNOWLEDGMENT"
+  },
+  {
+   "type": "p",
+   "text": "By using My Guardian Link, I acknowledge and agree that:"
+  },
+  {
+   "type": "li",
+   "text": "1. My Guardian Link is not 911 and does not replace calling 911 or local emergency services."
+  },
+  {
+   "type": "li",
+   "text": "2. I will use My Guardian Link only for legitimate, good-faith urgent, safety-related, roadside, reporting, caregiver, training, or approved practice purposes."
+  },
+  {
+   "type": "li",
+   "text": "3. I will not create false, prank, malicious, unauthorized, or improper activations."
+  },
+  {
+   "type": "li",
+   "text": "4. I will not use My Guardian Link to harass, stalk, track, threaten, control, or abuse another person."
+  },
+  {
+   "type": "li",
+   "text": "5. I will not add trusted contacts, emergency contacts, caregivers, parents, guardians, or group recipients without permission."
+  },
+  {
+   "type": "li",
+   "text": "6. I will not misuse personal information, location information, urgent signal data, incident records, group data, or platform data."
+  },
+  {
+   "type": "li",
+   "text": "7. I understand that misuse may result in suspension, termination, disclosure of records, referral to law enforcement, civil liability, administrative penalties, criminal consequences, and reimbursement claims."
+  },
+  {
+   "type": "li",
+   "text": "8. I understand that My Guardian Link may preserve and disclose records where permitted or required for safety, legal compliance, public safety, misuse investigation, insurance, legal defense, or dispute resolution."
+  },
+  {
+   "type": "li",
+   "text": "9. I agree to comply with this Acceptable Use Policy."
+  }
+ ]
+}

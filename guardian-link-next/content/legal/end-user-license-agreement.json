@@ -1,0 +1,727 @@
+{
+ "title": "End User License Agreement",
+ "subtitle": "My Guardian Link™",
+ "updated": "Last updated: August 4, 2026",
+ "blocks": [
+  {
+   "type": "h2",
+   "text": "Introduction"
+  },
+  {
+   "type": "table",
+   "rows": [
+    [
+     "**IMPORTANT: MY GUARDIAN LINK IS NOT 911.\nCALL 911 DIRECTLY WHEN YOU CAN SAFELY DO SO.**"
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "This Custom End-User License Agreement (the “EULA” or “Agreement”) is a legal agreement between you and Forward Move, LLC, doing business as My Guardian Link (“Forward Move,” “My Guardian Link,” “MGL,” “we,” “us,” or “our”), concerning your download, installation, access to, and use of the My Guardian Link mobile application distributed through Apple’s App Store (the “Licensed Application”)."
+  },
+  {
+   "type": "p",
+   "text": "This Agreement is between you and Forward Move only, and not with Apple Inc. (“Apple”). Forward Move, not Apple, is solely responsible for the Licensed Application, its content, and the services made available in connection with it, except as otherwise expressly stated in this Agreement or required by applicable law."
+  },
+  {
+   "type": "p",
+   "text": "By downloading, installing, accessing, creating an account through, or using the Licensed Application, you agree to this Agreement, the My Guardian Link Terms of Use, and the My Guardian Link Privacy Policy. If you do not agree, do not download, install, access, or use the Licensed Application."
+  },
+  {
+   "type": "p",
+   "text": "This EULA is a separate agreement and is incorporated into Section 34 of the My Guardian Link Terms of Use. This EULA governs the license to the Apple-distributed Licensed Application and Apple-specific requirements. The Terms of Use separately govern your account, use of My Guardian Link services, membership, billing, communications, and the Live Response Service. If a conflict exists, this EULA controls only for the Licensed Application and Apple-specific matters; the Terms of Use control for service and membership matters, subject in all cases to mandatory applicable law."
+  },
+  {
+   "type": "h2",
+   "text": "1. ACKNOWLEDGMENT AND PARTIES"
+  },
+  {
+   "type": "p",
+   "text": "You and Forward Move acknowledge that this Agreement is concluded between you and Forward Move only, and not with Apple. Forward Move, not Apple, is solely responsible for the Licensed Application and its content."
+  },
+  {
+   "type": "p",
+   "text": "This Agreement is not intended to conflict with the Apple Media Services Terms and Conditions or the Usage Rules applicable to applications distributed through Apple’s App Store. If a provision of this Agreement conflicts with a mandatory Apple Usage Rule, the applicable Apple Usage Rule controls to the extent of that conflict."
+  },
+  {
+   "type": "h2",
+   "text": "2. SCOPE OF LICENSE"
+  },
+  {
+   "type": "p",
+   "text": "Subject to your compliance with this Agreement, Forward Move grants you a limited, personal, revocable, nonexclusive, nontransferable, and nonsublicensable license to download, install, and use the Licensed Application on Apple-branded products that you own or control, as permitted by the Usage Rules in the Apple Media Services Terms and Conditions."
+  },
+  {
+   "type": "p",
+   "text": "The Licensed Application may also be accessed and used by other accounts associated with the purchaser through Apple-authorized Family Sharing, volume purchasing, or other Apple-authorized methods."
+  },
+  {
+   "type": "p",
+   "text": "You may not copy, modify, reverse engineer, decompile, disassemble, distribute, sell, rent, lease, sublicense, interfere with, circumvent security features of, or create derivative works from the Licensed Application, except to the extent that applicable law expressly permits an activity that cannot lawfully be restricted by agreement."
+  },
+  {
+   "type": "h2",
+   "text": "3. TWO SEPARATE SYSTEMS"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link consists of two separate but connected systems:"
+  },
+  {
+   "type": "li",
+   "text": "The Mobile Application. The Licensed Application provides digital communication, account, location-sharing, messaging, incident-creation, and safety tools operated through the user’s device and My Guardian Link’s technology platform."
+  },
+  {
+   "type": "li",
+   "text": "The Live Response Service. The Live Response Service is a human-operated service performed outside the Licensed Application through an External Response Center. Trained human Urgent Response Coordinators receive eligible assignments and may contact users, Trusted Contacts, or appropriate third parties."
+  },
+  {
+   "type": "p",
+   "text": "The Licensed Application is the digital tool used to create and transmit information. The Live Response Service is the separate real-world human service that may act upon an eligible incident assignment."
+  },
+  {
+   "type": "h2",
+   "text": "4. WHAT THE MOBILE APPLICATION DOES"
+  },
+  {
+   "type": "p",
+   "text": "Subject to device compatibility, permissions, account status, feature availability, and applicable law, the Licensed Application may allow users to:"
+  },
+  {
+   "type": "li",
+   "text": "Create and manage a My Guardian Link account."
+  },
+  {
+   "type": "li",
+   "text": "Complete and update a personal profile."
+  },
+  {
+   "type": "li",
+   "text": "Add and manage Trusted Contacts and emergency information."
+  },
+  {
+   "type": "li",
+   "text": "Create alerts or incident requests."
+  },
+  {
+   "type": "li",
+   "text": "Enter, transmit, and receive incident-related messages."
+  },
+  {
+   "type": "li",
+   "text": "Share device-reported location information and map links."
+  },
+  {
+   "type": "li",
+   "text": "Receive notifications and communications."
+  },
+  {
+   "type": "li",
+   "text": "View user-accessible incident or alert history."
+  },
+  {
+   "type": "li",
+   "text": "Use approved training, demonstration, or practice features."
+  },
+  {
+   "type": "p",
+   "text": "These are digital application tools. The Licensed Application does not itself provide human incident management, independently dispatch emergency responders, or guarantee that any person or public-safety agency will act upon an alert."
+  },
+  {
+   "type": "h2",
+   "text": "5. FREE USERS AND MEMBERS"
+  },
+  {
+   "type": "p",
+   "text": "A “Free User” is a user who has access to the digital application tools made available under the My Guardian Link Free Plan but is not currently eligible for the Live Response Service."
+  },
+  {
+   "type": "p",
+   "text": "A “Member” is a user who is eligible for the Live Response Service through a paid individual or group membership, a sponsor-funded arrangement, an employer or organization program, or another authorized membership arrangement."
+  },
+  {
+   "type": "p",
+   "text": "Free Users and Members may use the digital application tools made available for their accounts. Membership status determines whether an eligible incident may be assigned by the My Guardian Link backend to the External Response Center for human management. Membership does not purchase premium digital application functionality."
+  },
+  {
+   "type": "h2",
+   "text": "6. WHAT THE LIVE RESPONSE SERVICE DOES"
+  },
+  {
+   "type": "p",
+   "text": "For eligible Members and eligible incidents, the Live Response Service may include trained human personnel who:"
+  },
+  {
+   "type": "li",
+   "text": "Receive an eligible Live Response assignment from the My Guardian Link backend."
+  },
+  {
+   "type": "li",
+   "text": "Review available incident, account, location, message, and contact information."
+  },
+  {
+   "type": "li",
+   "text": "Attempt to contact the user."
+  },
+  {
+   "type": "li",
+   "text": "Attempt to contact one or more Trusted Contacts."
+  },
+  {
+   "type": "li",
+   "text": "Coordinate communications among the user, Trusted Contacts, and appropriate resources."
+  },
+  {
+   "type": "li",
+   "text": "Contact 911, a public-safety answering point, law enforcement, fire services, emergency medical services, roadside assistance, or another appropriate resource when the coordinator determines that doing so is appropriate and reasonably possible."
+  },
+  {
+   "type": "li",
+   "text": "Document coordinator actions and incident information."
+  },
+  {
+   "type": "p",
+   "text": "The Live Response Service is performed by human operators outside the Licensed Application. It is not generated, delivered, or completed solely by the Licensed Application."
+  },
+  {
+   "type": "h2",
+   "text": "7. BACKEND WORKFLOW AND SERVICE ELIGIBILITY"
+  },
+  {
+   "type": "p",
+   "text": "The Licensed Application does not independently decide whether the Live Response Service will be provided. The general workflow is:"
+  },
+  {
+   "type": "li",
+   "text": "The user creates an alert or incident request through the Licensed Application.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "The request and available information are transmitted to the My Guardian Link backend.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "The backend evaluates available account information, membership eligibility, incident type, service configuration, and operational availability.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "If the incident and user are eligible, the backend creates a Live Response assignment.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "The assignment is transmitted to the External Response Center outside the Licensed Application.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "A trained human Urgent Response Coordinator receives and manages the assignment according to available information, procedures, professional judgment, and operational conditions.",
+   "ordered": true
+  },
+  {
+   "type": "p",
+   "text": "Eligibility, assignment creation, coordinator availability, and the actions taken during an incident are controlled by backend and human-service processes, not by unlocking additional digital functionality within the Licensed Application."
+  },
+  {
+   "type": "h2",
+   "text": "8. WHAT A CUSTOMER PURCHASES"
+  },
+  {
+   "type": "p",
+   "text": "A My Guardian Link membership purchases eligibility for access to the Live Response Service, including trained human Urgent Response Coordinators, human incident review, communication coordination, appropriate outreach, response-center operations, and incident documentation."
+  },
+  {
+   "type": "p",
+   "text": "A membership does not purchase additional premium digital features in the Licensed Application. The app license and digital application tools are separate from the human-operated Live Response Service."
+  },
+  {
+   "type": "p",
+   "text": "A membership does not guarantee that every alert will qualify for a Live Response assignment, that a coordinator will be immediately available, that any particular action will be taken, or that an emergency agency or other third party will respond."
+  },
+  {
+   "type": "h2",
+   "text": "9. URGENT RESPONSE COORDINATORS AND EXTERNAL RESPONSE CENTER"
+  },
+  {
+   "type": "p",
+   "text": "An “Urgent Response Coordinator” is a trained human operator who works through an External Response Center outside the Licensed Application."
+  },
+  {
+   "type": "p",
+   "text": "The “External Response Center” is a response operation maintained by one or more third-party service providers under agreement with Forward Move. Urgent Response Coordinators and External Response Center personnel may be employees or independent contractors of those third-party service providers and are not Apple employees."
+  },
+  {
+   "type": "p",
+   "text": "Urgent Response Coordinators may rely on information provided by you, your device, My Guardian Link systems, Trusted Contacts, and third parties. They may exercise judgment based on the information and resources available at the time. They do not control public-safety agencies or guarantee dispatch, response, rescue, intervention, or any particular outcome."
+  },
+  {
+   "type": "h2",
+   "text": "10. IMPORTANT EMERGENCY-RESPONSE LIMITATIONS MY GUARDIAN LINK IS NOT 911 AND DOES NOT REPLACE CALLING 911 OR LOCAL EMERGENCY SERVICES."
+  },
+  {
+   "type": "p",
+   "text": "If you can safely call 911 or another appropriate emergency number directly, you should do so. You must not rely on the Licensed Application or the Live Response Service as your only method of obtaining emergency assistance."
+  },
+  {
+   "type": "p",
+   "text": "Activating an alert or incident feature does not guarantee that:"
+  },
+  {
+   "type": "li",
+   "text": "The alert or information will be transmitted, received, reviewed, or acted upon."
+  },
+  {
+   "type": "li",
+   "text": "A Trusted Contact will receive, view, answer, or respond to a communication."
+  },
+  {
+   "type": "li",
+   "text": "A Live Response assignment will be created."
+  },
+  {
+   "type": "li",
+   "text": "An Urgent Response Coordinator will be immediately available or able to reach you."
+  },
+  {
+   "type": "li",
+   "text": "A public-safety agency or other resource will be contacted or will accept the information provided."
+  },
+  {
+   "type": "li",
+   "text": "Police, fire, emergency medical personnel, roadside providers, or other responders will be dispatched or will arrive within any particular time."
+  },
+  {
+   "type": "li",
+   "text": "Your device location will be available, current, complete, or accurate."
+  },
+  {
+   "type": "li",
+   "text": "A coordinator or third party will correctly identify your identity, condition, circumstances, or location."
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link does not independently dispatch law enforcement, fire services, emergency medical services, or other emergency responders. Any response decision is made by the applicable public-safety agency or third-party provider."
+  },
+  {
+   "type": "h2",
+   "text": "11. LOCATION INFORMATION"
+  },
+  {
+   "type": "p",
+   "text": "With your permission, the Licensed Application may collect and transmit location information reported by your device, including latitude and longitude, a map location or moving map pin, a nearby or estimated street address, a timestamp, and location updates available during an active incident."
+  },
+  {
+   "type": "p",
+   "text": "Location information may be shared with Trusted Contacts, authorized Forward Move personnel, the External Response Center, Urgent Response Coordinators, contracted service providers, or public-safety agencies when reasonably necessary to provide the requested functionality or service."
+  },
+  {
+   "type": "p",
+   "text": "Device-reported location may be delayed, unavailable, incomplete, or inaccurate because of indoor use, building construction, terrain, weather, GPS limitations, operating-system restrictions, disabled permissions, poor cellular or internet coverage, battery condition, device settings, network outages, third-party failures, or other circumstances outside Forward Move’s control."
+  },
+  {
+   "type": "p",
+   "text": "You remain responsible for providing your address, surroundings, direction of travel, landmarks, or other location information whenever you are able."
+  },
+  {
+   "type": "h2",
+   "text": "12. SERVICE DEPENDENCIES"
+  },
+  {
+   "type": "p",
+   "text": "The Licensed Application and Live Response Service depend on systems, networks, people, and services that may be outside Forward Move’s control, including:"
+  },
+  {
+   "type": "li",
+   "text": "Your mobile device, battery, operating system, settings, and permissions."
+  },
+  {
+   "type": "li",
+   "text": "Cellular, Wi-Fi, internet, telephone, SMS, push-notification, and messaging networks."
+  },
+  {
+   "type": "li",
+   "text": "GPS, device-location, cloud-hosting, and mapping providers."
+  },
+  {
+   "type": "li",
+   "text": "Trusted Contacts and other recipients."
+  },
+  {
+   "type": "li",
+   "text": "The My Guardian Link backend, External Response Center, and available personnel."
+  },
+  {
+   "type": "li",
+   "text": "Public-safety answering points, 911 centers, government agencies, roadside providers, and other third parties."
+  },
+  {
+   "type": "p",
+   "text": "Maintenance, service interruptions, transmission delays, technical failures, account configuration, unavailable personnel, public-safety workload, or third-party outages may prevent, delay, or impair operation."
+  },
+  {
+   "type": "h2",
+   "text": "13. USER RESPONSIBILITIES"
+  },
+  {
+   "type": "p",
+   "text": "You agree to:"
+  },
+  {
+   "type": "li",
+   "text": "Provide accurate account, identity, telephone, emergency, contact, and location information."
+  },
+  {
+   "type": "li",
+   "text": "Keep your profile, membership, Trusted Contacts, and emergency information current."
+  },
+  {
+   "type": "li",
+   "text": "Maintain a charged, compatible, and operational device and necessary cellular or internet service."
+  },
+  {
+   "type": "li",
+   "text": "Enable permissions reasonably necessary for the features you choose to use."
+  },
+  {
+   "type": "li",
+   "text": "Select appropriate and willing Trusted Contacts and obtain any consent required to provide their information."
+  },
+  {
+   "type": "li",
+   "text": "Protect your login credentials and notify My Guardian Link promptly of suspected unauthorized access."
+  },
+  {
+   "type": "li",
+   "text": "Use approved practice or demonstration features when testing the Licensed Application."
+  },
+  {
+   "type": "li",
+   "text": "Avoid false, misleading, abusive, malicious, unauthorized, or fraudulent alerts or incident reports."
+  },
+  {
+   "type": "li",
+   "text": "Call 911 or local emergency services directly when immediate assistance is required and you are safely able to do so."
+  },
+  {
+   "type": "h2",
+   "text": "14. PRIVACY AND INFORMATION SHARING"
+  },
+  {
+   "type": "p",
+   "text": "Your use of the Licensed Application is subject to the My Guardian Link Privacy Policy. Depending on the features you use, My Guardian Link may process account information, contact information, device information, location information, messages, alerts, incident records, coordinator notes, and optional personal, medical, caregiver, disability, or emergency information."
+  },
+  {
+   "type": "p",
+   "text": "You authorize Forward Move and its service providers to collect, process, transmit, disclose, and retain information as reasonably necessary to provide the Licensed Application, digital application tools, Live Response Service, Trusted Contact communications, incident documentation, security, fraud prevention, legal compliance, and customer support."
+  },
+  {
+   "type": "p",
+   "text": "Do not submit information that you do not want disclosed to Trusted Contacts, the External Response Center, Urgent Response Coordinators, public-safety resources, or other authorized recipients when reasonably necessary to provide the requested service."
+  },
+  {
+   "type": "h2",
+   "text": "15. NO GUARANTEE OF PREVENTION, PROTECTION, OR OUTCOME"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link does not guarantee that the Licensed Application or Live Response Service will prevent a crime, injury, medical event, accident, property loss, disappearance, emergency, or other harmful occurrence."
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link does not provide physical security, law-enforcement services, fire services, emergency medical treatment, medical diagnosis, legal advice, or insurance. The Licensed Application and Live Response Service are supplemental communication and coordination resources only."
+  },
+  {
+   "type": "h2",
+   "text": "16. ACCOUNT, MEMBERSHIP, AND ACCESS"
+  },
+  {
+   "type": "p",
+   "text": "Certain functions require account registration, verification, device permissions, or eligibility under a membership or sponsoring organization. You are responsible for activity occurring through your account and for maintaining accurate account information."
+  },
+  {
+   "type": "p",
+   "text": "The app license itself does not include or guarantee access to the Live Response Service. Eligibility for the Live Response Service depends on a current paid, sponsored, organizational, or otherwise authorized membership and on the backend and operational conditions described in this Agreement."
+  },
+  {
+   "type": "p",
+   "text": "Pricing, duration, renewal, trial, cancellation, refund, and membership terms are disclosed at or before purchase and are governed by the applicable purchase terms and the My Guardian Link Terms of Use. If Apple processes a purchase, Apple’s applicable payment, subscription, cancellation, and refund rules also apply."
+  },
+  {
+   "type": "h2",
+   "text": "17. ACCEPTABLE USE"
+  },
+  {
+   "type": "p",
+   "text": "You may not use the Licensed Application or related services:"
+  },
+  {
+   "type": "li",
+   "text": "To make knowingly false, prank, malicious, or unauthorized emergency or incident reports."
+  },
+  {
+   "type": "li",
+   "text": "To harass, threaten, stalk, track, control, impersonate, or harm another person."
+  },
+  {
+   "type": "li",
+   "text": "To interfere with public-safety operations, the External Response Center, Urgent Response Coordinators, Trusted Contacts, or other users."
+  },
+  {
+   "type": "li",
+   "text": "To transmit unlawful, fraudulent, deceptive, defamatory, obscene, or malicious information or code."
+  },
+  {
+   "type": "li",
+   "text": "To gain unauthorized access to systems, accounts, or data or to bypass security measures."
+  },
+  {
+   "type": "li",
+   "text": "In any manner that violates applicable law or damages, disables, overburdens, or disrupts the Licensed Application or third-party systems."
+  },
+  {
+   "type": "p",
+   "text": "Forward Move may suspend or terminate access for misuse, fraud, safety concerns, nonpayment, legal requirements, or violations of this Agreement or the Terms of Use."
+  },
+  {
+   "type": "h2",
+   "text": "18. OWNERSHIP AND RESERVATION OF RIGHTS"
+  },
+  {
+   "type": "p",
+   "text": "The Licensed Application, My Guardian Link technology, software, interfaces, content, designs, trademarks, service marks, documentation, and related intellectual property are owned by or licensed to Forward Move."
+  },
+  {
+   "type": "p",
+   "text": "Except for the limited license expressly granted in this Agreement, no ownership or other right is transferred to you. Forward Move and its licensors reserve all rights not expressly granted."
+  },
+  {
+   "type": "h2",
+   "text": "19. MAINTENANCE AND SUPPORT"
+  },
+  {
+   "type": "p",
+   "text": "Forward Move is solely responsible for maintenance and support of the Licensed Application as required by this Agreement or applicable law. Apple has no obligation to furnish maintenance or support services for the Licensed Application."
+  },
+  {
+   "type": "p",
+   "text": "Support inquiries may be submitted to:"
+  },
+  {
+   "type": "p",
+   "text": "**My Guardian Link Support**\nhttps://myguardianlink.com/support\nEmail: support@myguardianlink.com\nTelephone: (920) 461-4188"
+  },
+  {
+   "type": "h2",
+   "text": "20. THIRD-PARTY SERVICES AND TERMS"
+  },
+  {
+   "type": "p",
+   "text": "The Licensed Application and Live Response Service may use or interact with third-party telecommunications, mapping, cloud-hosting, payment, notification, response-center, public-safety, and communications systems."
+  },
+  {
+   "type": "p",
+   "text": "You must comply with applicable third-party terms when using the Licensed Application, including terms of your cellular carrier, internet provider, Apple Media Services, mapping provider, and any other third-party service you use in connection with My Guardian Link."
+  },
+  {
+   "type": "p",
+   "text": "Forward Move does not control third-party services and is not responsible for their availability, performance, security, accuracy, delays, failures, privacy practices, or actions except to the extent required by applicable law."
+  },
+  {
+   "type": "h2",
+   "text": "21. DISCLAIMER OF WARRANTIES"
+  },
+  {
+   "type": "p",
+   "text": "TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSED APPLICATION AND RELATED SERVICES ARE PROVIDED “AS IS,” “AS AVAILABLE,” AND “WITH ALL FAULTS,” WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY."
+  },
+  {
+   "type": "p",
+   "text": "FORWARD MOVE DISCLAIMS IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, AVAILABILITY, RELIABILITY, EMERGENCY EFFECTIVENESS, AND UNINTERRUPTED OR ERROR-FREE OPERATION TO THE MAXIMUM EXTENT PERMITTED BY LAW."
+  },
+  {
+   "type": "p",
+   "text": "Some jurisdictions do not allow certain warranty exclusions, so portions of this section may not apply to you."
+  },
+  {
+   "type": "p",
+   "text": "If the Licensed Application fails to conform to an applicable warranty, you may notify Apple. Apple may refund the purchase price, if any, that you paid to Apple for the Licensed Application. To the maximum extent permitted by applicable law, Apple has no other warranty obligation concerning the Licensed Application. Forward Move is responsible for other claims, losses, liabilities, damages, costs, or expenses attributable to a failure to conform to an applicable warranty."
+  },
+  {
+   "type": "h2",
+   "text": "22. LIMITATION OF LIABILITY"
+  },
+  {
+   "type": "p",
+   "text": "TO THE MAXIMUM EXTENT PERMITTED BY LAW, FORWARD MOVE, ITS AFFILIATES, OWNERS, OFFICERS, DIRECTORS, EMPLOYEES, CONTRACTORS, LICENSORS, EXTERNAL RESPONSE CENTER PROVIDERS, URGENT RESPONSE COORDINATORS, VENDORS, AND SERVICE PROVIDERS WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, PUNITIVE, OR LOST-PROFIT DAMAGES ARISING FROM OR RELATED TO THE LICENSED APPLICATION OR RELATED SERVICES."
+  },
+  {
+   "type": "p",
+   "text": "This limitation includes damages arising from or related to:"
+  },
+  {
+   "type": "li",
+   "text": "Failure or delay of an alert, message, notification, call, or data transmission."
+  },
+  {
+   "type": "li",
+   "text": "Failure to create or deliver a Live Response assignment."
+  },
+  {
+   "type": "li",
+   "text": "Failure to contact a user, Trusted Contact, Urgent Response Coordinator, External Response Center, 911 center, public-safety agency, roadside provider, or other resource."
+  },
+  {
+   "type": "li",
+   "text": "Failure, delay, or outcome of any emergency or third-party response."
+  },
+  {
+   "type": "li",
+   "text": "Inaccurate, delayed, incomplete, or unavailable location or incident information."
+  },
+  {
+   "type": "li",
+   "text": "Network, device, software, battery, permission, carrier, cloud, mapping, app-store, or third-party system failure."
+  },
+  {
+   "type": "li",
+   "text": "Reliance on My Guardian Link as a substitute for directly calling 911 or local emergency services."
+  },
+  {
+   "type": "p",
+   "text": "To the maximum extent permitted by law, Forward Move’s total liability for claims arising from the Licensed Application will not exceed the amount you paid directly to Forward Move for the applicable services during the twelve months preceding the event giving rise to the claim. Nothing in this Agreement excludes or limits liability that cannot legally be excluded or limited."
+  },
+  {
+   "type": "h2",
+   "text": "23. PRODUCT CLAIMS"
+  },
+  {
+   "type": "p",
+   "text": "Forward Move, not Apple, is responsible for addressing claims by you or a third party relating to the Licensed Application or your possession or use of it, including product-liability claims, claims that the Licensed Application fails to satisfy an applicable legal or regulatory requirement, and claims arising under consumer-protection, privacy, or similar laws."
+  },
+  {
+   "type": "h2",
+   "text": "24. INTELLECTUAL-PROPERTY CLAIMS"
+  },
+  {
+   "type": "p",
+   "text": "If a third party claims that the Licensed Application or your possession or use of it infringes that party’s intellectual-property rights, Forward Move, not Apple, is responsible for investigating, defending, settling, and resolving the claim, subject to applicable law and any rights of Forward Move’s licensors."
+  },
+  {
+   "type": "h2",
+   "text": "25. LEGAL COMPLIANCE"
+  },
+  {
+   "type": "p",
+   "text": "You represent and warrant that:"
+  },
+  {
+   "type": "li",
+   "text": "You are not located in a country or region subject to a United States government embargo or designated by the United States government as supporting terrorism."
+  },
+  {
+   "type": "li",
+   "text": "You are not listed on a United States government list of prohibited or restricted parties."
+  },
+  {
+   "type": "li",
+   "text": "You will use the Licensed Application and related services in compliance with applicable laws and regulations."
+  },
+  {
+   "type": "h2",
+   "text": "26. TERMINATION"
+  },
+  {
+   "type": "p",
+   "text": "This Agreement remains effective until terminated. Your rights under this Agreement terminate automatically if you materially violate it. Forward Move may also suspend or terminate your license or access as permitted by this Agreement, the Terms of Use, or applicable law."
+  },
+  {
+   "type": "p",
+   "text": "Upon termination, you must discontinue use of and delete the Licensed Application from devices under your control. Sections that by their nature should survive termination, including ownership, disclaimers, limitations, claims responsibility, governing law, and third-party-beneficiary provisions, will survive"
+  },
+  {
+   "type": "h2",
+   "text": "27. GOVERNING LAW AND CONSUMER RIGHTS"
+  },
+  {
+   "type": "p",
+   "text": "Except where prohibited by applicable law, this Agreement is governed by the laws of the State of Wisconsin, without regard to conflict-of-law principles."
+  },
+  {
+   "type": "p",
+   "text": "Nothing in this Agreement limits mandatory consumer rights that cannot be waived under the laws applicable to you."
+  },
+  {
+   "type": "h2",
+   "text": "28. APPLE AS THIRD-PARTY BENEFICIARY"
+  },
+  {
+   "type": "p",
+   "text": "You and Forward Move acknowledge and agree that Apple and Apple’s subsidiaries are third-party beneficiaries of this Agreement. Upon your acceptance of this Agreement, Apple has the right, and is deemed to have accepted the right, to enforce this Agreement against you as a third-party beneficiary."
+  },
+  {
+   "type": "h2",
+   "text": "29. DEVELOPER INFORMATION"
+  },
+  {
+   "type": "p",
+   "text": "**Forward Move, LLC**\nDoing Business As: My Guardian Link\n2680 Vernon Drive\nGreen Bay, Wisconsin 54304\nEmail: support@myguardianlink.com\nTelephone: (920) 461-4188\nSupport Website: https://myguardianlink.com/support"
+  },
+  {
+   "type": "p",
+   "text": "Questions, complaints, and claims concerning the Licensed Application should be directed to Forward Move using the contact information above."
+  },
+  {
+   "type": "h2",
+   "text": "30. ENTIRE AGREEMENT AND RELATIONSHIP TO OTHER TERMS"
+  },
+  {
+   "type": "p",
+   "text": "This EULA, together with the My Guardian Link Terms of Use, Privacy Policy, applicable membership or subscription disclosures, and additional terms presented for a specific feature or service, constitutes the agreement governing your use of the Licensed Application and related My Guardian Link services."
+  },
+  {
+   "type": "p",
+   "text": "This EULA is maintained as a separate Custom EULA for Apple App Store distribution and is incorporated into Section 34 of the My Guardian Link Terms of Use. If this EULA conflicts with the Terms of Use solely concerning the license to the Apple-distributed Licensed Application or Apple-specific obligations, this EULA controls. The Terms of Use control concerning accounts, digital tools, membership, billing, and the Live Response Service. Mandatory applicable law controls over both documents."
+  },
+  {
+   "type": "p",
+   "text": "If any provision is found invalid or unenforceable, it will be modified or severed to the minimum extent necessary, and the remaining provisions will remain in effect. Forward Move’s failure to enforce a provision does not waive its right to enforce that provision later."
+  },
+  {
+   "type": "h2",
+   "text": "USER ACKNOWLEDGMENT"
+  },
+  {
+   "type": "li",
+   "text": "This EULA is between me and Forward Move, LLC, not Apple.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "The Licensed Application provides digital tools; the Live Response Service is a separate human-operated service outside the app.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Membership purchases eligibility for trained human response-center services, not premium digital application features.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "My Guardian Link is not 911 and does not guarantee alert delivery, coordinator availability, dispatch, response, prevention of harm, or any specific outcome.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "I should call 911 or local emergency services directly whenever I can safely do so.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "I have read and agree to this Custom EULA, the My Guardian Link Terms of Use, and the Privacy Policy.",
+   "ordered": true
+  }
+ ]
+}

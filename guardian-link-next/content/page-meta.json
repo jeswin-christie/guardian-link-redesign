@@ -1,0 +1,1427 @@
+{
+ "home": {
+  "route": "/",
+  "title": "Home Page | My Guardian Link | Get Connected + Stay Protected",
+  "description": "When danger finds you, So Do We! Your Personal Protection link Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+  "canonical": "https://myguardianlink.com/",
+  "robots": "index, follow, max-image-preview:large",
+  "schema_jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://myguardianlink.com/#organization",
+      "name": "My Guardian Link",
+      "legalName": "Forward Move, LLC d/b/a My Guardian Link",
+      "url": "https://myguardianlink.com/",
+      "slogan": "Get Connected + Stay Protected",
+      "description": "Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "email": "info@myguardianlink.com",
+      "telephone": "+1-920-461-4188",
+      "logo": "https://myguardianlink.com/media/mgl-horizontal-logo-rev.webp",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "2680 Vernon Drive",
+       "addressLocality": "Green Bay",
+       "addressRegion": "WI",
+       "postalCode": "54302",
+       "addressCountry": "US"
+      },
+      "contactPoint": [
+       {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@mygaurdianlink.com",
+        "areaServed": "US",
+        "availableLanguage": "en",
+        "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+         ],
+         "opens": "08:00",
+         "closes": "20:00"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://myguardianlink.com/#website",
+      "url": "https://myguardianlink.com/",
+      "name": "My Guardian Link",
+      "inLanguage": "en-US",
+      "publisher": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://myguardianlink.com/#webpage",
+      "url": "https://myguardianlink.com/",
+      "name": "Home Page | My Guardian Link | Get Connected + Stay Protected",
+      "description": "When danger finds you, So Do We! Your Personal Protection link Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+       "@id": "https://myguardianlink.com/#website"
+      },
+      "about": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myguardianlink.com/"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "how-it-works": {
+  "route": "/how-it-works/",
+  "title": "How It Works | My Guardian Link | Get Connected + Stay Protected",
+  "description": "Helps starts with one silent signal. A simple step-by-step view of how My Guardian Link helps move information quickly when urgent help is needed.",
+  "canonical": "https://myguardianlink.com/how-it-works/",
+  "robots": "index, follow, max-image-preview:large",
+  "schema_jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://myguardianlink.com/#organization",
+      "name": "My Guardian Link",
+      "legalName": "Forward Move, LLC d/b/a My Guardian Link",
+      "url": "https://myguardianlink.com/",
+      "slogan": "Get Connected + Stay Protected",
+      "description": "Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "email": "info@myguardianlink.com",
+      "telephone": "+1-920-461-4188",
+      "logo": "https://myguardianlink.com/media/mgl-horizontal-logo-rev.webp",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "2680 Vernon Drive",
+       "addressLocality": "Green Bay",
+       "addressRegion": "WI",
+       "postalCode": "54302",
+       "addressCountry": "US"
+      },
+      "contactPoint": [
+       {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@mygaurdianlink.com",
+        "areaServed": "US",
+        "availableLanguage": "en",
+        "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+         ],
+         "opens": "08:00",
+         "closes": "20:00"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://myguardianlink.com/#website",
+      "url": "https://myguardianlink.com/",
+      "name": "My Guardian Link",
+      "inLanguage": "en-US",
+      "publisher": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://myguardianlink.com/how-it-works/#webpage",
+      "url": "https://myguardianlink.com/how-it-works/",
+      "name": "How It Works | My Guardian Link | Get Connected + Stay Protected",
+      "description": "Helps starts with one silent signal. A simple step-by-step view of how My Guardian Link helps move information quickly when urgent help is needed.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+       "@id": "https://myguardianlink.com/#website"
+      },
+      "about": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myguardianlink.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "How It Works",
+        "item": "https://myguardianlink.com/how-it-works/"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "features": {
+  "route": "/features/",
+  "title": "Features | My Guardian Link | Get Connected + Stay Protected",
+  "description": "Protection for the moment you never planned for. Life is unpredictable. My Guardian Link is built for real moment that matter most.",
+  "canonical": "https://myguardianlink.com/features/",
+  "robots": "index, follow, max-image-preview:large",
+  "schema_jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://myguardianlink.com/#organization",
+      "name": "My Guardian Link",
+      "legalName": "Forward Move, LLC d/b/a My Guardian Link",
+      "url": "https://myguardianlink.com/",
+      "slogan": "Get Connected + Stay Protected",
+      "description": "Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "email": "info@myguardianlink.com",
+      "telephone": "+1-920-461-4188",
+      "logo": "https://myguardianlink.com/media/mgl-horizontal-logo-rev.webp",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "2680 Vernon Drive",
+       "addressLocality": "Green Bay",
+       "addressRegion": "WI",
+       "postalCode": "54302",
+       "addressCountry": "US"
+      },
+      "contactPoint": [
+       {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@mygaurdianlink.com",
+        "areaServed": "US",
+        "availableLanguage": "en",
+        "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+         ],
+         "opens": "08:00",
+         "closes": "20:00"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://myguardianlink.com/#website",
+      "url": "https://myguardianlink.com/",
+      "name": "My Guardian Link",
+      "inLanguage": "en-US",
+      "publisher": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://myguardianlink.com/features/#webpage",
+      "url": "https://myguardianlink.com/features/",
+      "name": "Features | My Guardian Link | Get Connected + Stay Protected",
+      "description": "Protection for the moment you never planned for. Life is unpredictable. My Guardian Link is built for real moment that matter most.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+       "@id": "https://myguardianlink.com/#website"
+      },
+      "about": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myguardianlink.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Features",
+        "item": "https://myguardianlink.com/features/"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "why-it-matters": {
+  "route": "/why-it-matters/",
+  "title": "Why It Matters | My Guardian Link | Get Connected + Stay Protected",
+  "description": "911 Is Essential. But Sometimes You Cannot Call, Speak, or Explain Fast Enough. My Guardian Link supports anxious moments when calling 911 is difficult, unsafe, delayed, or confusing.",
+  "canonical": "https://myguardianlink.com/why-it-matters/",
+  "robots": "index, follow, max-image-preview:large",
+  "schema_jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://myguardianlink.com/#organization",
+      "name": "My Guardian Link",
+      "legalName": "Forward Move, LLC d/b/a My Guardian Link",
+      "url": "https://myguardianlink.com/",
+      "slogan": "Get Connected + Stay Protected",
+      "description": "Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "email": "info@myguardianlink.com",
+      "telephone": "+1-920-461-4188",
+      "logo": "https://myguardianlink.com/media/mgl-horizontal-logo-rev.webp",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "2680 Vernon Drive",
+       "addressLocality": "Green Bay",
+       "addressRegion": "WI",
+       "postalCode": "54302",
+       "addressCountry": "US"
+      },
+      "contactPoint": [
+       {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@mygaurdianlink.com",
+        "areaServed": "US",
+        "availableLanguage": "en",
+        "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+         ],
+         "opens": "08:00",
+         "closes": "20:00"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://myguardianlink.com/#website",
+      "url": "https://myguardianlink.com/",
+      "name": "My Guardian Link",
+      "inLanguage": "en-US",
+      "publisher": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://myguardianlink.com/why-it-matters/#webpage",
+      "url": "https://myguardianlink.com/why-it-matters/",
+      "name": "Why It Matters | My Guardian Link | Get Connected + Stay Protected",
+      "description": "911 Is Essential. But Sometimes You Cannot Call, Speak, or Explain Fast Enough. My Guardian Link supports anxious moments when calling 911 is difficult, unsafe, delayed, or confusing.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+       "@id": "https://myguardianlink.com/#website"
+      },
+      "about": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myguardianlink.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Why It Matters",
+        "item": "https://myguardianlink.com/why-it-matters/"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "who-it-protects": {
+  "route": "/who-it-protects/",
+  "title": "Who It Protect | My Guardian Link | Get Connected + Stay Protected",
+  "description": "protection that starts before the emergency My Guardian Link helps prevent risk, protect people in urgent moments, and deter harm with silent activcation, exact location, trusted contact, and real human support.",
+  "canonical": "https://myguardianlink.com/who-it-protects/",
+  "robots": "index, follow, max-image-preview:large",
+  "schema_jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://myguardianlink.com/#organization",
+      "name": "My Guardian Link",
+      "legalName": "Forward Move, LLC d/b/a My Guardian Link",
+      "url": "https://myguardianlink.com/",
+      "slogan": "Get Connected + Stay Protected",
+      "description": "Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "email": "info@myguardianlink.com",
+      "telephone": "+1-920-461-4188",
+      "logo": "https://myguardianlink.com/media/mgl-horizontal-logo-rev.webp",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "2680 Vernon Drive",
+       "addressLocality": "Green Bay",
+       "addressRegion": "WI",
+       "postalCode": "54302",
+       "addressCountry": "US"
+      },
+      "contactPoint": [
+       {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@mygaurdianlink.com",
+        "areaServed": "US",
+        "availableLanguage": "en",
+        "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+         ],
+         "opens": "08:00",
+         "closes": "20:00"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://myguardianlink.com/#website",
+      "url": "https://myguardianlink.com/",
+      "name": "My Guardian Link",
+      "inLanguage": "en-US",
+      "publisher": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://myguardianlink.com/who-it-protects/#webpage",
+      "url": "https://myguardianlink.com/who-it-protects/",
+      "name": "Who It Protect | My Guardian Link | Get Connected + Stay Protected",
+      "description": "protection that starts before the emergency My Guardian Link helps prevent risk, protect people in urgent moments, and deter harm with silent activcation, exact location, trusted contact, and real human support.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+       "@id": "https://myguardianlink.com/#website"
+      },
+      "about": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myguardianlink.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Who It Protects",
+        "item": "https://myguardianlink.com/who-it-protects/"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "pricing": {
+  "route": "/pricing/",
+  "title": "Pricing | My Guardian Link | Get Connected + Stay Protected",
+  "description": "Get Protected In Minutes. Simple plans. Powerfull protection. Peace of mind.",
+  "canonical": "https://myguardianlink.com/pricing/",
+  "robots": "index, follow, max-image-preview:large",
+  "schema_jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://myguardianlink.com/#organization",
+      "name": "My Guardian Link",
+      "legalName": "Forward Move, LLC d/b/a My Guardian Link",
+      "url": "https://myguardianlink.com/",
+      "slogan": "Get Connected + Stay Protected",
+      "description": "Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "email": "info@myguardianlink.com",
+      "telephone": "+1-920-461-4188",
+      "logo": "https://myguardianlink.com/media/mgl-horizontal-logo-rev.webp",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "2680 Vernon Drive",
+       "addressLocality": "Green Bay",
+       "addressRegion": "WI",
+       "postalCode": "54302",
+       "addressCountry": "US"
+      },
+      "contactPoint": [
+       {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@mygaurdianlink.com",
+        "areaServed": "US",
+        "availableLanguage": "en",
+        "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+         ],
+         "opens": "08:00",
+         "closes": "20:00"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://myguardianlink.com/#website",
+      "url": "https://myguardianlink.com/",
+      "name": "My Guardian Link",
+      "inLanguage": "en-US",
+      "publisher": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://myguardianlink.com/pricing/#webpage",
+      "url": "https://myguardianlink.com/pricing/",
+      "name": "Pricing | My Guardian Link | Get Connected + Stay Protected",
+      "description": "Get Protected In Minutes. Simple plans. Powerfull protection. Peace of mind.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+       "@id": "https://myguardianlink.com/#website"
+      },
+      "about": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myguardianlink.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Pricing",
+        "item": "https://myguardianlink.com/pricing/"
+       }
+      ]
+     },
+     {
+      "@type": "Product",
+      "name": "My Guardian Link membership",
+      "brand": {
+       "@type": "Brand",
+       "name": "My Guardian Link"
+      },
+      "url": "https://myguardianlink.com/pricing/",
+      "offers": [
+       {
+        "@type": "Offer",
+        "name": "Free Plan",
+        "price": "0",
+        "priceCurrency": "USD"
+       },
+       {
+        "@type": "Offer",
+        "name": "Single Plan (annual)",
+        "price": "119.88",
+        "priceCurrency": "USD"
+       },
+       {
+        "@type": "Offer",
+        "name": "Single Plan (monthly)",
+        "price": "19.99",
+        "priceCurrency": "USD"
+       },
+       {
+        "@type": "Offer",
+        "name": "Group Plan (3 users) (annual)",
+        "price": "299.88",
+        "priceCurrency": "USD"
+       },
+       {
+        "@type": "Offer",
+        "name": "Group Plan (3 users) (monthly)",
+        "price": "49.99",
+        "priceCurrency": "USD"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "faq": {
+  "route": "/faq/",
+  "title": "FAQ | My Guardian Link | Get Connected + Stay Protected",
+  "description": "Built for Urgent Moments. Designed for Accountability. My Guardian Link is designed to support you in urgent situations when calling or speaking may be difficult.",
+  "canonical": "https://myguardianlink.com/faq/",
+  "robots": "index, follow, max-image-preview:large",
+  "schema_jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://myguardianlink.com/#organization",
+      "name": "My Guardian Link",
+      "legalName": "Forward Move, LLC d/b/a My Guardian Link",
+      "url": "https://myguardianlink.com/",
+      "slogan": "Get Connected + Stay Protected",
+      "description": "Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "email": "info@myguardianlink.com",
+      "telephone": "+1-920-461-4188",
+      "logo": "https://myguardianlink.com/media/mgl-horizontal-logo-rev.webp",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "2680 Vernon Drive",
+       "addressLocality": "Green Bay",
+       "addressRegion": "WI",
+       "postalCode": "54302",
+       "addressCountry": "US"
+      },
+      "contactPoint": [
+       {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@mygaurdianlink.com",
+        "areaServed": "US",
+        "availableLanguage": "en",
+        "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+         ],
+         "opens": "08:00",
+         "closes": "20:00"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://myguardianlink.com/#website",
+      "url": "https://myguardianlink.com/",
+      "name": "My Guardian Link",
+      "inLanguage": "en-US",
+      "publisher": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://myguardianlink.com/faq/#webpage",
+      "url": "https://myguardianlink.com/faq/",
+      "name": "FAQ | My Guardian Link | Get Connected + Stay Protected",
+      "description": "Built for Urgent Moments. Designed for Accountability. My Guardian Link is designed to support you in urgent situations when calling or speaking may be difficult.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+       "@id": "https://myguardianlink.com/#website"
+      },
+      "about": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myguardianlink.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "FAQ",
+        "item": "https://myguardianlink.com/faq/"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Does My Guardian Link work everywhere?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "My Guardian Link works on cellular data or Wi-Fi. Performance depends on coverage, connectivity, and device connections."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is this a replacement for 911?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "No. It is designed to support 911 when you cannot call, speak, or explain clearly."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Who receives my signal?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Your trusted contacts and a personal coordinator."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What does the coordinator do?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "A live coordinator reviews your alert in real time, verifies your location and message, and begins the next response steps immediately."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Does it work if I cannot talk?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. The system is designed for silent or limited-action situations."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is my location sent?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, the system sends GPS location when available."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can my family be notified?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes, trusted contacts can receive the urgent signal."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is there a record?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Incident activity can be time-stamped and documented for accountability."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Who should use this?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Anyone who may need help when they cannot speak, move, call, or explain clearly."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "support": {
+  "route": "/support/",
+  "title": "Support | My Guardian Link | Get Connected + Stay Protected",
+  "description": "My Guardian Link Support. We're here for you. Our support team can assist with account access, app setup, trusted contacts, activation settings, subscriptions, and technical issues.",
+  "canonical": "https://myguardianlink.com/support/",
+  "robots": "index, follow, max-image-preview:large",
+  "schema_jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://myguardianlink.com/#organization",
+      "name": "My Guardian Link",
+      "legalName": "Forward Move, LLC d/b/a My Guardian Link",
+      "url": "https://myguardianlink.com/",
+      "slogan": "Get Connected + Stay Protected",
+      "description": "Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "email": "info@myguardianlink.com",
+      "telephone": "+1-920-461-4188",
+      "logo": "https://myguardianlink.com/media/mgl-horizontal-logo-rev.webp",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "2680 Vernon Drive",
+       "addressLocality": "Green Bay",
+       "addressRegion": "WI",
+       "postalCode": "54302",
+       "addressCountry": "US"
+      },
+      "contactPoint": [
+       {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@mygaurdianlink.com",
+        "areaServed": "US",
+        "availableLanguage": "en",
+        "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+         ],
+         "opens": "08:00",
+         "closes": "20:00"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://myguardianlink.com/#website",
+      "url": "https://myguardianlink.com/",
+      "name": "My Guardian Link",
+      "inLanguage": "en-US",
+      "publisher": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "ContactPage",
+      "@id": "https://myguardianlink.com/support/#webpage",
+      "url": "https://myguardianlink.com/support/",
+      "name": "Support | My Guardian Link | Get Connected + Stay Protected",
+      "description": "My Guardian Link Support. We're here for you. Our support team can assist with account access, app setup, trusted contacts, activation settings, subscriptions, and technical issues.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+       "@id": "https://myguardianlink.com/#website"
+      },
+      "about": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myguardianlink.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Support",
+        "item": "https://myguardianlink.com/support/"
+       }
+      ]
+     },
+     {
+      "@type": "FAQPage",
+      "mainEntity": [
+       {
+        "@type": "Question",
+        "name": "Why can’t I sign in?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Make sure you are using the email address or mobile number connected to your My Guardian Link account. Confirm that your internet connection is active and that your password was entered correctly. If you still cannot sign in, contact My Guardian Link Support."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Why am I not receiving my verification code?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Verification codes may be delayed by your mobile carrier or email provider. Check the following: Confirm that your phone number or email address is correct. Check your email spam or junk folder. Make sure your phone can receive text messages. Do not request several codes in rapid succession. Only the newest code may work. Contact Support if the code still does not arrive."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Why is Sign in with Apple not working?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Make sure you are signed into your Apple ID on the device and that your internet connection is active. If you previously selected Hide My Email, your My Guardian Link account may be connected to Apple’s private relay email address rather than your regular email address. Try signing in again with Apple. If the problem continues, contact Support and provide the email address you believe is connected to your account."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How do I create an account?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "1. Open the My Guardian Link app. 2. Select Create Account or Get Started. 3. Enter the requested account information. 4. Verify your email address and mobile number. 5. Complete your profile and protection settings. 6. Select a membership plan when prompted. You must accept the Terms of Use and Privacy Policy before completing registration."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How do I add trusted contacts?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "1. Open the My Guardian Link app. 2. Go to Profile or Trusted Contacts. 3. Select Add Trusted Contact. 4. Enter the person’s name, mobile number, and email address. 5. Save the contact and send the invitation if prompted. Trusted contacts should know that you selected them and understand how to respond when they receive an alert. You must accept the Terms of Use and Privacy Policy before completing registration."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How do I test Urgent Assist?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "1. Open Urgent Assist in the app. 2. Follow the activation instructions shown on the screen. 3. Clearly enter or say: “Practice call test only.” 4. Confirm that your trusted contacts and the response workflow operate as expected. Do not use Urgent Assist for casual testing without identifying the activation as a practice test."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How do I manage or cancel a subscription?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Subscriptions purchased through Apple must be managed through your Apple account: 1. Open the iPhone Settings app. 2. Tap your name. 3. Tap Subscriptions. 4. Select My Guardian Link. 5. Choose the available option to manage or cancel the subscription. Deleting the app does not automatically cancel a subscription. Cancellation normally stops future renewal while access continues through the current paid term."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How do I delete my account?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "1. Open the My Guardian Link app. 2. Go to Profile or Account Settings. 3. Select Delete Account. 4. Review the information shown. 5. Confirm the deletion request. Account deletion is permanent and may remove your profile, settings, trusted-contact connections, and other account information. Cancel any active Apple subscription separately through your Apple subscription settings."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "How do I fix location or notification issues?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Confirm that My Guardian Link has permission to use location services and send notifications. On iPhone: 1. Open Settings. 2. Select My Guardian Link. 3. Allow Notifications. 4. Open Location and select the location permission recommended by the app. 5. Turn on Precise Location. 6. Confirm that cellular data is enabled for the app. Also make sure Low Power Mode, Focus settings, or restricted background activity are not preventing alerts or location updates. Reopen the app after changing permissions."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "about-us": {
+  "route": "/about-us/",
+  "title": "About Us | My Guardian Link | Get Connected + Stay Protected",
+  "description": "Created By Forward Move. About Us. Protection. Prevention. Response. Our mission is to help prevent violence and protect people during vulnerable and urgent moments.",
+  "canonical": "https://myguardianlink.com/about-us/",
+  "robots": "index, follow, max-image-preview:large",
+  "schema_jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://myguardianlink.com/#organization",
+      "name": "My Guardian Link",
+      "legalName": "Forward Move, LLC d/b/a My Guardian Link",
+      "url": "https://myguardianlink.com/",
+      "slogan": "Get Connected + Stay Protected",
+      "description": "Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "email": "info@myguardianlink.com",
+      "telephone": "+1-920-461-4188",
+      "logo": "https://myguardianlink.com/media/mgl-horizontal-logo-rev.webp",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "2680 Vernon Drive",
+       "addressLocality": "Green Bay",
+       "addressRegion": "WI",
+       "postalCode": "54302",
+       "addressCountry": "US"
+      },
+      "contactPoint": [
+       {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@mygaurdianlink.com",
+        "areaServed": "US",
+        "availableLanguage": "en",
+        "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+         ],
+         "opens": "08:00",
+         "closes": "20:00"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://myguardianlink.com/#website",
+      "url": "https://myguardianlink.com/",
+      "name": "My Guardian Link",
+      "inLanguage": "en-US",
+      "publisher": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "AboutPage",
+      "@id": "https://myguardianlink.com/about-us/#webpage",
+      "url": "https://myguardianlink.com/about-us/",
+      "name": "About Us | My Guardian Link | Get Connected + Stay Protected",
+      "description": "Created By Forward Move. About Us. Protection. Prevention. Response. Our mission is to help prevent violence and protect people during vulnerable and urgent moments.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+       "@id": "https://myguardianlink.com/#website"
+      },
+      "about": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myguardianlink.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About Us",
+        "item": "https://myguardianlink.com/about-us/"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "checkout": {
+  "route": "/checkout/",
+  "title": "Checkout | My Guardian Link | Get Connected + Stay Protected",
+  "description": "Before You Continue. Please review and acknowledge and coverage requirements.",
+  "canonical": "https://myguardianlink.com/checkout/",
+  "robots": "noindex, follow",
+  "schema_jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://myguardianlink.com/#organization",
+      "name": "My Guardian Link",
+      "legalName": "Forward Move, LLC d/b/a My Guardian Link",
+      "url": "https://myguardianlink.com/",
+      "slogan": "Get Connected + Stay Protected",
+      "description": "Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "email": "info@myguardianlink.com",
+      "telephone": "+1-920-461-4188",
+      "logo": "https://myguardianlink.com/media/mgl-horizontal-logo-rev.webp",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "2680 Vernon Drive",
+       "addressLocality": "Green Bay",
+       "addressRegion": "WI",
+       "postalCode": "54302",
+       "addressCountry": "US"
+      },
+      "contactPoint": [
+       {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@mygaurdianlink.com",
+        "areaServed": "US",
+        "availableLanguage": "en",
+        "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+         ],
+         "opens": "08:00",
+         "closes": "20:00"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://myguardianlink.com/#website",
+      "url": "https://myguardianlink.com/",
+      "name": "My Guardian Link",
+      "inLanguage": "en-US",
+      "publisher": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://myguardianlink.com/checkout/#webpage",
+      "url": "https://myguardianlink.com/checkout/",
+      "name": "Checkout | My Guardian Link | Get Connected + Stay Protected",
+      "description": "Before You Continue. Please review and acknowledge and coverage requirements.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+       "@id": "https://myguardianlink.com/#website"
+      },
+      "about": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myguardianlink.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Checkout",
+        "item": "https://myguardianlink.com/checkout/"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "legal": {
+  "route": "/legal/",
+  "title": "Legal | My Guardian Link | Get Connected + Stay Protected",
+  "description": "My Guardian Link™ Legal Policies & Disclaimers. Please review our policies and agreements below.",
+  "canonical": "https://myguardianlink.com/legal/",
+  "robots": "index, follow, max-image-preview:large",
+  "schema_jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://myguardianlink.com/#organization",
+      "name": "My Guardian Link",
+      "legalName": "Forward Move, LLC d/b/a My Guardian Link",
+      "url": "https://myguardianlink.com/",
+      "slogan": "Get Connected + Stay Protected",
+      "description": "Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "email": "info@myguardianlink.com",
+      "telephone": "+1-920-461-4188",
+      "logo": "https://myguardianlink.com/media/mgl-horizontal-logo-rev.webp",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "2680 Vernon Drive",
+       "addressLocality": "Green Bay",
+       "addressRegion": "WI",
+       "postalCode": "54302",
+       "addressCountry": "US"
+      },
+      "contactPoint": [
+       {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@mygaurdianlink.com",
+        "areaServed": "US",
+        "availableLanguage": "en",
+        "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+         ],
+         "opens": "08:00",
+         "closes": "20:00"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://myguardianlink.com/#website",
+      "url": "https://myguardianlink.com/",
+      "name": "My Guardian Link",
+      "inLanguage": "en-US",
+      "publisher": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://myguardianlink.com/legal/#webpage",
+      "url": "https://myguardianlink.com/legal/",
+      "name": "Legal | My Guardian Link | Get Connected + Stay Protected",
+      "description": "My Guardian Link™ Legal Policies & Disclaimers. Please review our policies and agreements below.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+       "@id": "https://myguardianlink.com/#website"
+      },
+      "about": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myguardianlink.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Legal",
+        "item": "https://myguardianlink.com/legal/"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "account-deletion": {
+  "route": "/account-deletion/",
+  "title": "Account Deletion | My Guardian Link | Get Connected + Stay Protected",
+  "description": "How to Delete Your Account. You may permanently delete your My Guardian Link account directly from the mobile app.",
+  "canonical": "https://myguardianlink.com/account-deletion/",
+  "robots": "index, follow, max-image-preview:large",
+  "schema_jsonld": [
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "Organization",
+      "@id": "https://myguardianlink.com/#organization",
+      "name": "My Guardian Link",
+      "legalName": "Forward Move, LLC d/b/a My Guardian Link",
+      "url": "https://myguardianlink.com/",
+      "slogan": "Get Connected + Stay Protected",
+      "description": "Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "email": "info@myguardianlink.com",
+      "telephone": "+1-920-461-4188",
+      "logo": "https://myguardianlink.com/media/mgl-horizontal-logo-rev.webp",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "2680 Vernon Drive",
+       "addressLocality": "Green Bay",
+       "addressRegion": "WI",
+       "postalCode": "54302",
+       "addressCountry": "US"
+      },
+      "contactPoint": [
+       {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@mygaurdianlink.com",
+        "areaServed": "US",
+        "availableLanguage": "en",
+        "hoursAvailable": {
+         "@type": "OpeningHoursSpecification",
+         "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+         ],
+         "opens": "08:00",
+         "closes": "20:00"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://myguardianlink.com/#website",
+      "url": "https://myguardianlink.com/",
+      "name": "My Guardian Link",
+      "inLanguage": "en-US",
+      "publisher": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     }
+    ]
+   },
+   {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://myguardianlink.com/account-deletion/#webpage",
+      "url": "https://myguardianlink.com/account-deletion/",
+      "name": "Account Deletion | My Guardian Link | Get Connected + Stay Protected",
+      "description": "How to Delete Your Account. You may permanently delete your My Guardian Link account directly from the mobile app.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+       "@id": "https://myguardianlink.com/#website"
+      },
+      "about": {
+       "@id": "https://myguardianlink.com/#organization"
+      }
+     },
+     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://myguardianlink.com/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Account Deletion",
+        "item": "https://myguardianlink.com/account-deletion/"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

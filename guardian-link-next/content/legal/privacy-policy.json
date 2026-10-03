@@ -1,0 +1,1774 @@
+{
+ "title": "Privacy Policy",
+ "subtitle": "Security, Privacy & Compliance Overview",
+ "updated": "Last updated: August 4, 2026",
+ "blocks": [
+  {
+   "type": "h2",
+   "text": "Introduction"
+  },
+  {
+   "type": "p",
+   "text": "PRIVACY POLICY"
+  },
+  {
+   "type": "p",
+   "text": "MY GUARDIAN LINK™"
+  },
+  {
+   "type": "p",
+   "text": "Effective Date: August 4, 2026"
+  },
+  {
+   "type": "p",
+   "text": "Company: Forward Move, LLC d/b/a My Guardian Link™"
+  },
+  {
+   "type": "p",
+   "text": "Website: myguardianlink.com"
+  },
+  {
+   "type": "p",
+   "text": "Contact: info@myguardianlink.com | (920) 461-4188"
+  },
+  {
+   "type": "p",
+   "text": "Mailing Address: 2680 Vernon Drive, Green Bay, WI 54304"
+  },
+  {
+   "type": "p",
+   "text": "This Privacy Policy explains how Forward Move, LLC d/b/a My Guardian Link™ (“My Guardian Link,” “MGL,” “Company,” “we,” “us,” or “our”) collects, uses, stores, discloses, protects, retains, and otherwise processes personal information when you access or use the My Guardian Link website, mobile application, backend platform, digital communication and safety tools, membership administration, Live Response Service, customer support, and related services (collectively, the “Services”)."
+  },
+  {
+   "type": "p",
+   "text": "This Privacy Policy applies to consumer users. Separate or additional privacy terms may apply to enterprise customers, sponsor groups, referral groups, employers, organizations, strategic partners, vendors, or other business relationships."
+  },
+  {
+   "type": "p",
+   "text": "By creating an account, using the Mobile Application, adding Trusted Contacts, activating an alert, enabling location or other device permissions, purchasing a membership, using the Live Response Service, or otherwise using the Services, you acknowledge that you have read this Privacy Policy."
+  },
+  {
+   "type": "p",
+   "text": "If you do not agree with this Privacy Policy, do not use the Services."
+  },
+  {
+   "type": "h2",
+   "text": "1. IMPORTANT PRIVACY AND EMERGENCY SERVICE NOTICE"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link supports urgent communication, Trusted Contact notification, location sharing, incident coordination, and, for eligible members, access to a human-operated Live Response Service."
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link is not 911 and is not a police department, fire department, ambulance service, public safety answering point, government emergency service, emergency medical provider, security company, or law enforcement agency. If you can safely call 911 or local emergency services directly, you should do so."
+  },
+  {
+   "type": "p",
+   "text": "Because the Services support urgent and safety-related communications, MGL may process sensitive information, including precise location, alert details, messages, Trusted Contact information, optional medical or emergency profile information, communication records, and incident documentation."
+  },
+  {
+   "type": "p",
+   "text": "When reasonably necessary to provide the Services, relevant information may be disclosed to your Trusted Contacts, Human Response Coordinators, the External Response Center, communications and mapping providers, public safety resources, roadside providers, service providers, or other authorized recipients."
+  },
+  {
+   "type": "h2",
+   "text": "2. TWO SEPARATE SYSTEMS"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link consists of two operationally distinct systems that work together:"
+  },
+  {
+   "type": "h3",
+   "text": "2.1 Mobile Application"
+  },
+  {
+   "type": "p",
+   "text": "The My Guardian Link mobile application (the “Mobile Application”) provides digital communication and safety tools. Depending on the account, device, selected configuration, and feature availability, the Mobile Application may allow users to:"
+  },
+  {
+   "type": "li",
+   "text": "Create and manage an account;"
+  },
+  {
+   "type": "li",
+   "text": "Complete or update a user profile;"
+  },
+  {
+   "type": "li",
+   "text": "Add and manage Trusted Contacts;"
+  },
+  {
+   "type": "li",
+   "text": "Add optional emergency, medical, caregiver, household, vehicle, school, or workplace information;"
+  },
+  {
+   "type": "li",
+   "text": "Create or activate alerts and safety-related communications;"
+  },
+  {
+   "type": "li",
+   "text": "Share device-reported location and map information;"
+  },
+  {
+   "type": "li",
+   "text": "Send incident messages or voice-to-text information;"
+  },
+  {
+   "type": "li",
+   "text": "Receive notifications and status messages;"
+  },
+  {
+   "type": "li",
+   "text": "View incident or alert history; and"
+  },
+  {
+   "type": "li",
+   "text": "Use training, practice, or demonstration tools where available."
+  },
+  {
+   "type": "p",
+   "text": "These functions are digital application tools. The Mobile Application does not itself provide human incident management, independently dispatch emergency responders, or guarantee that any person or agency will respond."
+  },
+  {
+   "type": "h3",
+   "text": "2.2 Live Response Service"
+  },
+  {
+   "type": "p",
+   "text": "The Live Response Service is a separately operated, human-provided service performed outside the Mobile Application through an External Response Center. Trained Human Response Coordinators may:"
+  },
+  {
+   "type": "li",
+   "text": "Receive eligible incident assignments from the MGL backend;"
+  },
+  {
+   "type": "li",
+   "text": "Review available identity, contact, location, alert, message, and emergency-profile information;"
+  },
+  {
+   "type": "li",
+   "text": "Attempt to contact the user;"
+  },
+  {
+   "type": "li",
+   "text": "Attempt to contact designated Trusted Contacts;"
+  },
+  {
+   "type": "li",
+   "text": "Coordinate communications among the user, Trusted Contacts, and appropriate resources;"
+  },
+  {
+   "type": "li",
+   "text": "Contact 911, a public safety answering point, roadside provider, or another appropriate resource when circumstances warrant and the service is available; and"
+  },
+  {
+   "type": "li",
+   "text": "Document communications, actions, and incident status."
+  },
+  {
+   "type": "p",
+   "text": "Human Response Coordinators work through the External Response Center and are not operating inside the Mobile Application. The External Response Center may be operated by an independent service provider acting on MGL’s behalf under contractual privacy, confidentiality, security, and data-use restrictions."
+  },
+  {
+   "type": "h3",
+   "text": "2.3 Backend Eligibility and Assignment"
+  },
+  {
+   "type": "p",
+   "text": "The MGL backend connects the Mobile Application with the Live Response Service. The backend, rather than the Mobile Application interface, determines whether an alert is eligible for the Live Response Service."
+  },
+  {
+   "type": "li",
+   "text": "A user creates or activates an alert through the Mobile Application;"
+  },
+  {
+   "type": "li",
+   "text": "The MGL backend receives the alert and associated information;"
+  },
+  {
+   "type": "li",
+   "text": "The backend checks account status, membership eligibility, alert type, service availability, and other operational criteria;"
+  },
+  {
+   "type": "li",
+   "text": "If the alert is eligible, the backend creates a Live Response assignment;"
+  },
+  {
+   "type": "li",
+   "text": "The assignment and relevant information are transmitted to the External Response Center; and"
+  },
+  {
+   "type": "li",
+   "text": "A Human Response Coordinator manages and documents the incident."
+  },
+  {
+   "type": "p",
+   "text": "An alert that is not eligible for the Live Response Service may still use available digital functions, such as notifying Trusted Contacts or recording the event, depending on the feature and account configuration."
+  },
+  {
+   "type": "h2",
+   "text": "3. FREE USERS, MEMBERS, AND WHAT MEMBERSHIP PURCHASES"
+  },
+  {
+   "type": "h3",
+   "text": "3.1 Digital Application Experience"
+  },
+  {
+   "type": "p",
+   "text": "The Mobile Application provides digital communication and safety tools. The particular tools available may vary by account type, configuration, device, jurisdiction, and service availability."
+  },
+  {
+   "type": "p",
+   "text": "Membership status does not represent the purchase of additional premium digital application functionality. MGL may modify, organize, limit, or make digital tools available as reasonably necessary for safety, testing, technical, legal, or operational reasons."
+  },
+  {
+   "type": "h3",
+   "text": "3.2 Why Background Location Is Necessary"
+  },
+  {
+   "type": "p",
+   "text": "A paid membership purchases eligibility for the 24/7 Live Response Service, subject to account status, service availability, these terms, and operational limitations. Membership provides access to trained Human Response Coordinators, incident coordination, External Response Center operations, and incident documentation."
+  },
+  {
+   "type": "h3",
+   "text": "3.3 Customer Purchase Statement"
+  },
+  {
+   "type": "p",
+   "text": "Customers purchase access to human-operated response-center services. They do not purchase a premium digital feature, digital content, or an additional software capability inside the Mobile Application."
+  },
+  {
+   "type": "p",
+   "text": "MGL processes membership, billing, and eligibility information to determine whether an alert may be assigned to the External Response Center."
+  },
+  {
+   "type": "h2",
+   "text": "4. USER JOURNEY AND PERSONAL INFORMATION FLOW"
+  },
+  {
+   "type": "p",
+   "text": "A typical user journey may involve the following steps:"
+  },
+  {
+   "type": "li",
+   "text": "Create an MGL account and provide identity and contact information.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Add Trusted Contacts and optional emergency-profile information.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Enable selected device permissions, such as location, notifications, microphone, or contacts.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Create or activate an alert through the Mobile Application.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Transmit the alert, device-reported location, message, and related information to the MGL backend.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Allow the backend to process the alert and determine Live Response eligibility.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "If eligible, transmit a case assignment to the External Response Center.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Allow a Human Response Coordinator to review the information, contact the user or Trusted Contacts, coordinate with appropriate resources, and document the incident.",
+   "ordered": true
+  },
+  {
+   "type": "p",
+   "text": "The categories of information processed at each step depend on the feature used, the user’s permissions, the alert type, membership eligibility, and the information the user chooses to provide."
+  },
+  {
+   "type": "h2",
+   "text": "5. INFORMATION WE COLLECT AND HOW WE COLLECT IT"
+  },
+  {
+   "type": "p",
+   "text": "We may collect information directly from you, automatically from your device or use of the Services, from Apple or another app marketplace, from payment and communications providers, from Trusted Contacts or group administrators, and from the External Response Center or other service providers."
+  },
+  {
+   "type": "h3",
+   "text": "5.1 Account and Identity Information"
+  },
+  {
+   "type": "p",
+   "text": "• Name;"
+  },
+  {
+   "type": "p",
+   "text": "• Email address;"
+  },
+  {
+   "type": "p",
+   "text": "• Phone number;"
+  },
+  {
+   "type": "p",
+   "text": "• Mailing address;"
+  },
+  {
+   "type": "p",
+   "text": "• Date of birth or age-verification information;"
+  },
+  {
+   "type": "p",
+   "text": "• Username, user ID, password, authentication credentials, and verification status;"
+  },
+  {
+   "type": "p",
+   "text": "• Account, plan, membership, subscription, group, sponsor, or referral status;"
+  },
+  {
+   "type": "p",
+   "text": "• Customer support information; and"
+  },
+  {
+   "type": "p",
+   "text": "• Communication preferences."
+  },
+  {
+   "type": "h3",
+   "text": "5.2 Trusted Contact and Other Contact Information"
+  },
+  {
+   "type": "p",
+   "text": "We may collect names, telephone numbers, email addresses, relationship descriptions, and other information about people you choose to add, including Trusted Contacts, emergency contacts, family members, caregivers, parents, guardians, group members, organization contacts, billing contacts, or administrators."
+  },
+  {
+   "type": "p",
+   "text": "You are responsible for obtaining permission from any person whose information you provide. If the Mobile Application requests access to your device contacts, it will do so only after the applicable device permission is granted and for the purpose of allowing you to select or manage contacts for the Services."
+  },
+  {
+   "type": "h3",
+   "text": "5.3 Location Information"
+  },
+  {
+   "type": "li",
+   "text": "Precise and approximate location;"
+  },
+  {
+   "type": "li",
+   "text": "Latitude and longitude;"
+  },
+  {
+   "type": "li",
+   "text": "Nearest or estimated address;"
+  },
+  {
+   "type": "li",
+   "text": "Map link and directions-related information;"
+  },
+  {
+   "type": "li",
+   "text": "Location timestamp;"
+  },
+  {
+   "type": "li",
+   "text": "Device-, GPS-, cellular-, Wi-Fi-, or network-derived location;"
+  },
+  {
+   "type": "li",
+   "text": "Location associated with an alert, report, roadside request, Trusted Contact notification, or incident record; and"
+  },
+  {
+   "type": "li",
+   "text": "Background or continuing location updates when enabled and reasonably necessary for an active incident or location-dependent feature."
+  },
+  {
+   "type": "p",
+   "text": "Location may be unavailable, delayed, incomplete, or inaccurate due to device settings, permissions, GPS limitations, buildings, terrain, weather, cellular or Wi-Fi conditions, operating-system restrictions, battery condition, or third-party failures."
+  },
+  {
+   "type": "h3",
+   "text": "5.4 Alert, Incident, and User Content"
+  },
+  {
+   "type": "p",
+   "text": "• Alert type and activation method;"
+  },
+  {
+   "type": "p",
+   "text": "• Date and time of activation;"
+  },
+  {
+   "type": "p",
+   "text": "• User-entered messages and incident details;"
+  },
+  {
+   "type": "p",
+   "text": "• Voice-to-text or speech-derived content, if used;"
+  },
+  {
+   "type": "p",
+   "text": "• Silent, loud, or other activation settings;"
+  },
+  {
+   "type": "p",
+   "text": "• Location associated with the alert;"
+  },
+  {
+   "type": "p",
+   "text": "• Trusted Contacts selected or notified;"
+  },
+  {
+   "type": "p",
+   "text": "• Message delivery and communication status;"
+  },
+  {
+   "type": "p",
+   "text": "• Call attempts, call records, and call notes;"
+  },
+  {
+   "type": "p",
+   "text": "• Human Response Coordinator notes and actions;"
+  },
+  {
+   "type": "p",
+   "text": "• External Response Center assignment and status;"
+  },
+  {
+   "type": "p",
+   "text": "• Public safety, roadside, or other escalation status;"
+  },
+  {
+   "type": "p",
+   "text": "• Incident packets, event logs, and timestamped history; and"
+  },
+  {
+   "type": "p",
+   "text": "• Photos, recordings, or other user content only if a feature expressly permits and the user provides them."
+  },
+  {
+   "type": "h3",
+   "text": "5.5 Device, Technical, Usage, and Diagnostic Information"
+  },
+  {
+   "type": "p",
+   "text": "• Device type, model, operating system, and app version;"
+  },
+  {
+   "type": "p",
+   "text": "• Device, installation, account, or notification identifiers;"
+  },
+  {
+   "type": "p",
+   "text": "• IP address, browser type, carrier, network type, and connectivity status;"
+  },
+  {
+   "type": "p",
+   "text": "• Permission and notification status;"
+  },
+  {
+   "type": "p",
+   "text": "• Battery or device-status information when available, permitted, and operationally relevant;"
+  },
+  {
+   "type": "p",
+   "text": "• Login records, security logs, crash logs, diagnostic data, and performance information;"
+  },
+  {
+   "type": "p",
+   "text": "• Screens viewed, feature interactions, dates, times, and general usage activity; and"
+  },
+  {
+   "type": "p",
+   "text": "• Fraud-prevention, misuse-detection, and system-integrity information."
+  },
+  {
+   "type": "h3",
+   "text": "5.6 Communications Information"
+  },
+  {
+   "type": "p",
+   "text": "• SMS and text messages;"
+  },
+  {
+   "type": "p",
+   "text": "• Telephone calls, call metadata, call notes, and recordings when applicable and disclosed;"
+  },
+  {
+   "type": "p",
+   "text": "• Emails;"
+  },
+  {
+   "type": "p",
+   "text": "• Push notifications and device tokens;"
+  },
+  {
+   "type": "p",
+   "text": "• In-app messages;"
+  },
+  {
+   "type": "p",
+   "text": "• Trusted Contact communications;"
+  },
+  {
+   "type": "p",
+   "text": "• Human Response Coordinator and External Response Center communications;"
+  },
+  {
+   "type": "p",
+   "text": "• Customer support communications;"
+  },
+  {
+   "type": "p",
+   "text": "• Group-administrator communications; and"
+  },
+  {
+   "type": "p",
+   "text": "• Account, billing, renewal, cancellation, security, and operational notices."
+  },
+  {
+   "type": "h3",
+   "text": "5.7 Optional Medical, Caregiver, Disability, and Emergency Profile Information"
+  },
+  {
+   "type": "p",
+   "text": "You may choose to provide information such as medical conditions, medications, allergies, disabilities, mobility or communication limitations, cognitive conditions, dementia or memory concerns, emergency instructions, caregiver notes, vehicle information, household information, school or workplace details, or personal-safety concerns."
+  },
+  {
+   "type": "p",
+   "text": "This information is generally entered by the user. It is not obtained from Apple Health or HealthKit unless a future feature separately discloses that collection, requests the required permission, and updates this Privacy Policy."
+  },
+  {
+   "type": "h3",
+   "text": "5.8 Payment, Purchase, and Membership Information"
+  },
+  {
+   "type": "li",
+   "text": "Selected membership and service term;"
+  },
+  {
+   "type": "li",
+   "text": "Subscription and eligibility status;"
+  },
+  {
+   "type": "li",
+   "text": "Transaction confirmation and purchase history;"
+  },
+  {
+   "type": "li",
+   "text": "Renewal, cancellation, refund, trial, promotion, or chargeback status;"
+  },
+  {
+   "type": "li",
+   "text": "Billing address, payment-method type, and limited card information provided by a payment processor; and"
+  },
+  {
+   "type": "li",
+   "text": "Apple transaction or subscription identifiers and status when a purchase is processed through Apple."
+  },
+  {
+   "type": "p",
+   "text": "We generally do not receive or store full payment-card numbers. Apple and other payment processors process payment information under their own terms and privacy policies."
+  },
+  {
+   "type": "h3",
+   "text": "5.9 Information From Third Parties"
+  },
+  {
+   "type": "p",
+   "text": "We may receive information from:"
+  },
+  {
+   "type": "li",
+   "text": "Apple, Google, and other app marketplaces;"
+  },
+  {
+   "type": "li",
+   "text": "Payment processors;"
+  },
+  {
+   "type": "li",
+   "text": "Cloud-hosting, database, security, identity, and fraud-prevention providers;"
+  },
+  {
+   "type": "li",
+   "text": "Mapping, geolocation, communications, telephone, SMS, email, and push-notification providers;"
+  },
+  {
+   "type": "li",
+   "text": "The External Response Center and Human Response Coordinators;"
+  },
+  {
+   "type": "li",
+   "text": "Public safety agencies, roadside providers, and other resources contacted during an incident;"
+  },
+  {
+   "type": "li",
+   "text": "Trusted Contacts, caregivers, group owners, sponsors, referral partners, or administrators;"
+  },
+  {
+   "type": "li",
+   "text": "Analytics, crash-reporting, customer-support, and app-performance providers; and"
+  },
+  {
+   "type": "li",
+   "text": "Legal, accounting, insurance, compliance, and professional advisers."
+  },
+  {
+   "type": "h3",
+   "text": "5.10 Group, Sponsor, Referral, Employer, and Organization Plans"
+  },
+  {
+   "type": "p",
+   "text": "If you join or are invited to a family, group, sponsor, referral, employer, or organization plan, we may collect information from or disclose limited information to the applicable owner, sponsor, administrator, billing contact, onboarding contact, or authorized representative."
+  },
+  {
+   "type": "p",
+   "text": "This may include your name, email, phone number, invitation status, onboarding status, membership status, plan type, billing responsibility, group association, and limited administrative information necessary to manage the plan."
+  },
+  {
+   "type": "h2",
+   "text": "6. SENSITIVE PERSONAL INFORMATION"
+  },
+  {
+   "type": "p",
+   "text": "Some information processed by MGL may be considered sensitive personal information under applicable law, including:"
+  },
+  {
+   "type": "li",
+   "text": "Precise geolocation;"
+  },
+  {
+   "type": "li",
+   "text": "Alert and emergency incident details;"
+  },
+  {
+   "type": "li",
+   "text": "Contents of messages directed to the Services;"
+  },
+  {
+   "type": "li",
+   "text": "Optional medical, disability, caregiver, vulnerability, or emergency-profile information;"
+  },
+  {
+   "type": "li",
+   "text": "Information about minors;"
+  },
+  {
+   "type": "li",
+   "text": "Authentication credentials;"
+  },
+  {
+   "type": "li",
+   "text": "Payment-related information;"
+  },
+  {
+   "type": "li",
+   "text": "Location information associated with a dangerous or urgent situation; and"
+  },
+  {
+   "type": "li",
+   "text": "Other information protected as sensitive under applicable law."
+  },
+  {
+   "type": "p",
+   "text": "We use sensitive personal information only as reasonably necessary to provide the Services, support safety, operate the Live Response Service, process payments, maintain security, prevent misuse, comply with law, and perform other legally permitted purposes. We do not use urgent incident details, precise emergency location, Trusted Contact information, or optional medical information for unrelated advertising."
+  },
+  {
+   "type": "h2",
+   "text": "7. HOW WE USE PERSONAL INFORMATION"
+  },
+  {
+   "type": "h3",
+   "text": "7.1 Provide the Mobile Application"
+  },
+  {
+   "type": "p",
+   "text": "• Create, verify, and manage accounts;"
+  },
+  {
+   "type": "p",
+   "text": "• Provide digital alert, messaging, notification, location-sharing, and Trusted Contact tools;"
+  },
+  {
+   "type": "p",
+   "text": "• Maintain user profiles, settings, and incident history;"
+  },
+  {
+   "type": "p",
+   "text": "• Provide training, practice, onboarding, and customer support;"
+  },
+  {
+   "type": "p",
+   "text": "• Operate group and membership administration; and"
+  },
+  {
+   "type": "p",
+   "text": "• Maintain security and service reliability."
+  },
+  {
+   "type": "h3",
+   "text": "7.2 Operate the Backend and Determine Live Response Eligibility"
+  },
+  {
+   "type": "p",
+   "text": "• Receive and process alerts;"
+  },
+  {
+   "type": "p",
+   "text": "• Associate alerts with the correct user and account;"
+  },
+  {
+   "type": "p",
+   "text": "• Verify membership, account, alert, and service eligibility;"
+  },
+  {
+   "type": "p",
+   "text": "• Create and route eligible Live Response assignments;"
+  },
+  {
+   "type": "p",
+   "text": "• Transmit relevant information to the External Response Center; and"
+  },
+  {
+   "type": "p",
+   "text": "• Maintain timestamped operational and incident records."
+  },
+  {
+   "type": "h3",
+   "text": "7.3 Provide the Live Response Service"
+  },
+  {
+   "type": "p",
+   "text": "• Allow Human Response Coordinators to review eligible incidents;"
+  },
+  {
+   "type": "p",
+   "text": "• Attempt to contact users and Trusted Contacts;"
+  },
+  {
+   "type": "p",
+   "text": "• Coordinate communications and available resources;"
+  },
+  {
+   "type": "p",
+   "text": "• Contact public safety, roadside, or other appropriate resources when circumstances warrant;"
+  },
+  {
+   "type": "p",
+   "text": "• Document actions and incident status; and"
+  },
+  {
+   "type": "p",
+   "text": "• Support quality assurance, training, legal, insurance, and compliance needs."
+  },
+  {
+   "type": "h3",
+   "text": "7.4 Communicate With You"
+  },
+  {
+   "type": "p",
+   "text": "• Send SMS, calls, push notifications, emails, and in-app messages;"
+  },
+  {
+   "type": "p",
+   "text": "• Send alerts, incident updates, membership notices, billing notices, security alerts, and legal notices;"
+  },
+  {
+   "type": "p",
+   "text": "• Respond to customer-support and privacy requests; and"
+  },
+  {
+   "type": "p",
+   "text": "• Provide service, training, and operational information."
+  },
+  {
+   "type": "h3",
+   "text": "7.5 Operate, Improve, and Protect the Services"
+  },
+  {
+   "type": "p",
+   "text": "• Monitor performance and diagnose errors;"
+  },
+  {
+   "type": "p",
+   "text": "• Test and improve app and backend functionality;"
+  },
+  {
+   "type": "p",
+   "text": "• Prevent fraud, abuse, false activations, and unauthorized access;"
+  },
+  {
+   "type": "p",
+   "text": "• Maintain security and system integrity;"
+  },
+  {
+   "type": "p",
+   "text": "• Enforce agreements and protect legal rights; and"
+  },
+  {
+   "type": "p",
+   "text": "• Create de-identified or aggregated analytics where permitted."
+  },
+  {
+   "type": "h3",
+   "text": "7.6 Billing, Legal, Safety, and Compliance"
+  },
+  {
+   "type": "p",
+   "text": "• Process membership and payment administration;"
+  },
+  {
+   "type": "p",
+   "text": "• Handle cancellations, refunds, disputes, and chargebacks;"
+  },
+  {
+   "type": "p",
+   "text": "• Comply with laws, subpoenas, court orders, and regulatory requirements;"
+  },
+  {
+   "type": "p",
+   "text": "• Respond to public safety, law enforcement, or government requests;"
+  },
+  {
+   "type": "p",
+   "text": "• Preserve evidence and investigate misuse;"
+  },
+  {
+   "type": "p",
+   "text": "• Protect users, Trusted Contacts, employees, partners, public safety resources, and others; and"
+  },
+  {
+   "type": "p",
+   "text": "• Support audits, insurance, risk management, legal defense, and dispute resolution."
+  },
+  {
+   "type": "h2",
+   "text": "8. HUMAN RESPONSE COORDINATORS AND THE EXTERNAL RESPONSE CENTER"
+  },
+  {
+   "type": "p",
+   "text": "For eligible incidents, relevant information may be made available to the External Response Center and trained Human Response Coordinators. The information provided is limited to what is reasonably necessary to understand, manage, document, and coordinate the incident."
+  },
+  {
+   "type": "p",
+   "text": "Human Response Coordinators may use the information to:"
+  },
+  {
+   "type": "li",
+   "text": "Identify the user and incident;"
+  },
+  {
+   "type": "li",
+   "text": "Review the user’s message, device-reported location, Trusted Contacts, and optional emergency information;"
+  },
+  {
+   "type": "li",
+   "text": "Contact the user;"
+  },
+  {
+   "type": "li",
+   "text": "Contact Trusted Contacts;"
+  },
+  {
+   "type": "li",
+   "text": "Coordinate communications;"
+  },
+  {
+   "type": "li",
+   "text": "Contact emergency services, a public safety answering point, roadside assistance, or another appropriate resource; and"
+  },
+  {
+   "type": "li",
+   "text": "Document the incident and actions taken."
+  },
+  {
+   "type": "p",
+   "text": "The External Response Center may maintain incident records and communication records on MGL’s behalf. MGL requires the External Response Center and its personnel to protect personal information through contractual confidentiality, security, access, retention, and use restrictions."
+  },
+  {
+   "type": "h2",
+   "text": "9. HOW WE DISCLOSE OR SHARE PERSONAL INFORMATION"
+  },
+  {
+   "type": "p",
+   "text": "We do not sell user lists or personal information for money as a standard business practice. We may disclose personal information as described below, as directed by you, as reasonably necessary to provide the Services, or as permitted or required by law."
+  },
+  {
+   "type": "h3",
+   "text": "9.1 Trusted Contacts and Other User-Selected Recipients"
+  },
+  {
+   "type": "p",
+   "text": "When you activate certain features, we may disclose your name, phone number, alert type, message, location, map link, timestamp, incident details, status updates, or other relevant information to the Trusted Contacts, emergency contacts, family members, caregivers, or other recipients you selected."
+  },
+  {
+   "type": "h3",
+   "text": "9.2 External Response Center and Human Response Coordinators"
+  },
+  {
+   "type": "p",
+   "text": "For eligible incidents, we may disclose account, identity, location, alert, message, communication, Trusted Contact, optional emergency-profile, membership-eligibility, and event-log information to the External Response Center and Human Response Coordinators."
+  },
+  {
+   "type": "h3",
+   "text": "9.3 Public Safety, Emergency, Roadside, and Safety Resources"
+  },
+  {
+   "type": "p",
+   "text": "When an incident is escalated or disclosure is reasonably necessary for safety, we may disclose relevant information to 911 centers, public safety answering points, law enforcement, fire departments, emergency medical providers, roadside providers, government agencies, or other safety resources."
+  },
+  {
+   "type": "p",
+   "text": "MGL does not control how an independent public safety agency or emergency provider processes information after receipt."
+  },
+  {
+   "type": "h3",
+   "text": "9.4 Service Providers and Technology Partners"
+  },
+  {
+   "type": "p",
+   "text": "We may disclose information to providers that support:"
+  },
+  {
+   "type": "li",
+   "text": "Apple platform services, app distribution, push notifications, and Apple-processed purchases;"
+  },
+  {
+   "type": "li",
+   "text": "Cloud hosting, databases, security, identity verification, and fraud prevention;"
+  },
+  {
+   "type": "li",
+   "text": "Mapping, location, telecommunications, telephone, SMS, email, and notification delivery;"
+  },
+  {
+   "type": "li",
+   "text": "Payment processing and subscription administration;"
+  },
+  {
+   "type": "li",
+   "text": "Customer support, analytics, diagnostics, and app performance;"
+  },
+  {
+   "type": "li",
+   "text": "Legal, accounting, compliance, insurance, and professional services; and"
+  },
+  {
+   "type": "li",
+   "text": "Other functions reasonably necessary to operate the Services."
+  },
+  {
+   "type": "p",
+   "text": "We require service providers and partners that process personal information on our behalf to use it only for authorized purposes and to provide the same or equivalent protection described in this Privacy Policy, subject to applicable law and the independent legal obligations of public safety agencies."
+  },
+  {
+   "type": "h3",
+   "text": "9.5 Group Owners, Sponsors, Referral Partners, and Administrators"
+  },
+  {
+   "type": "p",
+   "text": "We may disclose limited roster, invitation, onboarding, membership, billing, support, and compliance information to an authorized group owner, sponsor, employer, organization, referral partner, billing contact, or administrator."
+  },
+  {
+   "type": "h3",
+   "text": "9.6 Legal, Safety, and Compliance Disclosures"
+  },
+  {
+   "type": "p",
+   "text": "We may disclose information to comply with law or legal process; respond to law enforcement, public safety, regulatory, or government requests; protect safety; prevent or investigate fraud, misuse, threats, or illegal activity; preserve evidence; enforce agreements; or protect our rights, property, operations, and legal interests."
+  },
+  {
+   "type": "h3",
+   "text": "9.7 Business Transfers"
+  },
+  {
+   "type": "p",
+   "text": "We may transfer information in connection with a merger, acquisition, financing, investment, reorganization, bankruptcy, sale of assets, or similar transaction, subject to applicable law."
+  },
+  {
+   "type": "h3",
+   "text": "9.8 With Your Consent or Direction"
+  },
+  {
+   "type": "p",
+   "text": "We may disclose information when you consent, direct us to do so, select a recipient, activate a feature that requires disclosure, or otherwise authorize the disclosure."
+  },
+  {
+   "type": "h2",
+   "text": "10. PRECISE LOCATION AND BACKGROUND LOCATION"
+  },
+  {
+   "type": "p",
+   "text": "Precise location is essential to certain MGL safety and incident functions. We may collect and use precise location to transmit an alert, notify Trusted Contacts, provide map links, support directions, route eligible incidents, assist Human Response Coordinators, support escalation, maintain incident records, investigate misuse, and provide customer support."
+  },
+  {
+   "type": "p",
+   "text": "Background or continuing location may be collected only when the applicable permission is enabled and when reasonably necessary to support an active incident or another location-dependent feature. MGL does not use precise emergency location for unrelated advertising."
+  },
+  {
+   "type": "p",
+   "text": "You may change location permissions through iOS Settings. Disabling precise or background location may impair or prevent location-dependent features from working. Device-reported location is not guaranteed to be available or accurate."
+  },
+  {
+   "type": "h2",
+   "text": "11. APPLE IOS PERMISSIONS AND USER CONTROLS"
+  },
+  {
+   "type": "p",
+   "text": "The Mobile Application may request access to protected iOS resources only when relevant to a feature you choose to use. MGL will respect your iOS permission settings and will not attempt to bypass or override them."
+  },
+  {
+   "type": "h3",
+   "text": "11.1 Location"
+  },
+  {
+   "type": "p",
+   "text": "Location permission is used to attach device-reported location to alerts, share location with selected recipients, support directions, and support eligible Live Response incidents."
+  },
+  {
+   "type": "h3",
+   "text": "11.2 Contacts"
+  },
+  {
+   "type": "p",
+   "text": "Contacts permission may be used to help you select or enter Trusted Contacts. MGL does not use your address book for unrelated advertising or marketing."
+  },
+  {
+   "type": "h3",
+   "text": "11.3 Microphone and Speech"
+  },
+  {
+   "type": "p",
+   "text": "Microphone or speech-recognition permission may be used for user-initiated voice activation, voice-to-text incident messages, or other disclosed communication features. Audio or speech-derived content may be processed by Apple or another speech service under the provider’s terms when the feature is used."
+  },
+  {
+   "type": "h3",
+   "text": "11.4 Notifications"
+  },
+  {
+   "type": "p",
+   "text": "Notification permission is used for alerts, Trusted Contact communications, incident updates, service messages, membership notices, and security or account notifications."
+  },
+  {
+   "type": "h3",
+   "text": "11.5 Apple Watch, Bluetooth, and Connected Devices"
+  },
+  {
+   "type": "p",
+   "text": "If you use an Apple Watch or another connected device, MGL may process device, activation, notification, and communication information reasonably necessary to support the connected feature. Bluetooth access will be requested only if required by an enabled feature."
+  },
+  {
+   "type": "p",
+   "text": "You may revoke permissions through iOS Settings, but doing so may limit or disable the related feature. Denying an optional permission will not authorize MGL to collect that protected data by another method."
+  },
+  {
+   "type": "h2",
+   "text": "12. SMS, CALLS, EMAIL, PUSH NOTIFICATIONS, AND COMMUNICATION DATA"
+  },
+  {
+   "type": "p",
+   "text": "MGL relies on communications to provide account, alert, Trusted Contact, and Live Response functions. Message and data rates may apply. Message frequency varies, and carriers are not liable for delayed or undelivered messages."
+  },
+  {
+   "type": "p",
+   "text": "You may opt out of certain nonessential communications. Replying “STOP” to an applicable text program may stop texts from that program, and replying “HELP” may provide assistance information. Opting out of operational, alert, phone, push, location, or safety communications may impair or disable important Services."
+  },
+  {
+   "type": "h2",
+   "text": "13. CHILDREN AND MINORS"
+  },
+  {
+   "type": "p",
+   "text": "The Services are intended for adults and for minors who use the Services with the consent and supervision of a parent or legal guardian."
+  },
+  {
+   "type": "p",
+   "text": "Children under 13 may not create accounts directly. A parent or legal guardian must create, manage, and consent to any child profile or family-managed account for a child under 13. Users ages 13 through 17 may use the Services only with parent or legal-guardian consent and supervision, unless otherwise permitted by law."
+  },
+  {
+   "type": "p",
+   "text": "Parents and guardians are responsible for:"
+  },
+  {
+   "type": "li",
+   "text": "Creating and managing the minor’s account;"
+  },
+  {
+   "type": "li",
+   "text": "Providing accurate information;"
+  },
+  {
+   "type": "li",
+   "text": "Selecting Trusted Contacts and managing permissions;"
+  },
+  {
+   "type": "li",
+   "text": "Explaining appropriate use and supervising alert functions;"
+  },
+  {
+   "type": "li",
+   "text": "Managing membership and payment obligations; and"
+  },
+  {
+   "type": "li",
+   "text": "Submitting privacy requests for the minor where legally authorized."
+  },
+  {
+   "type": "p",
+   "text": "If we learn that a child under 13 created an account without appropriate parental or guardian authorization, we may suspend or delete the account and associated information, subject to legal retention requirements."
+  },
+  {
+   "type": "h2",
+   "text": "14. OPTIONAL MEDICAL, CAREGIVER, DISABILITY, AND EMERGENCY INFORMATION"
+  },
+  {
+   "type": "p",
+   "text": "Optional medical and emergency information may be used and disclosed only as reasonably necessary to provide safety communications, Trusted Contact notifications, eligible Live Response coordination, public safety or roadside escalation, caregiver coordination, incident documentation, customer support, security, legal compliance, and misuse prevention."
+  },
+  {
+   "type": "p",
+   "text": "You should provide only information you are comfortable having disclosed to authorized recipients during an incident. MGL does not provide medical diagnosis, treatment, monitoring, medical advice, or emergency medical services."
+  },
+  {
+   "type": "h2",
+   "text": "15. PAYMENTS, APPLE PURCHASES, AND MEMBERSHIP ADMINISTRATION"
+  },
+  {
+   "type": "p",
+   "text": "Payments purchase membership eligibility for the human-operated Live Response Service and do not purchase premium digital application functionality."
+  },
+  {
+   "type": "p",
+   "text": "Apple may process App Store purchases and subscriptions under Apple’s terms and privacy practices. MGL may receive limited transaction, subscription, renewal, cancellation, refund, and eligibility information from Apple. MGL does not control Apple’s payment systems and generally does not receive full payment-card information from Apple."
+  },
+  {
+   "type": "p",
+   "text": "Payments made through other processors are governed by the processor’s terms and privacy policy. We use payment and membership information to administer eligibility, renewals, cancellations, refunds, promotions, billing disputes, fraud prevention, financial records, and legal obligations."
+  },
+  {
+   "type": "h2",
+   "text": "16. COOKIES, SDKS, ANALYTICS, ADVERTISING, AND APPLE APP TRACKING TRANSPARENCY"
+  },
+  {
+   "type": "p",
+   "text": "We may use cookies, software development kits, analytics tools, log files, pixels, and similar technologies on our website, Mobile Application, landing pages, and support systems to operate the Services, maintain sessions, remember preferences, measure performance, diagnose errors, improve user experience, protect security, prevent fraud, and measure marketing effectiveness."
+  },
+  {
+   "type": "p",
+   "text": "We do not use precise emergency location, alert content, Trusted Contact information, optional medical information, or Live Response incident details for unrelated targeted advertising."
+  },
+  {
+   "type": "p",
+   "text": "If the Mobile Application engages in “tracking” as defined by Apple, MGL will accurately disclose that practice in App Store Connect, request permission through Apple’s AppTrackingTransparency framework before tracking, and honor the user’s selection. MGL will not condition access to unrelated core functionality on granting tracking permission."
+  },
+  {
+   "type": "p",
+   "text": "Website cookies and advertising technologies may operate separately from the Mobile Application. Where required by law, we will provide notice, consent, and opt-out controls, including recognized browser-based opt-out signals."
+  },
+  {
+   "type": "h2",
+   "text": "17. MARKETING COMMUNICATIONS"
+  },
+  {
+   "type": "p",
+   "text": "Where permitted by law, we may use contact information and limited non-emergency usage information to send communications about MGL products, services, training, features, and offers."
+  },
+  {
+   "type": "p",
+   "text": "You may opt out of marketing emails through the unsubscribe link and may opt out of applicable text-marketing programs by replying “STOP.” We may continue to send non-marketing account, safety, service, security, billing, renewal, cancellation, and legal notices."
+  },
+  {
+   "type": "h2",
+   "text": "18. DATA RETENTION"
+  },
+  {
+   "type": "p",
+   "text": "We retain personal information only for as long as reasonably necessary for the purposes described in this Privacy Policy, including providing the Services, maintaining accounts and incident records, protecting safety, complying with law, resolving disputes, preventing misuse, maintaining security, supporting insurance and legal defense, and operating our business."
+  },
+  {
+   "type": "table",
+   "rows": [
+    [
+     "**Information Category**",
+     "**General Retention Approach**"
+    ],
+    [
+     "Account and profile information",
+     "Retained while the account is active and for a reasonable period after closure or deletion."
+    ],
+    [
+     "Membership, purchase, and billing records",
+     "Retained as required for accounting, tax, audit, payment, fraud-prevention, and legal purposes."
+    ],
+    [
+     "Trusted Contact information",
+     "Retained while active in the account and for a reasonable period after removal or account closure."
+    ],
+    [
+     "Alert, Live Response, and incident records",
+     "Retained for safety, legal, insurance, compliance, dispute, quality, training, and operational purposes."
+    ],
+    [
+     "Location tied to an incident",
+     "Retained as part of the applicable incident record."
+    ],
+    [
+     "Optional medical or emergency profile information",
+     "Retained while active and for a reasonable period after removal, account closure, or deletion."
+    ],
+    [
+     "Customer support and privacy-request records",
+     "Retained for request handling, support history, quality, legal, and operational purposes."
+    ],
+    [
+     "Security and diagnostic logs",
+     "Retained for security, fraud prevention, audit, troubleshooting, and system integrity."
+    ],
+    [
+     "Marketing preferences",
+     "Retained until opt-out and thereafter as necessary to maintain suppression records."
+    ]
+   ]
+  },
+  {
+   "type": "p",
+   "text": "We may retain information longer where required or permitted by law, including for legal holds, investigations, public safety matters, insurance claims, disputes, tax obligations, audits, or enforcement of our rights. When information is no longer needed, we may delete, de-identify, anonymize, or aggregate it."
+  },
+  {
+   "type": "h2",
+   "text": "19. ACCOUNT DELETION, DATA DELETION, AND WITHDRAWAL OF CONSENT"
+  },
+  {
+   "type": "h3",
+   "text": "19.1 Initiating Account Deletion in the Mobile Application"
+  },
+  {
+   "type": "p",
+   "text": "A user may initiate permanent account deletion from within the Mobile Application:"
+  },
+  {
+   "type": "li",
+   "text": "Open the My Guardian Link mobile application.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Sign in to the account.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Tap the Profile tab in the bottom navigation.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Scroll to Account Deletion.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Open Account Deletion.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Tap Delete Account.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Review the confirmation message.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Confirm by tapping Delete Account.",
+   "ordered": true
+  },
+  {
+   "type": "p",
+   "text": "Account deletion is permanent and cannot be undone. Canceling a membership or deleting the Mobile Application from a device does not, by itself, delete the MGL account."
+  },
+  {
+   "type": "h3",
+   "text": "19.2 Information Removed and Information Retained"
+  },
+  {
+   "type": "p",
+   "text": "After a verified deletion request, MGL will delete or de-identify personal account data that is not reasonably required for legal, safety, security, public safety, fraud-prevention, billing, tax, insurance, dispute, or incident-record purposes."
+  },
+  {
+   "type": "p",
+   "text": "Certain records may be retained when legally required or reasonably necessary, including purchase and billing records, records of prior alerts or Live Response incidents, location tied to retained incidents, safety and misuse records, legal holds, security logs, privacy-request records, and information necessary to establish, exercise, or defend legal claims."
+  },
+  {
+   "type": "h3",
+   "text": "19.3 Revoking Consent and Permissions"
+  },
+  {
+   "type": "p",
+   "text": "You may revoke device permissions through iOS Settings, remove Trusted Contacts, edit optional profile information, opt out of certain communications, or submit a privacy request. Revocation does not affect processing already completed and may limit or disable the related feature."
+  },
+  {
+   "type": "h2",
+   "text": "20. SECURITY SAFEGUARDS"
+  },
+  {
+   "type": "p",
+   "text": "We use reasonable technical, administrative, and organizational safeguards designed to protect personal information. Safeguards may include:"
+  },
+  {
+   "type": "li",
+   "text": "Access controls and authentication;"
+  },
+  {
+   "type": "li",
+   "text": "Encryption in transit and at rest where appropriate;"
+  },
+  {
+   "type": "li",
+   "text": "Secure cloud infrastructure;"
+  },
+  {
+   "type": "li",
+   "text": "Logging, monitoring, and incident response;"
+  },
+  {
+   "type": "li",
+   "text": "Vendor and partner review;"
+  },
+  {
+   "type": "li",
+   "text": "Role-based access restrictions;"
+  },
+  {
+   "type": "li",
+   "text": "Data minimization and purpose limitation where practical;"
+  },
+  {
+   "type": "li",
+   "text": "Security testing and review; and"
+  },
+  {
+   "type": "li",
+   "text": "Policies, confidentiality obligations, and training."
+  },
+  {
+   "type": "p",
+   "text": "No app, device, network, cloud system, database, transmission, or storage method is completely secure. We cannot guarantee absolute security. You are responsible for securing your device, credentials, email account, phone number, notification previews, and app-store or cloud accounts."
+  },
+  {
+   "type": "h2",
+   "text": "21. DATA BREACHES AND SECURITY INCIDENTS"
+  },
+  {
+   "type": "p",
+   "text": "If we become aware of a security incident involving personal information, we will evaluate it, take reasonable remediation steps, and provide notices to affected users, regulators, law enforcement, business customers, partners, or other parties when required by applicable law."
+  },
+  {
+   "type": "h2",
+   "text": "22. YOUR PRIVACY CHOICES AND RIGHTS"
+  },
+  {
+   "type": "p",
+   "text": "Depending on where you live and applicable law, you may have the right to:"
+  },
+  {
+   "type": "li",
+   "text": "Access personal information;"
+  },
+  {
+   "type": "li",
+   "text": "Correct inaccurate personal information;"
+  },
+  {
+   "type": "li",
+   "text": "Delete certain personal information;"
+  },
+  {
+   "type": "li",
+   "text": "Obtain a portable copy of certain information;"
+  },
+  {
+   "type": "li",
+   "text": "Withdraw consent where processing is based on consent;"
+  },
+  {
+   "type": "li",
+   "text": "Opt out of marketing communications;"
+  },
+  {
+   "type": "li",
+   "text": "Limit certain uses of sensitive personal information;"
+  },
+  {
+   "type": "li",
+   "text": "Opt out of sale, sharing, targeted advertising, or certain profiling where applicable;"
+  },
+  {
+   "type": "li",
+   "text": "Object to or restrict certain processing; and"
+  },
+  {
+   "type": "li",
+   "text": "Appeal a denied privacy request where applicable."
+  },
+  {
+   "type": "p",
+   "text": "Rights may be limited by law and by safety, public safety, legal, security, fraud-prevention, billing, incident-record, insurance, contractual, or dispute-resolution needs."
+  },
+  {
+   "type": "h2",
+   "text": "23. HOW TO SUBMIT A PRIVACY REQUEST"
+  },
+  {
+   "type": "p",
+   "text": "Submit privacy questions or requests using either of the following methods:"
+  },
+  {
+   "type": "li",
+   "text": "Email: info@myguardianlink.com;"
+  },
+  {
+   "type": "li",
+   "text": "Mail: Forward Move, LLC d/b/a My Guardian Link, 2680 Vernon Drive, Green Bay, WI 54304; or"
+  },
+  {
+   "type": "li",
+   "text": "Support page: https://myguardianlink.com/support."
+  },
+  {
+   "type": "p",
+   "text": "We may verify your identity before processing a request. If you submit a request for another person, including a minor or legally represented individual, we may require proof of authority. We will respond within the period required by applicable law."
+  },
+  {
+   "type": "h2",
+   "text": "24. APPLE APP STORE PRIVACY DISCLOSURES AND APPLE PLATFORM USERS"
+  },
+  {
+   "type": "p",
+   "text": "MGL provides a privacy policy URL in App Store Connect and separately completes Apple’s App Privacy disclosures. Those disclosures describe the data types collected through the Mobile Application and third-party partners, whether the data is linked to a user, the purposes for which it is used, and whether any data is used for tracking."
+  },
+  {
+   "type": "p",
+   "text": "MGL is responsible for keeping its App Store Connect privacy disclosures accurate and updated when data practices, features, SDKs, partners, or purposes change."
+  },
+  {
+   "type": "p",
+   "text": "Apple may process App Store account, device, download, purchase, subscription, push-notification, and platform information under Apple’s own privacy policy. MGL does not control Apple’s independent processing."
+  },
+  {
+   "type": "p",
+   "text": "The Mobile Application and its third-party SDKs must collect only data reasonably relevant to the feature or task, respect iOS permission settings, and avoid collecting protected data before the applicable permission is granted."
+  },
+  {
+   "type": "h2",
+   "text": "25. CALIFORNIA PRIVACY NOTICE"
+  },
+  {
+   "type": "p",
+   "text": "This section applies to California residents where the California Consumer Privacy Act, as amended, applies."
+  },
+  {
+   "type": "h3",
+   "text": "25.1 Categories of Personal Information"
+  },
+  {
+   "type": "p",
+   "text": "• Identifiers and contact information;"
+  },
+  {
+   "type": "p",
+   "text": "• Customer-record and account information;"
+  },
+  {
+   "type": "p",
+   "text": "• Commercial and purchase information;"
+  },
+  {
+   "type": "p",
+   "text": "• Internet, electronic-network, usage, and diagnostic information;"
+  },
+  {
+   "type": "p",
+   "text": "• Precise and approximate geolocation;"
+  },
+  {
+   "type": "p",
+   "text": "• Audio, electronic, communications, and user-content information;"
+  },
+  {
+   "type": "p",
+   "text": "• Group, employer, sponsor, or organizational information;"
+  },
+  {
+   "type": "p",
+   "text": "• Sensitive personal information, including precise location, credentials, message content, optional medical or emergency information, and information about minors; and"
+  },
+  {
+   "type": "p",
+   "text": "• Inferences used for service improvement, account administration, security, or fraud prevention."
+  },
+  {
+   "type": "h3",
+   "text": "25.2 Purposes and Recipients"
+  },
+  {
+   "type": "p",
+   "text": "We collect, use, and disclose these categories for the business and operational purposes described in this Privacy Policy and disclose them to the recipient categories described in Section 9."
+  },
+  {
+   "type": "h3",
+   "text": "25.3 Sale and Sharing"
+  },
+  {
+   "type": "p",
+   "text": "We do not sell personal information for money. If website or app advertising technologies constitute a “sale” or “sharing” under California law, we will provide the required notice and opt-out rights."
+  },
+  {
+   "type": "h3",
+   "text": "25.4 California Rights"
+  },
+  {
+   "type": "p",
+   "text": "• Right to know and access;"
+  },
+  {
+   "type": "p",
+   "text": "• Right to delete;"
+  },
+  {
+   "type": "p",
+   "text": "• Right to correct;"
+  },
+  {
+   "type": "p",
+   "text": "• Right to opt out of sale or sharing where applicable;"
+  },
+  {
+   "type": "p",
+   "text": "• Right to limit certain uses of sensitive personal information where applicable; and"
+  },
+  {
+   "type": "p",
+   "text": "• Right to non-discrimination for exercising privacy rights."
+  },
+  {
+   "type": "h2",
+   "text": "26. OTHER UNITED STATES STATE PRIVACY RIGHTS"
+  },
+  {
+   "type": "p",
+   "text": "Residents of certain U.S. states may have rights to access, correct, delete, obtain a portable copy, opt out of targeted advertising, opt out of sale, opt out of certain profiling, and appeal a denied request. We will honor applicable rights where required by law."
+  },
+  {
+   "type": "h2",
+   "text": "27. CANADA PRIVACY NOTICE"
+  },
+  {
+   "type": "p",
+   "text": "If you are located in Canada, we process personal information in accordance with applicable Canadian privacy laws. Personal information may be processed or stored outside Canada, including in the United States, and may be subject to the laws and lawful access requests of those jurisdictions."
+  },
+  {
+   "type": "p",
+   "text": "You may request access to or correction of personal information using the contact methods in Section 23."
+  },
+  {
+   "type": "h2",
+   "text": "28. MEXICO PRIVACY NOTICE"
+  },
+  {
+   "type": "p",
+   "text": "If you are located in Mexico, this Privacy Policy is intended to serve as a privacy notice under applicable Mexican personal-data law. You may have rights to access, rectify, cancel, or oppose certain processing and to revoke consent where permitted. A Spanish-language notice may be provided where required or appropriate."
+  },
+  {
+   "type": "h2",
+   "text": "29. INTERNATIONAL DATA TRANSFERS"
+  },
+  {
+   "type": "p",
+   "text": "MGL is based in the United States. Personal information may be collected, processed, stored, or transferred in the United States and other countries where MGL or its service providers operate. Where required by law, we use appropriate safeguards for international transfers."
+  },
+  {
+   "type": "h2",
+   "text": "30. DO NOT TRACK AND GLOBAL PRIVACY CONTROL"
+  },
+  {
+   "type": "p",
+   "text": "There is no uniform industry standard for responding to all “Do Not Track” signals. Where required by applicable law, we will honor recognized opt-out preference signals, such as Global Privacy Control, for applicable browser-based sale or sharing opt-outs."
+  },
+  {
+   "type": "h2",
+   "text": "31. DE-IDENTIFIED, AGGREGATED, AND ANONYMIZED INFORMATION"
+  },
+  {
+   "type": "p",
+   "text": "We may create and use de-identified, aggregated, or anonymized information for analytics, research, reporting, service improvement, security, quality assurance, business planning, and operational purposes. We will not attempt to re-identify de-identified information except as permitted by law."
+  },
+  {
+   "type": "h2",
+   "text": "32. ARTIFICIAL INTELLIGENCE, AUTOMATION, AND ANALYTICS"
+  },
+  {
+   "type": "p",
+   "text": "MGL may use automation, analytics, or software tools to support account management, customer support, fraud prevention, incident logging, routing, quality assurance, and operational efficiency. Automation is not a substitute for 911, public safety judgment, medical diagnosis, or guaranteed emergency dispatch."
+  },
+  {
+   "type": "p",
+   "text": "As of the Effective Date, MGL does not disclose precise emergency location, emergency incident content, optional medical information, or Trusted Contact information to a third-party generative artificial-intelligence provider for model training or unrelated purposes."
+  },
+  {
+   "type": "p",
+   "text": "Before disclosing identifiable personal information to a third-party artificial-intelligence service for a new purpose, MGL will clearly identify the information, the type of recipient, and the purpose; obtain explicit permission when required; update applicable App Store and privacy disclosures; and require appropriate privacy and security protections."
+  },
+  {
+   "type": "h2",
+   "text": "33. LAW ENFORCEMENT, PUBLIC SAFETY, AND EMERGENCY DISCLOSURES"
+  },
+  {
+   "type": "p",
+   "text": "Because MGL supports urgent communication, we may preserve or disclose identity, location, alert, message, call, Trusted Contact, incident, coordinator, escalation, and related records to law enforcement, public safety agencies, emergency responders, regulators, courts, attorneys, insurers, or other parties when reasonably necessary to respond to an incident, protect safety, prevent harm, investigate misuse, comply with legal process, preserve evidence, cooperate with a lawful request, or protect legal rights."
+  },
+  {
+   "type": "h2",
+   "text": "34. DOMESTIC VIOLENCE, STALKING, AND SENSITIVE SAFETY USE"
+  },
+  {
+   "type": "p",
+   "text": "Users may rely on MGL in sensitive situations involving domestic violence, stalking, harassment, coercive control, campus or workplace threats, caregiver concerns, or other vulnerabilities."
+  },
+  {
+   "type": "p",
+   "text": "Carefully manage device security, passwords, biometric access, notification previews, location permissions, Trusted Contacts, shared devices, family accounts, cloud backups, email, SMS, and app-store credentials. MGL cannot guarantee that another person will not access information if that person controls or can access the user’s device, credentials, communications, or shared accounts."
+  },
+  {
+   "type": "p",
+   "text": "If you believe your device or account is being monitored or controlled, contact support from a safe device or trusted communication channel when possible."
+  },
+  {
+   "type": "h2",
+   "text": "35. THIRD-PARTY LINKS AND INDEPENDENT SERVICES"
+  },
+  {
+   "type": "p",
+   "text": "The Services may link to or interact with Apple, payment processors, mapping providers, communications providers, roadside providers, public safety resources, and other independent third parties. We are not responsible for the privacy, security, content, availability, or actions of independent third parties. Review their terms and privacy policies."
+  },
+  {
+   "type": "h2",
+   "text": "36. CHANGES TO THIS PRIVACY POLICY"
+  },
+  {
+   "type": "p",
+   "text": "We may update this Privacy Policy from time to time. The updated policy will be posted through the website, Mobile Application, account portal, or another reasonable method, and the Effective Date will be revised. If changes are material, we may provide additional notice or request consent where required by law."
+  },
+  {
+   "type": "h2",
+   "text": "37. CONTACT US"
+  },
+  {
+   "type": "p",
+   "text": "For privacy questions, requests, or concerns, contact:"
+  },
+  {
+   "type": "p",
+   "text": "My Guardian Link™"
+  },
+  {
+   "type": "p",
+   "text": "Forward Move, LLC"
+  },
+  {
+   "type": "p",
+   "text": "2680 Vernon Drive"
+  },
+  {
+   "type": "p",
+   "text": "Green Bay, WI 54304"
+  },
+  {
+   "type": "p",
+   "text": "Email: info@myguardianlink.com"
+  },
+  {
+   "type": "p",
+   "text": "Telephone: (920) 461-4188"
+  },
+  {
+   "type": "p",
+   "text": "Website: https://myguardianlink.com"
+  },
+  {
+   "type": "p",
+   "text": "Support: https://myguardianlink.com/support"
+  },
+  {
+   "type": "h2",
+   "text": "PRIVACY ACKNOWLEDGMENT"
+  },
+  {
+   "type": "p",
+   "text": "By using My Guardian Link, I acknowledge that:"
+  },
+  {
+   "type": "li",
+   "text": "MGL consists of a Mobile Application, a backend platform, and a separately operated human Live Response Service.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "The Mobile Application provides digital communication and safety tools.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "A paid membership purchases eligibility for trained Human Response Coordinators and External Response Center services, not premium digital application functionality.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "The backend determines whether an alert is eligible for the Live Response Service and may create an assignment for the External Response Center.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "MGL may collect and use personal information, including precise location, alert details, messages, Trusted Contact information, optional emergency-profile information, and incident records, as described in this Privacy Policy.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "MGL may disclose relevant information to Trusted Contacts, the External Response Center, Human Response Coordinators, service providers, public safety resources, roadside providers, and other authorized recipients as reasonably necessary.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "MGL is not 911 and does not replace direct contact with 911 or local emergency services when it is safe and possible to call them.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "I may manage iOS permissions, communication choices, Trusted Contacts, profile information, and account deletion as described in this Privacy Policy.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "Deleting the Mobile Application or canceling a membership does not by itself delete my MGL account.",
+   "ordered": true
+  },
+  {
+   "type": "li",
+   "text": "I have read and understand this Privacy Policy.",
+   "ordered": true
+  }
+ ]
+}
