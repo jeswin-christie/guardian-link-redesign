@@ -3,13 +3,25 @@ import Link from 'next/link';
 import type { CSSProperties, ReactNode } from 'react';
 import { MEDIA } from '@/lib/media';
 
+/** Illustrations / UI shots with baked-in text: shown whole (contain) inside .img-reveal, never cropped. */
+const FIT_IMAGES = new Set([
+  'page-2-section-4-e1779956986685.webp',
+  'page3-block5-e1780058629749.webp',
+  'chatgpt-image-may-28-2026-12-33-06-pm-e1779951889936.webp',
+  'chatgpt-image-jun-8-2026-05-14-13-pm-1.webp',
+  'what-your-account-recieve.webp',
+  'the-reality.webp',
+  'the-gap-section-banner.webp',
+]);
+
 /* ---------- Image from /public/media with intrinsic size ---------- */
 export function Img({
   src, alt = '', className, sizes = '(max-width: 860px) 100vw, 50vw', priority, style, ...rest
 }: { src: string; alt?: string; className?: string; sizes?: string; priority?: boolean; style?: CSSProperties; [k: `data-${string}`]: string | boolean | undefined }) {
   const [w, h] = MEDIA[src] ?? [1200, 800];
+  const cls = FIT_IMAGES.has(src) ? [className, 'img-fit'].filter(Boolean).join(' ') : className;
   return (
-    <Image src={`/media/${src}`} alt={alt} width={w} height={h} sizes={sizes} className={className}
+    <Image src={`/media/${src}`} alt={alt} width={w} height={h} sizes={sizes} className={cls}
       priority={priority} style={style} {...rest} />
   );
 }

@@ -19,18 +19,6 @@ export default function Pricing() {
         image="homw-block-3-highshield-e1779616387559.webp"
       />
 
-      <section className="panel sec sec--orange" data-section="celebration">
-        <div className="notice" data-reveal>
-          <h2>New Customer Portal Celebration</h2>
-          <ul>
-            <li>Trusted Contact Assist is available now and free.</li>
-            <li>Urgent Assist and Roadside Assistance are coming soon and are not currently available. You will be the first notified.</li>
-            <li>Purchase an Annual Single or Annual Group Plan today and receive a 20% rebate. Your rebate certificate will be emailed within 24 hours of purchase.</li>
-            <li>Our new customer portal and automation system were built to better serve our members.</li>
-          </ul>
-        </div>
-      </section>
-
       <section className="panel sec sec--page plans-wrap" id="plans" data-section="plans">
         <div className="sec__center">
           <Eyebrow>Plans</Eyebrow>

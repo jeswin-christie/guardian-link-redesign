@@ -102,7 +102,7 @@ export default function Motion() {
       host: (el.closest('section,footer,article') || el.parentElement) as HTMLElement,
     }));
     const parallax = $$('[data-parallax]').map((el) => ({ el, f: +(el.dataset.parallax || 0) }));
-    const pImgs = $$('[data-parallax-img]');
+    const pImgs = $$('[data-parallax-img]').filter((el) => !el.classList.contains('img-fit'));
     const hsList = $$('[data-hscroll-section]').map((s) => ({
       s, track: s.querySelector<HTMLElement>('[data-hscroll]')!, bar: s.querySelector<HTMLElement>('[data-hscroll-bar]'),
     })).filter((h) => h.track);

@@ -33,8 +33,11 @@ export default function PageHero({
           </video>
         ) : image ? (
           <>
-            <Img src={image} className={`hero__video${imageMobile ? ' hide-sm' : ''}`} sizes="100vw" priority />
-            {imageMobile && <Img src={imageMobile} className="hero__video show-sm" sizes="100vw" priority />}
+            {/* Blurred cover copy fills the frame; the full image sits on top uncropped (inner-page stills are often portrait). */}
+            <Img src={image} className={`hero__video hero__video--bg${imageMobile ? ' hide-sm' : ''}`} sizes="50vw" priority />
+            <Img src={image} className={`hero__video hero__video--fit${imageMobile ? ' hide-sm' : ''}`} sizes="100vw" priority />
+            {imageMobile && <Img src={imageMobile} className="hero__video hero__video--bg show-sm" sizes="50vw" priority />}
+            {imageMobile && <Img src={imageMobile} className="hero__video hero__video--fit show-sm" sizes="100vw" priority />}
           </>
         ) : null}
       </div>
