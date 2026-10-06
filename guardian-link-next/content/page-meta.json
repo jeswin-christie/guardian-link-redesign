@@ -2,7 +2,7 @@
  "home": {
   "route": "/",
   "title": "Home Page | My Guardian Link | Get Connected + Stay Protected",
-  "description": "When danger finds you, So Do We! Your Personal Protection link Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+  "description": "When danger finds you, So Do We! Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
   "canonical": "https://myguardianlink.com/",
   "robots": "index, follow, max-image-preview:large",
   "schema_jsonld": [
@@ -72,7 +72,7 @@
       "@id": "https://myguardianlink.com/#webpage",
       "url": "https://myguardianlink.com/",
       "name": "Home Page | My Guardian Link | Get Connected + Stay Protected",
-      "description": "When danger finds you, So Do We! Your Personal Protection link Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
+      "description": "When danger finds you, So Do We! Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.",
       "inLanguage": "en-US",
       "isPartOf": {
        "@id": "https://myguardianlink.com/#website"

@@ -26,7 +26,6 @@ export default function Home() {
 
       <PageHero
         size="full"
-        eyebrow="Your Personal Protection link"
         lines={['When danger finds you,', 'So Do We!']}
         footnote="Strengthens, Complements & Supports 911 — Does Not Replace 911."
         sub="Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds."
