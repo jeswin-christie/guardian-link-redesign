@@ -3,9 +3,8 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { PORTAL } from '@/lib/meta';
+import { PORTAL, SUPPORT_FORM } from '@/lib/meta';
 import { scrollToTop } from './Motion';
-import { toggleChat } from './ChatWidget';
 
 const LINKS = [
   { href: '/how-it-works/', label: 'How It Works' },
@@ -25,6 +24,7 @@ export default function PillNav() {
   const path = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menu, setMenu] = useState(false);
+  const [chat, setChat] = useState(false);
 
   useEffect(() => {
     const on = () => setScrolled(window.scrollY > window.innerHeight * 0.6);
@@ -35,8 +35,18 @@ export default function PillNav() {
 
   useEffect(() => { setMenu(false); }, [path]);
 
+  // gentle chat prompt on desktop, once per session
   useEffect(() => {
-    const esc = (e: KeyboardEvent) => { if (e.key === 'Escape') setMenu(false); };
+    if (window.innerWidth <= 860) return;
+    let seen: string | null = null;
+    try { seen = sessionStorage.getItem('mgl-chat'); sessionStorage.setItem('mgl-chat', '1'); } catch { /* storage blocked */ }
+    if (seen) return;
+    const t = setTimeout(() => setChat(true), 7000);
+    return () => clearTimeout(t);
+  }, []);
+
+  useEffect(() => {
+    const esc = (e: KeyboardEvent) => { if (e.key === 'Escape') { setMenu(false); setChat(false); } };
     window.addEventListener('keydown', esc);
     return () => window.removeEventListener('keydown', esc);
   }, []);
@@ -59,7 +69,7 @@ export default function PillNav() {
           <span /><span />
         </button>
         <Link href="/pricing/" className="pill__cta">Get Protected Now</Link>
-        <button className="pill__chat" onClick={toggleChat} aria-label="Chat with us">
+        <button className="pill__chat" onClick={() => setChat((c) => !c)} aria-label="Chat with us">
           <svg viewBox="0 0 24 24"><path d="M4 5h16v10H9l-5 4V5z" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /><circle cx="9" cy="10" r="1" fill="currentColor" /><circle cx="12" cy="10" r="1" fill="currentColor" /><circle cx="15" cy="10" r="1" fill="currentColor" /></svg>
         </button>
       </nav>
@@ -77,6 +87,13 @@ export default function PillNav() {
           <a href={PORTAL} className="btn btn--gold">Log In</a>
           <Link href="/pricing/" className="btn btn--red">Get Protected Now</Link>
         </div>
+      </div>
+
+      <div className={`chat${chat ? ' is-open' : ''}`} aria-hidden={!chat}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/media/cropped-untitled-07-july-2026-at-21-40-06.webp" alt="" width={40} height={40} />
+        <a href={SUPPORT_FORM} target="_blank" rel="noopener">Hi there! Have a question? Chat with us here.</a>
+        <button onClick={() => setChat(false)} aria-label="Close">×</button>
       </div>
     </>
   );

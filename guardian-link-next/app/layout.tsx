@@ -7,6 +7,7 @@ import PillNav from '@/components/PillNav';
 import Overlays from '@/components/Overlays';
 import Cursor from '@/components/Cursor';
 import Footer from '@/components/Footer';
+import ChatWidget from '@/components/ChatWidget';
 import { SITE } from '@/lib/meta';
 
 // Helvetica Neue, self-hosted from the client-supplied font files (subset to Latin, WOFF2)
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <PillNav />
         <Overlays />
         <Motion />
+        <ChatWidget />
       </body>
     </html>
   );

@@ -31,7 +31,11 @@ export default function Motion() {
   useEffect(() => {
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduce) return;
-    lenis = new Lenis({ lerp: 0.09, smoothWheel: true, anchors: { offset: 0 } });
+    lenis = new Lenis({
+      lerp: 0.09, smoothWheel: true, anchors: { offset: 0 },
+      // let the GHL chat panel scroll natively
+      prevent: (node) => node.nodeName === 'CHAT-WIDGET',
+    });
     let id = 0;
     const raf = (t: number) => { lenis?.raf(t); id = requestAnimationFrame(raf); };
     id = requestAnimationFrame(raf);

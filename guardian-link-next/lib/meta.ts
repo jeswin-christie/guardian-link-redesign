@@ -4,6 +4,8 @@ import pageMeta from '@/content/page-meta.json';
 export const SITE = 'https://myguardianlink.com';
 export const PORTAL = 'https://portal.myguardianlink.com/login';
 export const SUPPORT_FORM = 'https://link.yougetitfirst.com/widget/form/KzxeNUNyIwEYjMV3Z1ux';
+/** GoHighLevel chat widget "My Guardian Help Desk" (location Ab2vxQ5yR5MIplQBIXB5) */
+export const CHAT_WIDGET_ID = '6a4f7c76cf52f8a07d7a8f6e';
 
 type MetaEntry = {
   route: string;
