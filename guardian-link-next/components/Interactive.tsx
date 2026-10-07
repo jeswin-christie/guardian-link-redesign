@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Img } from './primitives';
-import { PORTAL } from '@/lib/meta';
+import { PORTAL, NEXT_STEP } from '@/lib/meta';
 
 /* ---------- Auto-advancing accordion with cross-fading media ---------- */
 export type AccItem = { title: string; body: ReactNode; image: string; alt?: string };
@@ -114,7 +114,8 @@ export function PricingPlans({ plans }: { plans: Plan[] }) {
                 <li key={k}><span>{k}</span><b className={v === 'N/A' ? 'na' : ''}>{v}</b></li>
               ))}
             </ul>
-            <a href={PORTAL} className={`btn ${p.featured ? 'btn--lime' : 'btn--ghost'} plan__cta`}>{p.cta}</a>
+            <a href={PORTAL} className={`btn ${p.featured ? 'btn--cta' : 'btn--ghost'} plan__cta`}>{p.cta}</a>
+            {p.cta === 'Get Protected Now' && <p className="next-step plan__next">{NEXT_STEP}</p>}
           </article>
         ))}
       </div>
@@ -133,7 +134,7 @@ export function CoverageAck() {
         <span>I understand that My Guardian Link requires cellular data or Wi-Fi and that coverage is not guaranteed in every location. My Guardian Link supports urgent communication but does not replace 911 or local emergency services.</span>
       </label>
       <p className="ack__must">You must acknowledge this notice before purchase or notification</p>
-      <a href={ok ? PORTAL : undefined} aria-disabled={!ok} className={`btn btn--lime ack__go${ok ? '' : ' is-disabled'}`}
+      <a href={ok ? PORTAL : undefined} aria-disabled={!ok} className={`btn btn--cta ack__go${ok ? '' : ' is-disabled'}`}
         onClick={(e) => { if (!ok) e.preventDefault(); }}>Continue to Checkout</a>
       <p className="ack__secure">Secure checkout. Your information is encrypted and protected.</p>
     </div>

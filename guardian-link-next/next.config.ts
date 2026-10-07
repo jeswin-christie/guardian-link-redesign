@@ -2,7 +2,10 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   trailingSlash: true,
-  images: { formats: ['image/avif', 'image/webp'] },
+  // 75 is the default; 85 is used by the /runners/ page photos
+  images: { formats: ['image/avif', 'image/webp'], qualities: [75, 85] },
+  // Three root layouts (main site, /students/, /runners/) — app/global-not-found.tsx serves the 404
+  experimental: { globalNotFound: true },
   async redirects() {
     // 301s carried over from the WordPress site (seo/redirects.csv)
     return [

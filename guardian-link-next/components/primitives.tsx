@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { CSSProperties, ReactNode } from 'react';
 import { MEDIA } from '@/lib/media';
+import { NEXT_STEP } from '@/lib/meta';
 
 /** Illustrations / UI shots with baked-in text: shown whole (contain) inside .img-reveal, never cropped. */
 const FIT_IMAGES = new Set([
@@ -67,7 +68,7 @@ export function SplitChars({ text, line = 0, after }: { text: string; line?: num
    href: internal or external link · video: opens the lightbox · open: opens a popup ("org" | "referral") */
 export type Action = { label: string; href?: string; video?: string; open?: 'org' | 'referral' };
 
-export function Btn({ a, variant = 'red', className = '', arrow, play }: { a: Action; variant?: string; className?: string; arrow?: boolean; play?: boolean }) {
+export function Btn({ a, variant = 'cta', className = '', arrow, play }: { a: Action; variant?: string; className?: string; arrow?: boolean; play?: boolean }) {
   const cls = `btn btn--${variant} ${className}`.trim();
   const inner = (
     <>
@@ -96,15 +97,9 @@ export function SmartLink({ href, className, children }: { href: string; classNa
   return <Link href={href} className={className}>{children}</Link>;
 }
 
-/* ---------- Giant kinetic word track ---------- */
-export function Giant({ word, dir = -1, speed = 0.4, className = '', repeat = 4, auto }: { word: ReactNode; dir?: 1 | -1; speed?: number; className?: string; repeat?: number; auto?: number }) {
-  return (
-    <div className={`giant ${className}`} aria-hidden="true">
-      <div className="giant__track" data-marquee={dir} data-speed={speed} {...(auto ? { 'data-auto': auto } : {})}>
-        {Array.from({ length: repeat }).map((_, i) => <span key={i}>{word}</span>)}
-      </div>
-    </div>
-  );
+/* ---------- "What happens next" line under every major Get Protected Now button ---------- */
+export function NextStep({ className = '' }: { className?: string }) {
+  return <p className={`next-step ${className}`.trim()}>{NEXT_STEP}</p>;
 }
 
 export function Eyebrow({ children, light }: { children: ReactNode; light?: boolean }) {

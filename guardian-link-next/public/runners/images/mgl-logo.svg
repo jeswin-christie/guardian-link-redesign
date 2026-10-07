@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" width="520" height="150" role="img" aria-labelledby="mgl-logo-title">
+  <title id="mgl-logo-title">My Guardian Link - get connected, stay protected</title>
+  <!-- Shield mark -->
+  <path d="M12 24 Q62 8 116 14 L116 78 Q116 120 64 144 Q12 120 12 78 Z" fill="#0B4F8A"/>
+  <path d="M12 24 Q62 8 116 14 L116 78 Q116 120 64 144 Q12 120 12 78 Z" fill="none" stroke="#0A3F6E" stroke-width="2"/>
+  <!-- Orange left swoosh -->
+  <path d="M21 30 Q23 29 28 28 L28 80 Q28 112 60 134 Q24 118 21 80 Z" fill="#E8772E"/>
+  <text x="68" y="90" text-anchor="middle" font-family="Roboto Slab, Georgia, serif" font-weight="700" font-size="50" fill="#FFFFFF" textLength="66" lengthAdjust="spacingAndGlyphs">my</text>
+  <!-- Wordmark -->
+  <text x="130" y="82" font-family="Roboto Slab, Georgia, serif" font-weight="700" font-size="54" fill="#0B4F8A" textLength="376" lengthAdjust="spacingAndGlyphs">GuardianLink</text>
+  <!-- Tagline -->
+  <g font-family="Roboto Slab, Georgia, serif" font-weight="700" font-size="22" fill="#E8772E">
+    <text x="134" y="118" textLength="160" lengthAdjust="spacingAndGlyphs">get connected</text>
+    <path d="M308 99 L299 112 L305 112 L301 124 L312 108 L306 108 L310 99 Z"/>
+    <text x="318" y="118" textLength="184" lengthAdjust="spacingAndGlyphs">stay protected</text>
+  </g>
+</svg>

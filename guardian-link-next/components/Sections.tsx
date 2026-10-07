@@ -1,10 +1,12 @@
-import { Img, SplitWords, Btn } from './primitives';
+import { Img, SplitWords, Btn, NextStep } from './primitives';
+import { DISCLAIMER_911, DISCLAIMER_RESPONSE } from '@/lib/meta';
 
-export const AUDIENCES: [string, string][] = [
-  ['1-students.webp', 'Students'],
+/** [image, label, optional link] — linked boxes open that audience's own page */
+export const AUDIENCES: [string, string, string?][] = [
+  ['1-students.webp', 'Students', '/students/'],
   ['2-nurse.webp', 'Nurses & Healthcare Workers'],
   ['3-daycare.webp', 'Daycare Providers'],
-  ['4-runners.webp', 'Runners'],
+  ['4-runners.webp', 'Runners', '/runners/'],
   ['whatsapp-image-2026-07-13-at-6-59-53-am.webp', 'Lone Workers'],
   ['6-real-estate-agent.webp', 'Real Estate Agents'],
   ['7-seniors.webp', 'Seniors & Dementia-Risk Families'],
@@ -26,13 +28,13 @@ export function CtaPanel({
         <SplitWords className="cta__title" text={title} />
         {text && <p data-reveal>{text}</p>}
         <div className="cta__btns" data-reveal>
-          <Btn a={{ label: 'Get Protected Now', href: '/pricing/' }} variant="white" />
+          <Btn a={{ label: 'Get Protected Now', href: '/pricing/' }} variant="cta" />
           <button type="button" className="btn btn--circle" data-open="org"><span>Protect My Organization</span></button>
         </div>
+        <NextStep className="cta__next" />
         {notes && (
           <ul className="cta__notes" data-reveal>
-            <li><b>Complements &amp; Supports 911 -</b> Does not replace 911.</li>
-            <li>Emergency response depends on circumstances, connectivity, and available services.</li>
+            <li><b>{DISCLAIMER_911}</b> {DISCLAIMER_RESPONSE}</li>
             <li>Real-time protection. Trusted connections. Peace of mind.</li>
           </ul>
         )}

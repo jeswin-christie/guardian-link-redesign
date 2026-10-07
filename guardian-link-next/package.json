@@ -6,15 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "css:runners": "tailwindcss -i \"app/(runners)/runners/runners.tailwind.css\" -o \"app/(runners)/runners/runners.css\""
   },
   "dependencies": {
     "lenis": "^1.3.26",
+    "lucide-react": "^1.52.0",
     "next": "^16.3.8",
+    "qrcode.react": "^4.2.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
     "@types/node": "^26.6.4",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",

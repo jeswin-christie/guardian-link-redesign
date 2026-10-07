@@ -1,0 +1,195 @@
+@import "tailwindcss" source(none);
+/* Only scan the runners page files (the rest of the site does not use Tailwind) */
+@source "./";
+@source "../../../components/runners";
+
+/*
+ * My Guardian Link — Runner landing page design tokens.
+ * Use these via Tailwind utilities, e.g. bg-brand-red, text-navy, font-display.
+ */
+/* Short phone/tablet screens (e.g. iPhone SE) — used to keep the hero within one screen. */
+@custom-variant short (@media (max-height: 740px) and (max-width: 1023.98px));
+
+@theme {
+  /* Brand */
+  --color-brand-red: #da2128;
+  --color-brand-red-dark: #b3161c;
+  --color-brand-red-soft: #fdecec;
+  --color-navy: #10233a;
+  --color-navy-deep: #0a1828;
+  --color-app-navy: #13294b;
+  --color-ink: #111a2b;
+  --color-body: #3b4352;
+  --color-muted: #6b7280;
+  --color-line: #e5e7eb;
+  --color-mist: #f4f5f7;
+  --color-amber: #f7a21b;
+
+  /* Logo colors */
+  --color-mgl-blue: #0b4f8a;
+  --color-mgl-orange: #e8772e;
+
+  /* Fonts (CSS variables are set by next/font in layout.tsx) */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-barlow-condensed), "Arial Narrow", sans-serif;
+  --font-slab: var(--font-roboto-slab), Georgia, serif;
+
+  --shadow-card: 0 1px 2px rgb(16 35 58 / 0.06), 0 8px 24px -12px rgb(16 35 58 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(16 35 58 / 0.06), 0 18px 36px -16px rgb(16 35 58 / 0.3);
+
+  /* Motion — utilities: animate-rise, animate-hero-zoom, animate-heartbeat, animate-soft-ping, animate-float */
+  --ease-out-soft: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --animate-rise: rise 0.8s var(--ease-out-soft) both;
+  --animate-hero-zoom: hero-zoom 2.2s var(--ease-out-soft) both;
+  --animate-heartbeat: heartbeat 2.6s ease-in-out infinite;
+  --animate-soft-ping: soft-ping 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+  --animate-float: float 8s ease-in-out infinite;
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes hero-zoom {
+    from {
+      opacity: 0;
+      transform: scale(1.08);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes heartbeat {
+    0%, 40%, 100% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(1.1);
+    }
+    20% {
+      transform: scale(0.97);
+    }
+    30% {
+      transform: scale(1.06);
+    }
+  }
+  @keyframes soft-ping {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.45;
+    }
+    80%, 100% {
+      transform: scale(1.7);
+      opacity: 0;
+    }
+  }
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-body);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Off-screen reveal offsets (translateX) must never widen the mobile layout viewport. */
+main {
+  overflow-x: clip;
+}
+
+/* Anchor targets clear the top edge a little */
+section[id] {
+  scroll-margin-top: 16px;
+}
+
+/* ---------- Scroll reveal ----------
+ * <html class="reveal-on"> is set by an inline script in layout.tsx, so without JS
+ * nothing is ever hidden. ScrollReveal adds .is-revealed when an element enters view.
+ *   data-reveal            fade up (also "left" | "right" | "fade" | "scale")
+ *   data-reveal-stagger    children fade up one after another
+ *   data-reveal="line-x" / "line-y"   connector lines draw in
+ * Hover lift uses the `translate` property so it never fights the reveal `transform`.
+ */
+.lift {
+  transition:
+    translate 0.25s var(--ease-out-soft),
+    box-shadow 0.25s var(--ease-out-soft);
+}
+@media (hover: hover) {
+  .lift:hover {
+    translate: 0 -4px;
+    box-shadow: var(--shadow-lift);
+  }
+}
+
+[data-reveal],
+[data-reveal-stagger] > * {
+  transition:
+    opacity 0.8s var(--ease-out-soft) var(--reveal-delay, 0ms),
+    transform 0.8s var(--ease-out-soft) var(--reveal-delay, 0ms),
+    translate 0.25s var(--ease-out-soft),
+    box-shadow 0.25s var(--ease-out-soft);
+}
+[data-reveal-stagger] > :nth-child(2) { --reveal-delay: 90ms; }
+[data-reveal-stagger] > :nth-child(3) { --reveal-delay: 180ms; }
+[data-reveal-stagger] > :nth-child(4) { --reveal-delay: 270ms; }
+[data-reveal-stagger] > :nth-child(5) { --reveal-delay: 360ms; }
+[data-reveal-stagger] > :nth-child(n + 6) { --reveal-delay: 450ms; }
+
+.reveal-on [data-reveal]:not(.is-revealed),
+.reveal-on [data-reveal-stagger]:not(.is-revealed) > * {
+  opacity: 0;
+  transform: translateY(28px);
+}
+.reveal-on [data-reveal="left"]:not(.is-revealed) { transform: translateX(-32px); }
+.reveal-on [data-reveal="right"]:not(.is-revealed) { transform: translateX(32px); }
+.reveal-on [data-reveal="fade"]:not(.is-revealed) { transform: none; }
+.reveal-on [data-reveal="scale"]:not(.is-revealed) { transform: scale(0.94); }
+
+[data-reveal="line-x"],
+[data-reveal="line-y"] {
+  transition: transform 1.2s var(--ease-out-soft) 0.2s;
+}
+[data-reveal="line-x"] { transform-origin: left center; }
+[data-reveal="line-y"] { transform-origin: center top; }
+.reveal-on [data-reveal="line-x"]:not(.is-revealed) { opacity: 1; transform: scaleX(0); }
+.reveal-on [data-reveal="line-y"]:not(.is-revealed) { opacity: 1; transform: scaleY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on [data-reveal]:not(.is-revealed),
+  .reveal-on [data-reveal-stagger]:not(.is-revealed) > * {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
-import { Img, SplitChars, Btn, TextLink, type Action } from './primitives';
+import { Img, SplitChars, Btn, TextLink, NextStep, type Action } from './primitives';
 
 type Props = {
   eyebrow?: string;
@@ -20,7 +20,7 @@ type Props = {
   children?: ReactNode;
 };
 
-/** The shared hero: blurred media, rising navy shapes, giant centred green headline with an asterisk footnote. */
+/** The shared hero: blurred media, rising navy shapes, large centred headline with an asterisk footnote. */
 export default function PageHero({
   eyebrow, lines, footnote, sub, primary, link, image, imageMobile, video, size = 'tall', scale = 'xl', children,
 }: Props) {
@@ -65,8 +65,9 @@ export default function PageHero({
         {sub && <div className="hero__sub">{sub}</div>}
         {(primary || link) && (
           <div className="hero__ctas">
-            {primary && <Btn a={primary} variant="lime" />}
+            {primary && <Btn a={primary} variant="cta" />}
             {link && <TextLink a={link} className="hero__link" />}
+            {primary?.label === 'Get Protected Now' && <NextStep className="hero__next" />}
           </div>
         )}
         {children}

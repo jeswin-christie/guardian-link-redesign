@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import { Img, Giant } from './primitives';
-import { SUPPORT_FORM } from '@/lib/meta';
+import { Img } from './primitives';
+import { SUPPORT_FORM, DISCLAIMER_911, DISCLAIMER_RESPONSE } from '@/lib/meta';
 
 export default function Footer() {
   return (
@@ -19,6 +19,7 @@ export default function Footer() {
           <h5>Product</h5>
           <Link href="/how-it-works/">How it Works</Link>
           <Link href="/features/">Features</Link>
+          <Link href="/why-it-matters/">Why It Matters</Link>
           <Link href="/features/#devices">Devices</Link>
           <Link href="/pricing/">Plan &amp; Pricing</Link>
         </nav>
@@ -36,8 +37,8 @@ export default function Footer() {
       </div>
 
       <div className="footer__disclaimer">
-        <p>My Guardian Link requires cellular data or Wi-Fi and does not replace 911. <Link href="/coverage-and-emergency-disclaimer/">View coverage and service limitations.</Link></p>
-        <p className="footer__strong">Strengthens 911 response —it does not replace 911.</p>
+        <p><b>{DISCLAIMER_911}</b> {DISCLAIMER_RESPONSE}</p>
+        <p>Requires cellular data or Wi-Fi. <Link href="/coverage-and-emergency-disclaimer/">View coverage and service limitations.</Link></p>
       </div>
 
       <div className="footer__bottom">
@@ -50,9 +51,6 @@ export default function Footer() {
           <Link href="/legal/">Legal</Link>
         </nav>
       </div>
-
-      <Giant className="giant--footer" dir={-1} speed={0.25} auto={40} repeat={3}
-        word={<>My Guardian Link<b className="dot">.</b></>} />
     </footer>
   );
 }

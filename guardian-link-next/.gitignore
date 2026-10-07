@@ -4,3 +4,6 @@ out
 *.tsbuildinfo
 next-env.d.ts
 .env*.local
+MyGuardianLink-Runners-main.zip
+backup-before-students-runners.zip
+guardian-main.zip

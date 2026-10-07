@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 150" width="128" height="150" role="img" aria-labelledby="mgl-shield-title">
+  <title id="mgl-shield-title">My Guardian Link</title>
+  <path d="M8 22 Q58 6 120 12 L120 76 Q120 120 64 146 Q8 120 8 76 Z" fill="#0B4F8A"/>
+  <path d="M8 22 Q58 6 120 12 L120 76 Q120 120 64 146 Q8 120 8 76 Z" fill="none" stroke="#0A3F6E" stroke-width="2"/>
+  <path d="M18 28 Q20 27 25 26 L25 78 Q25 112 60 136 Q21 120 18 78 Z" fill="#E8772E"/>
+  <text x="68" y="90" text-anchor="middle" font-family="Roboto Slab, Georgia, serif" font-weight="700" font-size="52" fill="#FFFFFF" textLength="70" lengthAdjust="spacingAndGlyphs">my</text>
+</svg>

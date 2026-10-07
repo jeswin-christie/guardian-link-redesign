@@ -29,12 +29,32 @@ child-guardian-consent-policy, sponsor-group-admin-acknowledgment).
 The live site's 301 redirects are in `next.config.ts`. Titles, descriptions, canonicals and JSON-LD come from
 `content/page-meta.json`.
 
+## Campaign pages: /students/ and /runners/
+
+Two standalone landing pages (originally separate projects: `guardian-main.zip` and
+`MyGuardianLink-Runners-main.zip`) now live inside this app. The **Students** and **Runners** boxes in
+"Who It Protects" (home page and `/who-it-protects/`) link to them — see `AUDIENCES` in `components/Sections.tsx`.
+
+Each one keeps its own design, fonts and CSS by having its **own root layout** (Next.js route groups),
+so none of the main site's styles, nav, loader or chat leak into them, and vice versa:
+
+| Route group | URL | Code | Assets |
+|---|---|---|---|
+| `app/(site)/` | the main website (all routes above) | `components/`, `app/globals.css` | `public/media/` |
+| `app/(students)/students/` | `/students/` (college-parent page), `/students/guide/` | `components/students/`, `lib/students/`, `styles/students/` (README inside) | `public/students/assets/` |
+| `app/(runners)/runners/` | `/runners/` | `components/runners/`, `lib/runners/site.ts` (README inside) — Tailwind v4, pre-compiled to `runners.css`; after changing Tailwind classes run `npm run css:runners` | `public/runners/images/` |
+
+Notes: moving between the main site and these pages is a full page load (different root layouts). Unmatched URLs
+use `app/global-not-found.tsx` (renders the main site's 404). The students page reads
+`NEXT_PUBLIC_START_FREE_URL`, `NEXT_PUBLIC_PORTAL_URL`, `NEXT_PUBLIC_META_PIXEL_ID` — see
+`components/students/env.example.txt`.
+
 ## Where things live
 
 | Path | What |
 |---|---|
 | `app/<route>/page.tsx` | Page content and section order |
-| `components/PageHero.tsx` | Shared hero (blurred media, navy shapes, green headline, asterisk footnote) |
+| `components/PageHero.tsx` | Shared hero (blurred media, navy shapes, white headline, asterisk footnote, next-step note under Get Protected Now) |
 | `components/Motion.tsx` | All scroll/reveal motion — pages only add `data-*` attributes |
 | `components/Interactive.tsx` | Auto accordion, FAQ, pricing toggle, checkout acknowledgment |
 | `components/Overlays.tsx` | Video lightbox + Protect My Organization / Referral Group popups. Any `data-video="/media/video/x.mp4"` or `data-open="org"` element opens them |
@@ -47,8 +67,16 @@ The live site's 301 redirects are in `next.config.ts`. Titles, descriptions, can
 
 `data-reveal` fade-up · `data-split-words` word rise (use `<SplitWords>`) · `data-stagger` children in sequence ·
 `data-reveal-img` clip reveal · `data-parallax-img` / `data-parallax="0.2"` parallax ·
-`data-marquee="-1" data-speed="0.4"` scroll-driven giant type (use `<Giant>`) · `data-num="5800"` count-up ·
+`data-num="5800"` count-up ·
 `data-hscroll-section` + `data-hscroll` pinned horizontal gallery. Everything respects `prefers-reduced-motion`.
+
+## Design rules (reviewer pass, Oct 2026)
+
+- **Nav:** How It Works · Pricing · FAQ · About Us · Log In · Get Protected Now. Features and Why It Matters are linked from the footer only.
+- **Primary CTA** (`variant="cta"` / `.btn--cta`, `--cta` orange-red): every Get Protected Now button. Put `<NextStep />` under major ones.
+- **Green** (`--green`) is reserved for protected / verified / success: checkmarks, the checkout acknowledgment, the "911 gets clear information" step. Don't use it for buttons, headlines, links or stats.
+- **No giant decorative type** and no logo inside sections — logo lives in the page header (hero) and footer only.
+- **911 disclaimer:** always use `DISCLAIMER`, `DISCLAIMER_911`, `DISCLAIMER_RESPONSE` from `lib/meta.ts` — never retype it.
 
 ## Open items to confirm with the client
 

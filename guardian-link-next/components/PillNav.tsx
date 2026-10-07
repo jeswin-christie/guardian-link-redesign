@@ -9,8 +9,6 @@ import { toggleChat } from './ChatWidget';
 
 const LINKS = [
   { href: '/how-it-works/', label: 'How It Works' },
-  { href: '/features/', label: 'Features' },
-  { href: '/why-it-matters/', label: 'Why It Matters' },
   { href: '/pricing/', label: 'Pricing' },
   { href: '/faq/', label: 'FAQ' },
   { href: '/about-us/', label: 'About Us' },
@@ -75,7 +73,7 @@ export default function PillNav() {
         </div>
         <div className="menu__ctas">
           <a href={PORTAL} className="btn btn--gold">Log In</a>
-          <Link href="/pricing/" className="btn btn--red">Get Protected Now</Link>
+          <Link href="/pricing/" className="btn btn--cta">Get Protected Now</Link>
         </div>
       </div>
     </>
