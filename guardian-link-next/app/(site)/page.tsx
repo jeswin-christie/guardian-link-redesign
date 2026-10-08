@@ -1,6 +1,6 @@
 import PageHero from '@/components/PageHero';
 import { Img, SplitWords, Btn, Eyebrow, SectionTag, JsonLd } from '@/components/primitives';
-import { AutoAccordion } from '@/components/Interactive';
+import { SignalLayers } from '@/components/SignalLayers';
 import { pageMetadata, pageSchema, DISCLAIMER, DISCLAIMER_911 } from '@/lib/meta';
 import { CtaPanel, AUDIENCES } from '@/components/Sections';
 import { BatteryCharging, Fuel, KeyRound, LifeBuoy, Phone, TriangleAlert, Truck } from 'lucide-react';
@@ -20,7 +20,7 @@ const SITUATIONS: [string, string][] = [
 ];
 
 
-/* Roadside services (all coming soon). Lucide line icons; Lucide has no winch, so that one is drawn on the same 24px grid. */
+/* Roadside services (Future Release — lib/status.ts). Lucide line icons; Lucide has no winch, so that one is drawn on the same 24px grid. */
 function WinchIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -50,7 +50,7 @@ export default function Home() {
         footnote={DISCLAIMER_911}
         sub="Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds."
         primary={{ label: 'Get Protected Now', href: '/pricing/' }}
-        link={{ label: 'See How it Works', video: '/media/video/walking-alone.mp4' }}
+        link={{ label: 'See How it Works', video: '/media/video/demo.mp4' }}
         image="chatgpt-image-may-22-2026-06-26-52-pm.webp"
         video="/media/video/walking-alone.mp4"
       >
@@ -113,19 +113,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The Solution */}
-      <section className="panel accsec" id="solution" data-section="solution">
-        <div className="accsec__head">
-          <Eyebrow>The Solution</Eyebrow>
-          <SplitWords className="h2" text="One silent urgent signal." />
+      {/* The Solution — one silent urgent signal, five layers */}
+      <section className="panel sig" id="solution" data-section="solution">
+        <div className="sig__intro">
+          <div>
+            <Eyebrow>The Solution</Eyebrow>
+            <SplitWords className="h2" text="One silent urgent signal." />
+          </div>
           <p className="lead" data-reveal>One silent urgent signal sends your identity, GPS location, and incident details to your trusted contacts and a trained personal coordinator.</p>
         </div>
-        <AutoAccordion items={[
-          { title: 'Identity', body: <p>Your name and key identification details.</p>, image: 'solution-identity.webp', alt: 'My Guardian Link app — profile screen with name, mobile number, email and personal details' },
-          { title: 'GPS Location', body: <p>Real-time location at the moment of the signal.</p>, image: 'solution-gps-location.webp', alt: 'My Guardian Link app — live map showing the user’s location pin and street address' },
-          { title: 'Incident Details', body: <p>Type of emergency, time, and any details you provide.</p>, image: 'what-trusted-cordinator-sees-1.webp' },
-          { title: 'Trusted Contacts', body: <p>The people you choose receive instant alerts.</p>, image: 'solution-trusted-contacts.webp', alt: 'My Guardian Link app — Add trusted contact screen listing connected trusted contacts' },
-          { title: 'Personal Coordinator', body: <p>A trained response coordinator reviews your signal, and can escalate to 911 immediately.</p>, image: 'support-banner-mgl-1.webp' },
+        <SignalLayers layers={[
+          { key: 'identity', title: 'Identity', body: 'Your name and key identification details.', tags: ['Name', 'Photo', 'Key ID details'],
+            image: 'signal-city-skyline.webp', frame: 'cover', position: '50% 55%', alt: 'City skyline and bay at night',
+            inset: { image: 'solution-identity.webp', alt: 'My Guardian Link profile screen with photo, name, mobile number, email and personal details' } },
+          { key: 'location', title: 'GPS Location', body: 'Real-time location at the moment of the signal.', tags: ['Real-time location', 'At the moment of the signal'],
+            image: 'signal-city-night.webp', frame: 'cover', position: '40% 60%', alt: 'Empty city street at night',
+            inset: { image: 'solution-gps-location.webp', alt: 'My Guardian Link live map with the user’s location pin, coordinates and street address' } },
+          { key: 'incident', title: 'Incident Details', body: 'Type of emergency, time, and any details you provide.', tags: ['Type of emergency', 'Time', 'Your details'],
+            image: 'incident-details.webp', frame: 'cover', position: '72% 50%', alt: 'Response coordinator reviewing an active urgent assist — the user’s message “Someone is following me”, notes, live map, medical details and time-stamped events' },
+          { key: 'contacts', title: 'Trusted Contacts', body: 'The people you choose receive instant alerts.', tags: ['People you choose', 'Instant alerts'],
+            image: 'solution-trusted-contacts.webp', frame: 'card', alt: 'My Guardian Link Add trusted contact screen with three connected trusted contacts' },
+          { key: 'coordinator', title: 'Personal Coordinator', body: 'A trained response coordinator reviews your signal, and can escalate to 911 immediately.', tags: ['Reviews your signal', 'Can escalate to 911'],
+            image: 'personal-coordinator.webp', frame: 'cover', position: '42% 38%', alt: 'Response coordinator wearing a headset, focused on her screen' },
         ]} />
       </section>
 
@@ -181,10 +190,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Roadside — every service is coming soon */}
+      {/* Roadside — Future Release (lib/status.ts) */}
       <section className="panel split split--road" id="roadside-assistance" data-section="roadside">
         <div className="split__body">
-          <p className="road__status" data-reveal><span className="road__dot" aria-hidden="true" /><span>Roadside assistance · <span className="road__nowrap">Coming soon</span></span></p>
+          <p className="road__status" data-reveal><span className="road__dot" aria-hidden="true" /><span>Roadside assistance · <span className="road__nowrap">Future release</span></span></p>
           <SplitWords className="h2 road__title" text="Help when you need it most." />
           <p className="lead road__lead" data-reveal>Fast, reliable roadside assistance, 24/7. Wherever you are, you&apos;ll be one tap away.</p>
           <div className="road__ctas" data-reveal>
@@ -195,7 +204,7 @@ export default function Home() {
           </div>
           <div className="road__svc-head" data-reveal>
             <h3>Services we&apos;ll provide</h3>
-            <span className="road__pill">Coming soon</span>
+            <span className="road__pill">Future release</span>
           </div>
           <ul className="svc" data-stagger>
             {ROADSIDE.map(([label, icon], i) => (
@@ -210,7 +219,7 @@ export default function Home() {
           {/* Real-ESRGAN 4x upscale of the clean square photo, shown whole (no crop, no parallax zoom) */}
           <figure className="img-reveal road__card" data-reveal-img>
             <Img src="roadside-assistance-hd.webp" alt="Roadside technician changing a tire beside a car at sunset" sizes="(max-width: 860px) 100vw, 640px" />
-            <figcaption className="road__badge"><span className="road__dot" aria-hidden="true" />24/7 roadside help — coming soon</figcaption>
+            <figcaption className="road__badge"><span className="road__dot" aria-hidden="true" />24/7 roadside help — future release</figcaption>
           </figure>
         </div>
       </section>

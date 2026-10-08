@@ -299,5 +299,25 @@ export const MEDIA: Record<string, [number, number]> = {
  "solution-trusted-contacts.webp": [
   1536,
   1024
+ ],
+ "signal-city-skyline.webp": [
+  1672,
+  941
+ ],
+ "signal-city-night.webp": [
+  1672,
+  941
+ ],
+ "chatgpt-image-may-22-2026-06-14-49-pm.webp": [
+  1087,
+  1447
+ ],
+ "incident-details.webp": [
+  1536,
+  1024
+ ],
+ "personal-coordinator.webp": [
+  2000,
+  1333
  ]
 };

@@ -80,7 +80,7 @@ export default function About() {
           <ul className="stairs">
             <li className="stairs__item" style={{ ['--i' as string]: 0 }}><b>24/7</b><span>Live response coordinators</span></li>
             <li className="stairs__item" style={{ ['--i' as string]: 1 }}><b>365</b><span>Days a year</span></li>
-            <li className="stairs__item" style={{ ['--i' as string]: 2 }}><b data-num="5800" data-prefix="~" data-format="comma">~5,800</b><span>PSAPs</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 2 }}><b data-num="5800" data-prefix="~" data-format="comma">~5,800</b><span>Connected 911 centers</span></li>
             <li className="stairs__item" style={{ ['--i' as string]: 3 }}><b>U.S.</b><span>Based professionals</span></li>
           </ul>
         </div>
