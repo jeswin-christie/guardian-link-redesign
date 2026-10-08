@@ -1,6 +1,6 @@
 # My Guardian Link — Next.js site
 
-Full rebuild of myguardianlink.com in the new design system (centered big-type hero with rising shapes,
+Full rebuild of myguardianlink.com in the new design system (centered big-type hero,
 framed panels, kinetic type, floating pill nav). All copy, images and video come from the content bundle;
 nothing has been rewritten — typos flagged in the bundle README are kept until the client approves fixes.
 
@@ -54,7 +54,7 @@ use `app/global-not-found.tsx` (renders the main site's 404). The students page 
 | Path | What |
 |---|---|
 | `app/<route>/page.tsx` | Page content and section order |
-| `components/PageHero.tsx` | Shared hero (blurred media, navy shapes, white headline, asterisk footnote, next-step note under Get Protected Now) |
+| `components/PageHero.tsx` | Shared hero (blurred media, white headline, asterisk footnote, next-step note under Get Protected Now) |
 | `components/Motion.tsx` | All scroll/reveal motion — pages only add `data-*` attributes |
 | `components/Interactive.tsx` | Auto accordion, FAQ, pricing toggle |
 | `components/Overlays.tsx` | Video lightbox + Protect My Organization / Referral Group popups. Any `data-video="/media/video/x.mp4"` or `data-open="org"` element opens them |

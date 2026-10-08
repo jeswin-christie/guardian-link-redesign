@@ -20,7 +20,7 @@ type Props = {
   children?: ReactNode;
 };
 
-/** The shared hero: blurred media, rising navy shapes, large centred headline with an asterisk footnote. */
+/** The shared hero: blurred media, large centred headline with an asterisk footnote. */
 export default function PageHero({
   eyebrow, lines, footnote, sub, primary, link, image, imageMobile, video, size = 'tall', scale = 'xl', children,
 }: Props) {
@@ -42,12 +42,6 @@ export default function PageHero({
         ) : null}
       </div>
       <div className="hero__shade" />
-
-      <svg className="hero__shapes" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-        <path className="shape shape--a" data-depth="0.35" d="M-380 1500 L-380 900 A640 640 0 0 1 900 900 L900 1500 L590 1500 L590 900 A330 330 0 0 0 -70 900 L-70 1500 Z" />
-        <path className="shape shape--b" data-depth="0.18" d="M300 1500 L300 900 A420 420 0 0 1 1140 900 L1140 1500 L960 1500 L960 900 A240 240 0 0 0 480 900 L480 1500 Z" />
-        <path className="shape shape--c" data-depth="0.5" d="M1130 1500 L1130 900 C1160 720 1300 610 1440 590 L1600 590 L1600 1500 Z" />
-      </svg>
 
       <Link href="/" className="hero__logo" aria-label="My Guardian Link home">
         <Img src="mgl-horizontal-logo-rev.webp" alt="My Guardian Link" sizes="220px" priority />

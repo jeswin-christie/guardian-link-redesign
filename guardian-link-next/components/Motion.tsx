@@ -22,7 +22,7 @@ const $$ = <T extends Element = HTMLElement>(s: string, c: ParentNode = document
 /**
  * All scroll-linked and reveal motion for the site. Pages only add data attributes:
  * data-reveal · data-split-words · data-stagger · data-bubble · .stairs · data-reveal-img
- * data-num · data-marquee · data-parallax · data-parallax-img · data-hscroll · hero shapes
+ * data-num · data-marquee · data-parallax · data-parallax-img · data-hscroll
  */
 export default function Motion() {
   const path = usePathname();
@@ -110,7 +110,6 @@ export default function Motion() {
     const hsList = $$('[data-hscroll-section]').map((s) => ({
       s, track: s.querySelector<HTMLElement>('[data-hscroll]')!, bar: s.querySelector<HTMLElement>('[data-hscroll-bar]'),
     })).filter((h) => h.track);
-    const shapes = $$<SVGPathElement>('.hero__shapes [data-depth]');
     const heroCenter = document.querySelector<HTMLElement>('[data-hero-center]');
     const heroVideo = document.querySelector<HTMLVideoElement>('video.hero__video');
     if (heroVideo && reduce) heroVideo.pause();
@@ -155,7 +154,6 @@ export default function Motion() {
           img.style.transform = `translate3d(0,${(((r.top + r.height / 2 - vh / 2) / vh) * -9).toFixed(2)}%,0)`;
         });
         if (y < vh * 1.2) {
-          shapes.forEach((sh) => sh.style.setProperty('--sy', `${(-y * +(sh.dataset.depth || 0)).toFixed(1)}px`));
           if (heroCenter) {
             const p = clamp(y / (vh * 0.8), 0, 1);
             heroCenter.style.transform = `translate3d(0,${(y * 0.25).toFixed(1)}px,0) scale(${(1 - p * 0.06).toFixed(3)})`;

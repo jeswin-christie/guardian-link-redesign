@@ -110,7 +110,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 .img-reveal img{width:100%;height:115%;object-fit:cover;transform:scale(1.15);transition:transform 1.8s var(--ease);will-change:transform}
 .img-reveal.is-in img{transform:scale(1)}
 
-/* ---------- Hero (centered big type + organic shapes) ---------- */
+/* ---------- Hero (centered big type) ---------- */
 .hero{height:calc(100vh - 2 * var(--gap));height:calc(100svh - 2 * var(--gap));min-height:680px;display:flex;align-items:center;justify-content:center;background:var(--navy-deep);isolation:isolate}
 .hero__media{position:absolute;inset:0;z-index:-3;overflow:hidden}
 .hero__video{width:100%;height:100%;object-fit:cover;filter:blur(7px) saturate(.9) brightness(.9);transform:scale(1.22);transition:transform 3s var(--ease)}
@@ -118,12 +118,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 .hero__shade{position:absolute;inset:0;z-index:-2;background:
   radial-gradient(ellipse at 50% 42%,rgba(4,15,34,.38) 0%,rgba(4,15,34,.12) 70%),
   linear-gradient(180deg,rgba(4,15,34,.4),rgba(4,15,34,0) 30%)}
-.hero__shapes{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;overflow:visible}
-.shape{fill:var(--navy-page);transform-box:fill-box;transform-origin:50% 100%;transform:translateY(105%);transition:transform 1.6s var(--ease);will-change:transform}
-.shape--b{fill:var(--navy-deep);transition-delay:.12s}
-.shape--c{transition-delay:.24s}
-.is-ready .shape{transform:translateY(var(--sy,0px))}
-.hero.is-settled .shape,.hero.is-settled .hero__center{transition:none}
+.hero.is-settled .hero__center{transition:none}
 .hero__logo{position:absolute;top:clamp(22px,4vh,40px);left:var(--pad);z-index:3}
 .hero__logo img{width:clamp(160px,13vw,210px);height:auto;opacity:0;transform:translateY(-14px);transition:opacity 1s var(--ease) .4s,transform 1s var(--ease) .4s}
 .is-ready .hero__logo img{opacity:1;transform:none}
@@ -468,7 +463,6 @@ ul,ol{margin:0;padding:0;list-style:none}
   .hero__center{padding:96px var(--pad) 110px}
   .hero__title{font-size:clamp(44px,13.5vw,96px);line-height:.92}
   .hero__line{white-space:normal}
-  .hero__shapes{height:62%;top:auto;bottom:0}
   .dark__intro{gap:0}
   .kin{min-height:0;padding:0 0 60px}
   .kin__text,.kin:nth-of-type(even) .kin__text{padding:40px var(--pad) 30px;align-self:start}
@@ -908,7 +902,6 @@ h1,h2,h3,h4,h5{font-weight:700}
   .hero__logo{top:18px}
   .hero__logo img{width:150px}
   .hero .hero__center{padding:104px var(--pad) 118px;width:100%}
-  .hero__shapes{height:42%}
   .hero__ast{margin-left:.1em}
 
   /* stats stairs → 2×2 grid under the image so labels never clip */
