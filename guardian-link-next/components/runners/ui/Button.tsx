@@ -29,7 +29,8 @@ type ButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
 
 /** CTA link styled as a button. All CTAs on this page are links (portal or in-page anchors). */
 export function Button({ href, variant = "red", size = "md", className = "", children, ...rest }: ButtonProps) {
-  const external = href.startsWith("http");
+  // Third-party sites open in a new tab; the User Portal (account setup) is our own funnel and stays in this tab.
+  const external = href.startsWith("http") && !href.startsWith("https://portal.myguardianlink.com");
   return (
     <a
       href={href}

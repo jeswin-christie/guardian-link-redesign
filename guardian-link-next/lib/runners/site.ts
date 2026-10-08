@@ -4,7 +4,7 @@
  * This page is reused for many runner influencers — swap the `partner`
  * block (name + logo) and links per influencer. Everything else stays generic.
  */
-import { SITE } from "@/lib/meta";
+import { SITE, SIGNUP } from "@/lib/meta";
 
 export type Partner = {
   /** Influencer / run club name, e.g. "Coach Sam Rivera" */
@@ -22,21 +22,19 @@ export const site = {
   siteUrl: SITE,
 
   /**
-   * CTA destinations. The page now lives on the main site (/runners/), so site links are relative;
-   * only the User Portal is external (opens in a new tab).
-   * (Mapped from myguardianlink.com, Oct 2026.)
-   * Sign-up flow there is: "Get Protected Now" → /pricing/ (Free / Single / Group plans)
-   * → plan button → User Portal login, where onboarding (profile, contacts, app) starts.
+   * CTA destinations — one path to membership, same as the main site (lib/funnel.ts):
+   * every setup button goes to account setup in the User Portal (phone sign-in = sign-up),
+   * where plan → trusted contacts → app download → activation follow.
    */
   links: {
     /** User Portal — sign in / sign up with phone OTP, then onboarding. */
-    portal: "https://portal.myguardianlink.com/login",
-    /** Plans page — the official "Get Protected Now" destination. */
-    getProtected: "/pricing/",
-    /** Features → "Activate Your Protection" (activation options). */
-    activation: "/features/#devices",
-    /** Pricing → Roadside Assistance add-on (scroll-to-text; falls back to the page top). */
-    roadside: "/pricing/#:~:text=Roadside%20Assistance",
+    portal: SIGNUP,
+    /** "Set Up Runner Protection" — account setup. */
+    getProtected: SIGNUP,
+    /** "Activate My Runner Setup" — activation happens in the app: /download/ sends phones to their store. */
+    activation: "/download/",
+    /** Roadside Assistance is a Future Release (lib/status.ts), so its button goes to account setup. */
+    roadside: SIGNUP,
     /** Official website home. */
     website: "/",
   },

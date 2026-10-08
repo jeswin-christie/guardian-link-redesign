@@ -15,7 +15,6 @@ import Plan from '@/components/students/sections/Plan';
 import Proof from '@/components/students/sections/Proof';
 import Reassure from '@/components/students/sections/Reassure';
 import Setup from '@/components/students/sections/Setup';
-import Stories from '@/components/students/sections/Stories';
 
 // The college-parent campaign page. Section order is the company's
 // paid-traffic flow (README, "Page order"); each section's own file
@@ -37,7 +36,6 @@ export default function Page() {
         <HerLink />
         <Reassure />
         <How />
-        <Stories />
         <Plan />
         <Setup />
         <Nine />

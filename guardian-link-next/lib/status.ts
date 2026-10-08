@@ -15,6 +15,8 @@ export type Item = {
   status: Status;
   /** Badge text exactly as the live site shows it (undefined = no badge shown live). */
   label?: string;
+  /** One-line description (from the live How It Works product grid). */
+  desc?: string;
   source: string;
   conflict?: string;
 };
@@ -28,35 +30,35 @@ export const STATUS_LABEL: Record<Status, string> = {
 
 export const PRODUCTS = {
   trustedContactAssist: {
-    name: 'Trusted Contact Assist', status: 'live', label: 'Freemium',
+    name: 'Trusted Contact Assist', desc: 'Notify a trusted contact so they can respond and support you.', status: 'live', label: 'Freemium',
     source: 'How It Works: FREEMIUM; pricing cards: Free plan 1 user, Single, Group',
   },
   urgentAssist: {
-    name: 'Urgent Assist', status: 'live',
+    name: 'Urgent Assist', desc: 'Rapid help when you need it most.', status: 'live',
     source: 'How It Works "current products" (no badge); pricing cards: Included on Single and Group, N/A on Free',
   },
   roadsideAssistance: {
-    name: 'Roadside Assistance', status: 'future-release', label: 'Future Release',
+    name: 'Roadside Assistance', desc: 'Get back on the road quickly and safely.', status: 'future-release', label: 'Future Release',
     source: 'Client confirmed 2026-10-08 (live site showed "Coming Soon" on Home, no badge on How It Works)',
   },
   urgentMedicalAssistance: {
-    name: 'Urgent Medical Assistance', status: 'future-release', label: 'Future Release',
+    name: 'Urgent Medical Assistance', desc: 'Connect to medical help when every second counts.', status: 'future-release', label: 'Future Release',
     source: 'Client confirmed 2026-10-08 (live How It Works showed NEW RELEASE)',
   },
   seeSomethingSaySomething: {
-    name: 'See Something, Say Something', status: 'live',
+    name: 'See Something, Say Something', desc: 'Report concerns. Help keep communities safe.', status: 'live',
     source: 'Pricing cards: Included on Single and Group, N/A on Free; no badge on Home or How It Works',
   },
   falseAlarmWorkflow: {
-    name: 'False Alarm Workflow', status: 'live',
+    name: 'False Alarm Workflow', desc: 'Confirms accidental activations quickly and helps prevent unnecessary escalation.', status: 'live',
     source: 'How It Works "current products", no badge',
   },
   tornadoAlert: {
-    name: 'Tornado Alert', status: 'future-release', label: 'Future Release',
+    name: 'Tornado Alert', desc: 'Real-time alerts and guidance when severe weather threatens.', status: 'future-release', label: 'Future Release',
     source: 'How It Works product grid: FUTURE RELEASE',
   },
   wildfireAlert: {
-    name: 'Wildfire Alert', status: 'future-release', label: 'Future Release',
+    name: 'Wildfire Alert', desc: 'Stay ahead of wildfire risk with timely alerts and updates.', status: 'future-release', label: 'Future Release',
     source: 'How It Works product grid: FUTURE RELEASE',
   },
 } satisfies Record<string, Item>;

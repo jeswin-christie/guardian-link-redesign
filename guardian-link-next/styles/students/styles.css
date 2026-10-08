@@ -1578,3 +1578,6 @@ a.badge:hover { background: #E6B65A; transform: translateY(-1px); }
   .demo__play { width: 68px; height: 68px; font-size: 28px; }
   .demo__caption { font-size: 17px; }
 }
+
+/* Standard next-step line (client review, Oct 2026) */
+.final__next { margin: 18px auto 0; max-width: 46ch; font-size: 15px; line-height: 1.5; color: rgba(255,255,255,.82); }

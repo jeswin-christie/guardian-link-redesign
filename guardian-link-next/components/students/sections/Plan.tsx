@@ -40,10 +40,10 @@ export default function Plan() {
             {/* A link since 2026-10-06 (user request): goes where START FREE
                 goes — the portal login (lib/behaviour/main.js), tracked as a
                 CTA click from "plan". */}
-            <a className="badge" href="#plan" data-cta="start">Try It Free</a>
+            <a className="badge" href="https://portal.myguardianlink.com/login" data-cta="start">Try It Free</a>
             <p className="plan-card__people">3 Members</p>
             <p className="plan-card__amount">$24.99<small>/ month</small></p>
-            <p className="plan-card__each">$8.33 each</p>
+            <p className="plan-card__each">Billed annually at $299.88 &middot; $8.33 each</p>
           </div>
         </div>
 
@@ -52,7 +52,7 @@ export default function Plan() {
           <dl className="offer__list">
             <div className="offer__row">
               <dt><span className="offer__ico" aria-hidden="true"><svg className="icon"><use href="#i-people" /></svg></span>The plan</dt>
-              <dd>$24.99/month for 3 people &mdash; $8.33 each.</dd>
+              <dd>$24.99/month for 3 people, billed annually at $299.88 &mdash; $8.33 each. Or $49.99/month, billed monthly.</dd>
             </div>
             <div className="offer__row">
               <dt><span className="offer__ico" aria-hidden="true"><svg className="icon"><use href="#i-tag" /></svg></span>Getting started</dt>

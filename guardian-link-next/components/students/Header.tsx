@@ -17,7 +17,7 @@ export default function Header({ home = '' }: { home?: string }) {
         <nav className="header__nav" aria-label="Primary">
           <a href={`${home}#demo`}>See Protection in Action</a>
         </nav>
-        <a className="btn btn--start btn--sm" href={`${home}#plan`} data-cta="start">Start Free</a>
+        <a className="btn btn--start btn--sm" href="https://portal.myguardianlink.com/login" data-cta="start">Start Free</a>
       </div>
     </header>
   );

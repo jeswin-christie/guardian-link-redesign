@@ -1,25 +1,19 @@
 import PageHero from '@/components/PageHero';
-import { Img, SplitWords, Btn, NextStep, Eyebrow, JsonLd } from '@/components/primitives';
+import { SplitWords, Btn, Eyebrow, JsonLd, TextLink } from '@/components/primitives';
 import { AutoAccordion } from '@/components/Interactive';
 import { CtaPanel } from '@/components/Sections';
-import { pageMetadata, pageSchema } from '@/lib/meta';
+import { pageMetadata, pageSchema, DISCLAIMER_RESPONSE } from '@/lib/meta';
+import { getProtected } from '@/lib/funnel';
 
 export const metadata = pageMetadata('how-it-works');
 
+/* Five practical situations (client review: reduced from nine). The product list lives on /pricing/. */
 const SITUATIONS = [
-  'When Someone Is Nearby And You Cannot Speak', 'You are hiding', 'You Are Being Chased', 'You Are Being Attacked',
-  'You are injured', 'You are confused', 'You are being followed', 'You do not know where you are', 'When Calling 911 Will Escalate The Danger',
-];
-
-const PRODUCTS: { n: string; t: string; tag?: [string, string]; d: string }[] = [
-  { n: '1', t: 'URGENT ASSIST', d: 'Rapid help when you need it most.' },
-  { n: '2', t: 'ROADSIDE ASSISTANCE', tag: ['FUTURE RELEASE', 'future'], d: 'Get back on the road quickly and safely.' },
-  { n: '3', t: 'URGENT MEDICAL ASSISTANCE', tag: ['FUTURE RELEASE', 'future'], d: 'Connect to medical help when every second counts.' },
-  { n: '4', t: 'SEE SOMETHING, SAY SOMETHING', d: 'Report concerns. Help keep communities safe.' },
-  { n: '5', t: 'TRUSTED CONTACT ASSIST', tag: ['FREEMIUM', ''], d: 'Notify one trusted contact so they can respond and support you.' },
-  { n: '6', t: 'FALSE ALARM WORKFLOW', d: 'Confirms accidental activations quickly and helps prevent unnecessary escalation.' },
-  { n: '7', t: 'TORNADO ALERT', tag: ['FUTURE RELEASE', 'future'], d: 'Real-time alerts and guidance when severe weather threatens.' },
-  { n: '8', t: 'WILDFIRE ALERT', tag: ['FUTURE RELEASE', 'future'], d: 'Stay ahead of wildfire risk with timely alerts and updates.' },
+  'Someone is nearby and you cannot speak.',
+  'You are being followed.',
+  'You are injured or confused.',
+  'You do not know where you are.',
+  'Calling 911 may escalate the danger.',
 ];
 
 export default function HowItWorks() {
@@ -28,10 +22,10 @@ export default function HowItWorks() {
       <JsonLd data={pageSchema('how-it-works')} />
       <PageHero
         eyebrow="The 5-Step Flow"
-        lines={['Helps starts with', 'one silent signal.']}
+        lines={['Help Starts With', 'One Silent Signal.']}
         scale="lg"
         sub="A simple step-by-step view of how My Guardian Link helps move information quickly when urgent help is needed."
-        primary={{ label: 'Get Protected Now', href: '/pricing/' }}
+        primary={getProtected('hero')}
         link={{ label: 'Protect My Organization', open: 'org' }}
         image="9.webp"
       />
@@ -42,74 +36,37 @@ export default function HowItWorks() {
           <SplitWords className="h2" text="From one signal to a coordinated response." />
         </div>
         <AutoAccordion items={[
-          { title: 'You Activate Help', body: <p>Tap the app, use voice command, smartwatch, earbuds, or silent activation.</p>, image: '9.webp' },
-          { title: 'Your identity and location are sent', body: <p>Verified identity, phone, GPS location, emergency type, and timestamp are delivered instantly.</p>, image: 'chatgpt-image-may-25-2026-03-00-28-pm-e1779701764908.webp' },
-          { title: 'Your trusted contacts are alerted', body: <p>The people you choose receive immediate alerts with verified details.</p>, image: 'what-your-account-recieve.webp' },
-          { title: 'A trained personal coordinator responds', body: <p>A human response coordinator reviews and takes action on your signal and guides the response.</p>, image: 'support-banner-mgl-1.webp' },
-          { title: '911 Escalation', body: <p>911 will be contacted. When needed, verified details will be shared with 911 so response can begin faster.</p>, image: 'home-banner-2-e1783070253640.webp' },
+          { title: 'You Activate Help', body: <p>Tap the app, use your voice, smartwatch, or earbuds — or activate silently.</p>, image: '9.webp' },
+          { title: 'Your identity and location are sent', body: <p>Your verified identity, phone number, GPS location, emergency type, and time are sent instantly.</p>, image: 'chatgpt-image-may-25-2026-03-00-28-pm-e1779701764908.webp' },
+          { title: 'Your trusted contacts are alerted', body: <p>The people you choose receive an alert with your details and location.</p>, image: 'what-your-account-recieve.webp' },
+          { title: 'A trained response coordinator responds', body: <p>A trained response coordinator reviews your signal and helps guide the response.</p>, image: 'support-banner-mgl-1.webp' },
+          { title: '911 Escalation', body: <p>When needed, the coordinator can contact 911 and share your verified details.</p>, image: 'home-banner-2-e1783070253640.webp' },
         ]} />
+        <div className="flow-proof" data-reveal>
+          <Btn a={{ label: 'See What Happens After Activation', href: '/#proof', cta: 'hiw-proof' }} variant="ghost" arrow />
+          <TextLink a={{ label: 'See all activation options & devices', href: '/features/#devices', cta: 'hiw-devices' }} />
+        </div>
       </section>
 
       <section className="panel sec sec--black" data-section="cannot-speak">
         <div className="sec__head">
-          <Eyebrow light>When you cannot speak</Eyebrow>
           <SplitWords className="h2 h2--xl" text="When you cannot speak" />
           <p className="lead lead--light" data-reveal>Some emergencies are silent, fast-moving, or too dangerous to explain out loud.</p>
         </div>
-        <ol className="biglist" data-stagger>
+        <ol className="biglist biglist--sm" data-stagger>
           {SITUATIONS.map((s, i) => <li key={s}><em>{String(i + 1).padStart(2, '0')}</em>{s}</li>)}
         </ol>
-        <div className="sec__center" style={{ marginTop: 'clamp(50px,9vh,100px)', marginBottom: 0 }}>
-          <p className="statement statement--center" data-reveal>Even when you cannot explain the emergency, your identity, precise location, and urgent signal can still reach trusted contacts and a personal coordinator.</p>
-          <ul className="chips chips--lg chips--center" data-stagger style={{ marginTop: 34 }}>
-            <li>Silent urgent signal</li><li>Precise GPS location</li><li>Trusted contacts</li><li>Personal coordinator</li>
-          </ul>
-        </div>
-      </section>
-
-      <section className="panel sec sec--panel" data-section="products">
-        <div className="sec__head">
-          <Eyebrow light>My Guardian Link current products</Eyebrow>
-          <SplitWords className="h2" text="My Guardian Link current products" />
-          <p className="lead lead--light" data-reveal>The platform is designed as a flexible infrastructure layer that supports multiple user needs and deployment models.</p>
-        </div>
-        <div className="products">
-          <figure className="products__img img-reveal" data-reveal-img><Img src="page-2-section-4-e1779956986685.webp" data-parallax-img="" /></figure>
-          <div className="cards cards--2" data-stagger>
-            {PRODUCTS.map((p) => (
-              <article className="card card--dark" key={p.n}>
-                <span className="card__n">{p.n.padStart(2, '0')}</span>
-                {p.tag && <span className={`card__tag${p.tag[1] ? ' card__tag--' + p.tag[1] : ''}`}>{p.tag[0]}</span>}
-                <h3>{p.t}</h3>
-                <p>{p.d}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-        <p className="statement statement--center" data-reveal style={{ marginTop: 'clamp(48px,8vh,90px)' }}>One platform. Protection for individuals, families, teams, and organizations.</p>
+        <p className="statement statement--center statement--sm" data-reveal style={{ marginTop: 'clamp(40px,7vh,72px)' }}>Even when you cannot explain the emergency, your identity, precise location, and urgent signal can still reach trusted contacts and a response coordinator.</p>
       </section>
 
       <CtaPanel
         title="Set it up before you need it."
-        text="Preparation takes minutes. The moment you need is help is not the time to wish you had it."
+        text="Preparation takes minutes. The moment you need help is not the time to wish you had it."
         image="page-2-block-4-bg-e1779960403948.webp"
         alt=""
+        reassure={`Setup takes minutes. ${DISCLAIMER_RESPONSE}`}
         notes={false}
       />
-      <section className="panel sec sec--page strip" data-section="starts">
-        <div className="strip__lead" data-reveal>
-          <h3>Starts in minutes</h3>
-          <p>Be ready before danger finds you.</p>
-        </div>
-        <ul className="chips chips--lg" data-stagger>
-          <li>Silent Activation</li><li>Trusted Contact</li><li>Personal Coordinator</li><li>911 escalation support</li>
-        </ul>
-        <p className="tagline" data-reveal>Your Protection. Our Technology. Always Connected.</p>
-        <div className="strip__btn">
-          <Btn a={{ label: 'Get Protected Now', href: '/pricing/' }} variant="cta" />
-          <NextStep />
-        </div>
-      </section>
     </>
   );
 }

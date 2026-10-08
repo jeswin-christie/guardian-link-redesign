@@ -8,6 +8,7 @@ import Overlays from '@/components/Overlays';
 import Cursor from '@/components/Cursor';
 import Footer from '@/components/Footer';
 import ChatWidget from '@/components/ChatWidget';
+import CtaTracking from '@/components/CtaTracking';
 import { SITE } from '@/lib/meta';
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Overlays />
         <Motion />
         <ChatWidget />
+        <CtaTracking />
       </body>
     </html>
   );

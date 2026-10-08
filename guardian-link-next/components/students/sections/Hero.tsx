@@ -34,11 +34,11 @@ export default function Hero() {
           <p className="hero__price">
             <span>3 members</span>
             <span className="hero__price-sep" aria-hidden="true">&mdash;</span>
-            <span><b>$24.99</b>/month</span>
+            <span><b>$24.99</b>/month, billed annually</span>
           </p>
 
           <div className="actions">
-            <a className="btn btn--start" href="#plan" data-cta="start">Start Free</a>
+            <a className="btn btn--start" href="https://portal.myguardianlink.com/login" data-cta="start">Start Free</a>
             <a className="btn btn--action" href="#demo">
               <Icon name="play" fill />
               See Protection in Action

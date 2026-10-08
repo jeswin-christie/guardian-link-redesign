@@ -15,11 +15,14 @@ export function initMain(page) {
   var each = function (list, fn) { Array.prototype.forEach.call(list, fn); };
 
   /* ------------------------------------------------------------------
-     1. LAUNCH SETTINGS — REPLACE BEFORE LAUNCH
-     Set these as environment variables (.env.local, or the host's
-     settings) and every matching button follows; see .env.example.
+     1. LAUNCH SETTINGS
+     The defaults below are live. To change a destination, set the
+     environment variable (.env.local, or the host's settings) and every
+     matching button follows; see env.example.txt.
      ------------------------------------------------------------------ */
 
+  // Every START FREE (data-cta="start") goes here (the links' own href is the
+  // same URL, so they still work if this script never runs).
   // Every START FREE (data-cta="start") goes here. One destination for all
   // of them (company feedback 8). Since 2026-10-06 (user request) it is the
   // member portal's login page, the one the main site's login button uses;
@@ -28,7 +31,8 @@ export function initMain(page) {
 
   // The QR code in setup step 4's download card (data-cta="portal") goes
   // here when tapped — the phones' route, as a phone can't scan its own
-  // screen: the member portal. Until set, it goes to myguardianlink.com.
+  // screen. Unset, it keeps its own link: myguardianlink.com/download/,
+  // which sends each phone to its app store.
   var PORTAL_URL = process.env.NEXT_PUBLIC_PORTAL_URL || '';
 
   // Meta Pixel ID, from Events Manager. Empty: no pixel loads, and events

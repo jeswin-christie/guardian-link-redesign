@@ -353,11 +353,17 @@ ul,ol{margin:0;padding:0;list-style:none}
 
 /* ---------- Footer ---------- */
 .footer{background:var(--navy-page);padding:clamp(48px,7vh,80px) var(--pad) 110px}
-.footer__grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+.footer__grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
 .footer__brand>p{margin-top:22px;max-width:34ch;color:rgba(255,255,255,.8)}
 .footer__stay{margin-top:34px;max-width:38ch}
 .footer__stay p{color:rgba(255,255,255,.75);font-size:15px;margin-top:6px}
 .footer__stay b{color:#fff}
+.footer__stay h5{margin-bottom:14px}
+.footer__start{margin-bottom:12px}
+.footer__stores{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.store{display:inline-flex;flex-direction:column;justify-content:center;min-height:48px;padding:7px 18px;border:1.5px solid var(--line-strong);border-radius:12px;font-weight:700;font-size:16px;line-height:1.15;color:#fff;transition:border-color .3s,background .3s}
+.store small{font-size:11px;font-weight:500;letter-spacing:.02em;color:rgba(255,255,255,.7)}
+.store:hover{border-color:#fff;background:rgba(255,255,255,.06)}
 .footer h5{font-family:var(--f-slab);font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);margin-bottom:18px}
 .footer__col{display:flex;flex-direction:column;gap:12px}
 .footer__col a{font-weight:700;width:max-content;background:linear-gradient(currentColor,currentColor) 0 100%/0 1.5px no-repeat;transition:background-size .45s var(--ease)}
@@ -447,7 +453,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 @media (max-width:1100px){
   .who__grid{grid-template-columns:repeat(2,1fr)}
   .bubble--round{grid-column:span 6}
-  .footer__grid{grid-template-columns:1fr 1fr 1fr}
+  .footer__grid{grid-template-columns:1fr 1fr}
   .footer__brand{grid-column:1/-1}
 }
 @media (max-width:860px){
@@ -1112,3 +1118,143 @@ h1,h2,h3,h4,h5{font-weight:700}
   .sig__pulse::after,.sig__nodes::after{animation:none}
   .sig__tags li{animation:none}
 }
+
+/* =========================================================================
+   Conversion redesign (client review, Oct 2026)
+   ========================================================================= */
+/* Problem split — shorter than a full screen */
+.split--compact{min-height:clamp(480px,72vh,760px)}
+
+/* Use cases — four static cards */
+.cases{background:var(--navy-panel);padding:clamp(72px,11vh,128px) var(--pad)}
+.cases__head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:end;margin-bottom:clamp(32px,5vh,56px)}
+.cases__head .h2{max-width:18ch}
+.cases__head .lead{margin:0;justify-self:end}
+.cases__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--gap)}
+.case{margin:0;position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--navy-deep)}
+.case img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.case:hover img{transform:scale(1.05)}
+.case figcaption{position:absolute;left:0;right:0;bottom:0;padding:70px 20px 20px;background:linear-gradient(0deg,rgba(2,12,29,.95),rgba(2,12,29,0))}
+.case figcaption b{display:block;font-size:18px;line-height:1.2}
+.case figcaption span{display:block;margin-top:6px;font-size:14px;color:rgba(255,255,255,.78);line-height:1.35}
+
+/* Signal section — contacts vs coordinator line */
+.sig__who{margin-top:14px!important;font-size:15px;color:rgba(255,255,255,.7)}
+
+/* Four features — one compact row */
+.feats{background:#000;padding:clamp(56px,9vh,100px) var(--pad)}
+.feats__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--gap)}
+.feat{background:var(--navy-panel);border:1px solid var(--line);display:flex;flex-direction:column}
+.feat figure{margin:0;aspect-ratio:3/2;overflow:hidden;background:var(--navy-deep)}
+.feat img{width:100%;height:100%;object-fit:cover}
+.feat div{padding:20px 22px 24px}
+.feat h3{font-size:clamp(18px,1.3vw,21px);letter-spacing:-.01em;margin-bottom:8px}
+.feat p{color:rgba(255,255,255,.75);font-size:15px}
+.feats__cta{display:flex;flex-direction:column;align-items:center;margin-top:clamp(36px,6vh,56px)}
+
+/* Who it protects — six tiles */
+.who__grid--6{grid-template-columns:repeat(3,minmax(0,1fr))}
+.who__grid--6 .aud{aspect-ratio:4/3}
+
+/* Why it's different — short */
+.diff2{padding:clamp(72px,11vh,128px) var(--pad)}
+.diff2__grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,6vw,96px);align-items:end}
+.diff2__grid .h2{max-width:16ch}
+.diff-list--one{grid-template-columns:1fr}
+.diff2__note{margin-top:24px;font-weight:700;font-size:clamp(17px,1.25vw,20px);line-height:1.3;max-width:34ch}
+
+/* Proof */
+.proof__grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1.1fr) minmax(0,.55fr);gap:clamp(20px,2.4vw,36px);align-items:start}
+.proof__card h3{font-size:clamp(19px,1.5vw,23px);margin:20px 0 6px}
+.proof__card p{color:rgba(255,255,255,.75);font-size:15px}
+.proof__card .phone{max-width:240px}
+.proof__card--phone{display:flex;flex-direction:column;align-items:flex-start}
+
+/* Pricing preview */
+.pp__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap);max-width:1120px;margin:0 auto}
+.pp__card{position:relative;background:var(--navy-panel);border:1px solid var(--line);padding:clamp(24px,2.4vw,34px);display:flex;flex-direction:column}
+.pp__card--featured{border-color:var(--orange);background:var(--navy-brand)}
+.pp__card h3{font-size:clamp(20px,1.6vw,24px);letter-spacing:-.01em}
+.pp__card--featured h3{padding-right:110px}
+.pp__card>p{color:rgba(255,255,255,.75);margin-top:6px}
+.pp__card>p.pp__price{margin-top:22px;font-size:clamp(34px,2.8vw,44px);font-weight:700;letter-spacing:-.03em;line-height:1;color:#fff}
+.pp__price small{font-size:15px;font-weight:400;letter-spacing:0;color:rgba(255,255,255,.7);margin-left:4px}
+.pp__card>p.pp__bill{font-size:13.5px;min-height:2.9em;margin-top:8px}
+.pp__card .btn{margin-top:auto;justify-content:center;border-radius:12px}
+.pp__card .pp__bill+.btn{margin-top:20px}
+.pp__foot{display:flex;flex-direction:column;align-items:center;margin-top:clamp(32px,5vh,48px)}
+
+/* Final CTA — plain background option, secondary org link, reassurance */
+.cta--plain{min-height:auto;background:var(--navy-brand)}
+.cta--plain .cta__tint{mix-blend-mode:normal;opacity:1;background:var(--navy-brand)}
+.cta__reassure{margin-top:14px;font-size:14px;color:rgba(255,255,255,.8)}
+.cta__org{margin-top:26px;font-size:15px}
+
+/* Pricing page */
+.plan__alt{margin-top:4px;font-size:13px;color:rgba(255,255,255,.6)}
+.after{background:var(--navy-panel)}
+.after__steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:var(--gap);counter-reset:s}
+.after__steps li{background:var(--navy-page);border:1px solid var(--line);padding:22px 20px;font-weight:700;font-size:16px;line-height:1.25}
+.after__steps li em{display:block;font-style:normal;font-family:var(--f-slab);font-size:13px;font-weight:500;color:var(--orange);margin-bottom:14px}
+.after__stores{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin-top:clamp(28px,4vh,40px)}
+.after__stores p{width:100%;text-align:center;color:rgba(255,255,255,.75);margin-bottom:4px}
+.incl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--gap)}
+.incl .card{padding:24px}
+.incl .card h3{font-size:18px}
+.incl .card p{font-size:15px}
+.card__tag--live{background:rgba(37,180,44,.14);color:#7fdc83}
+.org-band{text-align:center}
+.org-band .lead{margin:16px auto 0}
+
+/* How It Works — proof link under the flow */
+.flow-proof{display:flex;justify-content:center;margin-top:clamp(32px,5vh,48px)}
+
+@media (max-width:1100px){
+  .feats__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .proof__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .proof__card--phone{grid-column:1/-1;flex-direction:row;gap:24px;align-items:center}
+  .proof__card--phone .phone{flex:none;width:200px}
+  .after__steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .incl{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:860px){
+  .cases__head,.diff2__grid{grid-template-columns:1fr}
+  .cases__head .lead{justify-self:start}
+  .cases__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .who__grid--6{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .who__grid--6 .aud{aspect-ratio:4/5}
+  .pp__grid{grid-template-columns:1fr;max-width:520px}
+  .split--compact{min-height:0}
+  .split--compact .split__media{min-height:46vh}
+}
+@media (max-width:560px){
+  .proof__grid{grid-template-columns:1fr}
+  .proof__card--phone{flex-direction:column;align-items:flex-start}
+  .feat div{padding:14px 14px 16px}
+  .feat h3{font-size:16px}
+  .feat p{font-size:13.5px}
+  .case figcaption{padding:50px 14px 14px}
+  .case figcaption b{font-size:16px}
+  .case figcaption span{font-size:13px}
+  .after__steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .incl{grid-template-columns:1fr}
+}
+/* Store buttons on white bubbles (Features) */
+.bubble .footer__stores{margin-top:0;flex:none}
+.bubble .store{color:var(--navy-page);border-color:rgba(4,15,34,.25)}
+.bubble .store small{color:rgba(4,15,34,.65)}
+.bubble .store:hover{border-color:var(--navy-page);background:rgba(4,15,34,.05)}
+/* keep the final-CTA order on mobile, where .cta__btns uses display:contents + order */
+.cta__reassure{order:3}
+.cta__org{order:4}
+.cta__notes{order:5}
+.download__stores{justify-content:center;margin-top:28px}
+.download__stores .store{min-height:56px;padding:9px 22px;font-size:18px;background:rgba(2,12,29,.55)}
+@media (max-width:560px){
+  .billing button{padding:10px 18px;line-height:1.15}
+  .billing button em{display:block;margin:2px 0 0}
+}
+/* in-page links to Why It Matters / Features (they are not in nav or footer) */
+.split__more{margin-top:28px}
+.flow-proof{flex-wrap:wrap;align-items:center;gap:18px 32px}
+.faq__a a{color:var(--orange);text-decoration:underline;text-underline-offset:3px}

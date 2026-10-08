@@ -41,7 +41,7 @@ const CHAPTERS = [
   { id: 'prevent', icon: 'shield', title: 'Protection that starts before the emergency' },
   { id: 'campus', icon: 'pin', title: 'Alone on campus? Not anymore.' },
   { id: 'reality', icon: 'phone', title: '911 Is Essential.' },
-  { id: 'seconds', icon: 'tap', title: 'What happens in seconds' },
+  { id: 'seconds', icon: 'tap', title: 'What happens when you activate' },
   { id: 'setup', icon: 'id', title: 'Set it up before you need it.' },
   { id: 'know', icon: 'book', title: 'What You Need to Know' },
 ];
@@ -144,7 +144,7 @@ export default function GuidePage() {
               </div>
             </section>
 
-            {/* 04 — Source: Home page ("What happens in seconds") and
+            {/* 04 — Source: Home page ("What happens when you activate") and
                 Features page ("Activate with Confidence. Stay in Control."). */}
             <section className="g-chapter" id="seconds" data-reveal="">
               <ChapterHead n={4} />

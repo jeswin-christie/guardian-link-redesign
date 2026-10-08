@@ -12,14 +12,15 @@ export default function Final() {
       <div className="wrap">
         <div className="final__inner" data-reveal="">
           <h2 className="h2">Give her peace of mind. <span className="accent">Give yourself confidence.</span></h2>
-          <p className="final__price"><strong>3 people &mdash; $24.99/month.</strong> Try It Free.</p>
+          <p className="final__price"><strong>3 people &mdash; $24.99/month, billed annually.</strong> Try It Free.</p>
           <div className="actions">
-            <a className="btn btn--start" href="#plan" data-cta="start">Start Free</a>
+            <a className="btn btn--start" href="https://portal.myguardianlink.com/login" data-cta="start">Start Free</a>
             <a className="btn btn--action" href="#demo">
               <Icon name="play" fill />
               See Protection in Action
             </a>
           </div>
+          <p className="final__next">Next step: create your account, choose your plan, add trusted contacts, download the app, and activate protection.</p>
           <p className="final__tag">Get connected. Stay protected.</p>
         </div>
       </div>
