@@ -120,6 +120,10 @@ export const MEDIA: Record<string, [number, number]> = {
   664,
   812
  ],
+ "coordinator-incident-record.webp": [
+  1536,
+  1024
+ ],
  "cropped-untitled-07-july-2026-at-21-40-06.webp": [
   512,
   512

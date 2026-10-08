@@ -130,8 +130,8 @@ export default function Home() {
         ].map(([t, d, , img, alt]) => (
           <article className="kin" key={t}>
             <div className="kin__text" data-reveal><h3>{t}</h3><p>{d}</p></div>
-            {/* Images with alt text are shown whole (frame matches the photo, no crop) */}
-            <figure className={`kin__img img-reveal${alt ? ' kin__img--whole' : ''}`} data-reveal-img><Img src={img} alt={alt} className={alt ? 'img-fit' : undefined} data-parallax-img="" /></figure>
+            {/* Images with alt text are screen shots: same frame height, anchored right so the whole screen stays in view */}
+            <figure className={`kin__img img-reveal${alt ? ' kin__img--screen' : ''}`} data-reveal-img><Img src={img} alt={alt} className={alt ? 'img-fit' : undefined} data-parallax-img="" /></figure>
           </article>
         ))}
       </section>
