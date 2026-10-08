@@ -1,6 +1,5 @@
 import PageHero from '@/components/PageHero';
 import { SplitWords, Btn, Eyebrow, JsonLd, TextLink } from '@/components/primitives';
-import { AutoAccordion } from '@/components/Interactive';
 import { CtaPanel } from '@/components/Sections';
 import { pageMetadata, pageSchema, DISCLAIMER_RESPONSE } from '@/lib/meta';
 import { getProtected } from '@/lib/funnel';
@@ -14,6 +13,14 @@ const SITUATIONS = [
   'You are injured or confused.',
   'You do not know where you are.',
   'Calling 911 may escalate the danger.',
+];
+
+const FLOW: [string, string][] = [
+  ['You Activate Help', 'Tap the app, use your voice, smartwatch, or earbuds — or activate silently.'],
+  ['Your identity and location are sent', 'Your verified identity, phone number, GPS location, emergency type, and time are sent instantly.'],
+  ['Your trusted contacts are alerted', 'The people you choose receive an alert with your details and location.'],
+  ['A trained response coordinator responds', 'A trained response coordinator reviews your signal and helps guide the response.'],
+  ['911 Escalation', 'When needed, the coordinator can contact 911 and share your verified details.'],
 ];
 
 export default function HowItWorks() {
@@ -30,18 +37,12 @@ export default function HowItWorks() {
         image="9.webp"
       />
 
-      <section className="panel accsec" data-section="flow">
-        <div className="accsec__head">
-          <Eyebrow>The 5-Step Flow</Eyebrow>
-          <SplitWords className="h2" text="From one signal to a coordinated response." />
-        </div>
-        <AutoAccordion items={[
-          { title: 'You Activate Help', body: <p>Tap the app, use your voice, smartwatch, or earbuds — or activate silently.</p>, image: '9.webp' },
-          { title: 'Your identity and location are sent', body: <p>Your verified identity, phone number, GPS location, emergency type, and time are sent instantly.</p>, image: 'chatgpt-image-may-25-2026-03-00-28-pm-e1779701764908.webp' },
-          { title: 'Your trusted contacts are alerted', body: <p>The people you choose receive an alert with your details and location.</p>, image: 'what-your-account-recieve.webp' },
-          { title: 'A trained response coordinator responds', body: <p>A trained response coordinator reviews your signal and helps guide the response.</p>, image: 'support-banner-mgl-1.webp' },
-          { title: '911 Escalation', body: <p>When needed, the coordinator can contact 911 and share your verified details.</p>, image: 'home-banner-2-e1783070253640.webp' },
-        ]} />
+      <section className="panel sec sec--page" data-section="flow">
+        <Eyebrow>The 5-Step Flow</Eyebrow>
+        <SplitWords className="h2" text="From one signal to a coordinated response." />
+        <ol className="steps steps--page" data-reveal>
+          {FLOW.map(([title, text]) => <li key={title}><b>{title}</b>{text}</li>)}
+        </ol>
         <div className="flow-proof" data-reveal>
           <Btn a={{ label: 'See What Happens After Activation', href: '/#proof', cta: 'hiw-proof' }} variant="ghost" arrow />
           <TextLink a={{ label: 'See all activation options & devices', href: '/features/#devices', cta: 'hiw-devices' }} />

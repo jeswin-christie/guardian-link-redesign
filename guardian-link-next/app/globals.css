@@ -1258,3 +1258,9 @@ h1,h2,h3,h4,h5{font-weight:700}
 .split__more{margin-top:28px}
 .flow-proof{flex-wrap:wrap;align-items:center;gap:18px 32px}
 .faq__a a{color:var(--orange);text-decoration:underline;text-underline-offset:3px}
+
+/* How It Works: plain numbered 5-step list (replaces the auto-advancing accordion) */
+.steps--page{max-width:720px;margin-top:clamp(32px,5vh,48px);gap:28px}
+.steps--page li{font-size:clamp(15px,1.05vw,17px);line-height:1.55}
+.steps--page b{font-size:clamp(18px,1.4vw,22px);margin-bottom:4px}
+.sec--page .flow-proof{justify-content:flex-start}
