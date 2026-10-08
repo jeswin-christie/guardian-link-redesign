@@ -77,10 +77,10 @@ export default function About() {
         <div className="split__media">
           <div className="img-reveal" data-reveal-img><Img src="support-banner-mgl-1.webp" data-parallax-img="" /></div>
           <ul className="stairs">
-            <li className="stairs__item" style={{ ['--i' as string]: 0 }}><b>24/7</b><span>Live response coordinators</span></li>
-            <li className="stairs__item" style={{ ['--i' as string]: 1 }}><b>365</b><span>Days a year</span></li>
-            <li className="stairs__item" style={{ ['--i' as string]: 2 }}><b data-num="5800" data-prefix="~" data-format="comma">~5,800</b><span>Connected 911 centers</span></li>
-            <li className="stairs__item" style={{ ['--i' as string]: 3 }}><b>U.S.</b><span>Based professionals</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 3 }}><b>Silent</b><span>Urgent Signal</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 2 }}><b>Live</b><span>U.S.-Based Response Support</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 1 }}><b>911</b><span>Escalation Support</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 0 }}><b data-num="5800" data-prefix="~" data-format="comma">~5,800</b><span>Connected 911 centers</span></li>
           </ul>
         </div>
       </section>
