@@ -1,7 +1,7 @@
 import PageHero from '@/components/PageHero';
 import { Img, SplitWords, Btn, NextStep, Eyebrow, JsonLd, TextLink } from '@/components/primitives';
 import { SignalLayers } from '@/components/SignalLayers';
-import { pageMetadata, pageSchema, DISCLAIMER_911 } from '@/lib/meta';
+import { pageMetadata, pageSchema } from '@/lib/meta';
 import { CtaPanel, AudienceGrid, HOME_AUDIENCES } from '@/components/Sections';
 import { getProtected, signupUrl } from '@/lib/funnel';
 import { PLANS } from '@/lib/plans';
@@ -37,14 +37,16 @@ export default function Home() {
       {/* 1 · Hero */}
       <PageHero
         size="full"
-        lines={['When danger finds you,', 'So Do We!']}
-        footnote={DISCLAIMER_911}
-        sub="My Guardian Link is a mobile protection service that sends your identity, GPS location, incident details, trusted contacts, and a trained response coordinator into action when you cannot safely call, speak, or explain."
+        lines={['When Danger Finds You,', 'So Do We!']}
+        footnote="Strengthens, Complements & Supports 911 — Does Not Replace 911."
+        sub={<><strong>Your Personal Protection Link</strong><br />Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.</>}
         primary={getProtected('hero')}
-        link={{ label: 'Watch the Demo', video: '/media/video/demo.mp4', cta: 'hero-demo' }}
+        link={{ label: 'See How It Works', video: '/media/video/demo.mp4', cta: 'hero-demo' }}
         image="chatgpt-image-may-22-2026-06-26-52-pm.webp"
         video="/media/video/walking-alone.mp4"
-      />
+      >
+        <p className="hero__sub">When voice fails, My Guardian Link turns confusion into verified action.</p>
+      </PageHero>
 
       {/* 2 · Problem */}
       <section className="panel split split--stats split--compact" id="voice" data-section="voice">
