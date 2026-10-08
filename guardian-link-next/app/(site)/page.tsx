@@ -28,7 +28,6 @@ const ROADSIDE: [string, React.ReactNode][] = [
   ['Fuel Delivery', <><path d="M4 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16M2.5 21h13" /><path d="M7 7h4v4H7z" /><path d="M14 9h2a2 2 0 0 1 2 2v6a1.5 1.5 0 0 0 3 0V8l-3-3" /></>],
   ['Winching', <><rect x="3" y="8" width="8" height="8" rx="1.5" /><path d="M7 8v8M2 19.5h10M11 12h6.5v3a2 2 0 0 0 4 0" /></>],
   ['Accident Assistance', <><path d="M12 3.5L2.5 20h19L12 3.5z" /><path d="M12 10v4.5M12 17.2v.01" /></>],
-  ['Add More', <path d="M12 5v14M5 12h14" />],
 ];
 
 export default function Home() {
@@ -181,7 +180,7 @@ export default function Home() {
           <h4 className="mini-title" data-reveal>service we provide</h4>
           <ul className="svc" data-stagger>
             {ROADSIDE.map(([label, icon]) => (
-              <li key={label} className={label === 'Add More' ? 'svc__item svc__item--more' : 'svc__item'}>
+              <li key={label} className="svc__item">
                 <span className="svc__icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{icon}</svg>
                 </span>

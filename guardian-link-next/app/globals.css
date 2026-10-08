@@ -296,9 +296,6 @@ ul,ol{margin:0;padding:0;list-style:none}
 .svc__icon svg{width:22px;height:22px}
 .svc__label{font-size:15px;font-weight:500;line-height:1.25;text-wrap:balance}
 .svc__item:hover .svc__icon{background:var(--orange);color:#fff;transform:translateY(-2px)}
-.svc__item--more .svc__icon{background:transparent;border:1.5px dashed rgba(236,116,38,.55)}
-.svc__item--more .svc__label{color:var(--muted)}
-.svc__item--more:hover .svc__icon{background:transparent;color:var(--orange);transform:rotate(90deg)}
 @media (max-width:520px){
   .svc__item{gap:10px;padding:14px 10px}
   .svc__icon{width:36px;height:36px;border-radius:10px}
