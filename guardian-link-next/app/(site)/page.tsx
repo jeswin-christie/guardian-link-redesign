@@ -3,6 +3,7 @@ import { Img, SplitWords, Btn, Eyebrow, SectionTag, JsonLd } from '@/components/
 import { AutoAccordion } from '@/components/Interactive';
 import { pageMetadata, pageSchema, DISCLAIMER, DISCLAIMER_911 } from '@/lib/meta';
 import { CtaPanel, AUDIENCES } from '@/components/Sections';
+import { BatteryCharging, Fuel, KeyRound, LifeBuoy, Phone, TriangleAlert, Truck } from 'lucide-react';
 
 export const metadata = pageMetadata('home');
 
@@ -19,16 +20,24 @@ const SITUATIONS: [string, string][] = [
 ];
 
 
-/* Roadside services: label + 24px line icon (stroke inherits currentColor) */
+/* Roadside services (all coming soon). Lucide line icons; Lucide has no winch, so that one is drawn on the same 24px grid. */
+function WinchIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="2.5" y="3" width="9" height="7" rx="1.5" /><path d="M5.5 3v7M8.5 3v7" /><path d="M11.5 6.5H18v9a2.5 2.5 0 0 1-5 0V14" /><path d="M4 14h5" />
+    </svg>
+  );
+}
 const ROADSIDE: [string, React.ReactNode][] = [
-  ['Towing', <><path d="M3 16V9.5L5.5 6H10v10" /><path d="M10 13h11v3" /><path d="M14 13l5-6v3.5" /><circle cx="6.5" cy="17" r="1.8" /><circle cx="17" cy="17" r="1.8" /></>],
-  ['Battery Jump Start', <><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M7 7V4.5h3V7M14 7V4.5h3V7" /><path d="M12.5 10l-2.5 4h3l-2.5 4" /></>],
-  ['Flat Tire Assistance', <><path d="M5.2 17.5a7.5 7.5 0 1 1 13.6 0Z" /><circle cx="12" cy="12" r="2.5" /><path d="M3 20.5h18" /></>],
-  ['Lockout Service', <><circle cx="8" cy="15.5" r="4" /><path d="M10.8 12.7L20 3.5M16.5 7l2.5 2.5M14 9.5l2 2" /></>],
-  ['Fuel Delivery', <><path d="M4 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16M2.5 21h13" /><path d="M7 7h4v4H7z" /><path d="M14 9h2a2 2 0 0 1 2 2v6a1.5 1.5 0 0 0 3 0V8l-3-3" /></>],
-  ['Winching', <><rect x="3" y="8" width="8" height="8" rx="1.5" /><path d="M7 8v8M2 19.5h10M11 12h6.5v3a2 2 0 0 0 4 0" /></>],
-  ['Accident Assistance', <><path d="M12 3.5L2.5 20h19L12 3.5z" /><path d="M12 10v4.5M12 17.2v.01" /></>],
+  ['Towing', <Truck key="i" aria-hidden="true" />],
+  ['Battery jump start', <BatteryCharging key="i" aria-hidden="true" />],
+  ['Flat tire assistance', <LifeBuoy key="i" aria-hidden="true" />],
+  ['Lockout service', <KeyRound key="i" aria-hidden="true" />],
+  ['Fuel delivery', <Fuel key="i" aria-hidden="true" />],
+  ['Winching', <WinchIcon key="i" />],
+  ['Accident assistance', <TriangleAlert key="i" aria-hidden="true" />],
 ];
+const ROADSIDE_PHONE = { tel: '+19204614188', display: '(920) 461-4188' };
 
 export default function Home() {
   return (
@@ -112,10 +121,10 @@ export default function Home() {
           <p className="lead" data-reveal>One silent urgent signal sends your identity, GPS location, and incident details to your trusted contacts and a trained personal coordinator.</p>
         </div>
         <AutoAccordion items={[
-          { title: 'Identity', body: <p>Your name and key identification details.</p>, image: 'untitled-09-july-2026-at-11-38-19-1.webp', alt: 'My Guardian Link app — Arm My Guardian Link screen' },
-          { title: 'GPS Location', body: <p>Real-time location at the moment of the signal.</p>, image: 'chatgpt-image-may-25-2026-03-00-28-pm-e1779701764908.webp' },
+          { title: 'Identity', body: <p>Your name and key identification details.</p>, image: 'solution-identity.webp', alt: 'My Guardian Link app — profile screen with name, mobile number, email and personal details' },
+          { title: 'GPS Location', body: <p>Real-time location at the moment of the signal.</p>, image: 'solution-gps-location.webp', alt: 'My Guardian Link app — live map showing the user’s location pin and street address' },
           { title: 'Incident Details', body: <p>Type of emergency, time, and any details you provide.</p>, image: 'what-trusted-cordinator-sees-1.webp' },
-          { title: 'Trusted Contacts', body: <p>The people you choose receive instant alerts.</p>, image: 'page3-block5-2-e1780066345642.webp' },
+          { title: 'Trusted Contacts', body: <p>The people you choose receive instant alerts.</p>, image: 'solution-trusted-contacts.webp', alt: 'My Guardian Link app — Add trusted contact screen listing connected trusted contacts' },
           { title: 'Personal Coordinator', body: <p>A trained response coordinator reviews your signal, and can escalate to 911 immediately.</p>, image: 'support-banner-mgl-1.webp' },
         ]} />
       </section>
@@ -172,29 +181,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Roadside */}
+      {/* Roadside — every service is coming soon */}
       <section className="panel split split--road" id="roadside-assistance" data-section="roadside">
         <div className="split__body">
-          <SectionTag icon="tow">Roadside Assistance</SectionTag>
-          <SplitWords className="h2" text="Help when You Need It most." />
-          <p className="lead" data-reveal>Fast, reliable roadside assistance, 24/7. Wherever you are, we are just one tap away.</p>
-          <h4 className="mini-title" data-reveal>service we provide</h4>
+          <p className="road__status" data-reveal><span className="road__dot" aria-hidden="true" /><span>Roadside assistance · <span className="road__nowrap">Coming soon</span></span></p>
+          <SplitWords className="h2 road__title" text="Help when you need it most." />
+          <p className="lead road__lead" data-reveal>Fast, reliable roadside assistance, 24/7. Wherever you are, you&apos;ll be one tap away.</p>
+          <div className="road__ctas" data-reveal>
+            <Btn a={{ label: 'Get Protected Now', href: '/pricing/' }} variant="cta" className="road__btn" />
+            <a className="btn btn--ghost road__btn" href={`tel:${ROADSIDE_PHONE.tel}`} aria-label={`Call us at ${ROADSIDE_PHONE.display}`}>
+              <Phone aria-hidden="true" className="road__phone" />Call us
+            </a>
+          </div>
+          <div className="road__svc-head" data-reveal>
+            <h3>Services we&apos;ll provide</h3>
+            <span className="road__pill">Coming soon</span>
+          </div>
           <ul className="svc" data-stagger>
-            {ROADSIDE.map(([label, icon]) => (
-              <li key={label} className="svc__item">
-                <span className="svc__icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{icon}</svg>
-                </span>
+            {ROADSIDE.map(([label, icon], i) => (
+              <li key={label} className={i === ROADSIDE.length - 1 ? 'svc__item svc__item--wide' : 'svc__item'}>
+                <span className="svc__icon">{icon}</span>
                 <span className="svc__label">{label}</span>
               </li>
             ))}
           </ul>
-          <span className="btn btn--soon" data-reveal>Coming Soon</span>
         </div>
-        <div className="split__media">
-          <div className="img-reveal road__wide" data-reveal-img><Img src="roadside-assistance.webp" data-parallax-img="" /></div>
-          {/* Mobile: clean square crop under the content instead of the vignetted wide image */}
-          <figure className="img-reveal road__square" data-reveal-img><Img src="roadside-assistance-square.webp" className="img-fit" sizes="(max-width: 860px) 100vw, 1px" /></figure>
+        <div className="split__media road__media">
+          {/* Real-ESRGAN 4x upscale of the clean square photo, shown whole (no crop, no parallax zoom) */}
+          <figure className="img-reveal road__card" data-reveal-img>
+            <Img src="roadside-assistance-hd.webp" alt="Roadside technician changing a tire beside a car at sunset" sizes="(max-width: 860px) 100vw, 640px" />
+            <figcaption className="road__badge"><span className="road__dot" aria-hidden="true" />24/7 roadside help — coming soon</figcaption>
+          </figure>
         </div>
       </section>
 

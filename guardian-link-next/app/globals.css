@@ -290,20 +290,51 @@ ul,ol{margin:0;padding:0;list-style:none}
 .chips li{border:1px solid var(--line-strong);border-radius:999px;padding:9px 18px;font-size:15px;transition:background .3s,border-color .3s}
 .chips li:hover{background:var(--orange);border-color:var(--orange)}
 .split--road .btn--soon{align-self:flex-start}
-/* Service grid: hairline-ruled two-column menu, orange line icons */
-.svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:580px;border-top:1px solid var(--line)}
-.svc__item{display:flex;align-items:center;gap:14px;padding:16px 18px;border-bottom:1px solid var(--line);transition:background-color .35s var(--ease)}
-.svc__item:nth-child(odd){padding-left:0;border-right:1px solid var(--line)}
-.svc__icon{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:rgba(236,116,38,.12);color:var(--orange);transition:background-color .35s var(--ease),color .35s var(--ease),transform .5s var(--ease)}
+/* Redesign (mobile-first card grid): navy tiles, coral icon chips, amber "coming soon" accents */
+.split--road{--amber:#F59A3C;--amber-tint:#2B2010;--coral:#FF8A5C;--coral-tint:#2A1A2A;--tile:#10183A;--tile-line:#1C2750;--haze:#A6B0C8}
+.road__status{display:flex;align-items:center;gap:10px;margin:0 0 16px;color:var(--amber);font-size:13px;font-weight:700;letter-spacing:.14em;line-height:1.2;text-transform:uppercase}
+.road__nowrap{white-space:nowrap}
+.road__dot{position:relative;flex:none;width:10px;height:10px;border-radius:50%;background:var(--amber)}
+.road__dot::after{content:"";position:absolute;inset:0;border-radius:inherit;background:inherit;animation:road-ping 1.8s cubic-bezier(0,0,.2,1) infinite}
+@keyframes road-ping{75%,100%{transform:scale(2.2);opacity:0}}
+.road__title{font-size:clamp(36px,4vw,60px);letter-spacing:-.025em;line-height:1.04;max-width:15ch}
+.road__lead{margin-top:18px;color:var(--haze);max-width:44ch}
+.road__ctas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:28px;max-width:440px}
+.road__btn{height:54px;padding:0 18px;border-radius:14px;justify-content:center;font-size:16px}
+.road__btn.btn--ghost{border:1px solid var(--tile-line);gap:10px}
+.road__btn.btn--ghost:hover{border-color:rgba(166,176,200,.5)}
+.road__phone{width:19px;height:19px}
+.road__svc-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:44px 0 16px}
+.road__svc-head h3{font-size:clamp(19px,1.5vw,24px);letter-spacing:-.01em}
+.road__pill{border:1px solid rgba(245,154,60,.5);background:var(--amber-tint);color:var(--amber);border-radius:999px;padding:3px 10px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:600px}
+.svc__item{display:flex;flex-direction:column;justify-content:space-between;gap:18px;min-height:118px;padding:18px;border-radius:18px;background:var(--tile);border:1px solid var(--tile-line)}
+/* 7 services: the last tile spans both columns so every row stays full */
+.svc__item--wide{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:flex-start;min-height:0}
+.svc__icon{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:11px;background:var(--coral-tint);color:var(--coral)}
 .svc__icon svg{width:22px;height:22px}
-.svc__label{font-size:15px;font-weight:500;line-height:1.25;text-wrap:balance}
-.svc__item:hover .svc__icon{background:var(--orange);color:#fff;transform:translateY(-2px)}
+.svc__label{font-size:16px;font-weight:500;line-height:1.2;text-wrap:balance}
+.split--road .road__media{display:flex;align-items:center;justify-content:center;min-height:0;padding:clamp(48px,8vh,96px) var(--pad);background:none}
+.split--road .road__card{position:relative;inset:auto;width:100%;max-width:640px;height:auto;aspect-ratio:1;margin:0;border-radius:28px}
+.split--road .road__card img{height:100%;object-fit:cover}
+.road__badge{position:absolute;z-index:2;left:clamp(14px,1.6vw,22px);bottom:clamp(14px,1.6vw,22px);display:flex;align-items:center;gap:9px;padding:9px 16px;border-radius:999px;background:rgba(20,21,42,.8);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);font-size:14px;font-weight:500}
 @media (max-width:520px){
-  .svc__item{gap:10px;padding:14px 10px}
-  .svc__icon{width:36px;height:36px;border-radius:10px}
-  .svc__icon svg{width:19px;height:19px}
-  .svc__label{font-size:14px}
+  .road__status{font-size:11.5px;letter-spacing:.06em;gap:8px}
+  /* primary button sizes to its label; "Call us" takes the rest, so neither label is ever clipped */
+  .road__ctas{grid-template-columns:auto minmax(0,1fr)}
+  .road__btn{padding:0 20px;font-size:15px}
+  .svc{gap:10px}
+  .svc__item{min-height:110px;padding:16px;border-radius:16px}
+  .svc__item--wide{min-height:0}
+  .svc__icon{width:44px;height:44px;border-radius:10px}
+  .svc__icon svg{width:20px;height:20px}
+  .svc__label{font-size:15px}
+  .road__badge{font-size:13px}
 }
+@media (max-width:359px){
+  .road__ctas{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){.road__dot::after{animation:none}}
 
 /* ---------- CTA ---------- */
 .cta{min-height:100vh;display:grid;place-items:center;text-align:center;padding:clamp(90px,14vh,160px) var(--pad)}
@@ -985,10 +1016,9 @@ h1,h2,h3,h4,h5{font-weight:700}
   .cta__btns .btn--cta{width:100%;justify-content:center}
 }
 
-/* Roadside: square photo under the content on mobile (wide vignetted image on desktop) */
-.road__square{display:none}
+/* Roadside: photo card sits under the content on mobile */
 @media (max-width:860px){
-  .split--road .split__media{min-height:0;padding:0 var(--pad) 48px;background:none}
-  .split--road .road__wide{display:none}
-  .split--road .split__media>.road__square{display:block;position:relative;inset:auto;margin:0;height:auto;aspect-ratio:1}
+  .split--road .split__body{padding-bottom:28px}
+  .split--road .road__media{min-height:0;padding:0 var(--pad) 48px}
+  .split--road .road__card{border-radius:24px}
 }

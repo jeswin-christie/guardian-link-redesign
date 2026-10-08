@@ -208,6 +208,10 @@ export const MEDIA: Record<string, [number, number]> = {
   600,
   600
  ],
+ "roadside-assistance-hd.webp": [
+  1600,
+  1600
+ ],
  "screenshot-2026-07-13-at-2-14-46-pm.webp": [
   231,
   149
@@ -283,5 +287,17 @@ export const MEDIA: Record<string, [number, number]> = {
  "whatsapp-image-2026-07-13-at-6-59-53-am.webp": [
   1448,
   1086
+ ],
+ "solution-identity.webp": [
+  1024,
+  1536
+ ],
+ "solution-gps-location.webp": [
+  737,
+  1600
+ ],
+ "solution-trusted-contacts.webp": [
+  1536,
+  1024
  ]
 };
