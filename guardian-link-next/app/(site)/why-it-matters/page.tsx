@@ -1,6 +1,7 @@
 import PageHero from '@/components/PageHero';
 import { Img, SplitWords, Btn, NextStep, Eyebrow, JsonLd } from '@/components/primitives';
 import { pageMetadata, pageSchema, DISCLAIMER_911, DISCLAIMER_RESPONSE } from '@/lib/meta';
+import { getProtected } from '@/lib/funnel';
 
 export const metadata = pageMetadata('why-it-matters');
 
@@ -14,7 +15,7 @@ export default function WhyItMatters() {
         scale="md"
         footnote={DISCLAIMER_911}
         sub="My Guardian Link supports anxious moments when calling 911 is difficult, unsafe, delayed, or confusing. It will send your precise location, alert your trusted contacts, and connect you immediately to a live response coordinator when every second counts."
-        primary={{ label: 'Get Protected Now', href: '/pricing/' }}
+        primary={getProtected('hero')}
         link={{ label: 'Protect My Organization', open: 'org' }}
         image="8.webp"
       />
@@ -113,7 +114,7 @@ export default function WhyItMatters() {
         <div className="split__body">
           <Eyebrow>Positioning Statement</Eyebrow>
           <SplitWords className="h2" text="Built to Strengthen, Complement and support 911 — not replace it." />
-          <p className="lead" data-reveal>My Guardian Link delivers verified information to right people when calling, speaking, or explaning is difficult.</p>
+          <p className="lead" data-reveal>My Guardian Link delivers verified information to the right people when calling, speaking, or explaining is difficult.</p>
           <p className="tagline" data-reveal>Protect Yourself Before The Call You Cannot Make.</p>
           <div className="pos" data-reveal>
             <h3>{DISCLAIMER_911}</h3>
@@ -126,7 +127,7 @@ export default function WhyItMatters() {
             <article className="card"><h3>Personal coordinator</h3><p>A trained coordinator reviews and relays critical information.</p></article>
           </div>
           <div className="btn-row" data-reveal>
-            <Btn a={{ label: 'Get Protected Now', href: '/pricing/' }} variant="cta" />
+            <Btn a={getProtected('positioning')} variant="cta" />
             <button type="button" className="ulink" data-open="org">Protect My Organization</button>
           </div>
           <NextStep />
@@ -140,16 +141,16 @@ export default function WhyItMatters() {
       <section className="panel sec sec--panel" data-section="after">
         <div className="sec__center">
           <Eyebrow light>Real stories. Real outcomes. Real peace of mind.</Eyebrow>
-          <SplitWords className="h2" text="See what happen after you activate." />
+          <SplitWords className="h2" text="See what happens after you activate." />
         </div>
         <div className="demo">
           <div className="demo__main" data-reveal>
-            <button type="button" className="vcard vcard--tall" data-video="/media/video/demo.mp4" aria-label="Play 60-Second Demo">
+            <button type="button" className="vcard vcard--tall" data-video="/media/video/demo.mp4" aria-label="Play the demo video">
               <Img src="screenshot-2026-07-18-at-2-17-39-pm.webp" sizes="(max-width: 860px) 100vw, 50vw" />
               <span className="vcard__play" />
-              <span className="vcard__cap">60-Second Demo</span>
+              <span className="vcard__cap">Watch the Demo</span>
             </button>
-            <h3>60-Second Demo</h3>
+            <h3>Watch the Demo</h3>
             <p>See how My Guardian Link works when every second counts.</p>
           </div>
           <div className="demo__side" data-reveal style={{ ['--d' as string]: '.1s' }}>

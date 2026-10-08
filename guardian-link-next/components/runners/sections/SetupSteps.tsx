@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Pointer, ShieldCheck, User, Users } from "lucide-react";
+import { CreditCard, ShieldCheck, Smartphone, User, Users } from "lucide-react";
 import { site } from "@/lib/runners/site";
 import { Button } from "@/components/runners/ui/Button";
 import { Container } from "@/components/runners/ui/Container";
@@ -7,14 +7,15 @@ import { Container } from "@/components/runners/ui/Container";
 type Step = { title: string; detail?: string; icon: LucideIcon };
 
 const steps: Step[] = [
-  { title: "Create your profile.", icon: User },
+  { title: "Create your account.", icon: User },
+  { title: "Choose your plan.", icon: CreditCard },
   { title: "Add your Trusted Circle.", icon: Users },
+  { title: "Download the app.", detail: "App Store or Google Play.", icon: Smartphone },
   {
-    title: "Choose your activation method.",
+    title: "Activate protection.",
     detail: "Tap, voice, earbuds, watch, or silent preset.",
-    icon: Pointer,
+    icon: ShieldCheck,
   },
-  { title: "Enter the User Portal and start protected.", icon: ShieldCheck },
 ];
 
 export function SetupSteps() {
@@ -33,9 +34,9 @@ export function SetupSteps() {
           </p>
         </div>
 
-        <ol data-reveal-stagger className="relative mx-auto mt-10 max-w-md md:mt-12 md:grid md:max-w-none md:grid-cols-4 md:gap-6">
+        <ol data-reveal-stagger className="relative mx-auto mt-10 max-w-md md:mt-12 md:grid md:max-w-none md:grid-cols-5 md:gap-5">
           {/* Desktop horizontal connector (sits behind the number circles) */}
-          <span aria-hidden data-reveal="line-x" className="absolute left-[12.5%] right-[12.5%] top-5 hidden h-0.5 bg-brand-red md:block" />
+          <span aria-hidden data-reveal="line-x" className="absolute left-[10%] right-[10%] top-5 hidden h-0.5 bg-brand-red md:block" />
 
           {steps.map(({ title, detail, icon: Icon }, i) => {
             const last = i === steps.length - 1;

@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { CSSProperties, ReactNode } from 'react';
 import { MEDIA } from '@/lib/media';
-import { NEXT_STEP } from '@/lib/meta';
+import { NEXT_STEP, PORTAL } from '@/lib/meta';
 
 /** Illustrations / UI shots with baked-in text: shown whole (contain) inside .img-reveal, never cropped. */
 const FIT_IMAGES = new Set([
@@ -65,8 +65,9 @@ export function SplitChars({ text, line = 0, after }: { text: string; line?: num
 }
 
 /* ---------- Buttons / links ----------
-   href: internal or external link · video: opens the lightbox · open: opens a popup ("org" | "referral") */
-export type Action = { label: string; href?: string; video?: string; open?: 'org' | 'referral' };
+   href: internal or external link · video: opens the lightbox · open: opens a popup ("org" | "referral")
+   cta: placement name for click analytics (rendered as data-cta, see components/CtaTracking.tsx) */
+export type Action = { label: string; href?: string; video?: string; open?: 'org' | 'referral'; cta?: string };
 
 export function Btn({ a, variant = 'cta', className = '', arrow, play }: { a: Action; variant?: string; className?: string; arrow?: boolean; play?: boolean }) {
   const cls = `btn btn--${variant} ${className}`.trim();
@@ -77,24 +78,27 @@ export function Btn({ a, variant = 'cta', className = '', arrow, play }: { a: Ac
       {arrow && <i className="btn__arr" />}
     </>
   );
-  if (a.video) return <button type="button" className={cls} data-video={a.video}>{inner}</button>;
-  if (a.open) return <button type="button" className={cls} data-open={a.open}>{inner}</button>;
-  return <SmartLink href={a.href ?? '#'} className={cls}>{inner}</SmartLink>;
+  if (a.video) return <button type="button" className={cls} data-video={a.video} data-cta={a.cta}>{inner}</button>;
+  if (a.open) return <button type="button" className={cls} data-open={a.open} data-cta={a.cta}>{inner}</button>;
+  return <SmartLink href={a.href ?? '#'} className={cls} cta={a.cta}>{inner}</SmartLink>;
 }
 
 export function TextLink({ a, className = 'ulink' }: { a: Action; className?: string }) {
   if (a.video) return <button type="button" className={className} data-video={a.video}>{a.label}</button>;
   if (a.open) return <button type="button" className={className} data-open={a.open}>{a.label}</button>;
-  return <SmartLink href={a.href ?? '#'} className={className}>{a.label}</SmartLink>;
+  return <SmartLink href={a.href ?? '#'} className={className} cta={a.cta}>{a.label}</SmartLink>;
 }
 
-export function SmartLink({ href, className, children }: { href: string; className?: string; children: ReactNode }) {
+const PORTAL_ORIGIN = new URL(PORTAL).origin;
+
+export function SmartLink({ href, className, children, cta }: { href: string; className?: string; children: ReactNode; cta?: string }) {
   const external = /^(https?:|mailto:|tel:)/.test(href);
   if (external) {
-    const isWeb = href.startsWith('http');
-    return <a href={href} className={className} {...(isWeb ? { target: '_blank', rel: 'noopener' } : {})}>{children}</a>;
+    // Third-party sites open in a new tab; the portal (account setup) is our own funnel, so it stays in this tab.
+    const newTab = href.startsWith('http') && !href.startsWith(PORTAL_ORIGIN);
+    return <a href={href} className={className} data-cta={cta} {...(newTab ? { target: '_blank', rel: 'noopener' } : {})}>{children}</a>;
   }
-  return <Link href={href} className={className}>{children}</Link>;
+  return <Link href={href} className={className} data-cta={cta}>{children}</Link>;
 }
 
 /* ---------- "What happens next" line under every major Get Protected Now button ---------- */

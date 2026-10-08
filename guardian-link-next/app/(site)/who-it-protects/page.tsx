@@ -2,6 +2,7 @@ import PageHero from '@/components/PageHero';
 import { Img, SplitWords, Btn, Eyebrow, JsonLd } from '@/components/primitives';
 import { AUDIENCES, CtaPanel } from '@/components/Sections';
 import { pageMetadata, pageSchema } from '@/lib/meta';
+import { getProtected } from '@/lib/funnel';
 
 export const metadata = pageMetadata('who-it-protects');
 
@@ -19,9 +20,9 @@ export default function WhoItProtects() {
         eyebrow="Who It Protects"
         lines={['Protection That Starts', 'Before The Emergency']}
         scale="lg"
-        sub="My Guardian Link helps prevent risk, protect people in urgent moments, and deter harm with silent activcation, exact location, trusted contact, and real human support."
-        primary={{ label: 'Get Protected Now', href: '/pricing/' }}
-        link={{ label: 'See How It works', href: '/how-it-works/' }}
+        sub="My Guardian Link helps prevent risk, protect people in urgent moments, and deter harm with silent activation, exact location, trusted contact, and real human support."
+        primary={getProtected('hero')}
+        link={{ label: 'See How It Works', href: '/how-it-works/' }}
         image="page4-1-1.webp"
       />
 

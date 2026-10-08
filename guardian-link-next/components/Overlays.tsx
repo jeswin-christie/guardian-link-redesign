@@ -3,8 +3,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { Img } from './primitives';
 import { PORTAL, SUPPORT_FORM } from '@/lib/meta';
+import { signupUrl } from '@/lib/funnel';
 import { lockScroll } from './Motion';
-import Link from 'next/link';
 
 /**
  * Global video lightbox + "Protect My Organization" / "Explore Referral Groups" popups.
@@ -64,7 +64,7 @@ export default function Overlays() {
               <p>An employee benefit that shows your people they are valued, protected, and never alone.</p>
               <div className="modal__btns">
                 <a href={PORTAL} className="btn btn--gold">Log In</a>
-                <Link href="/pricing/" className="btn btn--cta" onClick={() => setModal(null)}>Get Protected Now</Link>
+                <a href={signupUrl()} className="btn btn--cta" data-cta="org-popup">Get Protected Now</a>
                 <button className="btn btn--orange" onClick={() => setModal('referral')}>Explore Referral Groups</button>
                 <a href={SUPPORT_FORM} className="btn btn--ghost" target="_blank" rel="noopener">Contact Support</a>
               </div>
@@ -99,7 +99,7 @@ export default function Overlays() {
               <p>Examples may include veterans groups, battered women&apos;s groups, nonprofits, and other mission-driven organizations. Approval is determined by My Guardian Link support.</p>
               <div className="modal__btns">
                 <a href={PORTAL} className="btn btn--gold">Log In</a>
-                <Link href="/pricing/" className="btn btn--cta" onClick={() => setModal(null)}>Get Protected Now</Link>
+                <a href={signupUrl()} className="btn btn--cta" data-cta="referral-popup">Get Protected Now</a>
                 <a href={SUPPORT_FORM} className="btn btn--ghost" target="_blank" rel="noopener">Contact Support</a>
               </div>
               <p className="modal__note">Contact Support to schedule a video meeting to assist with your Referral Group.</p>

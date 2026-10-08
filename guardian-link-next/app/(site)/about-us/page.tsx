@@ -1,6 +1,7 @@
 import PageHero from '@/components/PageHero';
 import { Img, SplitWords, Eyebrow, JsonLd } from '@/components/primitives';
 import { pageMetadata, pageSchema } from '@/lib/meta';
+import { getProtected } from '@/lib/funnel';
 
 export const metadata = pageMetadata('about-us');
 
@@ -32,7 +33,7 @@ export default function About() {
         eyebrow="Created By Forward Move"
         lines={['About Us']}
         footnote="Protection. Prevention. Response."
-        primary={{ label: 'Get Protected Now', href: '/pricing/' }}
+        primary={getProtected('hero')}
         link={{ label: 'Our Partners', href: '#partners' }}
         image="about-us-banner.webp"
       />
@@ -43,9 +44,7 @@ export default function About() {
         </div>
         <div className="split__body">
           <Eyebrow>Our mission</Eyebrow>
-          <SplitWords className="statement" text="Our mission is to help prevent violence and protect people during vulnerable and urgent moments by making it easier to recognize threats, communicate quickly, and connect with trusted people and trained response support." />
-          <p className="lead" data-reveal><strong>We are especially committed to preventing sexual, gender-based, racial, religious, and other forms of targeted violence.</strong></p>
-          <p className="lead" data-reveal>More than an app, My Guardian Link is a lifeline—bridging the gap between awareness and action through seamless collaboration with support teams and law enforcement. Our platform is built on the belief that prevention, protection, and education are essential to building stronger, better communities. Through onboarding training and user education, we equip every member with the tools and knowledge to recognize threats early, act with confidence, and become a proactive force for protection and prevention.</p>
+          <SplitWords className="statement" text="Our mission is to provide a reliable protection layer that gets critical response moving when seconds matter — by increasing awareness, deterring threats, and speeding up critical communication." />
           <p className="addr" data-reveal><b>Forward Move</b><br />2680 Vernon Drive, Green Bay, WI 54302</p>
         </div>
       </section>
@@ -53,9 +52,9 @@ export default function About() {
       <section className="panel sec sec--black" data-section="who-we-are">
         <div className="sec__head">
           <Eyebrow light>Who We Are</Eyebrow>
-          <SplitWords className="h2 h2--xl" text="Real Peaple. Real Experience. real Protection." />
+          <SplitWords className="h2 h2--xl" text="Real People. Real Experience. Real Protection." />
           <div className="lead lead--light" data-reveal>
-            <p>My Guardian Link was created by people who understand high-stress situations and the importance of a faster way to get help. Our mission is to empower individuals to recognize threats earlier, report concerns safely, and connect with the right people so action can begin sooner.</p>
+            <p>My Guardian Link was created by people who understand high-stress situations and the need for a faster way to get help.</p>
             <p style={{ marginTop: 14 }}>We combine advanced technology with trained response professionals and trusted partnerships to deliver reliable support when every second matters.</p>
           </div>
         </div>
@@ -88,8 +87,9 @@ export default function About() {
 
       <section className="panel band" id="partners" data-section="partners">
         <div className="band__head">
-          <Eyebrow light>Trusted Partners &amp; Integrations</Eyebrow>
-          <SplitWords className="h2" text="TRUSTED PARTNERS & INTEGRATIONS" />
+          <Eyebrow light>Trusted Partners &amp; Infrastructure</Eyebrow>
+          <SplitWords className="h2" text="Trusted Partners & Infrastructure" />
+          <p className="lead lead--light" data-reveal>The companies whose services and infrastructure My Guardian Link is built on.</p>
         </div>
         <div className="partners">
           {PARTNERS.map(([img, name, d]) => (

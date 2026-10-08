@@ -2,7 +2,9 @@
 
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Img } from './primitives';
-import { PORTAL, NEXT_STEP } from '@/lib/meta';
+import { NEXT_STEP } from '@/lib/meta';
+import { signupUrl } from '@/lib/funnel';
+import type { Plan } from '@/lib/plans';
 
 /* ---------- Auto-advancing accordion with cross-fading media ---------- */
 export type AccItem = { title: string; body: ReactNode; image: string; alt?: string };
@@ -86,38 +88,42 @@ export function Faq({ items }: { items: QA[] }) {
 }
 
 /* ---------- Pricing plans with annual / monthly toggle ---------- */
-type Plan = {
-  name: string; tag?: string; blurb: ReactNode; annualMo: string; annualTotal: string; monthly: string;
-  rows: [string, string][]; cta: string; featured?: boolean;
-};
 export function PricingPlans({ plans }: { plans: Plan[] }) {
   const [annual, setAnnual] = useState(true);
   return (
     <>
       <div className="billing" role="group" aria-label="Billing period">
-        <button className={annual ? 'is-on' : ''} onClick={() => setAnnual(true)}>Annual <em>Save up to 50%</em></button>
-        <button className={!annual ? 'is-on' : ''} onClick={() => setAnnual(false)}>Monthly</button>
+        <button className={annual ? 'is-on' : ''} aria-pressed={annual} onClick={() => setAnnual(true)}>Annual <em>Save up to 50%</em></button>
+        <button className={!annual ? 'is-on' : ''} aria-pressed={!annual} onClick={() => setAnnual(false)}>Monthly</button>
         <i className={`billing__knob${annual ? '' : ' is-right'}`} aria-hidden="true" />
       </div>
       <div className="plans" data-stagger>
-        {plans.map((p) => (
-          <article key={p.name} className={`plan${p.featured ? ' plan--featured' : ''}`}>
-            {p.tag && <span className="plan__tag">{p.tag}</span>}
-            <h2 className="plan__name">{p.name}</h2>
-            <div className="plan__blurb">{p.blurb}</div>
-            <div className="plan__price">
-              <b>{annual ? p.annualMo : p.monthly}</b><span>/ mo</span>
-            </div>
-            <p className="plan__bill">{annual ? <>Annual {p.annualTotal}</> : <>Billed monthly</>}</p>
-            <ul className="plan__rows">
-              {p.rows.map(([k, v]) => (
-                <li key={k}><span>{k}</span><b className={v === 'N/A' ? 'na' : ''}>{v}</b></li>
-              ))}
-            </ul>
-            <a href={PORTAL} className={`btn ${p.featured ? 'btn--cta' : 'btn--ghost'} plan__cta`}>{p.cta}</a>
-            {p.cta === 'Get Protected Now' && <p className="next-step plan__next">{NEXT_STEP}</p>}
-          </article>
-        ))}
+        {plans.map((p) => {
+          const free = p.id === 'free';
+          const billing = free ? undefined : annual ? 'annual' : 'monthly';
+          return (
+            <article key={p.id} className={`plan${p.featured ? ' plan--featured' : ''}`}>
+              {p.tag && <span className="plan__tag">{p.tag}</span>}
+              <h2 className="plan__name">{p.name}</h2>
+              <div className="plan__blurb">{p.note && <small>{p.note}</small>}{p.blurb}</div>
+              <div className="plan__price">
+                <b>{annual ? p.annualMo : p.monthly}</b><span>/ month</span>
+              </div>
+              <p className="plan__bill">
+                {free ? 'Free with app download' : annual ? <>Billed annually at {p.annualTotal}</> : 'Billed monthly'}
+              </p>
+              {!free && <p className="plan__alt">{annual ? <>Or {p.monthly}/month, billed monthly</> : <>Or {p.annualMo}/month, billed annually at {p.annualTotal}</>}</p>}
+              <ul className="plan__rows">
+                {p.rows.map(([k, v]) => (
+                  <li key={k}><span>{k}</span><b className={v === 'Not included' ? 'na' : ''}>{v}</b></li>
+                ))}
+              </ul>
+              <a href={signupUrl()} data-cta={`plan-${p.id}`} data-plan={p.id} data-billing={billing}
+                className={`btn ${p.featured ? 'btn--cta' : 'btn--ghost'} plan__cta`}>{p.cta}</a>
+              <p className="next-step plan__next">{NEXT_STEP}</p>
+            </article>
+          );
+        })}
       </div>
     </>
   );

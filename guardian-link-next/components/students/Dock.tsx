@@ -4,8 +4,8 @@
 export default function Dock() {
   return (
     <div className="dock" data-dock="">
-      <p className="dock__price"><strong>$24.99/month</strong>3 people &middot; Try It Free</p>
-      <a className="btn btn--start" href="#plan" data-cta="start">Start Free</a>
+      <p className="dock__price"><strong>$24.99/month</strong>Billed annually &middot; 3 people</p>
+      <a className="btn btn--start" href="https://portal.myguardianlink.com/login" data-cta="start">Start Free</a>
     </div>
   );
 }

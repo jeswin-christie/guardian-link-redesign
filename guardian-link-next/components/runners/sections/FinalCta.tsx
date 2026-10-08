@@ -79,8 +79,6 @@ export function FinalCta() {
           {/* QR: scan on desktop, tap on phones */}
           <a
             href={site.links.portal}
-            target="_blank"
-            rel="noopener noreferrer"
             aria-label={`Scan or tap to set up Runner Protection at ${site.displayPortalUrl}`}
             data-reveal="scale"
             className="group mx-auto flex w-fit flex-col items-center rounded-xl bg-white p-4 text-center shadow-card transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white motion-reduce:hover:translate-y-0 sm:p-5 lg:mx-0"

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { PORTAL } from '@/lib/meta';
+import { signupUrl } from '@/lib/funnel';
 import { scrollToTop } from './Motion';
 import { toggleChat } from './ChatWidget';
 
@@ -56,7 +57,7 @@ export default function PillNav() {
         <button className="pill__menu" onClick={() => setMenu((m) => !m)} aria-label={menu ? 'Close menu' : 'Open menu'} aria-expanded={menu}>
           <span /><span />
         </button>
-        <Link href="/pricing/" className="pill__cta">Get Protected Now</Link>
+        <a href={signupUrl()} className="pill__cta" data-cta="nav">Get Protected Now</a>
         <button className="pill__chat" onClick={toggleChat} aria-label="Chat with us">
           <svg viewBox="0 0 24 24"><path d="M4 5h16v10H9l-5 4V5z" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /><circle cx="9" cy="10" r="1" fill="currentColor" /><circle cx="12" cy="10" r="1" fill="currentColor" /><circle cx="15" cy="10" r="1" fill="currentColor" /></svg>
         </button>
@@ -73,7 +74,7 @@ export default function PillNav() {
         </div>
         <div className="menu__ctas">
           <a href={PORTAL} className="btn btn--gold">Log In</a>
-          <Link href="/pricing/" className="btn btn--cta">Get Protected Now</Link>
+          <a href={signupUrl()} className="btn btn--cta" data-cta="menu">Get Protected Now</a>
         </div>
       </div>
     </>

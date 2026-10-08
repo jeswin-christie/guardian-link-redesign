@@ -21,7 +21,7 @@ Helvetica Neue is self-hosted from `app/fonts/` via `next/font/local` (Light 300
 ## Routes (23, all statically generated)
 
 `/` · `/how-it-works/` · `/features/` (`#devices`, `#coverage-map`) · `/why-it-matters/` · `/who-it-protects/` ·
-`/pricing/` · `/faq/` · `/support/` · `/about-us/` (`#partners`) · `/legal/` · `/account-deletion/` ·
+`/pricing/` · `/faq/` · `/support/` · `/about-us/` (`#partners`) · `/download/` · `/legal/` · `/account-deletion/` ·
 9 policies via `app/[policy]` (privacy-policy, terms-of-use, end-user-license-agreement, refund-policy,
 acceptable-use-policy, sms-calling-and-communication-terms, coverage-and-emergency-disclaimer,
 child-guardian-consent-policy, sponsor-group-admin-acknowledgment).
@@ -72,8 +72,15 @@ use `app/global-not-found.tsx` (renders the main site's 404). The students page 
 
 ## Design rules (reviewer pass, Oct 2026)
 
-- **Nav:** How It Works · Pricing · FAQ · About Us · Log In · Get Protected Now. Features and Why It Matters are linked from the footer only.
+- **Nav:** How It Works · Pricing · FAQ · About Us · Log In · Get Protected Now.
+- **Footer:** How It Works · Pricing · FAQ · About Us · Support + legal row. Features, Why It Matters and Devices are no longer linked from nav or footer (the pages still exist for old links and search).
 - **Primary CTA** (`variant="cta"` / `.btn--cta`, `--cta` orange-red): every Get Protected Now button. Put `<NextStep />` under major ones.
+- **One path to membership:** every Get Protected Now, plan button and Create Free Account goes to account setup in the portal via `lib/funnel.ts` (`getProtected('placement')`, `signupUrl()`) — never hard-code a URL. Name the placement (`cta`) so `components/CtaTracking.tsx` can report the click (`dataLayer` event `cta_click`) and carry ad parameters into signup. The nav "Pricing" link is the only way to the pricing page.
+- **Availability labels** (Included / Future Release …) come from `lib/status.ts` — change a product's status there, not in page copy.
+- **App store links:** `APP_STORE` / `GOOGLE_PLAY` in `lib/meta.ts`.
+- **Prices:** `lib/plans.ts` is the only place plan prices and billing wording live (homepage preview, /pricing/). Annual prices always read "$X/month, billed annually at $Y". The /students/ page repeats the Group price in its own copy — update it there too.
+- **App download:** `/download/` sends phones to their own store and shows both buttons on desktop; use it wherever one "download the app" link or QR code is needed.
+- **Homepage order:** hero → problem → 4 use cases → one silent signal → 4 features → who it protects (6) → why it's different (5) → proof → pricing preview → final CTA. Proof cards use real assets only; add the founder card and real user quotes when the client supplies them (see the comment in `app/(site)/page.tsx`).
 - **Green** (`--green`) is reserved for protected / verified / success: checkmarks, the "911 gets clear information" step. Don't use it for buttons, headlines, links or stats.
 - **No giant decorative type** and no logo inside sections — logo lives in the page header (hero) and footer only.
 - **911 disclaimer:** always use `DISCLAIMER`, `DISCLAIMER_911`, `DISCLAIMER_RESPONSE` from `lib/meta.ts` — never retype it.

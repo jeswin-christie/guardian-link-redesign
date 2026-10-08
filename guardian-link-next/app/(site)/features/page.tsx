@@ -1,6 +1,7 @@
 import PageHero from '@/components/PageHero';
 import { Img, SplitWords, Btn, NextStep, Eyebrow, JsonLd } from '@/components/primitives';
-import { pageMetadata, pageSchema, DISCLAIMER_911, DISCLAIMER_RESPONSE } from '@/lib/meta';
+import { pageMetadata, pageSchema, DISCLAIMER_911, DISCLAIMER_RESPONSE, APP_STORE, GOOGLE_PLAY } from '@/lib/meta';
+import { getProtected } from '@/lib/funnel';
 
 export const metadata = pageMetadata('features');
 
@@ -21,7 +22,7 @@ export default function Features() {
         lines={['Activate with Confidence.', 'Stay in Control.']}
         scale="lg"
         sub="Start protection in the way that feels right for you-quietly, quickly and from anywhere."
-        primary={{ label: 'Get Protected Now', href: '/pricing/' }}
+        primary={getProtected('hero')}
         link={{ label: 'See What Gets Shared', href: '#shared' }}
         image="feature-home-banner.webp"
       />
@@ -40,7 +41,10 @@ export default function Features() {
             <div>
               <h4>Silent activation is available when speaking or drawing attention is unsafe.</h4>
             </div>
-            <Img src="screenshot-2026-07-13-at-2-14-46-pm.webp" alt="Get it on Google Play and Download on the App Store" sizes="230px" className="store-badges" />
+            <div className="footer__stores">
+              <a href={APP_STORE} className="store" target="_blank" rel="noopener" data-cta="features-app-store"><small>Download on the</small>App Store</a>
+              <a href={GOOGLE_PLAY} className="store" target="_blank" rel="noopener" data-cta="features-google-play"><small>Get it on</small>Google Play</a>
+            </div>
           </div>
         </div>
       </section>
@@ -80,7 +84,7 @@ export default function Features() {
           <Eyebrow light>Guided Response</Eyebrow>
           <div>
             <SplitWords className="h2 h2--xl" text="Coordinated Support. Stronger Outcomes." />
-            <p className="lead lead--light" data-reveal>Once activated, your response is mannaged by professionals and the people you trust.</p>
+            <p className="lead lead--light" data-reveal>Once activated, your response is managed by professionals and the people you trust.</p>
           </div>
         </div>
         {GUIDED.map((g) => (
@@ -97,7 +101,7 @@ export default function Features() {
         <div className="sec__center" style={{ marginTop: 'clamp(60px,10vh,120px)', marginBottom: 0, padding: '0 var(--pad)' }}>
           <SplitWords className="h2" text="Protection for anxious moments and urgent response." />
           <p className="lead lead--light" data-reveal>Real support. Real people. Real peace of mind.</p>
-          <div className="btn-row btn-row--center" data-reveal><Btn a={{ label: 'Get Protected Now', href: '/pricing/' }} variant="cta" /></div>
+          <div className="btn-row btn-row--center" data-reveal><Btn a={getProtected('guided-response')} variant="cta" /></div>
           <NextStep className="next-step--center" />
         </div>
       </section>
@@ -129,9 +133,9 @@ export default function Features() {
             </ul>
             <div className="stat stat--inline">
               <b data-num="5800" data-format="comma">5,800</b>
-              <span>My Gaudian Links connects through a central-station emergency response system capable of reaching approximately 5800 U.S. PSAPs / 911 centers.</span>
+              <span>My Guardian Link connects through a central-station emergency response system capable of reaching approximately 5800 U.S. PSAPs / 911 centers.</span>
             </div>
-            <div className="btn-row"><Btn a={{ label: 'Get Protected Now', href: '/pricing/' }} variant="cta" /></div>
+            <div className="btn-row"><Btn a={getProtected('coverage')} variant="cta" /></div>
             <NextStep />
           </div>
           <figure className="coverage__map" data-reveal>

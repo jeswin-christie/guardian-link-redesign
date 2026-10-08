@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Img } from './primitives';
-import { SUPPORT_FORM, DISCLAIMER_911, DISCLAIMER_RESPONSE } from '@/lib/meta';
+import { DISCLAIMER_911, DISCLAIMER_RESPONSE, APP_STORE, GOOGLE_PLAY } from '@/lib/meta';
+import { signupUrl } from '@/lib/funnel';
 
 export default function Footer() {
   return (
@@ -10,29 +11,29 @@ export default function Footer() {
           <Link href="/"><Img src="mgl-horizontal-logo-rev.webp" alt="My Guardian Link" sizes="220px" className="footer__logo" /></Link>
           <p>Smart protection. Connected confidence. Always with you when it matters most.</p>
           <div className="footer__stay">
-            <h5>Stay Connected</h5>
-            <p><b>Download the Free Version</b></p>
-            <p>Get product updates, Prevention &amp; Protection tips with in-app messaging.</p>
+            <h5>Start Free</h5>
+            <a href={signupUrl()} className="btn btn--cta footer__start" data-cta="footer-free" data-plan="free">Create Free Account</a>
+            <p>Then download the app to add trusted contacts and activate protection.</p>
+            <div className="footer__stores">
+              <a href={APP_STORE} className="store" target="_blank" rel="noopener" data-cta="footer-app-store">
+                <small>Download on the</small>App Store
+              </a>
+              <a href={GOOGLE_PLAY} className="store" target="_blank" rel="noopener" data-cta="footer-google-play">
+                <small>Get it on</small>Google Play
+              </a>
+            </div>
           </div>
         </div>
         <nav className="footer__col" aria-label="Product">
           <h5>Product</h5>
-          <Link href="/how-it-works/">How it Works</Link>
-          <Link href="/features/">Features</Link>
-          <Link href="/why-it-matters/">Why It Matters</Link>
-          <Link href="/features/#devices">Devices</Link>
-          <Link href="/pricing/">Plan &amp; Pricing</Link>
-        </nav>
-        <nav className="footer__col" aria-label="Resources">
-          <h5>Resources</h5>
-          <Link href="/faq/">Info Center</Link>
-          <Link href="/features/#coverage-map">Coverage Map</Link>
-          <a href={SUPPORT_FORM} target="_blank" rel="noopener">Support</a>
+          <Link href="/how-it-works/">How It Works</Link>
+          <Link href="/pricing/">Pricing</Link>
+          <Link href="/faq/">FAQ</Link>
         </nav>
         <nav className="footer__col" aria-label="Company">
           <h5>Company</h5>
           <Link href="/about-us/">About Us</Link>
-          <Link href="/about-us/#partners">Partners</Link>
+          <Link href="/support/">Support</Link>
         </nav>
       </div>
 
