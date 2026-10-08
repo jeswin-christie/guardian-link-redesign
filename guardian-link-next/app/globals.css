@@ -288,6 +288,23 @@ ul,ol{margin:0;padding:0;list-style:none}
 .chips li{border:1px solid var(--line-strong);border-radius:999px;padding:9px 18px;font-size:15px;transition:background .3s,border-color .3s}
 .chips li:hover{background:var(--orange);border-color:var(--orange)}
 .split--road .btn--soon{align-self:flex-start}
+/* Service grid: hairline-ruled two-column menu, orange line icons */
+.svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-width:580px;border-top:1px solid var(--line)}
+.svc__item{display:flex;align-items:center;gap:14px;padding:16px 18px;border-bottom:1px solid var(--line);transition:background-color .35s var(--ease)}
+.svc__item:nth-child(odd){padding-left:0;border-right:1px solid var(--line)}
+.svc__icon{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:rgba(236,116,38,.12);color:var(--orange);transition:background-color .35s var(--ease),color .35s var(--ease),transform .5s var(--ease)}
+.svc__icon svg{width:22px;height:22px}
+.svc__label{font-size:15px;font-weight:500;line-height:1.25;text-wrap:balance}
+.svc__item:hover .svc__icon{background:var(--orange);color:#fff;transform:translateY(-2px)}
+.svc__item--more .svc__icon{background:transparent;border:1.5px dashed rgba(236,116,38,.55)}
+.svc__item--more .svc__label{color:var(--muted)}
+.svc__item--more:hover .svc__icon{background:transparent;color:var(--orange);transform:rotate(90deg)}
+@media (max-width:520px){
+  .svc__item{gap:10px;padding:14px 10px}
+  .svc__icon{width:36px;height:36px;border-radius:10px}
+  .svc__icon svg{width:19px;height:19px}
+  .svc__label{font-size:14px}
+}
 
 /* ---------- CTA ---------- */
 .cta{min-height:100vh;display:grid;place-items:center;text-align:center;padding:clamp(90px,14vh,160px) var(--pad)}

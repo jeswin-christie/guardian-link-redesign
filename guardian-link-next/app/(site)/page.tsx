@@ -19,6 +19,18 @@ const SITUATIONS: [string, string][] = [
 ];
 
 
+/* Roadside services: label + 24px line icon (stroke inherits currentColor) */
+const ROADSIDE: [string, React.ReactNode][] = [
+  ['Towing', <><path d="M3 16V9.5L5.5 6H10v10" /><path d="M10 13h11v3" /><path d="M14 13l5-6v3.5" /><circle cx="6.5" cy="17" r="1.8" /><circle cx="17" cy="17" r="1.8" /></>],
+  ['Battery Jump Start', <><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M7 7V4.5h3V7M14 7V4.5h3V7" /><path d="M12.5 10l-2.5 4h3l-2.5 4" /></>],
+  ['Flat Tire Assistance', <><path d="M5.2 17.5a7.5 7.5 0 1 1 13.6 0Z" /><circle cx="12" cy="12" r="2.5" /><path d="M3 20.5h18" /></>],
+  ['Lockout Service', <><circle cx="8" cy="15.5" r="4" /><path d="M10.8 12.7L20 3.5M16.5 7l2.5 2.5M14 9.5l2 2" /></>],
+  ['Fuel Delivery', <><path d="M4 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16M2.5 21h13" /><path d="M7 7h4v4H7z" /><path d="M14 9h2a2 2 0 0 1 2 2v6a1.5 1.5 0 0 0 3 0V8l-3-3" /></>],
+  ['Winching', <><rect x="3" y="8" width="8" height="8" rx="1.5" /><path d="M7 8v8M2 19.5h10M11 12h6.5v3a2 2 0 0 0 4 0" /></>],
+  ['Accident Assistance', <><path d="M12 3.5L2.5 20h19L12 3.5z" /><path d="M12 10v4.5M12 17.2v.01" /></>],
+  ['Add More', <path d="M12 5v14M5 12h14" />],
+];
+
 export default function Home() {
   return (
     <>
@@ -115,11 +127,11 @@ export default function Home() {
           ['Silent Activation.', 'Discreet and fast when it matters most.', 'Silent', '2-being-followed-photo.webp'],
           ['Trusted Contacts Alerted.', 'Instant alerts sent to the people you trust most.', 'Trusted', '8.webp'],
           ['Trained Personal Coordinator.', 'A real response coordinator reviews and acts when needed.', 'Coordinator', 'home-banner-2-e1783070253640.webp'],
-          ['Documented Incident Details.', 'Every signal is recorded for clarity and peace of mind.', 'Documented', 'homw-block-3-highshield-e1779616387559.webp'],
-        ].map(([t, d, , img]) => (
+          ['Documented Incident Details.', 'Every signal is recorded for clarity and peace of mind.', 'Documented', 'what-trusted-cordinator-sees-1.webp', 'Incident record showing identity, live location, message thread and a timestamped event log'],
+        ].map(([t, d, , img, alt]) => (
           <article className="kin" key={t}>
             <div className="kin__text" data-reveal><h3>{t}</h3><p>{d}</p></div>
-            <figure className="kin__img img-reveal" data-reveal-img><Img src={img} data-parallax-img="" /></figure>
+            <figure className="kin__img img-reveal" data-reveal-img><Img src={img} alt={alt} className={alt ? 'img-fit' : undefined} data-parallax-img="" /></figure>
           </article>
         ))}
       </section>
@@ -167,8 +179,15 @@ export default function Home() {
           <SplitWords className="h2" text="Help when You Need It most." />
           <p className="lead" data-reveal>Fast, reliable roadside assistance, 24/7. Wherever you are, we are just one tap away.</p>
           <h4 className="mini-title" data-reveal>service we provide</h4>
-          <ul className="chips" data-stagger>
-            {['Towing', 'Battery Jump Start', 'Flat Tire Assistance', 'Lockout Service', 'Fuel Delivery', 'Winching', 'Accident Assistance', 'Add More'].map((x) => <li key={x}>{x}</li>)}
+          <ul className="svc" data-stagger>
+            {ROADSIDE.map(([label, icon]) => (
+              <li key={label} className={label === 'Add More' ? 'svc__item svc__item--more' : 'svc__item'}>
+                <span className="svc__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{icon}</svg>
+                </span>
+                <span className="svc__label">{label}</span>
+              </li>
+            ))}
           </ul>
           <span className="btn btn--soon" data-reveal>Coming Soon</span>
         </div>
