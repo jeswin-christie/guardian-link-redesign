@@ -126,12 +126,12 @@ export default function Home() {
           ['Silent Activation.', 'Discreet and fast when it matters most.', 'Silent', '2-being-followed-photo.webp'],
           ['Trusted Contacts Alerted.', 'Instant alerts sent to the people you trust most.', 'Trusted', '8.webp'],
           ['Trained Personal Coordinator.', 'A real response coordinator reviews and acts when needed.', 'Coordinator', 'home-banner-2-e1783070253640.webp'],
-          ['Documented Incident Details.', 'Every signal is recorded for clarity and peace of mind.', 'Documented', 'coordinator-incident-record.webp', 'Coordinator reviewing an incident record with identity, live location, message thread and a timestamped event log'],
+          ['Documented Incident Details.', 'Every signal is recorded for clarity and peace of mind.', 'Documented', 'coordinator-incident-dashboard.webp', 'Coordinator reviewing an incident record with identity, live location, message thread and a timestamped event log'],
         ].map(([t, d, , img, alt]) => (
           <article className="kin" key={t}>
             <div className="kin__text" data-reveal><h3>{t}</h3><p>{d}</p></div>
-            {/* Images with alt text are screen shots: same frame height, anchored right so the whole screen stays in view */}
-            <figure className={`kin__img img-reveal${alt ? ' kin__img--screen' : ''}`} data-reveal-img><Img src={img} alt={alt} className={alt ? 'img-fit' : undefined} data-parallax-img="" /></figure>
+            {/* All four frames are 3:2 (the incident dashboard's ratio); images with alt text are shown whole, without parallax drift */}
+            <figure className="kin__img kin__img--3x2 img-reveal" data-reveal-img><Img src={img} alt={alt} className={alt ? 'img-fit' : undefined} data-parallax-img="" /></figure>
           </article>
         ))}
       </section>

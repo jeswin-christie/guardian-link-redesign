@@ -211,7 +211,8 @@ ul,ol{margin:0;padding:0;list-style:none}
 .kin__text p{font-size:15px;color:rgba(255,255,255,.75);max-width:40ch;font-weight:400}
 .kin__img{margin:0;height:clamp(380px,46vw,650px);position:relative}
 .kin__img img{filter:grayscale(.55) contrast(1.05)}
-.img-reveal.kin__img--screen img.img-fit{object-fit:cover;object-position:100% 50%}
+.kin__img.kin__img--3x2{height:auto;aspect-ratio:3/2}
+@media (min-width:861px){.kin:has(>.kin__img--3x2){min-height:clamp(420px,42vw,560px)}}
 .kin:nth-of-type(even) .kin__text{align-self:end;padding-bottom:clamp(30px,6vw,90px)}
 
 .diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--pad);padding:clamp(60px,10vh,120px) var(--pad) 0 clamp(20px,11.5vw,170px);align-items:end}

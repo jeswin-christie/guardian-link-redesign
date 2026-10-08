@@ -120,7 +120,7 @@ export const MEDIA: Record<string, [number, number]> = {
   664,
   812
  ],
- "coordinator-incident-record.webp": [
+ "coordinator-incident-dashboard.webp": [
   1536,
   1024
  ],
