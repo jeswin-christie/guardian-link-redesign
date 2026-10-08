@@ -94,18 +94,16 @@ export default function Home() {
         </div>
         <SignalLayers layers={[
           { key: 'identity', title: 'Identity', body: 'Your name and key identification details.', tags: ['Name', 'Photo', 'Key ID details'],
-            image: 'signal-city-skyline.webp', frame: 'cover', position: '50% 55%', alt: 'City skyline and bay at night',
-            inset: { image: 'solution-identity.webp', alt: 'My Guardian Link profile screen with photo, name, mobile number, email and personal details' } },
+            image: 'solution-identity.webp', frame: 'device', alt: 'My Guardian Link profile screen with photo, name, mobile number, email and personal details' },
           { key: 'location', title: 'GPS Location', body: 'Real-time location at the moment of the signal.', tags: ['Real-time location', 'At the moment of the signal'],
             image: 'signal-city-night.webp', frame: 'cover', position: '40% 60%', alt: 'Empty city street at night',
             inset: { image: 'solution-gps-location.webp', alt: 'My Guardian Link live map with the user’s location pin, coordinates and street address' } },
           { key: 'incident', title: 'Incident Details', body: 'Type of emergency, time, and any details you provide.', tags: ['Type of emergency', 'Time', 'Your details'],
-            image: 'chatgpt-image-may-22-2026-06-14-49-pm.webp', frame: 'cover', position: '50% 34%', alt: 'Woman on a dark street at night checking her phone while a figure follows behind her' },
+            image: 'incident-details.webp', frame: 'cover', position: '72% 50%', alt: 'Response coordinator reviewing an active urgent assist — the user’s message “Someone is following me”, notes, live map, medical details and time-stamped events' },
           { key: 'contacts', title: 'Trusted Contacts', body: 'The people you choose receive instant alerts.', tags: ['People you choose', 'Instant alerts'],
             image: 'solution-trusted-contacts.webp', frame: 'card', alt: 'My Guardian Link Add trusted contact screen with three connected trusted contacts' },
           { key: 'coordinator', title: 'Personal Coordinator', body: 'A trained response coordinator reviews your signal, and can escalate to 911 when needed.', tags: ['Reviews your signal', 'Can escalate to 911'],
-            image: 'support-banner-mgl.webp', frame: 'cover', position: '82% 40%', alt: 'Trained My Guardian Link response coordinator wearing a headset in the response center',
-            inset: { image: 'what-trusted-cordinator-sees-1.webp', frame: 'card', side: 'left', alt: 'Active urgent assist record the coordinator reviews — live map, basic details, the user’s message and time-stamped events' } },
+            image: 'personal-coordinator.webp', frame: 'cover', position: '42% 38%', alt: 'Response coordinator wearing a headset, focused on her screen' },
         ]} />
       </section>
 
