@@ -105,7 +105,7 @@ export default function Home() {
           { key: 'contacts', title: 'Trusted Contacts', body: 'The people you choose receive instant alerts.', tags: ['People you choose', 'Instant alerts'],
             image: 'solution-trusted-contacts.webp', frame: 'card', alt: 'My Guardian Link Add trusted contact screen with three connected trusted contacts' },
           { key: 'coordinator', title: 'Personal Coordinator', body: 'A trained response coordinator reviews your signal, and can escalate to 911 when needed.', tags: ['Reviews your signal', 'Can escalate to 911'],
-            image: 'personal-coordinator.webp', frame: 'cover', position: '42% 38%', alt: 'Response coordinator wearing a headset, focused on her screen' },
+            image: 'support-banner-mgl-1.webp', frame: 'card', alt: 'Trained My Guardian Link response coordinator wearing a headset' },
         ]} />
       </section>
 
