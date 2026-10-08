@@ -56,10 +56,10 @@ export default function Home() {
             <Img src="home-banner-2-e1783070253640.webp" data-parallax-img="" />
           </div>
           <ul className="stairs">
-            <li className="stairs__item" style={{ ['--i' as string]: 3 }}><b>Silent</b><span>Urgent signal</span></li>
-            <li className="stairs__item" style={{ ['--i' as string]: 2 }}><b>U.S.</b><span>Live U.S-Based Response Support</span></li>
-            <li className="stairs__item" style={{ ['--i' as string]: 1 }}><b>911</b><span>Escalation support</span></li>
-            <li className="stairs__item" style={{ ['--i' as string]: 0 }}><b data-num="5800" data-prefix="~" data-format="comma">~5,800</b><span>PSAPs via central-station access</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 0 }}><b>Silent</b><span>Urgent signal</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 1 }}><b>U.S.</b><span>Live U.S-Based Response Support</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 2 }}><b>911</b><span>Escalation support</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 3 }}><b data-num="5800" data-prefix="~" data-format="comma">~5,800</b><span>PSAPs via central-station access</span></li>
           </ul>
         </div>
         <div className="split__body split__body--statement">
