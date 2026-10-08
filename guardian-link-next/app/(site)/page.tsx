@@ -1,5 +1,5 @@
 import PageHero from '@/components/PageHero';
-import { Img, SplitWords, Btn, Eyebrow, JsonLd } from '@/components/primitives';
+import { Img, SplitWords, Btn, Eyebrow, SectionTag, JsonLd } from '@/components/primitives';
 import { AutoAccordion } from '@/components/Interactive';
 import { pageMetadata, pageSchema, DISCLAIMER, DISCLAIMER_911 } from '@/lib/meta';
 import { CtaPanel, AUDIENCES } from '@/components/Sections';
@@ -126,11 +126,12 @@ export default function Home() {
           ['Silent Activation.', 'Discreet and fast when it matters most.', 'Silent', '2-being-followed-photo.webp'],
           ['Trusted Contacts Alerted.', 'Instant alerts sent to the people you trust most.', 'Trusted', '8.webp'],
           ['Trained Personal Coordinator.', 'A real response coordinator reviews and acts when needed.', 'Coordinator', 'home-banner-2-e1783070253640.webp'],
-          ['Documented Incident Details.', 'Every signal is recorded for clarity and peace of mind.', 'Documented', 'what-trusted-cordinator-sees-1.webp', 'Incident record showing identity, live location, message thread and a timestamped event log'],
+          ['Documented Incident Details.', 'Every signal is recorded for clarity and peace of mind.', 'Documented', 'coordinator-incident-record.webp', 'Coordinator reviewing an incident record with identity, live location, message thread and a timestamped event log'],
         ].map(([t, d, , img, alt]) => (
           <article className="kin" key={t}>
             <div className="kin__text" data-reveal><h3>{t}</h3><p>{d}</p></div>
-            <figure className="kin__img img-reveal" data-reveal-img><Img src={img} alt={alt} className={alt ? 'img-fit' : undefined} data-parallax-img="" /></figure>
+            {/* Images with alt text are shown whole (frame matches the photo, no crop) */}
+            <figure className={`kin__img img-reveal${alt ? ' kin__img--whole' : ''}`} data-reveal-img><Img src={img} alt={alt} className={alt ? 'img-fit' : undefined} data-parallax-img="" /></figure>
           </article>
         ))}
       </section>
@@ -139,7 +140,7 @@ export default function Home() {
       <section className="panel band band--compact band--sss" id="see-something-say-something" data-section="see-something">
         <div className="band__head">
           <div>
-            <Eyebrow light>See Something Say Something</Eyebrow>
+            <SectionTag icon="eye">See Something Say Something</SectionTag>
             <SplitWords className="h2" text="You see it. Report It We Help Coordinate the response" />
           </div>
           <div>
@@ -174,7 +175,7 @@ export default function Home() {
       {/* Roadside */}
       <section className="panel split split--road" id="roadside-assistance" data-section="roadside">
         <div className="split__body">
-          <Eyebrow>Roadside assistance</Eyebrow>
+          <SectionTag icon="tow">Roadside Assistance</SectionTag>
           <SplitWords className="h2" text="Help when You Need It most." />
           <p className="lead" data-reveal>Fast, reliable roadside assistance, 24/7. Wherever you are, we are just one tap away.</p>
           <h4 className="mini-title" data-reveal>service we provide</h4>

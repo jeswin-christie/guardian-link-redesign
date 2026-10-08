@@ -211,6 +211,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 .kin__text p{font-size:15px;color:rgba(255,255,255,.75);max-width:40ch;font-weight:400}
 .kin__img{margin:0;height:clamp(380px,46vw,650px);position:relative}
 .kin__img img{filter:grayscale(.55) contrast(1.05)}
+.kin__img.kin__img--whole{height:auto;aspect-ratio:3/2}
 .kin:nth-of-type(even) .kin__text{align-self:end;padding-bottom:clamp(30px,6vw,90px)}
 
 .diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--pad);padding:clamp(60px,10vh,120px) var(--pad) 0 clamp(20px,11.5vw,170px);align-items:end}
@@ -927,6 +928,10 @@ h1,h2,h3,h4,h5{font-weight:700}
 
 /* eyebrow labels removed site-wide */
 .eyebrow,.hero__eyebrow{display:none!important}
+
+/* Section tag (icon + uppercase label), mirrors the live myguardianlink.com section labels */
+.sec-tag{display:flex;align-items:center;gap:12px;margin:0 0 22px;color:var(--orange);font-size:14px;font-weight:700;letter-spacing:.08em;line-height:1.2;text-transform:uppercase}
+.sec-tag svg{flex:none;width:24px;height:24px}
 
 /* ==========================================================================
    Reviewer pass: next-step note under Get Protected Now + mobile-first spacing
