@@ -192,7 +192,9 @@ export default function Home() {
           <span className="btn btn--soon" data-reveal>Coming Soon</span>
         </div>
         <div className="split__media">
-          <div className="img-reveal" data-reveal-img><Img src="roadside-assistance.webp" data-parallax-img="" /></div>
+          <div className="img-reveal road__wide" data-reveal-img><Img src="roadside-assistance.webp" data-parallax-img="" /></div>
+          {/* Mobile: clean square crop under the content instead of the vignetted wide image */}
+          <figure className="img-reveal road__square" data-reveal-img><Img src="roadside-assistance-square.webp" className="img-fit" sizes="(max-width: 860px) 100vw, 1px" /></figure>
         </div>
       </section>
 

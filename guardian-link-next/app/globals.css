@@ -984,3 +984,11 @@ h1,h2,h3,h4,h5{font-weight:700}
   .cta__btns{width:100%}
   .cta__btns .btn--cta{width:100%;justify-content:center}
 }
+
+/* Roadside: square photo under the content on mobile (wide vignetted image on desktop) */
+.road__square{display:none}
+@media (max-width:860px){
+  .split--road .split__media{min-height:0;padding:0 var(--pad) 48px;background:none}
+  .split--road .road__wide{display:none}
+  .split--road .split__media>.road__square{display:block;position:relative;inset:auto;margin:0;height:auto;aspect-ratio:1}
+}

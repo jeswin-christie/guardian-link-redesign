@@ -204,6 +204,10 @@ export const MEDIA: Record<string, [number, number]> = {
   1777,
   885
  ],
+ "roadside-assistance-square.webp": [
+  600,
+  600
+ ],
  "screenshot-2026-07-13-at-2-14-46-pm.webp": [
   231,
   149
