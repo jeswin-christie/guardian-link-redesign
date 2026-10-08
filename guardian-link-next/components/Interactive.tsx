@@ -122,21 +122,3 @@ export function PricingPlans({ plans }: { plans: Plan[] }) {
     </>
   );
 }
-
-/* ---------- Checkout coverage acknowledgment ---------- */
-export function CoverageAck() {
-  const [ok, setOk] = useState(false);
-  return (
-    <div className="ack">
-      <label className={`ack__box${ok ? ' is-on' : ''}`}>
-        <input type="checkbox" checked={ok} onChange={(e) => setOk(e.target.checked)} />
-        <span className="ack__check" aria-hidden="true" />
-        <span>I understand that My Guardian Link requires cellular data or Wi-Fi and that coverage is not guaranteed in every location. My Guardian Link supports urgent communication but does not replace 911 or local emergency services.</span>
-      </label>
-      <p className="ack__must">You must acknowledge this notice before purchase or notification</p>
-      <a href={ok ? PORTAL : undefined} aria-disabled={!ok} className={`btn btn--cta ack__go${ok ? '' : ' is-disabled'}`}
-        onClick={(e) => { if (!ok) e.preventDefault(); }}>Continue to Checkout</a>
-      <p className="ack__secure">Secure checkout. Your information is encrypted and protected.</p>
-    </div>
-  );
-}

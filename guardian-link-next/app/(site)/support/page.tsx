@@ -2,7 +2,7 @@ import Link from 'next/link';
 import PageHero from '@/components/PageHero';
 import { SplitWords, Eyebrow, JsonLd } from '@/components/primitives';
 import { Faq } from '@/components/Interactive';
-import { pageMetadata, pageSchema, SUPPORT_FORM } from '@/lib/meta';
+import { pageMetadata, pageSchema, SUPPORT_FORM, SUPPORT_EMAIL } from '@/lib/meta';
 
 export const metadata = pageMetadata('support');
 
@@ -78,7 +78,7 @@ export default function Support() {
         <div className="bubbles bubbles--3">
           <div className="bubble bubble--round" data-bubble>
             <span className="bubble__n">Email Us</span>
-            <h4><a href="mailto:support@mygaurdianlink.com">support@mygaurdianlink.com</a></h4>
+            <h4><a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a></h4>
             <p>We typically respond within 24 business hours.</p>
           </div>
           <div className="bubble bubble--round" data-bubble>

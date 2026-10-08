@@ -126,10 +126,10 @@ export function Roadside() {
           <div data-reveal="right" className="min-w-0 rounded-xl bg-mist px-4 py-7 sm:px-8 sm:py-9">
             <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-center">
               <h3 className="text-sm font-extrabold uppercase tracking-[0.14em] text-ink sm:text-base">
-                Roadside Assistance Included
+                Roadside Assistance
               </h3>
               <span className="rounded-full bg-brand-red-soft px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-wider text-brand-red-dark">
-                Coming soon
+                Future release
               </span>
             </div>
 

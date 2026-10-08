@@ -144,7 +144,7 @@ export default function WhyItMatters() {
         </div>
         <div className="demo">
           <div className="demo__main" data-reveal>
-            <button type="button" className="vcard vcard--tall" data-video="/media/video/walking-alone.mp4" aria-label="Play 60-Second Demo">
+            <button type="button" className="vcard vcard--tall" data-video="/media/video/demo.mp4" aria-label="Play 60-Second Demo">
               <Img src="screenshot-2026-07-18-at-2-17-39-pm.webp" sizes="(max-width: 860px) 100vw, 50vw" />
               <span className="vcard__play" />
               <span className="vcard__cap">60-Second Demo</span>

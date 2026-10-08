@@ -15,6 +15,8 @@ const nextConfig: NextConfig = {
       { source: '/home-page-white', destination: '/', permanent: true },
       { source: '/elementor-8018', destination: '/', permanent: true },
       { source: '/info-center', destination: '/faq/', permanent: true },
+      // Coverage-acknowledgment page removed (Oct 2026); keep old links working
+      { source: '/checkout', destination: '/pricing/', permanent: true },
     ];
   },
 };

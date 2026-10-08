@@ -13,8 +13,8 @@ const SITUATIONS = [
 
 const PRODUCTS: { n: string; t: string; tag?: [string, string]; d: string }[] = [
   { n: '1', t: 'URGENT ASSIST', d: 'Rapid help when you need it most.' },
-  { n: '2', t: 'ROADSIDE ASSISTANCE', d: 'Get back on the road quickly and safely.' },
-  { n: '3', t: 'URGENT MEDICAL ASSISTANCE', tag: ['NEW RELEASE', ''], d: 'Connect to medical help when every second counts.' },
+  { n: '2', t: 'ROADSIDE ASSISTANCE', tag: ['FUTURE RELEASE', 'future'], d: 'Get back on the road quickly and safely.' },
+  { n: '3', t: 'URGENT MEDICAL ASSISTANCE', tag: ['FUTURE RELEASE', 'future'], d: 'Connect to medical help when every second counts.' },
   { n: '4', t: 'SEE SOMETHING, SAY SOMETHING', d: 'Report concerns. Help keep communities safe.' },
   { n: '5', t: 'TRUSTED CONTACT ASSIST', tag: ['FREEMIUM', ''], d: 'Notify one trusted contact so they can respond and support you.' },
   { n: '6', t: 'FALSE ALARM WORKFLOW', d: 'Confirms accidental activations quickly and helps prevent unnecessary escalation.' },

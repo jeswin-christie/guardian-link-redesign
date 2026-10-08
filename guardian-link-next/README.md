@@ -21,7 +21,7 @@ Helvetica Neue is self-hosted from `app/fonts/` via `next/font/local` (Light 300
 ## Routes (23, all statically generated)
 
 `/` · `/how-it-works/` · `/features/` (`#devices`, `#coverage-map`) · `/why-it-matters/` · `/who-it-protects/` ·
-`/pricing/` · `/faq/` · `/support/` · `/about-us/` (`#partners`) · `/checkout/` · `/legal/` · `/account-deletion/` ·
+`/pricing/` · `/faq/` · `/support/` · `/about-us/` (`#partners`) · `/legal/` · `/account-deletion/` ·
 9 policies via `app/[policy]` (privacy-policy, terms-of-use, end-user-license-agreement, refund-policy,
 acceptable-use-policy, sms-calling-and-communication-terms, coverage-and-emergency-disclaimer,
 child-guardian-consent-policy, sponsor-group-admin-acknowledgment).
@@ -56,7 +56,7 @@ use `app/global-not-found.tsx` (renders the main site's 404). The students page 
 | `app/<route>/page.tsx` | Page content and section order |
 | `components/PageHero.tsx` | Shared hero (blurred media, navy shapes, white headline, asterisk footnote, next-step note under Get Protected Now) |
 | `components/Motion.tsx` | All scroll/reveal motion — pages only add `data-*` attributes |
-| `components/Interactive.tsx` | Auto accordion, FAQ, pricing toggle, checkout acknowledgment |
+| `components/Interactive.tsx` | Auto accordion, FAQ, pricing toggle |
 | `components/Overlays.tsx` | Video lightbox + Protect My Organization / Referral Group popups. Any `data-video="/media/video/x.mp4"` or `data-open="org"` element opens them |
 | `components/PillNav.tsx` | Floating nav, mobile menu, chat prompt |
 | `components/LegalDoc.tsx` + `content/legal/*.json` | Policy renderer with table of contents |
@@ -74,7 +74,7 @@ use `app/global-not-found.tsx` (renders the main site's 404). The students page 
 
 - **Nav:** How It Works · Pricing · FAQ · About Us · Log In · Get Protected Now. Features and Why It Matters are linked from the footer only.
 - **Primary CTA** (`variant="cta"` / `.btn--cta`, `--cta` orange-red): every Get Protected Now button. Put `<NextStep />` under major ones.
-- **Green** (`--green`) is reserved for protected / verified / success: checkmarks, the checkout acknowledgment, the "911 gets clear information" step. Don't use it for buttons, headlines, links or stats.
+- **Green** (`--green`) is reserved for protected / verified / success: checkmarks, the "911 gets clear information" step. Don't use it for buttons, headlines, links or stats.
 - **No giant decorative type** and no logo inside sections — logo lives in the page header (hero) and footer only.
 - **911 disclaimer:** always use `DISCLAIMER`, `DISCLAIMER_911`, `DISCLAIMER_RESPONSE` from `lib/meta.ts` — never retype it.
 
@@ -83,4 +83,3 @@ use `app/global-not-found.tsx` (renders the main site's 404). The students page 
 - Typos from the live site ("Gaurdian", "Roadsite", "Immediatly", "befpre", "Whisper-to Text") are fixed; the support email domain is not.
 - Support email domain is spelled `mygaurdianlink.com` on the live site.
 - Pricing shows the visible live grid ($119.88/yr, "Save up to 50%"); the hidden grid disagrees.
-- "Continue to Checkout" goes to the portal login once the box is ticked; swap in the real checkout URL.

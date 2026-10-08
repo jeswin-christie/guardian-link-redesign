@@ -3,6 +3,12 @@ import pageMeta from '@/content/page-meta.json';
 
 export const SITE = 'https://myguardianlink.com';
 export const PORTAL = 'https://portal.myguardianlink.com/login';
+/** Account creation = the portal's phone-number sign-in (verified 2026-10-08: portal.myguardianlink.com/ redirects here; no separate signup route).
+ *  The portal reads only `returnTo`, `source` and `code` — it cannot preserve a chosen plan yet. */
+export const SIGNUP = PORTAL;
+export const APP_STORE = 'https://apps.apple.com/us/app/my-guardian-link/id6782908401';
+export const GOOGLE_PLAY = 'https://play.google.com/store/apps/details?id=com.my_guardian_link';
+export const SUPPORT_EMAIL = 'support@myguardianlink.com';
 export const SUPPORT_FORM = 'https://link.yougetitfirst.com/widget/form/KzxeNUNyIwEYjMV3Z1ux';
 /** GoHighLevel chat widget "My Guardian Help Desk" (location Ab2vxQ5yR5MIplQBIXB5) */
 /** Sitewide 911 disclaimer — import these everywhere so the wording never drifts. */
