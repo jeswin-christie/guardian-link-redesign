@@ -20,7 +20,7 @@ const FLOW: [string, string][] = [
   ['Your identity and location are sent', 'Your verified identity, phone number, GPS location, emergency type, and time are sent instantly.'],
   ['Your trusted contacts are alerted', 'The people you choose receive an alert with your details and location.'],
   ['A trained response coordinator responds', 'A trained response coordinator reviews your signal and helps guide the response.'],
-  ['911 Escalation', 'When needed, the coordinator can contact 911 and share your verified details.'],
+  ['911 can be contacted when needed', 'The trained response coordinator can contact 911 and share your verified details.'],
 ];
 
 export default function HowItWorks() {
@@ -57,7 +57,7 @@ export default function HowItWorks() {
         <ol className="biglist biglist--sm" data-stagger>
           {SITUATIONS.map((s, i) => <li key={s}><em>{String(i + 1).padStart(2, '0')}</em>{s}</li>)}
         </ol>
-        <p className="statement statement--center statement--sm" data-reveal style={{ marginTop: 'clamp(40px,7vh,72px)' }}>Even when you cannot explain the emergency, your identity, precise location, and urgent signal can still reach trusted contacts and a response coordinator.</p>
+        <p className="statement statement--center statement--sm" data-reveal style={{ marginTop: 'clamp(40px,7vh,72px)' }}>Even when you cannot explain the emergency, your identity, precise location, and urgent signal can still reach trusted contacts and a trained response coordinator.</p>
       </section>
 
       <CtaPanel
