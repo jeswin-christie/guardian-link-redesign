@@ -320,7 +320,15 @@ export const MEDIA: Record<string, [number, number]> = {
   2000,
   1333
  ],
+ "video-poster-babysitter.webp": [
+  1280,
+  720
+ ],
  "video-poster-college-campus.webp": [
+  1280,
+  720
+ ],
+ "video-poster-nurse.webp": [
   1280,
   720
  ],

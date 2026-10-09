@@ -31,9 +31,9 @@ npm start            # serve the production build
 |---|---|
 | **Offer terms** (optional) — what the parent pays today, when billing begins, what "free" means | Not shown on the page: the "To confirm" rows were removed at the user's request (2026-09-14), and "How Start Free Works" now states only the client's confirmed terms. If the company supplies these, add them as tiles in `components/sections/Plan.tsx`. |
 | START FREE destination | Goes to the portal login page, https://portal.myguardianlink.com/login (user, 2026-10-06), with the ad's UTM / fbclid added. For a dedicated checkout, set `NEXT_PUBLIC_START_FREE_URL` (see `.env.example`); one setting updates every START FREE button. |
-| Member-portal link (tapping the QR code in setup step 4) | Goes to `https://myguardianlink.com/download/` (sends each phone to its app store). `NEXT_PUBLIC_PORTAL_URL` overrides it. |
+| Member-portal link (tapping the QR code in setup step 4) | Goes to `https://portal.myguardianlink.com/app?group=PARENTPLAN` (same link as the QR, since 2026-10-09). `NEXT_PUBLIC_PORTAL_URL` overrides it. |
 | Meta Pixel ID | `NEXT_PUBLIC_META_PIXEL_ID`. Empty = no pixel loads. See *Conversion tracking* below. |
-| QR code (setup step 4, the download card) | Points to `https://myguardianlink.com/download/` (Oct 2026). Regenerate with segno if the link changes. |
+| QR code (setup step 4, the download card) | Points to `https://portal.myguardianlink.com/app?group=PARENTPLAN` (client's updated QR, 2026-10-09; redrawn as a sharp SVG with segno). Regenerate with segno if the link changes. |
 | Demo video link | `components/students/sections/Demo.tsx` → `/media/video/demo.mp4` (the main site's demo). With a real player, fire the Video View event on play (see `lib/behaviour/main.js`). |
 | Social proof | Removed (Oct 2026) until real, approved testimonials exist — never invented ones. |
 | Free guide page | Not linked from the landing page since 2026-10-06 — reachable only at `/guide`. The guide page, `/guide` (`app/guide/page.tsx`), is built **only from myguardianlink.com's own wording** (Home, How It Works, Why It Matters, Features, FAQ, Who It Protects) — the site has no guide of its own. Each block in the file names its source page. If the website's wording changes, update the guide to match. |

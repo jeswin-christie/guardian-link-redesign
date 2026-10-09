@@ -17,12 +17,14 @@ type Props = {
   size?: 'full' | 'tall' | 'short';
   /** smaller type for long headlines */
   scale?: 'xl' | 'lg' | 'md';
+  /** Hide the "Next step: …" line shown under a Get Protected Now button (home: user, 2026-10-09). */
+  hideNextStep?: boolean;
   children?: ReactNode;
 };
 
 /** The shared hero: blurred media, large centred headline with an asterisk footnote. */
 export default function PageHero({
-  eyebrow, lines, footnote, sub, primary, link, image, imageMobile, video, size = 'tall', scale = 'xl', children,
+  eyebrow, lines, footnote, sub, primary, link, image, imageMobile, video, size = 'tall', scale = 'xl', hideNextStep = false, children,
 }: Props) {
   return (
     <section className={`panel hero hero--${size} hero--${scale}`} id="top" data-section="top">
@@ -61,7 +63,7 @@ export default function PageHero({
           <div className="hero__ctas">
             {primary && <Btn a={primary} variant="cta" />}
             {link && <TextLink a={link} className="hero__link" />}
-            {primary?.label === 'Get Protected Now' && <NextStep className="hero__next" />}
+            {primary?.label === 'Get Protected Now' && !hideNextStep && <NextStep className="hero__next" />}
           </div>
         )}
         {children}

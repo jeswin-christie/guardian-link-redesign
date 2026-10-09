@@ -31,8 +31,8 @@ export function initMain(page) {
 
   // The QR code in setup step 4's download card (data-cta="portal") goes
   // here when tapped — the phones' route, as a phone can't scan its own
-  // screen. Unset, it keeps its own link: myguardianlink.com/download/,
-  // which sends each phone to its app store.
+  // screen. Unset, it keeps its own link (the same one the QR encodes):
+  // https://portal.myguardianlink.com/app?group=PARENTPLAN
   var PORTAL_URL = process.env.NEXT_PUBLIC_PORTAL_URL || '';
 
   // Meta Pixel ID, from Events Manager. Empty: no pixel loads, and events

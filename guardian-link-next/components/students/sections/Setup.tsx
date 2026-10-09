@@ -36,13 +36,13 @@ export default function Setup() {
             <span className="setup__num" aria-hidden="true">4</span>
             {/* The client's download card (2026-09-14), copy exactly as supplied.
                 The QR is scanned from a desktop and tapped on a phone, which
-                can't scan its own screen. The QR (segno, Oct 2026) and the tap
-                both go to https://myguardianlink.com/download/, which sends each
-                phone to its own app store; desktops see both store buttons.
+                can't scan its own screen. The QR (segno, client's updated code,
+                2026-10-09) and the tap both go to
+                https://portal.myguardianlink.com/app?group=PARENTPLAN.
                 NEXT_PUBLIC_PORTAL_URL (lib/behaviour/main.js) can override the tap. */}
             <div className="app-card">
               <h3 className="h3 app-card__title">Download the myGuardianLink Mobile App</h3>
-              <a className="app-card__qr" href="/download/" data-cta="portal">
+              <a className="app-card__qr" href="https://portal.myguardianlink.com/app?group=PARENTPLAN" data-cta="portal">
                 <img src="/students/assets/img/campaign/qr-app.svg" width={200} height={200}
                      alt="QR code: download the myGuardianLink app" loading="lazy" decoding="async" />
               </a>

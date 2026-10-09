@@ -30,8 +30,8 @@ const FEATURES: [string, string, string, string?][] = [
 /* [video, poster, title, text, data-cta] */
 const PROOF_VIDEOS: [string, string, string, string, string][] = [
   ['demo.mp4', 'screenshot-2026-07-18-at-2-17-39-pm.webp', 'Watch the Demo', 'See how My Guardian Link works when every second counts.', 'proof-demo'],
-  ['college-campus-reality.mp4', 'video-poster-college-campus.webp', 'Student Reality', 'Late night, walking alone. See how her trusted contacts and a response coordinator respond.', 'proof-campus'],
-  ['runners-reality.mp4', 'video-poster-runners.webp', 'Runner Reality', 'Out alone on a run. See how one tap shares her location and alerts the people she trusts.', 'proof-runners'],
+  ['babysitter-reality.mp4', 'video-poster-babysitter.webp', 'Babysitter Reality', 'Alone with three young children when something changes. See how a whisper connects her to a response coordinator.', 'proof-babysitter'],
+  ['nurse-reality.mp4', 'video-poster-nurse.webp', 'Nurse Reality', 'Leaving a night shift and being followed. See how her whisper becomes her name, exact location and help on the way.', 'proof-nurse'],
 ];
 
 const DIFFERENT = ['Silent urgent signal', 'Verified identity', 'GPS location', 'Trusted contacts', 'Trained response coordinator who can contact 911 when needed'];
@@ -44,6 +44,7 @@ export default function Home() {
       {/* 1 · Hero */}
       <PageHero
         size="full"
+        hideNextStep
         lines={['When Danger Finds You,', 'So Do We!']}
         footnote="Strengthens, Complements & Supports 911 — Does Not Replace 911."
         sub={<><strong>Your Personal Protection Link</strong><br />Activate an urgent alert, share your live location, notify trusted contacts, and connect with a trained response coordinator in seconds.</>}
