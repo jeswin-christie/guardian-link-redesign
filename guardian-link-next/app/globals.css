@@ -386,9 +386,6 @@ ul,ol{margin:0;padding:0;list-style:none}
 .pill__login{color:#7a5410!important}
 .pill__cta{height:42px;padding:0 24px;border-radius:999px;background:var(--cta);color:#fff;display:grid;place-items:center;font-size:15.5px;font-weight:700;transition:background .3s;white-space:nowrap}
 .pill__cta:hover{background:var(--cta-hover)}
-.pill__chat{width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;transition:transform .4s var(--ease)}
-.pill__chat svg{width:20px;height:20px}
-.pill__chat:hover{transform:rotate(-12deg) scale(1.06)}
 .pill__menu{display:none;width:42px;height:42px;border-radius:50%;background:rgba(4,15,34,.06);position:relative}
 .pill__menu span{position:absolute;left:13px;right:13px;height:2px;background:var(--navy-page);transition:transform .4s var(--ease)}
 .pill__menu span:first-child{top:17px}.pill__menu span:last-child{top:23px}
@@ -402,6 +399,13 @@ ul,ol{margin:0;padding:0;list-style:none}
 .menu nav a{font-size:clamp(34px,9vw,54px);font-weight:700;letter-spacing:-.02em;line-height:1.15}
 .menu nav a:hover{color:var(--orange)}
 .menu__ctas{display:flex;gap:10px;margin-top:36px;flex-wrap:wrap}
+
+/* chat button — same red icon that used to sit in the pill, now in the bottom-right corner directly under
+   the GHL greeting prompt and chat window (its centre lines up with the prompt's arrow, 49px in from the edge).
+   --mgl-chat-bottom lifts it above the pill where the pill reaches the corner (phones); see ChatWidget.tsx. */
+.chat-fab{position:fixed;right:28px;bottom:calc(var(--mgl-chat-bottom,20px) + 8px);z-index:91;width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .4s var(--ease)}
+.chat-fab svg{width:20px;height:20px}
+.chat-fab:hover{transform:rotate(-12deg) scale(1.06)}
 
 /* chat prompt */
 .chat{position:fixed;right:24px;bottom:100px;z-index:91;display:flex;align-items:center;gap:12px;background:#fff;color:#1d4fb8;border-radius:12px;padding:14px 40px 14px 14px;max-width:310px;box-shadow:0 20px 50px rgba(0,0,0,.35);
@@ -933,12 +937,12 @@ h1,h2,h3,h4,h5{font-weight:700}
 
 /* pill nav on narrow phones: round buttons keep their size, the CTA gives way */
 @media (max-width:520px){
-  .pill__top,.pill__menu,.pill__chat{flex:none}
+  .pill__top,.pill__menu{flex:none}
   .pill__cta{min-width:0;overflow:hidden;text-overflow:ellipsis}
 }
 @media (max-width:360px){
   .pill{gap:5px;padding:6px}
-  .pill__top,.pill__menu,.pill__chat{width:38px;height:38px}
+  .pill__top,.pill__menu{width:38px;height:38px}
   .pill.is-scrolled .pill__top{width:38px;margin-right:5px}
   .pill__menu span{left:11px;right:11px}
   .pill__menu span:first-child{top:15px}.pill__menu span:last-child{top:21px}

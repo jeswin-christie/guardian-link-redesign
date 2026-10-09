@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 import { PORTAL } from '@/lib/meta';
 import { signupUrl } from '@/lib/funnel';
 import { scrollToTop } from './Motion';
-import { toggleChat } from './ChatWidget';
 
 const LINKS = [
   { href: '/how-it-works/', label: 'How It Works' },
@@ -58,9 +57,6 @@ export default function PillNav() {
           <span /><span />
         </button>
         <a href={signupUrl()} className="pill__cta" data-cta="nav">Get Protected Now</a>
-        <button className="pill__chat" onClick={toggleChat} aria-label="Chat with us">
-          <svg viewBox="0 0 24 24"><path d="M4 5h16v10H9l-5 4V5z" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /><circle cx="9" cy="10" r="1" fill="currentColor" /><circle cx="12" cy="10" r="1" fill="currentColor" /><circle cx="15" cy="10" r="1" fill="currentColor" /></svg>
-        </button>
       </nav>
 
       <div className={`menu${menu ? ' is-open' : ''}`} aria-hidden={!menu}>

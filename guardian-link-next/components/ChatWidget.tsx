@@ -8,8 +8,11 @@ import { CHAT_WIDGET_ID } from '@/lib/meta';
  * GoHighLevel / LeadConnector live chat ("My Guardian Help Desk"),
  * the same widget the WordPress site loads. Content, greeting and colours are
  * managed in GHL → Sites → Chat Widget; nothing is configured here except:
- *  - GHL's own round launcher bubble is hidden (it collides with the pill nav);
- *    the red chat button in the pill nav opens the widget instead (toggleChat).
+ *  - GHL's own round launcher bubble is hidden; our red chat button (.chat-fab) takes its
+ *    place in the bottom-right corner, directly under the greeting prompt and chat window,
+ *    and opens the widget instead (toggleChat).
+ *  - Where the pill nav reaches that corner (phones), the widget and the button are lifted
+ *    above the pill so they never sit on top of it (liftAboveNav).
  */
 
 type ChatApi = { isLoaded?: boolean; openWidget: () => void; closeWidget: () => void; isActive: () => boolean };
@@ -17,7 +20,30 @@ declare global {
   interface Window { leadConnector?: { chatWidget?: ChatApi } }
 }
 
-const WIDGET_CSS = '#lc_text-widget--btn{display:none!important}';
+/* --mgl-chat-bottom is set on <html> by liftAboveNav(); custom properties inherit into the shadow root.
+   The widget keeps GHL's 70px launcher space at its bottom — the red button sits there — so that
+   transparent space must let clicks through to the button. */
+const WIDGET_CSS = '#lc_text-widget--btn{display:none!important}'
+  + '#lc_text-widget{bottom:var(--mgl-chat-bottom,20px)!important;pointer-events:none}'
+  + '#lc_text-widget>*{pointer-events:auto}';
+
+/** GHL's launcher footprint: 60px wide, 20px from the right edge. */
+const LAUNCHER_SPACE = 20 + 60 + 12;
+
+/** Lift the widget above the pill nav when the pill would run under the corner button. */
+function liftAboveNav() {
+  const pill = document.querySelector('.pill');
+  const root = document.documentElement.style;
+  if (!pill) { root.removeProperty('--mgl-chat-bottom'); return; }
+  const p = pill.getBoundingClientRect();
+  const vw = document.documentElement.clientWidth;
+  if (p.right > vw - LAUNCHER_SPACE) {
+    // pill::before draws a ring 5px outside the pill
+    root.setProperty('--mgl-chat-bottom', `${Math.round(window.innerHeight - p.top + 5 + 10)}px`);
+  } else {
+    root.removeProperty('--mgl-chat-bottom');
+  }
+}
 
 /** Inject our overrides into the widget's (open) shadow root. Returns true once done. */
 function styleWidget() {
@@ -51,6 +77,17 @@ export function toggleChat() {
 
 export default function ChatWidget() {
   useEffect(() => {
+    // The pill slides in on load and widens when its back-to-top button appears on scroll — re-check each time.
+    liftAboveNav();
+    const pill = document.querySelector('.pill');
+    const ro = new ResizeObserver(liftAboveNav);
+    if (pill) ro.observe(pill);
+    pill?.addEventListener('transitionend', liftAboveNav);
+    window.addEventListener('resize', liftAboveNav);
+    return () => { ro.disconnect(); pill?.removeEventListener('transitionend', liftAboveNav); window.removeEventListener('resize', liftAboveNav); };
+  }, []);
+
+  useEffect(() => {
     if (styleWidget()) return;
     const id = window.setInterval(() => { if (styleWidget()) window.clearInterval(id); }, 100);
     const stop = window.setTimeout(() => window.clearInterval(id), 60000);
@@ -58,12 +95,17 @@ export default function ChatWidget() {
   }, []);
 
   return (
-    <Script
-      id="lc-chat-widget"
-      src="https://widgets.leadconnectorhq.com/loader.js"
-      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-      data-widget-id={CHAT_WIDGET_ID}
-      strategy="afterInteractive"
-    />
+    <>
+      <button className="chat-fab" onClick={toggleChat} aria-label="Chat with us">
+        <svg viewBox="0 0 24 24"><path d="M4 5h16v10H9l-5 4V5z" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /><circle cx="9" cy="10" r="1" fill="currentColor" /><circle cx="12" cy="10" r="1" fill="currentColor" /><circle cx="15" cy="10" r="1" fill="currentColor" /></svg>
+      </button>
+      <Script
+        id="lc-chat-widget"
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        data-widget-id={CHAT_WIDGET_ID}
+        strategy="afterInteractive"
+      />
+    </>
   );
 }
