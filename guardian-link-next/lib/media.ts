@@ -319,5 +319,13 @@ export const MEDIA: Record<string, [number, number]> = {
  "personal-coordinator.webp": [
   2000,
   1333
+ ],
+ "video-poster-college-campus.webp": [
+  1280,
+  720
+ ],
+ "video-poster-runners.webp": [
+  1280,
+  720
  ]
 };

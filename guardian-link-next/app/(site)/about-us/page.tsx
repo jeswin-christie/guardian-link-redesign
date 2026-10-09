@@ -79,8 +79,8 @@ export default function About() {
           <ul className="stairs">
             <li className="stairs__item" style={{ ['--i' as string]: 3 }}><b>Silent</b><span>Urgent Signal</span></li>
             <li className="stairs__item" style={{ ['--i' as string]: 2 }}><b>Live</b><span>U.S.-Based Response Support</span></li>
-            <li className="stairs__item" style={{ ['--i' as string]: 1 }}><b>911</b><span>Contacted When Needed</span></li>
-            <li className="stairs__item" style={{ ['--i' as string]: 0 }}><b data-num="5800" data-prefix="~" data-format="comma">~5,800</b><span>911 centers via central-station access</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 1 }}><b>911</b><span>Escalation Support</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 0 }}><b data-num="5800" data-prefix="~" data-format="comma">~5,800</b><span>Connected 911 Centers</span></li>
           </ul>
         </div>
       </section>
