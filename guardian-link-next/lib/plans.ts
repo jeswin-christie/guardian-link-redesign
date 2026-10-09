@@ -45,6 +45,9 @@ export const PLANS: Plan[] = [
   },
 ];
 
+/** Free plan setup order: the Start Free button opens the portal sign-up, then the app is downloaded. */
+export const FREE_SETUP = 'Create a free account, then download the app';
+
 export const plan = (id: PlanId) => PLANS.find((p) => p.id === id)!;
 
 /** "$9.99/month, billed annually at $119.88" — the exact wording the client asked for. */

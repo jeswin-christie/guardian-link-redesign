@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Img } from './primitives';
 import { NEXT_STEP } from '@/lib/meta';
 import { signupUrl } from '@/lib/funnel';
-import type { Plan } from '@/lib/plans';
+import { FREE_SETUP, type Plan } from '@/lib/plans';
 
 /* ---------- Auto-advancing accordion with cross-fading media ---------- */
 export type AccItem = { title: string; body: ReactNode; image: string; alt?: string };
@@ -110,7 +110,7 @@ export function PricingPlans({ plans }: { plans: Plan[] }) {
                 <b>{annual ? p.annualMo : p.monthly}</b><span>/ month</span>
               </div>
               <p className="plan__bill">
-                {free ? 'Free with app download' : annual ? <>Billed annually at {p.annualTotal}</> : 'Billed monthly'}
+                {free ? FREE_SETUP : annual ? <>Billed annually at {p.annualTotal}</> : 'Billed monthly'}
               </p>
               {!free && <p className="plan__alt">{annual ? <>Or {p.monthly}/month, billed monthly</> : <>Or {p.annualMo}/month, billed annually at {p.annualTotal}</>}</p>}
               <ul className="plan__rows">

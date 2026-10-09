@@ -756,18 +756,18 @@
       "mainEntity": [
        {
         "@type": "Question",
-        "name": "Does My Guardian Link work everywhere?",
+        "name": "Does My Guardian Link replace 911?",
         "acceptedAnswer": {
          "@type": "Answer",
-         "text": "My Guardian Link works on cellular data or Wi-Fi. Performance depends on coverage, connectivity, and device connections."
+         "text": "No. My Guardian Link supports 911 — it does not replace 911. When you cannot call, speak, or explain clearly, it helps share your verified identity, location, and incident details with your trusted contacts and a trained response coordinator, who can contact 911 when needed. If you can safely call 911 yourself, do so."
         }
        },
        {
         "@type": "Question",
-        "name": "Is this a replacement for 911?",
+        "name": "What happens after I activate help?",
         "acceptedAnswer": {
          "@type": "Answer",
-         "text": "No. It is designed to support 911 when you cannot call, speak, or explain clearly."
+         "text": "Your identity, GPS location, and incident details are sent to your trusted contacts and a trained response coordinator. The coordinator reviews your signal and, when needed, can contact 911 and share your verified details."
         }
        },
        {
@@ -775,47 +775,87 @@
         "name": "Who receives my signal?",
         "acceptedAnswer": {
          "@type": "Answer",
-         "text": "Your trusted contacts and a personal coordinator."
+         "text": "Your trusted contacts and a trained response coordinator. Your trusted contacts are the people you choose when you set up your account."
         }
        },
        {
         "@type": "Question",
-        "name": "What does the coordinator do?",
+        "name": "What does the response coordinator do?",
         "acceptedAnswer": {
          "@type": "Answer",
-         "text": "A live coordinator reviews your alert in real time, verifies your location and message, and begins the next response steps immediately."
+         "text": "A trained response coordinator reviews your alert in real time and checks your location and message. They begin the next response steps right away and can contact 911 and share your verified details when needed."
         }
        },
        {
         "@type": "Question",
-        "name": "Does it work if I cannot talk?",
+        "name": "Is my GPS location sent?",
         "acceptedAnswer": {
          "@type": "Answer",
-         "text": "Yes. The system is designed for silent or limited-action situations."
+         "text": "Yes. Your GPS location is sent with your signal when it is available. Accuracy depends on your device, coverage, and connectivity."
         }
        },
        {
         "@type": "Question",
-        "name": "Is my location sent?",
+        "name": "What if I cannot talk?",
         "acceptedAnswer": {
          "@type": "Answer",
-         "text": "Yes, the system sends GPS location when available."
+         "text": "You can send an alert without speaking. My Guardian Link is designed for silent or limited-action situations."
         }
        },
        {
         "@type": "Question",
-        "name": "Can my family be notified?",
+        "name": "Can my family or trusted contacts be notified?",
         "acceptedAnswer": {
          "@type": "Answer",
-         "text": "Yes, trusted contacts can receive the urgent signal."
+         "text": "Yes. The trusted contacts you choose, such as family members, receive the urgent signal. They get an alert with your message, location, and quick action options."
         }
        },
        {
         "@type": "Question",
-        "name": "Is there a record?",
+        "name": "Does My Guardian Link work everywhere?",
         "acceptedAnswer": {
          "@type": "Answer",
-         "text": "Yes. Incident activity can be time-stamped and documented for accountability."
+         "text": "My Guardian Link works over cellular data or Wi-Fi. Coverage is not guaranteed in every location, and performance depends on coverage, connectivity, and device connections."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Is there a record of the incident?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. Incident activity can be time-stamped and documented for accountability. This gives you a clear record of what happened and when."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "What happens after I click Get Protected Now?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "You create your account, choose your plan, add trusted contacts, download the app, and activate protection. Setup only takes a few minutes."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Where do I create my account?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "You create your account through the secure My Guardian Link portal. Tap Get Protected Now on any page to open it. You verify your mobile number, then choose your plan and add your trusted contacts."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Where do I download the app?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Download the My Guardian Link app from the App Store on iPhone or Google Play on Android. After you create your account, download the app to activate protection."
+        }
+       },
+       {
+        "@type": "Question",
+        "name": "Can I cancel anytime?",
+        "acceptedAnswer": {
+         "@type": "Answer",
+         "text": "Yes. There is no long-term commitment. Cancel within the first 30 days of your first paid membership to request a refund. After you cancel, your membership stays active through the end of your paid billing term, and Apple subscriptions are managed in your Apple account settings."
         }
        },
        {
@@ -823,7 +863,7 @@
         "name": "Who should use this?",
         "acceptedAnswer": {
          "@type": "Answer",
-         "text": "Anyone who may need help when they cannot speak, move, call, or explain clearly."
+         "text": "Anyone who may need help when they cannot speak, move, call, or explain clearly. That includes people who feel unsafe, people at risk of medical distress, students, runners and lone workers, and families who want to protect each other."
         }
        }
       ]

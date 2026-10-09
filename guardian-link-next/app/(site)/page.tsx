@@ -4,7 +4,7 @@ import { SignalLayers } from '@/components/SignalLayers';
 import { pageMetadata, pageSchema } from '@/lib/meta';
 import { CtaPanel, AudienceGrid, HOME_AUDIENCES } from '@/components/Sections';
 import { getProtected, signupUrl } from '@/lib/funnel';
-import { PLANS } from '@/lib/plans';
+import { PLANS, FREE_SETUP } from '@/lib/plans';
 
 export const metadata = pageMetadata('home');
 
@@ -27,7 +27,7 @@ const FEATURES: [string, string, string, string?][] = [
   ['Documented Incident Details', 'Every signal is recorded for clarity and peace of mind.', 'coordinator-incident-dashboard.webp', 'Coordinator reviewing an incident record with identity, live location, message thread and a timestamped event log'],
 ];
 
-const DIFFERENT = ['Silent urgent signal', 'Verified identity', 'GPS location', 'Trusted contacts', 'Trained response coordinator who can escalate to 911'];
+const DIFFERENT = ['Silent urgent signal', 'Verified identity', 'GPS location', 'Trusted contacts', 'Trained response coordinator who can contact 911 when needed'];
 
 export default function Home() {
   return (
@@ -69,7 +69,7 @@ export default function Home() {
       {/* 3 · Use cases — four static cards (replaces the pinned horizontal gallery and its dead space) */}
       <section className="panel cases" data-section="situations">
         <div className="cases__head">
-          <SplitWords className="h2" text="You can't always call. But you can always be connected." />
+          <SplitWords className="h2" text="When calling is difficult, My Guardian Link helps keep you connected." />
           <p className="lead lead--light" data-reveal>My Guardian Link delivers silent protection, precise location, and real people who can act.</p>
         </div>
         <div className="cases__grid" data-stagger>
@@ -104,7 +104,7 @@ export default function Home() {
             image: 'incident-details.webp', frame: 'cover', position: '72% 50%', alt: 'Response coordinator reviewing an active urgent assist — the user’s message “Someone is following me”, notes, live map, medical details and time-stamped events' },
           { key: 'contacts', title: 'Trusted Contacts', body: 'The people you choose receive instant alerts.', tags: ['People you choose', 'Instant alerts'],
             image: 'solution-trusted-contacts.webp', frame: 'card', alt: 'My Guardian Link Add trusted contact screen with three connected trusted contacts' },
-          { key: 'coordinator', title: 'Personal Coordinator', body: 'A trained response coordinator reviews your signal, and can escalate to 911 when needed.', tags: ['Reviews your signal', 'Can escalate to 911'],
+          { key: 'coordinator', title: 'Response Coordinator', body: 'A trained response coordinator reviews your signal and can contact 911 when needed.', tags: ['Reviews your signal', 'Can contact 911 when needed'],
             image: 'support-banner-mgl-1.webp', frame: 'card', alt: 'Trained My Guardian Link response coordinator wearing a headset' },
         ]} />
       </section>
@@ -195,7 +195,7 @@ export default function Home() {
                 <h3>{p.name}</h3>
                 <p>{p.preview}</p>
                 <p className="pp__price">{p.annualMo}<small>/month</small></p>
-                <p className="pp__bill">{free ? 'Free with app download' : <>Billed annually at {p.annualTotal} · or {p.monthly}/month billed monthly</>}</p>
+                <p className="pp__bill">{free ? FREE_SETUP : <>Billed annually at {p.annualTotal} · or {p.monthly}/month billed monthly</>}</p>
                 <a href={signupUrl()} data-cta={`home-plan-${p.id}`} data-plan={p.id} data-billing={free ? undefined : 'annual'}
                   className={`btn ${p.featured ? 'btn--cta' : 'btn--ghost'}`}>{p.cta}</a>
               </article>
