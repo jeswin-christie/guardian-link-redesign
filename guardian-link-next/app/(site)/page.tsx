@@ -14,9 +14,9 @@ export const metadata = pageMetadata('home');
    /pricing/ ("What's included") and /how-it-works/, not here. */
 
 const USE_CASES: [string, string, string][] = [
-  ['2-being-followed-photo.webp', 'Personal Safety', 'Being followed, harassed, or feeling unsafe.'],
+  ['2-being-followed-photo.webp', 'Personal Protection', 'Being followed, harassed, or feeling unsafe.'],
   ['3-medical-distress.webp', 'Medical Distress', 'When you cannot explain what is happening.'],
-  ['4-college-threat.webp', 'Student Protection', 'On campus, off campus, and on the way home.'],
+  ['4-college-threat.webp', 'Student Reality', 'On campus, off campus, and on the way home.'],
   ['6-runner-in-danger.webp', 'Runners & Lone Workers', 'Out alone, early, late, or far from help.'],
 ];
 
@@ -25,6 +25,13 @@ const FEATURES: [string, string, string, string?][] = [
   ['Trusted Contacts Alerted', 'Instant alerts sent to the people you trust most.', '8.webp'],
   ['Trained Response Coordinator', 'A real response coordinator reviews and acts when needed.', 'support-banner-mgl-1.webp'],
   ['Documented Incident Details', 'Every signal is recorded for clarity and peace of mind.', 'coordinator-incident-dashboard.webp', 'Coordinator reviewing an incident record with identity, live location, message thread and a timestamped event log'],
+];
+
+/* [video, poster, title, text, data-cta] */
+const PROOF_VIDEOS: [string, string, string, string, string][] = [
+  ['demo.mp4', 'screenshot-2026-07-18-at-2-17-39-pm.webp', 'Watch the Demo', 'See how My Guardian Link works when every second counts.', 'proof-demo'],
+  ['college-campus-reality.mp4', 'video-poster-college-campus.webp', 'Student Reality', 'Late night, walking alone. See how her trusted contacts and a response coordinator respond.', 'proof-campus'],
+  ['runners-reality.mp4', 'video-poster-runners.webp', 'Runner Reality', 'Out alone on a run. See how one tap shares her location and alerts the people she trusts.', 'proof-runners'],
 ];
 
 const DIFFERENT = ['Silent urgent signal', 'Verified identity', 'GPS location', 'Trusted contacts', 'Trained response coordinator who can contact 911 when needed'];
@@ -39,7 +46,7 @@ export default function Home() {
         size="full"
         lines={['When Danger Finds You,', 'So Do We!']}
         footnote="Strengthens, Complements & Supports 911 — Does Not Replace 911."
-        sub={<><strong>Your Personal Protection Link</strong><br />Activate an urgent alert, share your live location, notify trusted contacts, and connect with a live response coordinator in seconds.</>}
+        sub={<><strong>Your Personal Protection Link</strong><br />Activate an urgent alert, share your live location, notify trusted contacts, and connect with a trained response coordinator in seconds.</>}
         primary={getProtected('hero')}
         link={{ label: 'See How It Works', video: '/media/video/demo.mp4', cta: 'hero-demo' }}
         image="chatgpt-image-may-22-2026-06-26-52-pm.webp"
@@ -151,7 +158,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8 · Proof — what happens after activation. Real assets only.
+      {/* 8 · Proof — three videos (client, Oct 2026: the coordinator view is already shown above and the
+          contact view used the wrong template). Real assets only.
           To add later (client to supply): a "From the Founder" card (Richard's photo + short mission statement)
           and a "What Users Are Saying" card (real, permissioned quotes only — never invented). */}
       <section className="panel sec sec--panel proof" id="proof" data-section="proof">
@@ -159,24 +167,16 @@ export default function Home() {
           <SplitWords className="h2" text="See What Happens After You Activate Help" />
         </div>
         <div className="proof__grid">
-          <article className="proof__card" data-reveal>
-            <button type="button" className="vcard" data-video="/media/video/demo.mp4" data-cta="proof-demo" aria-label="Play the demo video">
-              <Img src="screenshot-2026-07-18-at-2-17-39-pm.webp" sizes="(max-width: 860px) 100vw, 40vw" />
-              <span className="vcard__play" />
-            </button>
-            <h3>Watch the Demo</h3>
-            <p>See how My Guardian Link works when every second counts.</p>
-          </article>
-          <article className="proof__card" data-reveal style={{ ['--d' as string]: '.1s' }}>
-            <div className="shot"><Img src="what-trusted-cordinator-sees-1.webp" alt="Response coordinator dashboard with live GPS map, message and quick-action buttons" sizes="(max-width: 860px) 100vw, 35vw" /></div>
-            <h3>What the Coordinator Sees</h3>
-            <p>A live dashboard with a precise GPS map, your message, and quick buttons to respond fast.</p>
-          </article>
-          <article className="proof__card proof__card--phone" data-reveal style={{ ['--d' as string]: '.2s' }}>
-            <div className="phone"><Img src="what-your-account-recieve.webp" alt="Trusted contact alert on a phone with message, location and quick actions" sizes="260px" /></div>
-            <h3>What Contacts Receive</h3>
-            <p>An instant alert with your message, location, and quick action options.</p>
-          </article>
+          {PROOF_VIDEOS.map(([video, poster, title, text, cta], i) => (
+            <article className="proof__card" data-reveal key={video} style={i ? { ['--d' as string]: `${i / 10}s` } : undefined}>
+              <button type="button" className="vcard" data-video={`/media/video/${video}`} data-cta={cta} aria-label={`Play: ${title}`}>
+                <Img src={poster} sizes="(max-width: 860px) 100vw, 33vw" />
+                <span className="vcard__play" />
+              </button>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -203,8 +203,15 @@ export default function Home() {
           })}
         </div>
         <div className="pp__foot" data-reveal>
-          <Btn a={{ label: 'Compare Plans', href: '/pricing/', cta: 'home-compare' }} variant="ghost" arrow />
           <NextStep className="next-step--center" />
+        </div>
+        <div className="pp__refund" data-reveal>
+          <div>
+            <h3>30-Day Refund Policy · Cancel Anytime · No Long-Term Commitment</h3>
+            <p>Cancel within the first 30 days of your first paid membership to request a refund. After 30 days, your membership remains active through the end of your paid billing term.</p>
+            <p className="pp__refund-note">Free Plan does not include Urgent Assist or live response coordination.</p>
+          </div>
+          <button type="button" className="btn btn--cta" data-open="org" data-cta="home-org">Protect My Organization</button>
         </div>
       </section>
 

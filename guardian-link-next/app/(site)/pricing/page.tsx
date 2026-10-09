@@ -11,7 +11,7 @@ const AFTER = ['Create your account', 'Verify your phone', 'Choose or confirm yo
 
 /* Live products first, then future releases — labels come from lib/status.ts */
 const INCLUDED: Item[] = [
-  PRODUCTS.urgentAssist, PRODUCTS.trustedContactAssist, PRODUCTS.seeSomethingSaySomething, PRODUCTS.falseAlarmWorkflow,
+  PRODUCTS.urgentAssist, PRODUCTS.trustedContactAssist, PRODUCTS.seeSomethingSaySomething, PRODUCTS.trustedNetworkAssist,
   PRODUCTS.roadsideAssistance, PRODUCTS.urgentMedicalAssistance, PRODUCTS.tornadoAlert, PRODUCTS.wildfireAlert,
 ];
 
@@ -54,7 +54,7 @@ export default function Pricing() {
       <section className="panel sec sec--page" data-section="included">
         <div className="sec__center">
           <SplitWords className="h2" text="What's included today — and what's coming" />
-          <p className="lead" data-reveal>Urgent Assist and See Something Say Something are included on the Single and Group plans. Trusted Contact Assist is included on every plan.</p>
+          <p className="lead" data-reveal>Urgent Assist, Trusted Network Assist, and See Something Say Something are included on the Single and Group plans. Trusted Contact Assist is included on every plan.</p>
         </div>
         <div className="incl" data-stagger>
           {INCLUDED.map((p) => (

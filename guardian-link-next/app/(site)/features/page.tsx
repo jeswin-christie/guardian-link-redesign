@@ -8,9 +8,9 @@ export const metadata = pageMetadata('features');
 const METHODS = ['One-Touch Instant', 'Speech-to-Text', 'Whisper-to-Text', 'Hands-Free Voice', '“Hey Siri” Available', '“Hey Google” Coming Soon', 'Smart Watch Ready', 'Earbuds Ready'];
 
 const GUIDED: { t: string; d: string; extra?: string; list: string[]; word: string; img: string }[] = [
-  { t: 'Live Response Coordinator', d: 'Reviews your alert, location, and message, communicates with you, and helps coordinate next steps.', extra: 'Coordinator availability: 24/7/365', list: ['Reviews your information', 'Communicates with you', 'Takes next steps'], word: 'Coordinator', img: 'support-banner-mgl-1.webp' },
+  { t: 'Trained Response Coordinator', d: 'Reviews your alert, location, and message, communicates with you, and helps coordinate next steps.', extra: 'Coordinator availability: 24/7/365', list: ['Reviews your information', 'Communicates with you', 'Takes next steps'], word: 'Coordinator', img: 'support-banner-mgl-1.webp' },
   { t: 'Trusted Contact', d: 'Receive your alert and live location so they can call you or navigate directly to you.', list: ['Instant signal', 'Location and details share', 'Call or find you'], word: 'Trusted', img: 'what-your-account-recieve.webp' },
-  { t: 'Escalation When Needed', d: 'When needed, verified information may be sent through the emergency-response system to support a faster, clearer response.', list: ['Escalates to 911', 'Shares verified details', 'Stay on the line'], word: 'Escalation', img: 'home-banner-2-e1783070253640.webp' },
+  { t: '911 Contacted When Needed', d: 'When needed, the trained response coordinator can contact 911 and share your verified details to support a faster, clearer response.', list: ['911 can be contacted when needed', 'Shares verified details', 'Stay on the line'], word: '911', img: 'home-banner-2-e1783070253640.webp' },
 ];
 
 export default function Features() {
