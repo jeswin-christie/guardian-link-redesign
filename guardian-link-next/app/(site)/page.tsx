@@ -45,9 +45,10 @@ export default function Home() {
       <PageHero
         size="full"
         hideNextStep
+        kicker="Your Personal Protection Link"
         lines={['When Danger Finds You,', 'So Do We!']}
         footnote="Strengthens, Complements & Supports 911 — Does Not Replace 911."
-        sub={<><strong>Your Personal Protection Link</strong><br />Activate an urgent alert, share your live location, notify trusted contacts, and connect with a trained response coordinator in seconds.</>}
+        sub="Activate an urgent alert, share your live location, notify trusted contacts, and connect with a trained response coordinator in seconds."
         primary={getProtected('hero')}
         link={{ label: 'See How It Works', video: '/media/video/demo.mp4', cta: 'hero-demo' }}
         image="chatgpt-image-may-22-2026-06-26-52-pm.webp"
