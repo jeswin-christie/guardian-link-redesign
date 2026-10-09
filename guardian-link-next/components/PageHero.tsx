@@ -4,6 +4,8 @@ import { Img, SplitChars, Btn, TextLink, NextStep, type Action } from './primiti
 
 type Props = {
   eyebrow?: string;
+  /** Bold line shown above the headline (home: "Your Personal Protection Link"). */
+  kicker?: string;
   /** Headline lines. The asterisk is added after the last line when `footnote` is given. */
   lines: string[];
   footnote?: string;
@@ -24,7 +26,7 @@ type Props = {
 
 /** The shared hero: blurred media, large centred headline with an asterisk footnote. */
 export default function PageHero({
-  eyebrow, lines, footnote, sub, primary, link, image, imageMobile, video, size = 'tall', scale = 'xl', hideNextStep = false, children,
+  eyebrow, kicker, lines, footnote, sub, primary, link, image, imageMobile, video, size = 'tall', scale = 'xl', hideNextStep = false, children,
 }: Props) {
   return (
     <section className={`panel hero hero--${size} hero--${scale}`} id="top" data-section="top">
@@ -51,6 +53,7 @@ export default function PageHero({
 
       <div className="hero__center" data-hero-center>
         {eyebrow && <p className="hero__eyebrow"><i />{eyebrow}</p>}
+        {kicker && <p className="hero__kicker">{kicker}</p>}
         <h1 className="hero__title" aria-label={lines.join(' ')}>
           {lines.map((l, i) => (
             <SplitChars key={i} text={l} line={i}

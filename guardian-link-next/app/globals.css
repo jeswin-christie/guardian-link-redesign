@@ -1264,3 +1264,9 @@ h1,h2,h3,h4,h5{font-weight:700}
 .steps--page li{font-size:clamp(15px,1.05vw,17px);line-height:1.55}
 .steps--page b{font-size:clamp(18px,1.4vw,22px);margin-bottom:4px}
 .sec--page .flow-proof{justify-content:flex-start}
+
+/* Home hero: "Your Personal Protection Link" as its own bold line above the headline (client, Oct 2026) */
+.hero__kicker{font-size:clamp(24px,2.7vw,46px);font-weight:800;letter-spacing:-.025em;line-height:1.1;color:#fff;margin-bottom:clamp(14px,2.4vh,26px);
+  text-shadow:0 2px 20px rgba(2,12,29,.7);opacity:0;transform:translateY(12px);transition:opacity .9s var(--ease) .2s,transform .9s var(--ease) .2s}
+.is-ready .hero__kicker{opacity:1;transform:none}
+@media (max-width:560px){.hero__kicker{font-size:clamp(20px,5.6vw,30px);text-wrap:balance}}
