@@ -13,7 +13,19 @@ import { CHAT_WIDGET_ID } from '@/lib/meta';
  *    and opens the widget instead (toggleChat).
  *  - Where the pill nav reaches that corner (phones), the widget and the button are lifted
  *    above the pill so they never sit on top of it (liftAboveNav).
+ *  - The greeting prompt shows on every page load. GHL hides it for 24 hours once the visitor
+ *    opens the chat or closes the prompt; that flag is cleared before the widget loads.
  */
+
+/* Runs when this client chunk loads — before hydration, so before the afterInteractive loader script. */
+if (typeof window !== 'undefined') {
+  try {
+    // Key is `${locationId}lead-connecter-text-widget-prompt-dismissed` (GHL's own spelling)
+    Object.keys(window.localStorage)
+      .filter((k) => k.endsWith('lead-connecter-text-widget-prompt-dismissed'))
+      .forEach((k) => window.localStorage.removeItem(k));
+  } catch { /* storage blocked: GHL just keeps its default behaviour */ }
+}
 
 type ChatApi = { isLoaded?: boolean; openWidget: () => void; closeWidget: () => void; isActive: () => boolean };
 declare global {
