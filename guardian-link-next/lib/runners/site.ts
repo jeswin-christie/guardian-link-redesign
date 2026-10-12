@@ -4,7 +4,7 @@
  * This page is reused for many runner influencers — swap the `partner`
  * block (name + logo) and links per influencer. Everything else stays generic.
  */
-import { SITE } from "@/lib/meta";
+import { ORIGIN } from "@/lib/meta";
 
 export type Partner = {
   /** Influencer / run club name, e.g. "Coach Sam Rivera" */
@@ -32,7 +32,7 @@ export const site = {
   } as Partner | null,
 
   /** Public URL of the site — used for absolute social-preview links (WhatsApp, etc.). Lives at /runners/. */
-  siteUrl: SITE,
+  siteUrl: ORIGIN,
 
   /**
    * CTA destinations (client proof, 2026-10-12). Every "Set Up…" / "Activate…" button and

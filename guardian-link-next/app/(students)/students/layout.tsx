@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { PT_Sans, Roboto_Slab } from 'next/font/google';
 
-import { SITE } from '@/lib/meta';
+import { ORIGIN, SITE } from '@/lib/meta';
 
 import '@/styles/students/styles.css';
 import '@/styles/students/intro.css';
@@ -24,11 +24,11 @@ const ptSans = PT_Sans({
   variable: '--font-pt-sans',
 });
 
-// og:image must be an ABSOLUTE URL for Facebook — uses the main site's address.
+// og:image must be an ABSOLUTE URL for Facebook — resolved against the deployment's own address (ORIGIN).
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE),
-  alternates: { canonical: '/students/' },
+  metadataBase: new URL(ORIGIN),
+  alternates: { canonical: `${SITE}/students/` },
   title: 'myGuardianLink — College Parent Protection',
   description:
     'myGuardianLink connects college students to trusted people and a live response coordinator when seconds matter.',
