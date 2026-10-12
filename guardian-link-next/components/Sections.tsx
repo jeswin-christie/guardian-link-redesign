@@ -4,7 +4,7 @@ import { getProtected } from '@/lib/funnel';
 
 /** [image, label, optional link] — linked boxes open that audience's own page. Full list: /who-it-protects/ */
 export const AUDIENCES: [string, string, string?][] = [
-  ['1-students.webp', 'Students', '/students/'],
+  ['1-students.webp', 'Students', '/parentplan/'],
   ['2-nurse.webp', 'Nurses & Healthcare Workers'],
   ['3-daycare.webp', 'Daycare Providers'],
   ['4-runners.webp', 'Runners', '/runners/'],
@@ -17,7 +17,7 @@ export const AUDIENCES: [string, string, string?][] = [
 /** The six most likely converters, shown on the homepage (client review, Oct 2026). */
 export const HOME_AUDIENCES: [string, string, string?][] = [
   ['8-women-walking.webp', 'Women on the Move'],
-  ['1-students.webp', 'Students', '/students/'],
+  ['1-students.webp', 'Students', '/parentplan/'],
   ['lone-worker.webp', 'Lone Workers'],
   ['7-seniors.webp', 'Seniors Alone & Caregivers'],
   ['2-nurse.webp', 'Healthcare Workers'],
@@ -31,7 +31,7 @@ export function AudienceGrid({ items, six }: { items: [string, string, string?][
         <figure className={href ? 'aud aud--link' : 'aud'} key={img + label}>
           <Img src={img} sizes={six ? '(max-width: 860px) 50vw, 33vw' : '(max-width: 860px) 50vw, 25vw'} />
           <figcaption>{label}</figcaption>
-          {/* Plain <a>: /students/ and /runners/ have their own root layouts, so it's a full page load anyway */}
+          {/* Plain <a>: /parentplan/ and /runners/ have their own root layouts, so it's a full page load anyway */}
           {href && <a className="aud__link" href={href} aria-label={label} />}
         </figure>
       ))}

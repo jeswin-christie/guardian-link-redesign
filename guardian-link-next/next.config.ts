@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   // 75 is the default; 85 is used by the /runners/ page photos
   images: { formats: ['image/avif', 'image/webp'], qualities: [75, 85] },
-  // Three root layouts (main site, /students/, /runners/) — app/global-not-found.tsx serves the 404
+  // Three root layouts (main site, /parentplan/, /runners/) — app/global-not-found.tsx serves the 404
   experimental: { globalNotFound: true },
   async redirects() {
     // 301s carried over from the WordPress site (seo/redirects.csv)
@@ -17,6 +17,10 @@ const nextConfig: NextConfig = {
       { source: '/info-center', destination: '/faq/', permanent: true },
       // Coverage-acknowledgment page removed (Oct 2026); keep old links working
       { source: '/checkout', destination: '/pricing/', permanent: true },
+      // College-parent page moved from /students/ to /parentplan/ (Oct 2026); keep old links working.
+      // Exact paths only: /students/assets/* (the page's images) stays where it is.
+      { source: '/students', destination: '/parentplan/', permanent: true },
+      { source: '/students/guide', destination: '/parentplan/guide/', permanent: true },
     ];
   },
 };
