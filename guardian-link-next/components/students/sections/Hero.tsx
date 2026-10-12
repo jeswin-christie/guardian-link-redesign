@@ -1,4 +1,4 @@
-import { PARENT_PLAN_LABEL, PARENT_PLAN_URL } from '@/lib/students/cta';
+import { PARENT_PLAN_LABEL, PARENT_PLAN_URL, PORTAL_LABEL, PORTAL_URL } from '@/lib/students/cta';
 import { Icon } from '@/components/students/IconSprite';
 
 /* ==========================================================================
@@ -40,6 +40,7 @@ export default function Hero() {
 
           <div className="actions">
             <a className="btn btn--start" href={PARENT_PLAN_URL} data-cta="start">{PARENT_PLAN_LABEL}</a>
+            <a className="btn btn--portal" href={PORTAL_URL} data-cta="portal">{PORTAL_LABEL}</a>
             <a className="btn btn--action" href="#demo">
               <Icon name="play" fill />
               See Protection in Action

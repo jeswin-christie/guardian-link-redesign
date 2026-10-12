@@ -6,7 +6,7 @@
    ========================================================================== */
 
 import { onLoad } from './on-load';
-import { PARENT_PLAN_URL } from '../cta';
+import { PARENT_PLAN_URL, PORTAL_URL } from '../cta';
 
 // page: 'landing' (the campaign page) or 'guide' (/guide). Everything below
 // is shared; only the page-view event differs.
@@ -72,6 +72,9 @@ export function initMain(page) {
   }
 
   pointAll('[data-cta="start"]', START_FREE_URL);
+  // The QR card (data-cta="qr") and "Go to User Portal" (data-cta="portal") keep the ad's parameters too.
+  pointAll('[data-cta="qr"]', START_FREE_URL);
+  pointAll('[data-cta="portal"]', PORTAL_URL);
 
   /* ------------------------------------------------------------------
      3. CONVERSION TRACKING (company feedback 10)
@@ -139,8 +142,10 @@ export function initMain(page) {
       track('video_view', ['trackCustom', 'VideoView'], { video: '1-minute overview' });
     } else if (el.matches('a[href="#demo"]')) {
       track('demo_click', ['trackCustom', 'SeeProtectionClick'], { cta_location: placeOf(el) });
+    } else if (el.matches('[data-cta="qr"]')) {
+      track('cta_click', ['trackCustom', 'StartFreeClick'], { cta_location: 'qr' });
     } else if (el.matches('[data-cta="portal"]')) {
-      track('portal_click', ['trackCustom', 'PortalClick']);
+      track('portal_click', ['trackCustom', 'PortalClick'], { cta_location: placeOf(el) });
     }
   });
 

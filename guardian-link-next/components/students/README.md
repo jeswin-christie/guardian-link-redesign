@@ -30,7 +30,7 @@ npm start            # serve the production build
 | What | Where |
 |---|---|
 | **Offer terms** (optional) — what the parent pays today, when billing begins, what "free" means | Not shown on the page: the "To confirm" rows were removed at the user's request (2026-09-14), and "How Start Free Works" now states only the client's confirmed terms. If the company supplies these, add them as tiles in `components/sections/Plan.tsx`. |
-| GET THE PARENT PLAN destination | Since 2026-10-12 (paid Meta traffic): the paid Parent Plan journey with PARENTPLAN preselected, https://portal.myguardianlink.com/org/PARENTPLAN, with the ad's UTM / fbclid added. Never the free plan. **Test once signed out, through to payment, before ads go live.** For a dedicated checkout, set `NEXT_PUBLIC_PARENT_PLAN_URL` (see `env.example.txt`); `lib/students/cta.ts` holds the default and one setting updates every button. |
+| Campaign links (set up like the runners page, 2026-10-12) | Every GET THE PARENT PLAN button and the QR code: https://portal.myguardianlink.com/app?group=PARENTPLAN. Every GO TO USER PORTAL button (hero, setup, final CTA): https://portal.myguardianlink.com/org/PARENTPLAN. The ad's UTM / fbclid are added to both. Never the free plan. **Test once signed out, through to payment, before ads go live.** `lib/students/cta.ts` holds the defaults; `NEXT_PUBLIC_PARENT_PLAN_URL` / `NEXT_PUBLIC_PARENT_PLAN_PORTAL_URL` override them (see `env.example.txt`). The QR (`public/students/assets/img/campaign/qr-parentplan.svg`, the client's code redrawn as SVG) encodes the app link — regenerate it if that link changes. |
 | Meta Pixel ID | `NEXT_PUBLIC_META_PIXEL_ID`. Empty = no pixel loads. See *Conversion tracking* below. |
 | Demo video link | `components/students/sections/Demo.tsx` → `/media/video/demo.mp4` (the main site's demo). With a real player, fire the Video View event on play (see `lib/behaviour/main.js`). |
 | Social proof | Removed (Oct 2026) until real, approved testimonials exist — never invented ones. |
@@ -149,9 +149,10 @@ The brief allows changes as long as the reason is clear. Each one:
    and tablets it slides up once the hero's GET THE PARENT PLAN has scrolled away,
    and hides again at the final CTA.
 9. **No app download before payment** (2026-10-12, paid Meta traffic).
-   The setup section's download card (QR code, App Store and Google Play
-   links, group code PARENTPLAN) was removed; step 4 now only says the app
-   comes after payment. Steps 1–4 sit in white boxes at every width, each
+   The setup section's download card (App Store and Google Play links)
+   was removed; step 4 now only says the app comes after payment. Later
+   the same day the client asked for the runners page's setup: a QR code
+   (final CTA) to the PARENTPLAN sign-up, and GO TO USER PORTAL buttons. Steps 1–4 sit in white boxes at every width, each
    number beside its box.
 10. **Conversion tracking** — see above.
 11. **The free guide link was removed from the landing page** (user,
@@ -225,7 +226,7 @@ styles/guide.css        guide page only (g- classes), incl. its print layout
 lib/behaviour/intro.js  opening scene behaviour
 lib/behaviour/main.js   launch settings, attribution, tracking, no-tails, FAQ line setting, reveal, dock, smooth anchors
 lib/behaviour/motion.js motion layer behaviour
-public/assets/          logo.png (favicon), logo-white.png, img/campaign/ (photos, og-image.jpg, qr-app.svg)
+public/assets/          logo.png (favicon), logo-white.png, img/campaign/ (photos, og-image.jpg, qr-parentplan.svg)
 .env.example            launch settings
 tools/make-qr.py        regenerates the QR code
 guides/                 client brief, draft and source photos
