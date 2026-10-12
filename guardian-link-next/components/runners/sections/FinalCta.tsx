@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { QRCodeSVG } from "qrcode.react";
 import { site } from "@/lib/runners/site";
 import { Button } from "@/components/runners/ui/Button";
 import { Container } from "@/components/runners/ui/Container";
@@ -83,12 +82,13 @@ export function FinalCta() {
             data-reveal="scale"
             className="group mx-auto flex w-fit flex-col items-center rounded-xl bg-white p-4 text-center shadow-card transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white motion-reduce:hover:translate-y-0 sm:p-5 lg:mx-0"
           >
-            <QRCodeSVG
-              value={site.links.getProtected}
-              level="M"
-              size={140}
-              fgColor="#0a1828"
-              aria-hidden
+            {/* The client's QR (2026-10-12), drawn with segno as a sharp SVG: encodes
+                https://portal.myguardianlink.com/app?group=FALL50. Regenerate if the link changes. */}
+            <img
+              src="/runners/images/qr-fall50.svg"
+              alt=""
+              width={41}
+              height={41}
               className="h-[120px] w-[120px] sm:h-[140px] sm:w-[140px]"
             />
             <span className="mt-3 text-sm font-bold text-ink">Scan or tap to set up</span>
