@@ -14,7 +14,7 @@
    left-aligned on phones and centred from 720px — heading, content and
    buttons together.
 
-    1  Tokens              8  Parent Plan, How Start Free works
+    1  Tokens              8  Parent Plan, How the Parent Plan works
     2  Base                9  Setup
     3  Primitives         10  911
     4  Header             11  Parent questions, social-proof slot
@@ -276,7 +276,7 @@ main:focus { outline: none; }
 }
 
 /* Buttons. Only two labels exist on this page (brief item 5):
-   START FREE — Confirmation Green, per the guide's "CTA buttons" row
+   GET THE PARENT PLAN — Confirmation Green, per the guide's "CTA buttons" row
    SEE PROTECTION IN ACTION — outlined, so it never competes */
 .btn {
   display: inline-flex;
@@ -378,7 +378,7 @@ main:focus { outline: none; }
 
 /* The draft's menu, restored at the user's request. Four links need the
    room, so it shows from 1100px; below that the header is the logo and
-   Start Free. Same white-on-navy link style as before. */
+   Get the Parent Plan. Same white-on-navy link style as before. */
 .header__nav { display: none; }
 .header .btn { flex: none; }
 
@@ -388,6 +388,21 @@ main:focus { outline: none; }
 @media (max-width: 399px) {
   .header__bar { gap: 10px; }
   .header .btn { padding: 0 12px; font-size: 13px; letter-spacing: 0.06em; }
+}
+
+/* Get the Parent Plan is too long for one line beside the logo on
+   phones; it breaks evenly in two instead (2026-10-12). */
+@media (max-width: 559px) {
+  .header .btn {
+    flex: 0 1 auto;
+    min-width: 0;
+    padding: 6px 12px;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    line-height: 1.15;
+    white-space: normal;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -422,7 +437,7 @@ main:focus { outline: none; }
 /* --------------------------------------------------------------------------
    5. HERO
    Phone: the photo fills the top of the screen with the headline set over
-   its foot, so headline, the four features, the price and START FREE all
+   its foot, so headline, the four features, the price and GET THE PARENT PLAN all
    land in the first screen. Desktop: copy on white, the photo filling the
    right half with a curved corner and an orange stroke.
    -------------------------------------------------------------------------- */
@@ -538,7 +553,7 @@ main:focus { outline: none; }
 .hero .actions { padding: 20px var(--gutter) 0; }
 .hero .fine { padding: 0 var(--gutter) 44px; }
 
-/* Points at "How Start Free works", so the offer is one tap from the price. */
+/* Points at "How the Parent Plan works", so the offer is one tap from the price. */
 .fine__link {
   display: block;
   width: max-content;
@@ -984,7 +999,7 @@ a.badge:hover { background: #E6B65A; transform: translateY(-1px); }
 }
 .check .icon { stroke-width: 3; }
 
-/* How Start Free works — the offer (company feedback 4), in the page's own
+/* How the Parent Plan works — the offer (company feedback 4), in the page's own
    parts: a Soft Gray panel the width of the plan card, one white tile per
    term, each with a Navy icon circle and an orange accent label — the same
    pieces as How It Works and the hero features. */
@@ -1376,9 +1391,9 @@ a.badge:hover { background: #E6B65A; transform: translateY(-1px); }
 }
 
 /* --------------------------------------------------------------------------
-   14. MOBILE DOCK — START FREE within thumb reach on phones and tablets
+   14. MOBILE DOCK — GET THE PARENT PLAN within thumb reach on phones and tablets
    Restored at the user's request (2026-09-14), after it was taken out the
-   same day with the page's extra START FREE buttons.
+   same day with the page's extra GET THE PARENT PLAN buttons.
    -------------------------------------------------------------------------- */
 
 .dock { display: none; }
@@ -1411,6 +1426,21 @@ a.badge:hover { background: #E6B65A; transform: translateY(-1px); }
     color: var(--navy);
   }
   .dock .btn { min-height: 52px; padding: 0 24px; }
+  .dock__price { min-width: 0; }
+}
+
+/* Phones: Get the Parent Plan breaks in two so the price keeps its room. */
+@media (max-width: 599px) {
+  .dock .btn {
+    flex: none;
+    width: 172px;
+    padding: 6px 14px;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    line-height: 1.15;
+    white-space: normal;
+    text-align: center;
+  }
 
   /* Keeps the footer clear of the dock. */
   .js .footer { padding-bottom: 128px; }
@@ -1433,7 +1463,7 @@ a.badge:hover { background: #E6B65A; transform: translateY(-1px); }
    -------------------------------------------------------------------------- */
 
 @media (max-width: 359px) {
-  /* The logo keeps the guide's 200px minimum. START FREE sits in the hero
+  /* The logo keeps the guide's 200px minimum. GET THE PARENT PLAN sits in the hero
      directly below, and the dock takes over once that scrolls away. */
   .header .btn { display: none; }
 
@@ -1463,11 +1493,11 @@ a.badge:hover { background: #E6B65A; transform: translateY(-1px); }
   .setup__step { grid-template-columns: 40px minmax(0, 1fr); column-gap: 14px; }
   .setup__num { font-size: 38px; }
 
-  /* START FREE stays on one line in the dock; the price beside it shrinks. */
+  /* The dock's button breaks in two; the price beside it shrinks. */
   .dock { gap: 10px; }
   .dock__price { font-size: 13px; }
   .dock__price strong { font-size: 17px; }
-  .dock .btn { padding-inline: 12px; white-space: nowrap; }
+  .dock .btn { width: 150px; padding-inline: 10px; font-size: 14px; letter-spacing: 0.06em; }
 
   /* The demo caption wraps to three lines here; a squarer frame and a
      smaller play button keep the two from overlapping. */
