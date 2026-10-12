@@ -1,4 +1,4 @@
-import { PARENT_PLAN_LABEL, PARENT_PLAN_URL } from '@/lib/students/cta';
+import { PARENT_PLAN_LABEL, PARENT_PLAN_QR, PARENT_PLAN_URL, PORTAL_LABEL, PORTAL_URL } from '@/lib/students/cta';
 import { Icon } from '@/components/students/IconSprite';
 
 /* ==========================================================================
@@ -11,18 +11,28 @@ export default function Final() {
   return (
     <section className="final on-dark" id="start">
       <div className="wrap">
-        <div className="final__inner" data-reveal="">
-          <h2 className="h2">Give her peace of mind. <span className="accent">Give yourself confidence.</span></h2>
-          <p className="final__price"><strong>3 people &mdash; $24.99/month, billed annually.</strong></p>
-          <div className="actions">
-            <a className="btn btn--start" href={PARENT_PLAN_URL} data-cta="start">{PARENT_PLAN_LABEL}</a>
-            <a className="btn btn--action" href="#demo">
-              <Icon name="play" fill />
-              See Protection in Action
-            </a>
+        <div className="final__grid">
+          <div className="final__inner" data-reveal="">
+            <h2 className="h2">Give her peace of mind. <span className="accent">Give yourself confidence.</span></h2>
+            <p className="final__price"><strong>3 people &mdash; $24.99/month, billed annually.</strong></p>
+            <div className="actions">
+              <a className="btn btn--start" href={PARENT_PLAN_URL} data-cta="start">{PARENT_PLAN_LABEL}</a>
+              <a className="btn btn--portal" href={PORTAL_URL} data-cta="portal">{PORTAL_LABEL}</a>
+              <a className="btn btn--action" href="#demo">
+                <Icon name="play" fill />
+                See Protection in Action
+              </a>
+            </div>
+            <p className="final__next">Next step: get the Parent Plan and complete payment. After payment you download the app, add trusted contacts and activate protection.</p>
+            <p className="final__tag">Get connected. Stay protected.</p>
           </div>
-          <p className="final__next">Next step: get the Parent Plan and complete payment. After payment you download the app, add trusted contacts and activate protection.</p>
-          <p className="final__tag">Get connected. Stay protected.</p>
+
+          {/* QR: scan on desktop, tap on phones — like the runners page */}
+          <a className="final__qr" href={PARENT_PLAN_URL} data-cta="qr" data-reveal="" aria-label="Scan or tap to get the Parent Plan">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={PARENT_PLAN_QR} alt="" width={41} height={41} />
+            <span>Scan or tap to get the Parent Plan</span>
+          </a>
         </div>
       </div>
     </section>

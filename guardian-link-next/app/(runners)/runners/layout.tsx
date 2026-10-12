@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Barlow_Condensed, Inter, Roboto_Slab } from "next/font/google";
 import { site } from "@/lib/runners/site";
+import { SITE } from "@/lib/meta";
 import "./runners.css"; // pre-compiled Tailwind output — source is runners.tailwind.css (npm run css:runners)
 
 const inter = Inter({
@@ -26,7 +27,7 @@ const robotoSlab = Roboto_Slab({
 export const metadata: Metadata = {
   metadataBase: new URL(site.siteUrl),
   title: "Run Free. Never Run Alone. | My Guardian Link for Runners",
-  alternates: { canonical: "/runners/" },
+  alternates: { canonical: `${SITE}/runners/` },
   description:
     "My Guardian Link helps runners send their identity, GPS location, and urgent need for help when they cannot safely call, speak, or explain — plus everyday check-ins, reporting, and roadside assistance.",
   openGraph: {

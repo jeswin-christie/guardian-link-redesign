@@ -1,3 +1,5 @@
+import { PARENT_PLAN_LABEL, PARENT_PLAN_URL, PORTAL_LABEL, PORTAL_URL } from '@/lib/students/cta';
+
 /* ==========================================================================
    8 · FAMILY SETUP
    ========================================================================== */
@@ -43,6 +45,12 @@ export default function Setup() {
             </div>
           </li>
         </ol>
+
+        {/* Two buttons under the steps, as on the runners page (client, 2026-10-12) */}
+        <div className="actions setup__actions" data-reveal="">
+          <a className="btn btn--start" href={PARENT_PLAN_URL} data-cta="start">{PARENT_PLAN_LABEL}</a>
+          <a className="btn btn--portal" href={PORTAL_URL} data-cta="portal">{PORTAL_LABEL}</a>
+        </div>
       </div>
     </section>
   );

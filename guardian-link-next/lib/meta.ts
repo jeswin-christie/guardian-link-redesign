@@ -2,6 +2,10 @@ import type { Metadata } from 'next';
 import pageMeta from '@/content/page-meta.json';
 
 export const SITE = 'https://myguardianlink.com';
+/** Where this build is actually served — the base for link-preview image URLs (metadataBase).
+ *  On Vercel this is the project's production domain (guardian-link-redesign.vercel.app today, myguardianlink.com
+ *  once that domain is attached); SITE elsewhere. Using SITE here made og:image point at the old live site (404). */
+export const ORIGIN = process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : SITE;
 export const PORTAL = 'https://portal.myguardianlink.com/login';
 /** Account creation = the portal's phone-number sign-in (verified 2026-10-08: portal.myguardianlink.com/ redirects here; no separate signup route).
  *  The portal reads only `returnTo`, `source` and `code` — it cannot preserve a chosen plan yet. */
@@ -17,6 +21,9 @@ export const DISCLAIMER_RESPONSE = 'Emergency response depends on circumstances,
 export const DISCLAIMER = `${DISCLAIMER_911} ${DISCLAIMER_RESPONSE}`;
 /** Shown under every major Get Protected Now button. */
 export const NEXT_STEP = 'Next step: create your account, choose your plan, add trusted contacts, download the app, and activate protection.';
+/** Link-preview image (iMessage, WhatsApp, social): the logo on MGL blue. Without it, previews picked the
+ *  reversed logo from the page, whose white shield and wordmark vanish on a white card. */
+export const OG_IMAGE = { url: '/media/og-image.png', width: 1200, height: 630, alt: 'My Guardian Link — get connected, stay protected' };
 export const CHAT_WIDGET_ID = '6a4f7c76cf52f8a07d7a8f6e';
 
 type MetaEntry = {
@@ -38,7 +45,8 @@ export function pageMetadata(key: string): Metadata {
     description: m.description,
     alternates: { canonical: m.canonical },
     robots: m.robots,
-    openGraph: { title: m.title, description: m.description, url: m.canonical, siteName: 'My Guardian Link', type: 'website' },
+    openGraph: { title: m.title, description: m.description, url: m.canonical, siteName: 'My Guardian Link', type: 'website', images: [OG_IMAGE] },
+    twitter: { card: 'summary_large_image', title: m.title, description: m.description, images: [OG_IMAGE.url] },
   };
 }
 

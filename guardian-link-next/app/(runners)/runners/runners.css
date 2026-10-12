@@ -588,9 +588,6 @@
   .max-w-36 {
     max-width: calc(var(--spacing) * 36);
   }
-  .max-w-\[160px\] {
-    max-width: 160px;
-  }
   .max-w-\[280px\] {
     max-width: 280px;
   }
@@ -1224,9 +1221,6 @@
   .text-navy {
     color: var(--color-navy);
   }
-  .text-red-400 {
-    color: var(--color-red-400);
-  }
   .text-white {
     color: var(--color-white);
   }
@@ -1401,9 +1395,6 @@
     .hover\:bg-white:hover {
       background-color: var(--color-white);
     }
-    .hover\:text-amber:hover {
-      color: var(--color-amber);
-    }
     .hover\:text-app-navy:hover {
       color: var(--color-app-navy);
     }
@@ -1517,9 +1508,6 @@
     .sm\:size-12 {
       width: calc(var(--spacing) * 12);
       height: calc(var(--spacing) * 12);
-    }
-    .sm\:h-10 {
-      height: calc(var(--spacing) * 10);
     }
     .sm\:h-12 {
       height: calc(var(--spacing) * 12);
@@ -1729,14 +1717,8 @@
     .md\:items-center {
       align-items: center;
     }
-    .md\:items-end {
-      align-items: flex-end;
-    }
     .md\:items-stretch {
       align-items: stretch;
-    }
-    .md\:justify-between {
-      justify-content: space-between;
     }
     .md\:justify-center {
       justify-content: center;
@@ -1755,9 +1737,6 @@
     }
     .md\:text-center {
       text-align: center;
-    }
-    .md\:text-left {
-      text-align: left;
     }
   }
   @media (width >= 64rem) {
@@ -1835,6 +1814,9 @@
     }
     .lg\:h-20 {
       height: calc(var(--spacing) * 20);
+    }
+    .lg\:h-24 {
+      height: calc(var(--spacing) * 24);
     }
     .lg\:h-\[60px\] {
       height: 60px;

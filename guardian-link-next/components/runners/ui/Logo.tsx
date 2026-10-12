@@ -34,7 +34,7 @@ export function Logo({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center ${className}`}>
       {partner?.logo ? (
-        <Image src={partner.logo} alt={partner.name} width={383} height={154} className="h-14 w-auto sm:h-16 lg:h-[72px]" />
+        <Image src={partner.logo} alt={partner.name} width={partner.width ?? 383} height={partner.height ?? 154} priority className="h-16 w-auto sm:h-20 lg:h-24" />
       ) : (
         <MglLogo className="h-12 sm:h-14" />
       )}
