@@ -4,7 +4,7 @@
  * This page is reused for many runner influencers — swap the `partner`
  * block (name + logo) and links per influencer. Everything else stays generic.
  */
-import { SITE, SIGNUP } from "@/lib/meta";
+import { SITE } from "@/lib/meta";
 
 export type Partner = {
   /** Influencer / run club name, e.g. "Coach Sam Rivera" */
@@ -15,26 +15,33 @@ export type Partner = {
 
 export const site = {
   brand: "My Guardian Link",
-  /** Set to a Partner object to co-brand the page; null shows My Guardian Link only. */
-  partner: null as Partner | null,
+  /**
+   * Set to a Partner object to co-brand the page; null shows My Guardian Link only.
+   * With a logo, the partner's logo replaces the My Guardian Link logo at the top of the
+   * hero (client proof, 2026-10-12); the footer keeps the small My Guardian Link logo.
+   */
+  partner: {
+    name: "SRSE Sports — Sean Ryan Sports Enterprises",
+    logo: "/runners/images/partners/srse-sports.png",
+  } as Partner | null,
 
   /** Public URL of the site — used for absolute social-preview links (WhatsApp, etc.). Lives at /runners/. */
   siteUrl: SITE,
 
   /**
-   * CTA destinations — one path to membership, same as the main site (lib/funnel.ts):
-   * every setup button goes to account setup in the User Portal (phone sign-in = sign-up),
-   * where plan → trusted contacts → app download → activation follow.
+   * CTA destinations (client proof, 2026-10-12). Every "Set Up…" / "Activate…" button and
+   * the QR code go to the portal's app sign-up with the partner's group code preselected;
+   * "Go to User Portal" goes to the partner's organization page.
    */
   links: {
-    /** User Portal — sign in / sign up with phone OTP, then onboarding. */
-    portal: SIGNUP,
-    /** "Set Up Runner Protection" — account setup. */
-    getProtected: SIGNUP,
-    /** "Activate My Runner Setup" — activation happens in the app: /download/ sends phones to their store. */
-    activation: "/download/",
-    /** Roadside Assistance is a Future Release (lib/status.ts), so its button goes to account setup. */
-    roadside: SIGNUP,
+    /** "Go to User Portal" — the partner's organization in the User Portal. */
+    portal: "https://portal.myguardianlink.com/org/FALL50",
+    /** "Set Up Runner Protection" and the other setup buttons, plus the QR code. */
+    getProtected: "https://portal.myguardianlink.com/app?group=FALL50",
+    /** "Activate My Runner Setup". */
+    activation: "https://portal.myguardianlink.com/app?group=FALL50",
+    /** "Set Up My Guardian Link" under Roadside Assistance (a Future Release, lib/status.ts). */
+    roadside: "https://portal.myguardianlink.com/app?group=FALL50",
     /** Official website home. */
     website: "/",
   },

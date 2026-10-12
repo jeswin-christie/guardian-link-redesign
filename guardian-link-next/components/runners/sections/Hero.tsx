@@ -11,7 +11,7 @@ const features = [
   "Silent activation",
   "GPS location",
   "Live coordinator",
-  "Trusted Circle support",
+  "Trusted Contact Support",
 ];
 
 /** Faint shield + location-pin watermark (decorative). */

@@ -1,22 +1,10 @@
 import Image from "next/image";
 import type { LucideIcon } from "lucide-react";
-import {
-  BatteryFull,
-  CalendarClock,
-  Ellipsis,
-  Eye,
-  House,
-  MapPin,
-  MessageCircleQuestionMark,
-  MessageSquare,
-  Signal,
-  Siren,
-  Users,
-  Wifi,
-} from "lucide-react";
+import { CalendarClock, Eye, MapPin, MessageCircleQuestionMark } from "lucide-react";
 import { Button } from "@/components/runners/ui/Button";
 import { Container } from "@/components/runners/ui/Container";
 import { site } from "@/lib/runners/site";
+import { AppAlertMockup } from "./AppAlertMockup";
 
 const reportQuestions: { label: string; icon: LucideIcon }[] = [
   { label: "What did you see?", icon: Eye },
@@ -25,95 +13,9 @@ const reportQuestions: { label: string; icon: LucideIcon }[] = [
   { label: "Why did it concern you?", icon: MessageCircleQuestionMark },
 ];
 
-const tabs: { label: string; icon: LucideIcon; active?: boolean }[] = [
-  { label: "Home", icon: House },
-  { label: "Message", icon: MessageSquare },
-  { label: "Report", icon: Siren, active: true },
-  { label: "Circle", icon: Users },
-  { label: "More", icon: Ellipsis },
-];
-
 const PHOTO_SRC = "/runners/images/see-something.jpg";
 const PHOTO_ALT =
   "A runner on a quiet road at sunset heads toward a parked SUV — the kind of situation runners notice first.";
-
-/** Bold red eye-in-circle used on the app's report screen. */
-function EyeAlertIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 64 40" className={className} aria-hidden="true" focusable="false">
-      <path d="M2 20C9 8.5 19.5 2 32 2s23 6.5 30 18c-7 11.5-17.5 18-30 18S9 31.5 2 20z" className="fill-brand-red" />
-      <circle cx="32" cy="20" r="12" fill="#fff" />
-      <circle cx="32" cy="20" r="7.5" className="fill-brand-red" />
-    </svg>
-  );
-}
-
-/** HTML/CSS phone mockup of the My Guardian Link "I See Something" report screen. */
-function PhoneMockup() {
-  return (
-    <div
-      role="img"
-      aria-label="My Guardian Link app showing the I See Something screen with a Report Activity button"
-      className="relative w-[210px] shrink-0 rounded-[2.4rem] bg-[#0d0f14] p-2.5 shadow-[0_24px_48px_-20px_rgb(16_35_58/0.55)] ring-1 ring-black/20 sm:w-[230px] xl:w-[240px]"
-    >
-      {/* side buttons */}
-      <span aria-hidden="true" className="absolute top-24 -left-[3px] h-10 w-[3px] rounded-l bg-[#0d0f14]" />
-      <span aria-hidden="true" className="absolute top-28 -right-[3px] h-14 w-[3px] rounded-r bg-[#0d0f14]" />
-
-      <div aria-hidden="true" className="relative flex aspect-[9/19] flex-col overflow-hidden rounded-[1.9rem] bg-white">
-        {/* notch */}
-        <div className="absolute top-0 left-1/2 h-5 w-[42%] -translate-x-1/2 rounded-b-2xl bg-[#0d0f14]" />
-
-        {/* status bar */}
-        <div className="flex items-center justify-between px-5 pt-1.5 text-[10px] font-semibold text-ink">
-          <span>9:41</span>
-          <span className="flex items-center gap-0.5">
-            <Signal className="h-2.5 w-2.5" strokeWidth={2.5} />
-            <Wifi className="h-2.5 w-2.5" strokeWidth={2.5} />
-            <BatteryFull className="h-3 w-3" strokeWidth={2} />
-          </span>
-        </div>
-
-        {/* screen content */}
-        <div className="flex flex-1 flex-col items-center justify-center gap-4 px-4 text-center">
-          <span className="relative flex items-center justify-center">
-            <span aria-hidden="true" className="absolute h-16 w-16 animate-soft-ping rounded-full bg-brand-red/25" />
-            <EyeAlertIcon className="relative h-auto w-[72px]" />
-          </span>
-          <p className="font-slab text-[19px] leading-tight font-bold tracking-wide text-ink uppercase">
-            I See
-            <br />
-            Something
-          </p>
-          <span className="rounded-md bg-brand-red px-4 py-2 text-[12px] font-semibold text-white shadow-sm">
-            Report Activity
-          </span>
-        </div>
-
-        {/* tab bar */}
-        <div className="bg-app-navy px-1.5 pt-2 pb-1.5">
-          <ul className="grid grid-cols-5">
-            {tabs.map(({ label, icon: Icon, active }) => (
-              <li key={label} className="flex flex-col items-center gap-0.5">
-                <span
-                  className={`flex h-5 w-5 items-center justify-center rounded-full ${
-                    active ? "bg-brand-red text-white" : "text-white/85"
-                  }`}
-                >
-                  <Icon className="h-3 w-3" strokeWidth={2.25} />
-                </span>
-                <span className={`text-[7.5px] leading-none ${active ? "font-semibold text-white" : "text-white/70"}`}>
-                  {label}
-                </span>
-              </li>
-            ))}
-          </ul>
-          <div className="mx-auto mt-1.5 h-1 w-16 rounded-full bg-white/70" />
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export function SeeSomething() {
   return (
@@ -169,7 +71,14 @@ export function SeeSomething() {
           {/* Phone mockup (+ photo below lg) */}
           <div data-reveal="left" className="order-2 flex flex-col items-center gap-6 md:flex-row md:items-stretch lg:order-1 lg:shrink-0">
             <div className="flex justify-center md:items-center">
-              <PhoneMockup />
+              {/* The app's Secondary Alert screen (client proof, 2026-10-12). */}
+              <AppAlertMockup
+                initialMode="secondary"
+                interactive={false}
+                caption={null}
+                reveal={null}
+                className="w-[230px] sm:w-[250px] lg:max-w-[260px]"
+              />
             </div>
             <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl shadow-card md:aspect-auto md:min-h-[300px] md:flex-1 lg:hidden">
               <Image

@@ -71,9 +71,14 @@ export function SetupSteps() {
         </ol>
 
         <div data-reveal className="mt-10 flex flex-col items-center text-center">
-          <Button href={site.links.portal} variant="navy" size="lg" className="w-full max-w-md sm:w-auto sm:max-w-none">
-            {site.cta.portal}
-          </Button>
+          <div className="flex w-full max-w-md flex-col gap-3 sm:w-auto sm:max-w-none sm:flex-row">
+            <Button href={site.links.getProtected} variant="red" size="lg" className="w-full sm:w-auto">
+              {site.cta.setup}
+            </Button>
+            <Button href={site.links.portal} variant="navy" size="lg" className="w-full sm:w-auto">
+              {site.cta.portal}
+            </Button>
+          </div>
           <p className="mt-3 text-xs font-medium uppercase tracking-wider text-muted sm:text-sm">
             Runner Protection Setup • GROUP: {site.groupCode} <span className="normal-case">(example)</span>
           </p>
