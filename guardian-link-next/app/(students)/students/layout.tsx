@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: 'website',
     title: 'Protection She Deserves. | myGuardianLink',
     description:
-      'One tap. Precise location. Trusted people. Live response. 3 members — $24.99/month, billed annually. Start free.',
+      'One tap. Precise location. Trusted people. Live response. 3 members — $24.99/month, billed annually. Get the Parent Plan.',
     images: [{ url: '/students/assets/img/campaign/og-image.jpg', width: 1200, height: 630 }],
   },
   twitter: { card: 'summary_large_image' },

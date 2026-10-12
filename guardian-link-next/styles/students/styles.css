@@ -1061,9 +1061,10 @@ a.badge:hover { background: #E6B65A; transform: translateY(-1px); }
    9. EASY SETUP
    -------------------------------------------------------------------------- */
 
-/* Every step: its number, then a white box with its words — step 4's box
-   being the download card. The same at every width (user, 2026-09-14);
-   desktop only rearranges them. */
+/* Every step: its number, then a white box with its words. The same at
+   every width (user, 2026-09-14); desktop only rearranges them. Step 4's
+   download card was removed for paid traffic (2026-10-12): the app is
+   offered only after payment. */
 .setup__steps { display: grid; gap: 16px; }
 
 .setup__step {
@@ -1083,8 +1084,6 @@ a.badge:hover { background: #E6B65A; transform: translateY(-1px); }
   line-height: 1;
   color: var(--orange);
 }
-/* Step 4's number stays level with the card's title. */
-.setup__step--app .setup__num { align-self: start; margin-top: 26px; }
 
 .setup__body {
   padding: 18px 20px;
@@ -1096,130 +1095,28 @@ a.badge:hover { background: #E6B65A; transform: translateY(-1px); }
 .setup__step .h3 { margin-bottom: 6px; }
 .setup__step a { font-weight: 700; color: var(--navy); }
 
-/* Step 4: the app download card (client's design, 2026-09-14). A white
-   card on the section's Soft Gray: the QR — tapped on a phone, scanned
-   from a desktop — then the site address, then the group code for anyone
-   who joins without the QR. Centred, one thing under another. */
-.app-card {
-  padding: 28px 20px 22px;
-  border: 1px solid var(--line);
-  border-radius: 28px;
-  background: #fff;
-  box-shadow: 0 28px 64px -40px rgba(16, 42, 67, 0.4);
-  text-align: center;
-}
-.setup__step .app-card__title { margin: 0; font-size: 22px; }
-
-/* The QR carries its own white quiet zone; the frame seats it. It is a
-   link, so a phone — which can't scan its own screen — taps it instead. */
-.app-card__qr {
-  display: block;
-  width: min(196px, 78%);
-  margin: 22px auto 0;
-  padding: 12px;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 0 18px 40px -26px rgba(16, 42, 67, 0.5);
-  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
-}
-.app-card__qr img { display: block; width: 100%; height: auto; }
-@media (hover: hover) {
-  .app-card__qr:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 24px 48px -26px rgba(16, 42, 67, 0.55);
-  }
-}
-
-.app-card__action {
-  margin: 22px 0 0;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.2;
-  color: var(--orange);
-}
-.app-card__hint { margin: 8px 0 0; font-size: 16px; line-height: 1.45; }
-
-.app-card__visit {
-  margin: 20px 0 0;
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
-  font-size: 17px;
-}
-.setup__step .app-card__visit a {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-}
-
-.app-card__code {
-  margin-top: 20px;
-  padding: 18px 14px;
-  border-radius: 18px;
-  background: var(--soft);
-}
-.app-card__code-label { margin: 0; font-weight: 700; font-size: 15px; color: var(--guardian); }
-.app-card__code-value {
-  margin: 4px 0 0;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
-  color: var(--guardian);
-  user-select: all;          /* one tap selects the whole code, to copy */
-}
-.app-card__code-note { margin: 8px 0 0; font-size: 14px; line-height: 1.45; color: var(--muted); }
-.app-card__action { text-wrap: balance; }
-
-/* The narrowest phones (under 360px): the card's column is about 226px, so
-   the type steps down a touch — the address keeps to one line and the
-   orange line breaks evenly in two. */
-@media (max-width: 359px) {
-  .setup__body { padding: 16px; }
-  .app-card { padding-inline: 14px; }
-  .setup__step .app-card__title { font-size: 20px; }
-  .app-card__action { font-size: 20px; }
-  .app-card__hint,
-  .app-card__visit { font-size: 15px; }
-  .app-card__code { padding-inline: 10px; }
-  .app-card__code-value { font-size: 22px; letter-spacing: 0.04em; }
-}
-
 /* Tablets: the phone's arrangement, larger — one column, centred under the
-   centred heading. (Two by two, a short box sat beside the tall card.) */
+   centred heading. */
 @media (min-width: 720px) {
   .setup__steps { max-width: 760px; margin-inline: auto; gap: 20px; }
   .setup__step { grid-template-columns: 64px minmax(0, 1fr); column-gap: 20px; }
   .setup__num { font-size: 52px; }
-  .setup__step--app .setup__num { margin-top: 30px; }
   .setup__body { padding: 24px 30px; border-radius: 24px; }
-  .app-card { padding: 32px 28px 26px; }
 }
 
-/* Desktop: steps 1–3 in white boxes down the left, step 4's download card
-   on the right beside them (user, 2026-09-14). Every step reads number,
-   then box — the card being step 4's. The three boxes share the card's
-   height between them, so both columns start and end together; each
-   box's words sit in its middle, with its number level with them. The
-   numbers stand in one column, joined by the rail (js/motion.js). */
+/* Desktop: the four steps two by two, each number beside its box. Boxes
+   in a row share its height, their words in the middle. The numbers are
+   joined by the rail (js/motion.js). */
 @media (min-width: 1024px) {
   .setup__steps {
     max-width: none;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: clamp(40px, 4vw, 64px);
     row-gap: 20px;
   }
   .setup__step { grid-template-columns: 56px minmax(0, 1fr); align-content: stretch; }
-  .setup__step:not(.setup__step--app) { grid-column: 1; }
-  .setup__step--app { grid-column: 2; grid-row: 1 / span 3; }
   .setup__num { font-size: 56px; }
-
-  /* Stretched to share the card's height, each box keeps its words in
-     its middle. */
   .setup__body { display: flex; flex-direction: column; justify-content: center; }
-
-  .app-card { padding: 34px 32px 28px; }
-  .setup__step .app-card__title { font-size: 24px; }
 }
 
 /* --------------------------------------------------------------------------

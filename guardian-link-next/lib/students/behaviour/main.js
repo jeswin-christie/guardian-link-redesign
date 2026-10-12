@@ -6,6 +6,7 @@
    ========================================================================== */
 
 import { onLoad } from './on-load';
+import { PARENT_PLAN_URL } from '../cta';
 
 // page: 'landing' (the campaign page) or 'guide' (/guide). Everything below
 // is shared; only the page-view event differs.
@@ -21,19 +22,10 @@ export function initMain(page) {
      matching button follows; see env.example.txt.
      ------------------------------------------------------------------ */
 
-  // Every START FREE (data-cta="start") goes here (the links' own href is the
-  // same URL, so they still work if this script never runs).
-  // Every START FREE (data-cta="start") goes here. One destination for all
-  // of them (company feedback 8). Since 2026-10-06 (user request) it is the
-  // member portal's login page, the one the main site's login button uses;
-  // set the variable to send them to a dedicated checkout instead.
-  var START_FREE_URL = process.env.NEXT_PUBLIC_START_FREE_URL || 'https://portal.myguardianlink.com/login';
-
-  // The QR code in setup step 4's download card (data-cta="portal") goes
-  // here when tapped — the phones' route, as a phone can't scan its own
-  // screen. Unset, it keeps its own link: myguardianlink.com/download/,
-  // which sends each phone to its app store.
-  var PORTAL_URL = process.env.NEXT_PUBLIC_PORTAL_URL || '';
+  // Every Get the Parent Plan button (data-cta="start") goes to the paid
+  // Parent Plan journey, PARENTPLAN preselected (lib/students/cta.ts). The
+  // links' own href is the same URL, so they still work without this script.
+  var START_FREE_URL = PARENT_PLAN_URL;
 
   // Meta Pixel ID, from Events Manager. Empty: no pixel loads, and events
   // still reach window.dataLayer for GTM / GHL.
@@ -80,7 +72,6 @@ export function initMain(page) {
   }
 
   pointAll('[data-cta="start"]', START_FREE_URL);
-  pointAll('[data-cta="portal"]', PORTAL_URL);
 
   /* ------------------------------------------------------------------
      3. CONVERSION TRACKING (company feedback 10)
