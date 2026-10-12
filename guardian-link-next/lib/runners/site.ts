@@ -11,6 +11,9 @@ export type Partner = {
   name: string;
   /** Path under /public, e.g. "/runners/images/partners/sam-rivera.png" */
   logo?: string;
+  /** Intrinsic size of the logo file. */
+  width?: number;
+  height?: number;
 };
 
 export const site = {
@@ -18,11 +21,14 @@ export const site = {
   /**
    * Set to a Partner object to co-brand the page; null shows My Guardian Link only.
    * With a logo, the partner's logo replaces the My Guardian Link logo at the top of the
-   * hero (client proof, 2026-10-12); the footer keeps the small My Guardian Link logo.
+   * hero (client proof, 2026-10-12). The Fall 50 logo is the client's (runners update PDF,
+   * 2026-10-12); the client said not to use the SRSE Sports logo.
    */
   partner: {
-    name: "SRSE Sports — Sean Ryan Sports Enterprises",
-    logo: "/runners/images/partners/srse-sports.png",
+    name: "The Fall 50",
+    logo: "/runners/images/partners/fall50.png",
+    width: 480,
+    height: 349,
   } as Partner | null,
 
   /** Public URL of the site — used for absolute social-preview links (WhatsApp, etc.). Lives at /runners/. */
@@ -47,7 +53,6 @@ export const site = {
   },
   /** Human-readable URLs printed on the page. */
   displayUrl: "myguardianlink.com",
-  displayPortalUrl: "portal.myguardianlink.com",
 
   /** Example group code used in the race check-in example and setup line. */
   groupCode: "FALL50",

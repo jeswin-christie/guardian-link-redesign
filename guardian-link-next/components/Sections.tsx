@@ -18,10 +18,10 @@ export const AUDIENCES: [string, string, string?][] = [
 export const HOME_AUDIENCES: [string, string, string?][] = [
   ['8-women-walking.webp', 'Women on the Move'],
   ['1-students.webp', 'Students', '/students/'],
-  ['7-dementia.webp', 'Seniors / People Living Alone'],
-  ['7-seniors.webp', 'Families & Caregivers'],
+  ['lone-worker.webp', 'Lone Workers'],
+  ['7-seniors.webp', 'Seniors Alone & Caregivers'],
   ['2-nurse.webp', 'Healthcare Workers'],
-  ['4-runners.webp', 'Runners, Walkers & Lone Workers', '/runners/'],
+  ['4-runners.webp', 'Runners & Walkers', '/runners/'],
 ];
 
 export function AudienceGrid({ items, six }: { items: [string, string, string?][]; six?: boolean }) {

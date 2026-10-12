@@ -2,15 +2,40 @@ import PageHero from '@/components/PageHero';
 import { Img, SplitWords, Btn, NextStep, Eyebrow, JsonLd } from '@/components/primitives';
 import { pageMetadata, pageSchema, DISCLAIMER_911, DISCLAIMER_RESPONSE, APP_STORE, GOOGLE_PLAY } from '@/lib/meta';
 import { getProtected } from '@/lib/funnel';
+import { AudioLines, Hand, Headphones, MessageSquareText, Mic, ShieldCheck, Sparkles, Speech, Watch, type LucideIcon } from 'lucide-react';
 
 export const metadata = pageMetadata('features');
 
-const METHODS = ['One-Touch Instant', 'Speech-to-Text', 'Whisper-to-Text', 'Hands-Free Voice', '“Hey Siri” Available', '“Hey Google” Coming Soon', 'Smart Watch Ready', 'Earbuds Ready'];
+/* Activation methods — icon layout after the client's reference (runners update PDF, Oct 2026). Status labels match lib/status.ts ACTIVATION. */
+const METHODS: [LucideIcon, string, string?][] = [
+  [Hand, 'One-Touch', 'Instant'],
+  [MessageSquareText, 'Speech-to-Text'],
+  [AudioLines, 'Whisper-to-Text'],
+  [Speech, 'Hands-Free Voice'],
+  [Mic, '“Hey Siri”', 'Available'],
+  [Sparkles, '“Hey Google”', 'Coming Soon'],
+  [Watch, 'Smart Watch', 'Ready'],
+  [Headphones, 'Earbuds', 'Ready'],
+];
 
-const GUIDED: { t: string; d: string; extra?: string; list: string[]; word: string; img: string }[] = [
-  { t: 'Trained Response Coordinator', d: 'Reviews your alert, location, and message, communicates with you, and helps coordinate next steps.', extra: 'Coordinator availability: 24/7/365', list: ['Reviews your information', 'Communicates with you', 'Takes next steps'], word: 'Coordinator', img: 'support-banner-mgl-1.webp' },
-  { t: 'Trusted Contact', d: 'Receive your alert and live location so they can call you or navigate directly to you.', list: ['Instant signal', 'Location and details share', 'Call or find you'], word: 'Trusted', img: 'what-your-account-recieve.webp' },
-  { t: '911 Contacted When Needed', d: 'When needed, the trained response coordinator can contact 911 and share your verified details to support a faster, clearer response.', list: ['911 can be contacted when needed', 'Shares verified details', 'Stay on the line'], word: '911', img: 'home-banner-2-e1783070253640.webp' },
+/* Guided response rows. `list` items are plain strings or [label, text] pairs (label in bold).
+   Trusted Contact and 911 copy is the client's (runners update PDF, Oct 2026). */
+type Guided = { t: string; lead?: string; d: string; extra?: string; list: (string | [string, string])[]; close?: string; img: string; phone?: boolean; alt?: string };
+const GUIDED: Guided[] = [
+  { t: 'Trained Response Coordinator', d: 'Reviews your alert, location, and message, communicates with you, and helps coordinate next steps.', extra: 'Coordinator availability: 24/7/365', list: ['Reviews your information', 'Communicates with you', 'Takes next steps'], img: 'support-banner-mgl-1.webp' },
+  {
+    t: 'Trusted Contact', lead: 'When trouble starts, seconds matter.', d: 'Your Trusted Contact receives an immediate Urgent Assist alert with:',
+    list: [['WHO', 'Your name and identity.'], ['WHERE', 'Your precise GPS location on a map.'], ['WHAT', 'Your message explaining the situation.'], ['CALL', 'One tap to contact you directly.'], ['DIRECTIONS', 'One tap for turn-by-turn navigation to your location.']],
+    close: 'The right people. The right information. Right when it matters.',
+    img: 'trusted-contact-alert.webp', phone: true,
+    alt: 'Urgent Assist Trusted Contact alert in the My Guardian Link app: map location, sender name, Call and Directions buttons, and the message “Someone is following me and I don’t feel comfortable.”',
+  },
+  {
+    t: '911 Escalation. Coordinated Response.', lead: 'When every second counts, immediate action matters.', d: 'Your Urgent Response Coordinator will escalate a serious threat directly to 911.',
+    list: [['911 NOTIFIED', 'Emergency services contacted when needed.'], ['CRITICAL DETAILS', 'Your identity, location, and incident information shared.'], ['STAY CONNECTED', 'Your coordinator remains involved to support the response.']],
+    close: 'One Signal. Coordinated Action. Response When It Matters Most.',
+    img: 'home-banner-2-e1783070253640.webp',
+  },
 ];
 
 export default function Features() {
@@ -28,31 +53,35 @@ export default function Features() {
       />
 
       {/* Activation methods */}
-      <section className="panel band band--compact" id="devices" data-section="devices">
-        <div className="band__head">
+      <section className="panel act" id="devices" data-section="devices">
+        <div className="act__head">
           <Eyebrow light>Activate Your Protection</Eyebrow>
           <SplitWords className="h2" text="Start protection the way that feels right for you." />
+          <p className="lead lead--light" data-reveal>Quietly, quickly, and from anywhere.</p>
         </div>
-        <div className="bubbles bubbles--4 bubbles--cards">
-          {METHODS.map((m, i) => (
-            <div className="bubble bubble--round" data-bubble key={m}><span className="bubble__n">{String(i + 1).padStart(2, '0')}</span><h4>{m}</h4></div>
+        <ul className="act__grid" data-stagger>
+          {METHODS.map(([Icon, name, status]) => (
+            <li key={name}>
+              <Icon aria-hidden="true" className="act__icon" strokeWidth={1.6} />
+              <b>{name}</b>
+              {status && <span className={status === 'Coming Soon' ? 'act__soon' : undefined}>{status}</span>}
+            </li>
           ))}
-          <div className="bubble bubble--pill bubble--wide" data-bubble>
-            <div>
-              <h4>Silent activation is available when speaking or drawing attention is unsafe.</h4>
-            </div>
-            <div className="footer__stores">
-              <a href={APP_STORE} className="store" target="_blank" rel="noopener" data-cta="features-app-store"><small>Download on the</small>App Store</a>
-              <a href={GOOGLE_PLAY} className="store" target="_blank" rel="noopener" data-cta="features-google-play"><small>Get it on</small>Google Play</a>
-            </div>
+        </ul>
+        <div className="act__foot" data-reveal>
+          <p className="act__silent"><ShieldCheck aria-hidden="true" strokeWidth={1.6} />Silent activation is available when speaking or drawing attention is unsafe.</p>
+          <div className="footer__stores">
+            <a href={APP_STORE} className="store" target="_blank" rel="noopener" data-cta="features-app-store"><small>Download on the</small>App Store</a>
+            <a href={GOOGLE_PLAY} className="store" target="_blank" rel="noopener" data-cta="features-google-play"><small>Get it on</small>Google Play</a>
           </div>
         </div>
       </section>
 
       {/* What gets shared */}
       <section className="panel split" id="shared" data-section="shared">
-        <div className="split__media">
-          <div className="img-reveal" data-reveal-img><Img src="chatgpt-image-may-28-2026-12-33-06-pm-e1779951889936.webp" data-parallax-img="" /></div>
+        {/* Gold, smaller and subtler than the old green shield (client, runners update PDF, Oct 2026) */}
+        <div className="split__media split__media--emblem">
+          <div className="emblem" data-reveal><Img src="shield-gold.webp" alt="" sizes="300px" /></div>
         </div>
         <div className="split__body">
           <Eyebrow>What Gets Shared</Eyebrow>
@@ -91,11 +120,19 @@ export default function Features() {
           <article className="kin" key={g.t}>
             <div className="kin__text" data-reveal>
               <h3>{g.t}</h3>
+              {g.lead && <p className="kin__lead">{g.lead}</p>}
               <p>{g.d}</p>
               {g.extra && <p className="kin__extra">{g.extra}</p>}
-              <ul className="clist">{g.list.map((x) => <li key={x}>{x}</li>)}</ul>
+              <ul className="clist">
+                {g.list.map((x) => typeof x === 'string'
+                  ? <li key={x}>{x}</li>
+                  : <li key={x[0]}><b>{x[0]}</b> — {x[1]}</li>)}
+              </ul>
+              {g.close && <p className="kin__close">{g.close}</p>}
             </div>
-            <figure className="kin__img img-reveal" data-reveal-img><Img src={g.img} data-parallax-img="" /></figure>
+            {g.phone
+              ? <figure className="kin__img kin__img--phone" data-reveal><Img src={g.img} alt={g.alt ?? ''} sizes="(max-width: 860px) 70vw, 320px" /></figure>
+              : <figure className="kin__img img-reveal" data-reveal-img><Img src={g.img} alt={g.alt ?? ''} data-parallax-img="" /></figure>}
           </article>
         ))}
         <div className="sec__center" style={{ marginTop: 'clamp(60px,10vh,120px)', marginBottom: 0, padding: '0 var(--pad)' }}>

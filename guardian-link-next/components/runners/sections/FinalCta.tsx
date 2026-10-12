@@ -3,19 +3,6 @@ import { site } from "@/lib/runners/site";
 import { Button } from "@/components/runners/ui/Button";
 import { Container } from "@/components/runners/ui/Container";
 
-/** Renders the site URL; any path after the domain is accented, like the reference. */
-function DisplayUrl({ className = "" }: { className?: string }) {
-  const slash = site.displayUrl.indexOf("/");
-  const domain = slash === -1 ? site.displayUrl : site.displayUrl.slice(0, slash);
-  const path = slash === -1 ? "" : site.displayUrl.slice(slash);
-  return (
-    <span className={`break-all ${className}`}>
-      {domain}
-      {path && <span className="text-red-400">{path}</span>}
-    </span>
-  );
-}
-
 export function FinalCta() {
   return (
     <section
@@ -78,7 +65,7 @@ export function FinalCta() {
           {/* QR: scan on desktop, tap on phones */}
           <a
             href={site.links.getProtected}
-            aria-label={`Scan or tap to set up Runner Protection at ${site.displayPortalUrl}`}
+            aria-label="Scan or tap to set up Runner Protection"
             data-reveal="scale"
             className="group mx-auto flex w-fit flex-col items-center rounded-xl bg-white p-4 text-center shadow-card transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white motion-reduce:hover:translate-y-0 sm:p-5 lg:mx-0"
           >
@@ -91,18 +78,9 @@ export function FinalCta() {
               height={41}
               className="h-[120px] w-[120px] sm:h-[140px] sm:w-[140px]"
             />
-            <span className="mt-3 text-sm font-bold text-ink">Scan or tap to set up</span>
-            <span className="mt-0.5 max-w-[160px] break-all text-xs text-muted group-hover:text-brand-red">
-              {site.displayPortalUrl}
-            </span>
+            <span className="mt-3 text-sm font-bold text-ink group-hover:text-brand-red">Scan or tap to set up</span>
           </a>
         </div>
-
-        <p className="mt-12 text-center text-lg font-bold tracking-wide sm:text-xl">
-          <a href={site.links.website} className="hover:text-amber">
-            <DisplayUrl />
-          </a>
-        </p>
       </Container>
     </section>
   );

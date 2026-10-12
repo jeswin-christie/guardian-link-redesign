@@ -78,7 +78,7 @@ export default function Home() {
       {/* 3 · Use cases — four static cards (replaces the pinned horizontal gallery and its dead space) */}
       <section className="panel cases" data-section="situations">
         <div className="cases__head">
-          <SplitWords className="h2" text="When calling is difficult, My Guardian Link helps keep you connected." />
+          <SplitWords className="h2" text="When calling is difficult, My Guardian Link keeps you connected." />
           <p className="lead lead--light" data-reveal>My Guardian Link delivers silent protection, precise location, and real people who can act.</p>
         </div>
         <div className="cases__grid" data-stagger>

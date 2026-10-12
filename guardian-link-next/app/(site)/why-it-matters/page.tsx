@@ -2,6 +2,7 @@ import PageHero from '@/components/PageHero';
 import { Img, SplitWords, Btn, NextStep, Eyebrow, JsonLd } from '@/components/primitives';
 import { pageMetadata, pageSchema, DISCLAIMER_911, DISCLAIMER_RESPONSE } from '@/lib/meta';
 import { getProtected } from '@/lib/funnel';
+import { Check, Smartphone, UserRound } from 'lucide-react';
 
 export const metadata = pageMetadata('why-it-matters');
 
@@ -132,8 +133,17 @@ export default function WhyItMatters() {
           </div>
           <NextStep />
         </div>
-        <div className="split__media">
-          <div className="img-reveal" data-reveal-img><Img src="page3-block5-e1780058629749.webp" data-parallax-img="" /></div>
+        {/* Gold signal → verified → 911 flow, drawn in code (replaces the stretched green shield image; client, Oct 2026) */}
+        <div className="split__media split__media--flow">
+          <svg className="flow911__shield" viewBox="0 0 200 236" aria-hidden="true">
+            <path d="M100 6 186 36v74c0 58-36 98-86 122C50 208 14 168 14 110V36Z" />
+            <path d="M100 22 172 47v63c0 49-30 83-72 104-42-21-72-55-72-104V47Z" />
+          </svg>
+          <ol className="flow911" data-stagger>
+            <li><span className="flow911__node"><UserRound aria-hidden="true" strokeWidth={1.6} /><Smartphone aria-hidden="true" strokeWidth={1.6} /></span><b>You send an urgent signal</b></li>
+            <li><span className="flow911__node"><Check aria-hidden="true" strokeWidth={2} /></span><b>Information is verified</b></li>
+            <li><span className="flow911__node flow911__node--911">911</span><b>911 can be alerted when needed</b></li>
+          </ol>
         </div>
       </section>
 
@@ -165,18 +175,6 @@ export default function WhyItMatters() {
               </button>
             </div>
             <button type="button" className="ulink" data-video="/media/video/nurse-reality.mp4">Watch scenario reenactments</button>
-          </div>
-        </div>
-        <div className="sees">
-          <div className="sees__item" data-reveal>
-            <h3>What the Response Coordinator Sees</h3>
-            <p>A live dashboard gives coordinators, precise GPS map, message, and quick buttons to response fast.</p>
-            <div className="shot"><Img src="what-trusted-cordinator-sees-1.webp" sizes="(max-width: 860px) 100vw, 60vw" /></div>
-          </div>
-          <div className="sees__item sees__item--phone" data-reveal style={{ ['--d' as string]: '.1s' }}>
-            <h3>What Your Contacts Receive</h3>
-            <p>Trusted contacts receive an instant alert with the message, location, and quick action options.</p>
-            <div className="phone"><Img src="what-your-account-recieve.webp" sizes="320px" /></div>
           </div>
         </div>
       </section>

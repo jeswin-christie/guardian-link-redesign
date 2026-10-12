@@ -335,5 +335,17 @@ export const MEDIA: Record<string, [number, number]> = {
  "video-poster-runners.webp": [
   1280,
   720
+ ],
+ "lone-worker.webp": [
+  798,
+  482
+ ],
+ "trusted-contact-alert.webp": [
+  851,
+  1572
+ ],
+ "shield-gold.webp": [
+  664,
+  812
  ]
 };
