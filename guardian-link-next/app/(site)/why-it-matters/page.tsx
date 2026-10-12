@@ -14,7 +14,7 @@ export default function WhyItMatters() {
         lines={['911 Is Essential.', 'But Sometimes You Cannot Call, Speak, or Explain Fast Enough.']}
         scale="md"
         footnote={DISCLAIMER_911}
-        sub="My Guardian Link supports anxious moments when calling 911 is difficult, unsafe, delayed, or confusing. It will send your precise location, alert your trusted contacts, and connect you immediately to a live response coordinator when every second counts."
+        sub="My Guardian Link supports anxious moments when calling 911 is difficult, unsafe, delayed, or confusing. It will send your precise location, alert your trusted contacts, and connect you immediately to a trained response coordinator when every second counts."
         primary={getProtected('hero')}
         link={{ label: 'Protect My Organization', open: 'org' }}
         image="8.webp"

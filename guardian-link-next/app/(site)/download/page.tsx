@@ -4,7 +4,7 @@ import StoreRedirect from '@/components/StoreRedirect';
 import { APP_STORE, GOOGLE_PLAY, SITE } from '@/lib/meta';
 
 /* One link / QR code for "download the app": phones are sent to their own store,
-   desktops see both buttons. Used by the /students/ download card's QR code. */
+   desktops see both buttons. (The /students/ download card's QR no longer points here: since 2026-10-09 it goes to portal.myguardianlink.com/app?group=PARENTPLAN.) */
 export const metadata: Metadata = {
   title: { absolute: 'Download the App | My Guardian Link' },
   description: 'Download the My Guardian Link app for iPhone or Android.',

@@ -8,11 +8,11 @@ export const metadata = pageMetadata('about-us');
 const PILLARS: [string, string][] = [
   ['Prevention', 'Helping people recognize and avoid potential danger.'],
   ['Protection', 'Tools and support that put help at your fingertips.'],
-  ['Response', '24/7 live response coordinators ready to act.'],
+  ['Response', '24/7 trained response coordinators ready to act.'],
   ['Intelligence', 'Verified information shared with the right people.'],
 ];
 const TRUST: [string, string][] = [
-  ['24/7/365 Live Response Coordinators', 'U.S.-based professionals trained in emergency response, crisis communication, and 911 escalation. Real people—always.'],
+  ['24/7/365 Trained Response Coordinators', 'U.S.-based professionals trained in emergency response, crisis communication, and contacting 911 when needed. Real people—always.'],
   ['Central-Station Partnership', 'Connected through a leading U.S. central station with access to approximately 5,800 PSAPs across the country.'],
   ['Security & Privacy First', 'Your information is encrypted, never sold, and used only to protect and respond. We take your trust seriously.'],
   ['Built on Experience', 'Founded by leaders with deep experience in technology, emergency response, and protecting communities.'],
@@ -79,8 +79,8 @@ export default function About() {
           <ul className="stairs">
             <li className="stairs__item" style={{ ['--i' as string]: 3 }}><b>Silent</b><span>Urgent Signal</span></li>
             <li className="stairs__item" style={{ ['--i' as string]: 2 }}><b>Live</b><span>U.S.-Based Response Support</span></li>
-            <li className="stairs__item" style={{ ['--i' as string]: 1 }}><b>911</b><span>Contacted When Needed</span></li>
-            <li className="stairs__item" style={{ ['--i' as string]: 0 }}><b data-num="5800" data-prefix="~" data-format="comma">~5,800</b><span>911 centers via central-station access</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 1 }}><b>911</b><span>Escalation Support</span></li>
+            <li className="stairs__item" style={{ ['--i' as string]: 0 }}><b data-num="5800" data-prefix="~" data-format="comma">~5,800</b><span>Connected 911 Centers</span></li>
           </ul>
         </div>
       </section>

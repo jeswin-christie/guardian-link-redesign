@@ -45,6 +45,10 @@ export const PRODUCTS = {
     name: 'Urgent Medical Assistance', desc: 'Connect to medical help when every second counts.', status: 'future-release', label: 'Future Release',
     source: 'Client confirmed 2026-10-08 (live How It Works showed NEW RELEASE)',
   },
+  trustedNetworkAssist: {
+    name: 'Trusted Network Assist', desc: 'Use when your trusted contacts need to respond.', status: 'live',
+    source: 'Client update 2026-10-08 (New Website PDF): Included on Single and Group, Not included on Free; replaces False Alarm Workflow in the pricing "What\'s included" grid',
+  },
   seeSomethingSaySomething: {
     name: 'See Something, Say Something', desc: 'Report concerns. Help keep communities safe.', status: 'live',
     source: 'Pricing cards: Included on Single and Group, N/A on Free; no badge on Home or How It Works',
