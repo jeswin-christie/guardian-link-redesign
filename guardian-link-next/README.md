@@ -29,7 +29,7 @@ child-guardian-consent-policy, sponsor-group-admin-acknowledgment).
 The live site's 301 redirects are in `next.config.ts`. Titles, descriptions, canonicals and JSON-LD come from
 `content/page-meta.json`.
 
-## Campaign pages: /students/ and /runners/
+## Campaign pages: /parentplan/ and /runners/
 
 Two standalone landing pages (originally separate projects: `guardian-main.zip` and
 `MyGuardianLink-Runners-main.zip`) now live inside this app. The **Students** and **Runners** boxes in
@@ -41,7 +41,7 @@ so none of the main site's styles, nav, loader or chat leak into them, and vice 
 | Route group | URL | Code | Assets |
 |---|---|---|---|
 | `app/(site)/` | the main website (all routes above) | `components/`, `app/globals.css` | `public/media/` |
-| `app/(students)/students/` | `/students/` (college-parent page), `/students/guide/` | `components/students/`, `lib/students/`, `styles/students/` (README inside) | `public/students/assets/` |
+| `app/(students)/parentplan/` | `/parentplan/` (college-parent page, formerly `/students/`, which redirects), `/parentplan/guide/` | `components/students/`, `lib/students/`, `styles/students/` (README inside) | `public/students/assets/` |
 | `app/(runners)/runners/` | `/runners/` | `components/runners/`, `lib/runners/site.ts` (README inside) — Tailwind v4, pre-compiled to `runners.css`; after changing Tailwind classes run `npm run css:runners` | `public/runners/images/` |
 
 Notes: moving between the main site and these pages is a full page load (different root layouts). Unmatched URLs
@@ -78,7 +78,7 @@ use `app/global-not-found.tsx` (renders the main site's 404). The students page 
 - **One path to membership:** every Get Protected Now, plan button and Create Free Account goes to account setup in the portal via `lib/funnel.ts` (`getProtected('placement')`, `signupUrl()`) — never hard-code a URL. Name the placement (`cta`) so `components/CtaTracking.tsx` can report the click (`dataLayer` event `cta_click`) and carry ad parameters into signup. The nav "Pricing" link is the only way to the pricing page.
 - **Availability labels** (Included / Future Release …) come from `lib/status.ts` — change a product's status there, not in page copy.
 - **App store links:** `APP_STORE` / `GOOGLE_PLAY` in `lib/meta.ts`.
-- **Prices:** `lib/plans.ts` is the only place plan prices and billing wording live (homepage preview, /pricing/). Annual prices always read "$X/month, billed annually at $Y". The /students/ page repeats the Group price in its own copy — update it there too.
+- **Prices:** `lib/plans.ts` is the only place plan prices and billing wording live (homepage preview, /pricing/). Annual prices always read "$X/month, billed annually at $Y". The /parentplan/ page repeats the Group price in its own copy — update it there too.
 - **App download:** `/download/` sends phones to their own store and shows both buttons on desktop; use it wherever one "download the app" link or QR code is needed.
 - **Homepage order:** hero → problem → 4 use cases → one silent signal → 4 features → who it protects (6) → why it's different (5) → proof → pricing preview → final CTA. Proof cards use real assets only; add the founder card and real user quotes when the client supplies them (see the comment in `app/(site)/page.tsx`).
 - **Green** (`--green`) is reserved for protected / verified / success: checkmarks, the "911 gets clear information" step. Don't use it for buttons, headlines, links or stats.

@@ -8,7 +8,7 @@ import PageScripts from '@/components/students/PageScripts';
 import '@/styles/students/guide.css';
 
 /* ==========================================================================
-   FREE PREVENTION & READINESS GUIDE — /students/guide/
+   FREE PREVENTION & READINESS GUIDE — /parentplan/guide/
    The landing page's "Get the Free Prevention & Readiness Guide" link opens
    it. myguardianlink.com has no guide of its own (checked 2026-10-06).
 
@@ -26,7 +26,7 @@ import '@/styles/students/guide.css';
    ========================================================================== */
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/students/guide/' },
+  alternates: { canonical: '/parentplan/guide/' },
   title: 'Free Prevention & Readiness Guide — myGuardianLink',
   description: 'Be Ready. Be Protected. Before you need it.',
   openGraph: {
@@ -62,7 +62,7 @@ export default function GuidePage() {
     <>
       <IconSprite />
       <a className="skip" href="#main">Skip to content</a>
-      <Header home="/students/" />
+      <Header home="/parentplan/" />
 
       <main id="main" tabIndex={-1}>
 
@@ -233,7 +233,7 @@ export default function GuidePage() {
 
       </main>
 
-      <Footer home="/students/" />
+      <Footer home="/parentplan/" />
       <PageScripts page="guide" />
     </>
   );

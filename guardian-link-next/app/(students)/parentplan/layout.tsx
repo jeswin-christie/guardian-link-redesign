@@ -28,7 +28,7 @@ const ptSans = PT_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL(ORIGIN),
-  alternates: { canonical: `${SITE}/students/` },
+  alternates: { canonical: `${SITE}/parentplan/` },
   title: 'myGuardianLink — College Parent Protection',
   description:
     'myGuardianLink connects college students to trusted people and a live response coordinator when seconds matter.',
@@ -59,11 +59,11 @@ export const viewport: Viewport = {
      plays it: the #section is dropped so the doors open onto the hero.
      The timeout is the safety catch: if lib/behaviour/intro.js never runs,
      nothing could open the scene, so it takes itself away.
-   - The scene belongs to the landing page (/students/) only; /students/guide/ has none. */
+   - The scene belongs to the landing page (/parentplan/) only; /parentplan/guide/ has none. */
 const GATE_SCRIPT = `(function () {
   var d = document.documentElement;
   d.classList.add('js');
-  if (location.pathname !== '/students/' && location.pathname !== '/students') return;
+  if (location.pathname !== '/parentplan/' && location.pathname !== '/parentplan') return;
   var nav = window.performance && performance.getEntriesByType
     ? performance.getEntriesByType('navigation')[0] : null;
   var reload = !!nav && nav.type === 'reload';
