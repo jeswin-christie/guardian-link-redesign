@@ -2,7 +2,7 @@
 
 The landing page for the **Facebook college-parent campaign**. It is not a
 corporate homepage: one audience (parents of college students), one offer
-(the Parent Plan, 3 people — $24.99/month), one primary action (**START FREE**).
+(the Parent Plan, 3 people — $24.99/month), one primary action (**GET THE PARENT PLAN**).
 
 Built with Next.js (App Router), converted from the original static
 HTML/CSS/JS page on 2026-10-06. The page is fully static (prerendered at
@@ -30,10 +30,8 @@ npm start            # serve the production build
 | What | Where |
 |---|---|
 | **Offer terms** (optional) — what the parent pays today, when billing begins, what "free" means | Not shown on the page: the "To confirm" rows were removed at the user's request (2026-09-14), and "How Start Free Works" now states only the client's confirmed terms. If the company supplies these, add them as tiles in `components/sections/Plan.tsx`. |
-| START FREE destination | Goes to the portal login page, https://portal.myguardianlink.com/login (user, 2026-10-06), with the ad's UTM / fbclid added. For a dedicated checkout, set `NEXT_PUBLIC_START_FREE_URL` (see `.env.example`); one setting updates every START FREE button. |
-| Member-portal link (tapping the QR code in setup step 4) | Goes to `https://portal.myguardianlink.com/app?group=PARENTPLAN` (same link as the QR, since 2026-10-09). `NEXT_PUBLIC_PORTAL_URL` overrides it. |
+| GET THE PARENT PLAN destination | Since 2026-10-12 (paid Meta traffic): the paid Parent Plan journey with PARENTPLAN preselected, https://portal.myguardianlink.com/org/PARENTPLAN, with the ad's UTM / fbclid added. Never the free plan. **Test once signed out, through to payment, before ads go live.** For a dedicated checkout, set `NEXT_PUBLIC_PARENT_PLAN_URL` (see `env.example.txt`); `lib/students/cta.ts` holds the default and one setting updates every button. |
 | Meta Pixel ID | `NEXT_PUBLIC_META_PIXEL_ID`. Empty = no pixel loads. See *Conversion tracking* below. |
-| QR code (setup step 4, the download card) | Points to `https://portal.myguardianlink.com/app?group=PARENTPLAN` (client's updated QR, 2026-10-09; redrawn as a sharp SVG with segno). Regenerate with segno if the link changes. |
 | Demo video link | `components/students/sections/Demo.tsx` → `/media/video/demo.mp4` (the main site's demo). With a real player, fire the Video View event on play (see `lib/behaviour/main.js`). |
 | Social proof | Removed (Oct 2026) until real, approved testimonials exist — never invented ones. |
 | Free guide page | Not linked from the landing page since 2026-10-06 — reachable only at `/guide`. The guide page, `/guide` (`app/guide/page.tsx`), is built **only from myguardianlink.com's own wording** (Home, How It Works, Why It Matters, Features, FAQ, Who It Protects) — the site has no guide of its own. Each block in the file names its source page. If the website's wording changes, update the guide to match. |
@@ -54,11 +52,11 @@ as written since 2026-09-14:
 | 5 | Parent reassurance | `#parents` |
 | 6 | How it works (the one workflow explanation) | `#how` |
 | — | Social proof (hidden until real) | `#stories` |
-| 7 | The Parent Plan + How Start Free Works | `#plan`, `#offer` |
+| 7 | The Parent Plan + How the Parent Plan Works | `#plan`, `#offer` |
 | 8 | Family setup | `#setup` |
 | 9 | 911 support | `#with-911` |
 | 10 | Parent questions (FAQ) | `#faq` |
-| 11 | Final CTA — Start Free | `#start` |
+| 11 | Final CTA — Get the Parent Plan | `#start` |
 
 ## Conversion tracking
 
@@ -68,7 +66,7 @@ The funnel the company asked for, and where each step is measured:
 |---|---|---|---|
 | Landing Page View | this page, on load | `landing_page_view` | `PageView` |
 | Video View | this page, click on the demo video | `video_view` | `VideoView` (custom) |
-| CTA Click | this page, any START FREE (with `cta_location`) | `cta_click` | `StartFreeClick` (custom) |
+| CTA Click | this page, any GET THE PARENT PLAN (with `cta_location`) | `cta_click` | `StartFreeClick` (custom) |
 | Checkout Start | **the checkout page (GHL)** | — | `InitiateCheckout` |
 | Purchase | **the checkout page (GHL) + Conversions API** | — | `Purchase` |
 | Group Plan Activation | **the app / backend, via Conversions API** | — | custom, e.g. `GroupPlanActivated` |
@@ -83,7 +81,7 @@ How it fits together:
   id from the Conversions API for the same event and Meta de-duplicates the
   pair.
 - The ad's `utm_*` and `fbclid` parameters are kept for the visit and added
-  to the START FREE and portal links, so GHL can attribute the purchase to
+  to the GET THE PARENT PLAN and portal links, so GHL can attribute the purchase to
   the ad.
 
 Before meaningful ad spend: open Meta Events Manager → *Test events*, load
@@ -114,7 +112,7 @@ The brief allows changes as long as the reason is clear. Each one:
 
 1. **No menu in the header.** Paid traffic should not be offered ways off
    the conversion path. The header is the logo, *See Protection in Action*
-   (on wide screens) and START FREE; phones show the logo and START FREE.
+   (on wide screens) and GET THE PARENT PLAN; phones show the logo and GET THE PARENT PLAN.
    (The draft's full menu was tried on 2026-09-13 at the user's request and
    taken out again on 2026-09-14, following this feedback as written.)
 2. **Trust strip under the hero**, with the company's four proof points,
@@ -122,9 +120,9 @@ The brief allows changes as long as the reason is clear. Each one:
 3. **The demo straight after the trust strip**, so parents see how it
    works before scrolling. (It spent 2026-09-13 at the foot of the page at
    the user's request; back here since 2026-09-14.)
-4. **"How Start Free Works" under the Parent Plan card** lays out the offer
+4. **"How the Parent Plan Works" under the Parent Plan card** lays out the offer
    in five tiles, all in the client's own words: the plan ($24.99/month for
-   3 people — $8.33 each), Try It Free, 30-Day Refund Policy, Cancel
+   3 people — $8.33 each), paid sign-up with the app after payment, 30-Day Refund Policy, Cancel
    Anytime, No Long-Term Commitment. The hero fine print links to it.
    (Removed briefly on 2026-09-13, restored 2026-09-14. The company's rows
    for what is paid today, when billing begins and what "free" means had no
@@ -142,22 +140,19 @@ The brief allows changes as long as the reason is clear. Each one:
    guide).
 7. **Social proof slot, hidden.** Nothing is shown until real evidence
    exists; no invented quotes or numbers.
-8. **One CTA wording, one destination.** Every START FREE carries
+8. **One CTA wording, one destination.** Every GET THE PARENT PLAN carries
    `data-cta="start"` and goes to `START_FREE_URL`. Since 2026-09-14, at the
    user's request, there are three: the header, the hero and the final CTA.
    Those after the demo, the direct-link section and the reassurance band,
    and on the Parent Plan card were removed. The phones' bottom dock went
    with them and was restored the same day at the user's request: on phones
-   and tablets it slides up once the hero's START FREE has scrolled away,
+   and tablets it slides up once the hero's GET THE PARENT PLAN has scrolled away,
    and hides again at the final CTA.
-9. **Mobile download is a tap.** A phone can't scan its own screen, so the
-   QR code in setup step 4 is a link: tapped, it goes to the member portal
-   (`PORTAL_URL`); scanned from a desktop, to the link it encodes. Since
-   2026-09-14 it sits in the client's download card ("Scan or Tap to
-   Download", group code PARENTPLAN), which replaced the phones' *Continue
-   to Download* button. Steps 1–3 sit in white boxes at every width, each
-   number beside its box; on desktop they stand down the left with the
-   card beside them on the right.
+9. **No app download before payment** (2026-10-12, paid Meta traffic).
+   The setup section's download card (QR code, App Store and Google Play
+   links, group code PARENTPLAN) was removed; step 4 now only says the app
+   comes after payment. Steps 1–4 sit in white boxes at every width, each
+   number beside its box.
 10. **Conversion tracking** — see above.
 11. **The free guide link was removed from the landing page** (user,
     2026-10-06; it had sat below the final CTA). The final CTA is now the
@@ -168,7 +163,7 @@ The brief allows changes as long as the reason is clear. Each one:
 
 ### From the original build
 
-1. **START FREE is Confirmation Green, not orange.** The Brand Guidelines
+1. **GET THE PARENT PLAN is Confirmation Green, not orange.** The Brand Guidelines
    assign "CTA buttons" to Confirmation Green, and the guide's own *Brand in
    Action* example is a green button on navy. Orange stays where the guide
    puts it — the shield, icons and accent labels.
@@ -185,7 +180,7 @@ The brief allows changes as long as the reason is clear. Each one:
    the one exception is a visitor arriving on a `#section` link from
    elsewhere — they asked for that section.
 4. **"See What's Next →" was removed.** Brief item 5 allows two CTA labels:
-   START FREE and SEE PROTECTION IN ACTION (plus the phones' download
+   GET THE PARENT PLAN and SEE PROTECTION IN ACTION (plus the phones' download
    button above).
 5. **The Parent Plan photo is large, not a small circle.** Brief item 4 asks
    for large photography, so photo 3 ("The Parent Plan photo") fills a full
@@ -199,7 +194,7 @@ The brief allows changes as long as the reason is clear. Each one:
    section, and the "Strengthens, Complements & Supports 911" line is in the
    footer.
 8. **The phone layout is designed separately.** The headline sits over the
-   photo so headline, the four features, the price and START FREE land in
+   photo so headline, the four features, the price and GET THE PARENT PLAN land in
    the first screen.
 9. **"No tails" is handled in code.** Headlines balance their lines
    (CSS `text-wrap: balance`), and the last two words of every paragraph are

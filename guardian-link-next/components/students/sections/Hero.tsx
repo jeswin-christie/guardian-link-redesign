@@ -1,3 +1,4 @@
+import { PARENT_PLAN_LABEL, PARENT_PLAN_URL } from '@/lib/students/cta';
 import { Icon } from '@/components/students/IconSprite';
 
 /* ==========================================================================
@@ -8,7 +9,7 @@ import { Icon } from '@/components/students/IconSprite';
      3 members — $24.99/month.   ("people" → "members" at the user's
                                   request, 2026-09-14, matching the
                                   Parent Plan card's "3 Members")
-     Start Free.
+     Get the Parent Plan.
    ========================================================================== */
 export default function Hero() {
   return (
@@ -38,13 +39,13 @@ export default function Hero() {
           </p>
 
           <div className="actions">
-            <a className="btn btn--start" href="https://portal.myguardianlink.com/login" data-cta="start">Start Free</a>
+            <a className="btn btn--start" href={PARENT_PLAN_URL} data-cta="start">{PARENT_PLAN_LABEL}</a>
             <a className="btn btn--action" href="#demo">
               <Icon name="play" fill />
               See Protection in Action
             </a>
           </div>
-          <p className="fine">Try&nbsp;It&nbsp;Free&nbsp;&middot; 30-Day&nbsp;Refund&nbsp;Policy&nbsp;&middot; Cancel&nbsp;Anytime&nbsp;&middot; No&nbsp;Long-Term&nbsp;Commitment <a className="fine__link" href="#offer">How Start&nbsp;Free&nbsp;works</a></p>
+          <p className="fine">30-Day&nbsp;Refund&nbsp;Policy&nbsp;&middot; Cancel&nbsp;Anytime&nbsp;&middot; No&nbsp;Long-Term&nbsp;Commitment <a className="fine__link" href="#offer">How the Parent&nbsp;Plan&nbsp;works</a></p>
         </div>
       </div>
     </section>

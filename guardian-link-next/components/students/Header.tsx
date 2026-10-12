@@ -1,7 +1,9 @@
+import { PARENT_PLAN_LABEL, PARENT_PLAN_URL } from '@/lib/students/cta';
+
 /* ==========================================================================
    HEADER — paid traffic, so no menu to wander off through (company
-   feedback 1): the logo, See Protection in Action, and Start Free. Phones
-   and small laptops show the logo and Start Free only. (The draft's full
+   feedback 1): the logo, See Protection in Action, and Get the Parent Plan.
+   Phones and small laptops show the logo and Get the Parent Plan only. (The draft's full
    menu was tried at the user's request, then taken out again on
    2026-09-14 to follow the company's feedback.)
    ========================================================================== */
@@ -17,7 +19,7 @@ export default function Header({ home = '' }: { home?: string }) {
         <nav className="header__nav" aria-label="Primary">
           <a href={`${home}#demo`}>See Protection in Action</a>
         </nav>
-        <a className="btn btn--start btn--sm" href="https://portal.myguardianlink.com/login" data-cta="start">Start Free</a>
+        <a className="btn btn--start btn--sm" href={PARENT_PLAN_URL} data-cta="start">{PARENT_PLAN_LABEL}</a>
       </div>
     </header>
   );

@@ -1,11 +1,12 @@
+import { PARENT_PLAN_LABEL, PARENT_PLAN_URL } from '@/lib/students/cta';
 import { Icon } from '@/components/students/IconSprite';
 
 /* ==========================================================================
    7 · PRICE — The Parent Plan. Photo 3, "The Parent Plan photo", set large
    rather than in the draft's small circle (brief item 4).
-   Below the card, "How Start Free works" spells out the offer (company
+   Below the card, "How the Parent Plan works" spells out the offer (company
    feedback 4), using only terms the client's own copy states: the price,
-   Try It Free, 30-Day Refund Policy, Cancel Anytime, No Long-Term
+   paid sign-up with the app after payment, 30-Day Refund Policy, Cancel Anytime, No Long-Term
    Commitment. The unconfirmed billing rows (paid today, billing start,
    what "free" means) were removed at the user's request, 2026-09-14.
    ========================================================================== */
@@ -37,10 +38,9 @@ export default function Plan() {
           </div>
 
           <div className="plan-card__price on-dark">
-            {/* A link since 2026-10-06 (user request): goes where START FREE
-                goes — the portal login (lib/behaviour/main.js), tracked as a
-                CTA click from "plan". */}
-            <a className="badge" href="https://portal.myguardianlink.com/login" data-cta="start">Try It Free</a>
+            {/* Goes where every Get the Parent Plan button goes
+                (lib/students/cta.ts), tracked as a CTA click from "plan". */}
+            <a className="badge" href={PARENT_PLAN_URL} data-cta="start">{PARENT_PLAN_LABEL}</a>
             <p className="plan-card__people">3 Members</p>
             <p className="plan-card__amount">$24.99<small>/ month</small></p>
             <p className="plan-card__each">Billed annually at $299.88 &middot; $8.33 each</p>
@@ -48,7 +48,7 @@ export default function Plan() {
         </div>
 
         <div className="offer" id="offer" data-reveal="">
-          <h3 className="h3 offer__title">How Start Free Works</h3>
+          <h3 className="h3 offer__title">How the Parent Plan Works</h3>
           <dl className="offer__list">
             <div className="offer__row">
               <dt><span className="offer__ico" aria-hidden="true"><svg className="icon"><use href="#i-people" /></svg></span>The plan</dt>
@@ -56,7 +56,7 @@ export default function Plan() {
             </div>
             <div className="offer__row">
               <dt><span className="offer__ico" aria-hidden="true"><svg className="icon"><use href="#i-tag" /></svg></span>Getting started</dt>
-              <dd>Try It Free.</dd>
+              <dd>Get the Parent Plan and complete payment. The app download comes right after.</dd>
             </div>
             <div className="offer__row">
               <dt><span className="offer__ico" aria-hidden="true"><svg className="icon"><use href="#i-refund" /></svg></span>Refunds</dt>
