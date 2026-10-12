@@ -16,8 +16,8 @@ Everything per-influencer lives in `src/config/site.ts`:
 
 | Field | What it does |
 |---|---|
-| `partner` | `{ name, logo }` — shows the influencer's name/logo next to the My Guardian Link logo (hero + footer). `null` = MGL only. Put logo files in `public/images/partners/`. |
-| `links.*` | CTA destinations on myguardianlink.com: `portal` (User Portal login — "Go to User Portal" + QR code), `getProtected` (/pricing/ — "Set Up…" buttons), `activation` (/features/#devices), `roadside` (/pricing/ Roadside Assistance), `website`. |
+| `partner` | `{ name, logo }` — the partner's logo replaces the My Guardian Link logo at the top of the hero; the footer keeps the small My Guardian Link logo. `null` = MGL only. Currently SRSE Sports (`public/runners/images/partners/srse-sports.png`, client proof 2026-10-12). |
+| `links.*` | CTA destinations (client proof, 2026-10-12): `portal` = https://portal.myguardianlink.com/org/FALL50 ("Go to User Portal"); `getProtected`, `activation`, `roadside` = https://portal.myguardianlink.com/app?group=FALL50 (every "Set Up…" / "Activate…" button and the QR code); `website`. |
 | `displayUrl` / `displayPortalUrl` | URL text printed on the page. |
 | `groupCode` / `eventName` | Used in the race check-in example and setup line. |
 
