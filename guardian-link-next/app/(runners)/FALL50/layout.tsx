@@ -27,7 +27,7 @@ const robotoSlab = Roboto_Slab({
 export const metadata: Metadata = {
   metadataBase: new URL(site.siteUrl),
   title: "Run Free. Never Run Alone. | My Guardian Link for Runners",
-  alternates: { canonical: `${SITE}/runners/` },
+  alternates: { canonical: `${SITE}/FALL50/` },
   description:
     "My Guardian Link helps runners send their identity, GPS location, and urgent need for help when they cannot safely call, speak, or explain — plus everyday check-ins, reporting, and roadside assistance.",
   openGraph: {
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       "Protection, connection, and coordination for runners — before, during, and after the run. Set up in about 10 minutes.",
     type: "website",
-    url: "/runners/",
+    url: "/FALL50/",
     siteName: "My Guardian Link",
   },
   // Square brand icon preview (opengraph-image.png / twitter-image.png in this folder)

@@ -6,7 +6,6 @@
     --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(70.4% 0.191 22.216);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -488,6 +487,9 @@
   }
   .h-\[120px\] {
     height: 120px;
+  }
+  .h-auto {
+    height: auto;
   }
   .h-full {
     height: 100%;

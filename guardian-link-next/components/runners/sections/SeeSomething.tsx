@@ -4,7 +4,6 @@ import { CalendarClock, Eye, MapPin, MessageCircleQuestionMark } from "lucide-re
 import { Button } from "@/components/runners/ui/Button";
 import { Container } from "@/components/runners/ui/Container";
 import { site } from "@/lib/runners/site";
-import { AppAlertMockup } from "./AppAlertMockup";
 
 const reportQuestions: { label: string; icon: LucideIcon }[] = [
   { label: "What did you see?", icon: Eye },
@@ -12,6 +11,9 @@ const reportQuestions: { label: string; icon: LucideIcon }[] = [
   { label: "When did it happen?", icon: CalendarClock },
   { label: "Why did it concern you?", icon: MessageCircleQuestionMark },
 ];
+
+// The app's Secondary Alert screen: the client's screenshot (2026-10-14).
+const SCREEN_SRC = "/runners/images/app/see-something-screen.jpg";
 
 const PHOTO_SRC = "/runners/images/see-something.jpg";
 const PHOTO_ALT =
@@ -71,14 +73,19 @@ export function SeeSomething() {
           {/* Phone mockup (+ photo below lg) */}
           <div data-reveal="left" className="order-2 flex flex-col items-center gap-6 md:flex-row md:items-stretch lg:order-1 lg:shrink-0">
             <div className="flex justify-center md:items-center">
-              {/* The app's Secondary Alert screen (client proof, 2026-10-12). */}
-              <AppAlertMockup
-                initialMode="secondary"
-                interactive={false}
-                caption={null}
-                reveal={null}
-                className="w-[230px] sm:w-[250px] lg:max-w-[260px]"
-              />
+              {/* The app's Secondary Alert screen — the client's screenshot, in the same phone frame. */}
+              <figure className="mx-auto w-[230px] sm:w-[250px] lg:max-w-[260px]">
+                <div className="rounded-[2.75rem] bg-navy-deep p-2.5 shadow-[0_30px_60px_-25px_rgb(16_35_58/0.55)] ring-1 ring-black/10">
+                  <Image
+                    src={SCREEN_SRC}
+                    alt="My Guardian Link app: Secondary Alert screen with the See Something Say Something alert"
+                    width={738}
+                    height={1600}
+                    sizes="260px"
+                    className="block h-auto w-full rounded-[2.2rem]"
+                  />
+                </div>
+              </figure>
             </div>
             <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl shadow-card md:aspect-auto md:min-h-[300px] md:flex-1 lg:hidden">
               <Image

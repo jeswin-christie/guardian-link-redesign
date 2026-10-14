@@ -7,7 +7,7 @@ export const AUDIENCES: [string, string, string?][] = [
   ['1-students.webp', 'Students', '/parentplan/'],
   ['2-nurse.webp', 'Nurses & Healthcare Workers'],
   ['3-daycare.webp', 'Daycare Providers'],
-  ['4-runners.webp', 'Runners', '/runners/'],
+  ['4-runners.webp', 'Runners', '/FALL50/'],
   ['whatsapp-image-2026-07-13-at-6-59-53-am.webp', 'Lone Workers'],
   ['6-real-estate-agent.webp', 'Real Estate Agents'],
   ['7-seniors.webp', 'Seniors & Dementia-Risk Families'],
@@ -21,7 +21,7 @@ export const HOME_AUDIENCES: [string, string, string?][] = [
   ['lone-worker.webp', 'Lone Workers'],
   ['7-seniors.webp', 'Seniors Alone & Caregivers'],
   ['2-nurse.webp', 'Healthcare Workers'],
-  ['4-runners.webp', 'Runners & Walkers', '/runners/'],
+  ['4-runners.webp', 'Runners & Walkers', '/FALL50/'],
 ];
 
 export function AudienceGrid({ items, six }: { items: [string, string, string?][]; six?: boolean }) {
@@ -31,7 +31,7 @@ export function AudienceGrid({ items, six }: { items: [string, string, string?][
         <figure className={href ? 'aud aud--link' : 'aud'} key={img + label}>
           <Img src={img} sizes={six ? '(max-width: 860px) 50vw, 33vw' : '(max-width: 860px) 50vw, 25vw'} />
           <figcaption>{label}</figcaption>
-          {/* Plain <a>: /parentplan/ and /runners/ have their own root layouts, so it's a full page load anyway */}
+          {/* Plain <a>: /parentplan/ and /FALL50/ have their own root layouts, so it's a full page load anyway */}
           {href && <a className="aud__link" href={href} aria-label={label} />}
         </figure>
       ))}

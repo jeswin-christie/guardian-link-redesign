@@ -49,7 +49,7 @@ export default function WhoItProtects() {
             <figure className={href ? 'aud aud--link' : 'aud'} key={img}>
               <Img src={img} sizes="(max-width: 860px) 50vw, 25vw" />
               <figcaption>{label}</figcaption>
-              {/* Plain <a>: /parentplan/ and /runners/ have their own root layouts, so it's a full page load anyway */}
+              {/* Plain <a>: /parentplan/ and /FALL50/ have their own root layouts, so it's a full page load anyway */}
               {href && <a className="aud__link" href={href} aria-label={label} />}
             </figure>
           ))}
