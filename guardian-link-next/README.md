@@ -29,7 +29,7 @@ child-guardian-consent-policy, sponsor-group-admin-acknowledgment).
 The live site's 301 redirects are in `next.config.ts`. Titles, descriptions, canonicals and JSON-LD come from
 `content/page-meta.json`.
 
-## Campaign pages: /parentplan/ and /runners/
+## Campaign pages: /parentplan/ and /FALL50/
 
 Two standalone landing pages (originally separate projects: `guardian-main.zip` and
 `MyGuardianLink-Runners-main.zip`) now live inside this app. The **Students** and **Runners** boxes in
@@ -42,7 +42,10 @@ so none of the main site's styles, nav, loader or chat leak into them, and vice 
 |---|---|---|---|
 | `app/(site)/` | the main website (all routes above) | `components/`, `app/globals.css` | `public/media/` |
 | `app/(students)/parentplan/` | `/parentplan/` (college-parent page, formerly `/students/`, which redirects), `/parentplan/guide/` | `components/students/`, `lib/students/`, `styles/students/` (README inside) | `public/students/assets/` |
-| `app/(runners)/runners/` | `/runners/` | `components/runners/`, `lib/runners/site.ts` (README inside) — Tailwind v4, pre-compiled to `runners.css`; after changing Tailwind classes run `npm run css:runners` | `public/runners/images/` |
+| `app/(runners)/FALL50/` | `/FALL50/` (runners page, formerly `/runners/`, which redirects) | `components/runners/`, `lib/runners/site.ts` (README inside) — Tailwind v4, pre-compiled to `runners.css`; after changing Tailwind classes run `npm run css:runners` | `public/runners/images/` |
+
+`/fall50/` (or any other letter case) 301-redirects to `/FALL50/` in the server's nginx config, not in
+`next.config.ts`: Next.js redirects ignore case, so one there would loop on `/FALL50/` itself.
 
 Notes: moving between the main site and these pages is a full page load (different root layouts). Unmatched URLs
 use `app/global-not-found.tsx` (renders the main site's 404). The students page reads

@@ -38,14 +38,14 @@ export function initMain(page) {
      Kept for the visit in sessionStorage, in case the address loses them.
      ------------------------------------------------------------------ */
 
-  var ATTRIBUTION_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'utm_id', 'fbclid'];
+  // fbclid and every utm_* parameter (utm_source, utm_id, utm_creative…).
+  function isAttributionKey(k) { return k === 'fbclid' || k.indexOf('utm_') === 0; }
   var attribution = {};
 
   try {
     var query = new URLSearchParams(window.location.search);
-    ATTRIBUTION_KEYS.forEach(function (k) {
-      var v = query.get(k);
-      if (v) attribution[k] = v;
+    query.forEach(function (v, k) {
+      if (v && isAttributionKey(k)) attribution[k] = v;
     });
     if (Object.keys(attribution).length) {
       sessionStorage.setItem('mgl_attribution', JSON.stringify(attribution));
@@ -99,6 +99,13 @@ export function initMain(page) {
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
     /* eslint-enable */
+    // The page fires its own PageView once per load (below). Without this,
+    // the Pixel adds another PageView on every history change (a #section
+    // link, the back button), so one visit would report several.
+    window.fbq.disablePushState = true;
+    // No automatic events (Meta's own SubscribedButtonClick on every
+    // button): each Get the Parent Plan click is reported once, below.
+    window.fbq('set', 'autoConfig', false, META_PIXEL_ID);
     window.fbq('init', META_PIXEL_ID);
   }
 
@@ -129,21 +136,29 @@ export function initMain(page) {
   }
 
   if (page === 'guide') track('guide_page_view', ['track', 'PageView']);
-  else track('landing_page_view', ['track', 'PageView']);
+  else {
+    track('landing_page_view', ['track', 'PageView']);
+    // Once per page load, with the Parent Plan as the content viewed.
+    track('view_content', ['track', 'ViewContent'], {
+      content_name: 'Parent Plan',
+      content_ids: ['PARENTPLAN'],
+      content_type: 'product'
+    });
+  }
 
   document.addEventListener('click', function (e) {
     var el = e.target.closest ? e.target.closest('a, button') : null;
     if (!el) return;
 
     if (el.matches('[data-cta="start"]')) {
-      track('cta_click', ['trackCustom', 'StartFreeClick'], { cta_location: placeOf(el) });
+      track('cta_click', ['trackCustom', 'ParentPlanCTAClick'], { cta_location: placeOf(el) });
     } else if (el.matches('[data-track="video"]')) {
       // A click on the poster for now; with a real player, fire on play.
       track('video_view', ['trackCustom', 'VideoView'], { video: '1-minute overview' });
     } else if (el.matches('a[href="#demo"]')) {
       track('demo_click', ['trackCustom', 'SeeProtectionClick'], { cta_location: placeOf(el) });
     } else if (el.matches('[data-cta="qr"]')) {
-      track('cta_click', ['trackCustom', 'StartFreeClick'], { cta_location: 'qr' });
+      track('cta_click', ['trackCustom', 'ParentPlanCTAClick'], { cta_location: 'qr' });
     } else if (el.matches('[data-cta="portal"]')) {
       track('portal_click', ['trackCustom', 'PortalClick'], { cta_location: placeOf(el) });
     }

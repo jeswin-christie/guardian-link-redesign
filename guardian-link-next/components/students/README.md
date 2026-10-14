@@ -65,8 +65,9 @@ The funnel the company asked for, and where each step is measured:
 | Step | Fired by | dataLayer event | Meta event |
 |---|---|---|---|
 | Landing Page View | this page, on load | `landing_page_view` | `PageView` |
+| Content View | this page, on load (once) | `view_content` | `ViewContent` — `content_name: Parent Plan`, `content_ids: [PARENTPLAN]` |
 | Video View | this page, click on the demo video | `video_view` | `VideoView` (custom) |
-| CTA Click | this page, any GET THE PARENT PLAN (with `cta_location`) | `cta_click` | `StartFreeClick` (custom) |
+| CTA Click | this page, any GET THE PARENT PLAN (with `cta_location`) | `cta_click` | `ParentPlanCTAClick` (custom) |
 | Checkout Start | **the checkout page (GHL)** | — | `InitiateCheckout` |
 | Purchase | **the checkout page (GHL) + Conversions API** | — | `Purchase` |
 | Group Plan Activation | **the app / backend, via Conversions API** | — | custom, e.g. `GroupPlanActivated` |
@@ -80,7 +81,10 @@ How it fits together:
   `META_PIXEL_ID` is set, sent to the Pixel with an `event_id`. Send the same
   id from the Conversions API for the same event and Meta de-duplicates the
   pair.
-- The ad's `utm_*` and `fbclid` parameters are kept for the visit and added
+- Each event fires once per page load: `PageScripts` starts the scripts
+  once, the Pixel base code loads once, and `fbq.disablePushState` stops
+  the Pixel's own extra PageView on #section links and back/forward.
+- The ad's `fbclid` and every `utm_*` parameter are kept for the visit and added
   to the GET THE PARENT PLAN and portal links, so GHL can attribute the purchase to
   the ad.
 

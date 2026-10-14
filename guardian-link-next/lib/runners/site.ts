@@ -31,7 +31,7 @@ export const site = {
     height: 349,
   } as Partner | null,
 
-  /** Public URL of the site — used for absolute social-preview links (WhatsApp, etc.). Lives at /runners/. */
+  /** Public URL of the site — used for absolute social-preview links (WhatsApp, etc.). Lives at /FALL50/. */
   siteUrl: ORIGIN,
 
   /**
