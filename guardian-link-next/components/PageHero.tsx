@@ -1,11 +1,14 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { Img, SplitChars, Btn, TextLink, NextStep, type Action } from './primitives';
+import { APP_STORE, GOOGLE_PLAY } from '@/lib/meta';
 
 type Props = {
   eyebrow?: string;
   /** Bold line shown above the headline (home: "Your Personal Protection Link"). */
   kicker?: string;
+  /** Small uppercase line directly above the headline (home: "The Personal Protection App With Live Human Response"). */
+  descriptor?: string;
   /** Headline lines. The asterisk is added after the last line when `footnote` is given. */
   lines: string[];
   footnote?: string;
@@ -21,12 +24,16 @@ type Props = {
   scale?: 'xl' | 'lg' | 'md';
   /** Hide the "Next step: …" line shown under a Get Protected Now button (home: user, 2026-10-09). */
   hideNextStep?: boolean;
+  /** A real app screen in an iPhone frame beside the copy (stacks under it on mobile). Home only. */
+  phone?: { src: string; alt: string };
+  /** App Store and Google Play badges under the CTA buttons; the value names the placement for click tracking (data-cta). */
+  stores?: string;
   children?: ReactNode;
 };
 
 /** The shared hero: blurred media, large centred headline with an asterisk footnote. */
 export default function PageHero({
-  eyebrow, kicker, lines, footnote, sub, primary, link, image, imageMobile, video, size = 'tall', scale = 'xl', hideNextStep = false, children,
+  eyebrow, kicker, descriptor, lines, footnote, sub, primary, link, image, imageMobile, video, size = 'tall', scale = 'xl', hideNextStep = false, phone, stores, children,
 }: Props) {
   return (
     <section className={`panel hero hero--${size} hero--${scale}`} id="top" data-section="top">
@@ -51,9 +58,11 @@ export default function PageHero({
         <Img src="mgl-horizontal-logo-rev.webp" alt="My Guardian Link" sizes="220px" priority />
       </Link>
 
-      <div className="hero__center" data-hero-center>
+      <div className={`hero__center${phone ? ' hero__center--phone' : ''}`} data-hero-center>
+        <div className="hero__copy">
         {eyebrow && <p className="hero__eyebrow"><i />{eyebrow}</p>}
         {kicker && <p className="hero__kicker">{kicker}</p>}
+        {descriptor && <p className="hero__descriptor">{descriptor}</p>}
         <h1 className="hero__title" aria-label={lines.join(' ')}>
           {lines.map((l, i) => (
             <SplitChars key={i} text={l} line={i}
@@ -69,7 +78,19 @@ export default function PageHero({
             {primary?.label === 'Get Protected Now' && !hideNextStep && <NextStep className="hero__next" />}
           </div>
         )}
+        {stores && (
+          <div className="hero__stores">
+            <a href={APP_STORE} className="store" target="_blank" rel="noopener" data-cta={`${stores}-app-store`}><small>Download on the</small>App Store</a>
+            <a href={GOOGLE_PLAY} className="store" target="_blank" rel="noopener" data-cta={`${stores}-google-play`}><small>Get it on</small>Google Play</a>
+          </div>
+        )}
         {children}
+        </div>
+        {phone && (
+          <figure className="hero__phone">
+            <Img src={phone.src} alt={phone.alt} sizes="(max-width: 900px) 60vw, 300px" priority />
+          </figure>
+        )}
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ const outcomes: { icon: LucideIcon; title: string; text: string }[] = [
   {
     icon: Headset,
     title: "What happens next",
-    text: "A live coordinator can check in, contact your Trusted Circle, help assess the situation, and escalate when needed.",
+    text: "A live coordinator can check in, contact your Trusted Contacts, help assess the situation, and escalate when needed.",
   },
 ];
 
@@ -74,7 +74,7 @@ export function WhyItMatters() {
               ))}
             </ul>
             <p className="mt-6 border-t border-line pt-4 text-center text-sm font-semibold text-ink">
-              Exact location + live call back + Trusted Circle support.
+              Exact location + live call back + Trusted Contacts support.
             </p>
           </div>
 

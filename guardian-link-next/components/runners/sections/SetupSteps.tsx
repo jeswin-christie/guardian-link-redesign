@@ -6,13 +6,15 @@ import { Container } from "@/components/runners/ui/Container";
 
 type Step = { title: string; detail?: string; icon: LucideIcon };
 
+// Order for the direct App Store / Google Play journey (client, 2026-10-15): the app comes first.
+// Always "Trusted Contacts", never "Trusted Circle".
 const steps: Step[] = [
-  { title: "Create your account.", icon: User },
+  { title: "Download the App.", detail: "App Store or Google Play.", icon: Smartphone },
+  { title: "Create your Account.", icon: User },
   { title: "Choose your plan.", icon: CreditCard },
-  { title: "Add your Trusted Circle.", icon: Users },
-  { title: "Download the app.", detail: "App Store or Google Play.", icon: Smartphone },
+  { title: "Add your Trusted Contacts.", icon: Users },
   {
-    title: "Activate protection.",
+    title: "Activate Protection.",
     detail: "Tap, voice, earbuds, watch, or silent preset.",
     icon: ShieldCheck,
   },

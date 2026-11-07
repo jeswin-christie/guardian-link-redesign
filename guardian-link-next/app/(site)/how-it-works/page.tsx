@@ -31,7 +31,7 @@ export default function HowItWorks() {
         eyebrow="The 5-Step Flow"
         lines={['Help Starts With', 'One Silent Signal.']}
         scale="lg"
-        sub="A simple step-by-step view of how My Guardian Link helps move information quickly when urgent help is needed."
+        sub="My Guardian Link is a personal protection app for iPhone and Android. One discreet activation connects your urgent signal, identity, and GPS location with a live response coordinator and your trusted contacts."
         primary={getProtected('hero')}
         link={{ label: 'Protect My Organization', open: 'org' }}
         image="9.webp"
