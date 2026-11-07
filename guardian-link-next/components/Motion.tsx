@@ -154,7 +154,12 @@ export default function Motion() {
           img.style.transform = `translate3d(0,${(((r.top + r.height / 2 - vh / 2) / vh) * -9).toFixed(2)}%,0)`;
         });
         if (y < vh * 1.2) {
-          if (heroCenter) {
+          // Home on mobile: the app screen sits below the hero copy, so fading the block on scroll hid it before it was reached.
+          const stacked = heroCenter?.classList.contains('hero__center--phone') && window.innerWidth <= 900;
+          if (heroCenter && stacked) {
+            heroCenter.style.transform = '';
+            heroCenter.style.opacity = '';
+          } else if (heroCenter) {
             const p = clamp(y / (vh * 0.8), 0, 1);
             heroCenter.style.transform = `translate3d(0,${(y * 0.25).toFixed(1)}px,0) scale(${(1 - p * 0.06).toFixed(3)})`;
             heroCenter.style.opacity = (1 - p * 1.1).toFixed(3);
