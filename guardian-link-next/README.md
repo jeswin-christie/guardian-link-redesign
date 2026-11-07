@@ -52,6 +52,13 @@ use `app/global-not-found.tsx` (renders the main site's 404). The students page 
 `NEXT_PUBLIC_START_FREE_URL`, `NEXT_PUBLIC_PORTAL_URL`, `NEXT_PUBLIC_META_PIXEL_ID` — see
 `components/students/env.example.txt`.
 
+## Email signature (do not move or rename)
+
+`public/email-signature/` holds Richard DuBois's Gmail signature: the images it loads
+(`https://myguardianlink.com/email-signature/*.png`) and a copy-and-paste page,
+`/email-signature/richard-dubois.html`. Sent emails load these images from the live site, so moving
+or renaming the files breaks the signature in every email already sent. Edit the HTML file to change the details.
+
 ## Where things live
 
 | Path | What |

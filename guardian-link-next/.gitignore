@@ -20,3 +20,5 @@ myguardianlink-next.js.pem
 # Server keys — never commit
 *.pem
 phone image.jpeg
+img 2.jpeg
+image 1.jpeg

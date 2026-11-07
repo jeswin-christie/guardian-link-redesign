@@ -1150,6 +1150,9 @@ h1,h2,h3,h4,h5{font-weight:700}
 .feat{background:var(--navy-panel);border:1px solid var(--line);display:flex;flex-direction:column}
 .feat figure{margin:0;aspect-ratio:3/2;overflow:hidden;background:var(--navy-deep)}
 .feat img{width:100%;height:100%;object-fit:cover}
+/* Two photos side by side in one card (Trusted Contacts Alerted); the figure's navy shows through the gap as a divider */
+.feat .feat__duo{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.feat__duo img{min-width:0;min-height:0}
 .feat div{padding:20px 22px 24px}
 .feat h3{font-size:clamp(18px,1.3vw,21px);letter-spacing:-.01em;margin-bottom:8px}
 .feat p{color:rgba(255,255,255,.75);font-size:15px}
@@ -1315,3 +1318,26 @@ h1,h2,h3,h4,h5{font-weight:700}
 .flow911 b{font-size:clamp(17px,1.4vw,21px);font-weight:700;color:#fff;line-height:1.25;max-width:16ch}
 @media (max-width:860px){.split__media--flow{min-height:0}}
 
+
+/* Home hero: app descriptor, iPhone app screen beside the copy, store badges under the CTAs (client, Nov 2026).
+   .hero__copy is a plain pass-through on every other hero. */
+.hero__copy{display:contents}
+.hero__descriptor{font-size:clamp(12px,.95vw,15px);font-weight:700;letter-spacing:.16em;text-transform:uppercase;line-height:1.4;color:var(--orange);margin-bottom:clamp(12px,2vh,20px);
+  text-shadow:0 2px 14px rgba(2,12,29,.8);opacity:0;transform:translateY(12px);transition:opacity .9s var(--ease) .3s,transform .9s var(--ease) .3s}
+.is-ready .hero__descriptor{opacity:1;transform:none}
+.hero__stores{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:clamp(18px,3vh,28px);opacity:0;transform:translateY(20px);transition:opacity 1s var(--ease) 1.15s,transform 1s var(--ease) 1.15s}
+.is-ready .hero__stores{opacity:1;transform:none}
+.hero__stores .store{background:rgba(2,12,29,.55)}
+.hero__center--phone{flex-direction:row;justify-content:center;gap:clamp(36px,4.5vw,84px);width:100%;max-width:1480px}
+.hero__center--phone .hero__copy{display:flex;flex-direction:column;align-items:center;min-width:0}
+.hero__center--phone .hero__title{font-size:clamp(40px,5vw,92px)}
+.hero__phone{flex:none;margin:0;opacity:0;transform:translateY(24px);transition:opacity 1.1s var(--ease) 1.2s,transform 1.1s var(--ease) 1.2s}
+.is-ready .hero__phone{opacity:1;transform:none}
+.hero__phone img{display:block;width:auto;height:min(60vh,600px);border:9px solid #0b1220;border-radius:46px;
+  box-shadow:0 40px 90px -24px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.18),0 0 70px rgba(236,116,38,.16)}
+@media (max-width:900px){
+  .hero__center--phone{flex-direction:column}
+  .hero__phone{margin-top:clamp(32px,5vh,44px)}
+  .hero__phone img{height:auto;width:min(62vw,260px);border-width:7px;border-radius:36px}
+}
+@media (prefers-reduced-motion:reduce){.hero__descriptor,.hero__stores,.hero__phone{opacity:1;transform:none;transition:none}}

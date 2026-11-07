@@ -20,9 +20,11 @@ const USE_CASES: [string, string, string][] = [
   ['6-runner-in-danger.webp', 'Runners & Lone Workers', 'Out alone, early, late, or far from help.'],
 ];
 
-const FEATURES: [string, string, string, string?][] = [
+/* [title, text, image — or two images shown side by side, alt] */
+const FEATURES: [string, string, string | [string, string], string?][] = [
   ['Silent Activation', 'Discreet and fast when it matters most.', '2-being-followed-photo.webp'],
-  ['Trusted Contacts Alerted', 'Instant alerts sent to the people you trust most.', '8.webp'],
+  // Two trusted contacts receiving the alert, side by side (client, Oct 2026)
+  ['Trusted Contacts Alerted', 'Instant alerts sent to the people you trust most.', ['trusted-contact-alert-woman.webp', 'trusted-contact-alert-man.webp'], 'Two trusted contacts, a woman and a man, each holding up a phone showing an Urgent Assist Active alert with the sender\'s location and message'],
   ['Trained Response Coordinator', 'A real response coordinator reviews and acts when needed.', 'support-banner-mgl-1.webp'],
   ['Documented Incident Details', 'Every signal is recorded for clarity and peace of mind.', 'coordinator-incident-dashboard.webp', 'Coordinator reviewing an incident record with identity, live location, message thread and a timestamped event log'],
 ];
@@ -41,16 +43,19 @@ export default function Home() {
     <>
       <JsonLd data={pageSchema('home')} />
 
-      {/* 1 · Hero */}
+      {/* 1 · Hero — app descriptor, iPhone app screen and store badges added for first-glance product recognition (client, Nov 2026) */}
       <PageHero
         size="full"
         hideNextStep
         kicker="Your Personal Protection Link"
+        descriptor="The Personal Protection App With Live Human Response"
         lines={['When Danger Finds You,', 'So Do We!']}
         footnote="Strengthens, Complements & Supports 911 — Does Not Replace 911."
-        sub="Activate an urgent alert, share your live location, notify trusted contacts, and connect with a trained response coordinator in seconds."
+        sub="My Guardian Link is a mobile personal protection app for iPhone and Android that connects you to a live Urgent Response Coordinator and your trusted contacts when you need help."
         primary={getProtected('hero')}
         link={{ label: 'See How It Works', video: '/media/video/demo.mp4', cta: 'hero-demo' }}
+        stores="hero"
+        phone={{ src: 'app-urgent-assist-ios.webp', alt: 'The My Guardian Link iPhone app home screen with the Urgent Assist button' }}
         image="chatgpt-image-may-22-2026-06-26-52-pm.webp"
         video="/media/video/walking-alone.mp4"
       >
@@ -123,7 +128,13 @@ export default function Home() {
         <div className="feats__grid" data-stagger>
           {FEATURES.map(([t, d, img, alt]) => (
             <article className="feat" key={t}>
-              <figure><Img src={img} alt={alt ?? ''} sizes="(max-width: 860px) 50vw, 25vw" /></figure>
+              {Array.isArray(img) ? (
+                <figure className="feat__duo" role="img" aria-label={alt}>
+                  {img.map((src) => <Img key={src} src={src} sizes="(max-width: 860px) 25vw, 13vw" />)}
+                </figure>
+              ) : (
+                <figure><Img src={img} alt={alt ?? ''} sizes="(max-width: 860px) 50vw, 25vw" /></figure>
+              )}
               <div><h3>{t}</h3><p>{d}</p></div>
             </article>
           ))}

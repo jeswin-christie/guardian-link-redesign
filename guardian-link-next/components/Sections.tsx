@@ -18,7 +18,8 @@ export const AUDIENCES: [string, string, string?][] = [
 export const HOME_AUDIENCES: [string, string, string?][] = [
   ['8-women-walking.webp', 'Women on the Move'],
   ['1-students.webp', 'Students', '/parentplan/'],
-  ['lone-worker.webp', 'Lone Workers'],
+  // Full-quality original (the old lone-worker.webp was a low-res, streaked copy)
+  ['whatsapp-image-2026-07-13-at-6-59-53-am.webp', 'Lone Workers'],
   ['7-seniors.webp', 'Seniors Alone & Caregivers'],
   ['2-nurse.webp', 'Healthcare Workers'],
   ['4-runners.webp', 'Runners & Walkers', '/FALL50/'],

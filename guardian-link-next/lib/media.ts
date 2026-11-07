@@ -260,6 +260,10 @@ export const MEDIA: Record<string, [number, number]> = {
   2000,
   623
  ],
+ "app-urgent-assist-ios.webp": [
+  738,
+  1600
+ ],
  "untitled-09-july-2026-at-11-38-19-1.webp": [
   719,
   1485
@@ -347,5 +351,13 @@ export const MEDIA: Record<string, [number, number]> = {
  "shield-gold.webp": [
   664,
   812
+ ],
+ "trusted-contact-alert-woman.webp": [
+  1122,
+  1402
+ ],
+ "trusted-contact-alert-man.webp": [
+  1122,
+  1402
  ]
 };
