@@ -24,8 +24,6 @@ type Props = {
   scale?: 'xl' | 'lg' | 'md';
   /** Hide the "Next step: …" line shown under a Get Protected Now button (home: user, 2026-10-09). */
   hideNextStep?: boolean;
-  /** A real app screen in an iPhone frame beside the copy (stacks under it on mobile). Home only. */
-  phone?: { src: string; alt: string };
   /** App Store and Google Play badges under the CTA buttons; the value names the placement for click tracking (data-cta). */
   stores?: string;
   children?: ReactNode;
@@ -33,7 +31,7 @@ type Props = {
 
 /** The shared hero: blurred media, large centred headline with an asterisk footnote. */
 export default function PageHero({
-  eyebrow, kicker, descriptor, lines, footnote, sub, primary, link, image, imageMobile, video, size = 'tall', scale = 'xl', hideNextStep = false, phone, stores, children,
+  eyebrow, kicker, descriptor, lines, footnote, sub, primary, link, image, imageMobile, video, size = 'tall', scale = 'xl', hideNextStep = false, stores, children,
 }: Props) {
   return (
     <section className={`panel hero hero--${size} hero--${scale}`} id="top" data-section="top">
@@ -58,8 +56,7 @@ export default function PageHero({
         <Img src="mgl-horizontal-logo-rev.webp" alt="My Guardian Link" sizes="220px" priority />
       </Link>
 
-      <div className={`hero__center${phone ? ' hero__center--phone' : ''}`} data-hero-center>
-        <div className="hero__copy">
+      <div className="hero__center" data-hero-center>
         {eyebrow && <p className="hero__eyebrow"><i />{eyebrow}</p>}
         {kicker && <p className="hero__kicker">{kicker}</p>}
         {descriptor && <p className="hero__descriptor">{descriptor}</p>}
@@ -85,12 +82,6 @@ export default function PageHero({
           </div>
         )}
         {children}
-        </div>
-        {phone && (
-          <figure className="hero__phone">
-            <Img src={phone.src} alt={phone.alt} sizes="(max-width: 900px) 60vw, 300px" priority />
-          </figure>
-        )}
       </div>
     </section>
   );

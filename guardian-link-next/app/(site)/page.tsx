@@ -43,7 +43,7 @@ export default function Home() {
     <>
       <JsonLd data={pageSchema('home')} />
 
-      {/* 1 · Hero — app descriptor, iPhone app screen and store badges added for first-glance product recognition (client, Nov 2026) */}
+      {/* 1 · Hero — app descriptor and store badges added for first-glance product recognition (client, Nov 2026) */}
       <PageHero
         size="full"
         hideNextStep
@@ -55,15 +55,14 @@ export default function Home() {
         primary={getProtected('hero')}
         link={{ label: 'See How It Works', video: '/media/video/demo.mp4', cta: 'hero-demo' }}
         stores="hero"
-        phone={{ src: 'app-urgent-assist-ios.webp', alt: 'The My Guardian Link iPhone app home screen with the Urgent Assist button' }}
         image="chatgpt-image-may-22-2026-06-26-52-pm.webp"
         video="/media/video/walking-alone.mp4"
       >
         <p className="hero__sub">When voice fails, My Guardian Link turns confusion into verified action.</p>
       </PageHero>
 
-      {/* 2 · Problem */}
-      <section className="panel split split--stats split--compact" id="voice" data-section="voice">
+      {/* 2 · Problem — with the real iOS app screen to the right of the text (moved here from the hero, client, Nov 2026) */}
+      <section className="panel split split--stats split--compact split--phone" id="voice" data-section="voice">
         <div className="split__media">
           <div className="img-reveal" data-reveal-img><Img src="home-banner-2-e1783070253640.webp" data-parallax-img="" /></div>
         </div>
@@ -78,6 +77,9 @@ export default function Home() {
           </ul>
           <p className="split__more" data-reveal><TextLink a={{ label: 'Why 911 alone may not be enough', href: '/why-it-matters/', cta: 'home-why' }} /></p>
         </div>
+        <figure className="split__phone" data-reveal>
+          <Img src="app-urgent-assist-ios.webp" alt="The My Guardian Link iPhone app home screen with the Urgent Assist button" sizes="(max-width: 860px) 52vw, 240px" />
+        </figure>
       </section>
 
       {/* 3 · Use cases — four static cards (replaces the pinned horizontal gallery and its dead space) */}
