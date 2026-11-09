@@ -51,7 +51,7 @@ export default function Home() {
         descriptor="The Personal Protection App With Live Human Response"
         lines={['When Danger Finds You,', 'So Do We!']}
         footnote="Strengthens, Complements & Supports 911 — Does Not Replace 911."
-        sub="My Guardian Link is a mobile personal protection app for iPhone and Android that connects you to a live Urgent Response Coordinator and your trusted contacts when you need help."
+        sub={<><b>My Guardian Link</b> is a mobile personal protection system accessed through an easy-to-use app for iPhone and Android. It connects you with trusted contacts, a live Urgent Response Coordinator, and 911 escalation when needed.</>}
         primary={getProtected('hero')}
         link={{ label: 'See How It Works', video: '/media/video/demo.mp4', cta: 'hero-demo' }}
         stores="hero"

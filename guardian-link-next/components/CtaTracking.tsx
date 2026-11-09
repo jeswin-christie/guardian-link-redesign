@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { PORTAL } from '@/lib/meta';
+import { phoneStore } from '@/lib/device';
 
 const KEY = 'mgl_attribution';
 const PARAMS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid'];
@@ -12,7 +13,8 @@ declare global { interface Window { dataLayer?: Record<string, unknown>[] } }
 /**
  * 1. Remembers the ad parameters a visitor landed with (sessionStorage) and adds them to
  *    every portal link when it is clicked, so signups stay attributed to the campaign.
- * 2. Pushes `{ event: 'cta_click', cta, page, plan, billing, destination }` to window.dataLayer
+ * 2. Get Protected Now links (data-smart) send phones to their app store; computers keep the portal link.
+ * 3. Pushes `{ event: 'cta_click', cta, page, plan, billing, destination }` to window.dataLayer
  *    for every link carrying data-cta — ready for GTM / GA4 when analytics is installed.
  */
 export default function CtaTracking() {
@@ -26,6 +28,10 @@ export default function CtaTracking() {
     const onClick = (e: MouseEvent) => {
       const a = (e.target as Element | null)?.closest?.('a[href]') as HTMLAnchorElement | null;
       if (!a) return;
+      if (a.dataset.smart !== undefined) {
+        const store = phoneStore();
+        if (store) a.href = store;
+      }
       let url: URL;
       try { url = new URL(a.href); } catch { return; }
       if (url.origin === PORTAL_ORIGIN) {

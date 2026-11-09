@@ -15,7 +15,9 @@ export function signupUrl(): string {
   return SIGNUP;
 }
 
-/** The primary red "Get Protected Now" action. `cta` names the placement for click analytics (data-cta). */
+/** The primary red "Get Protected Now" action. `cta` names the placement for click analytics (data-cta).
+ *  Smart link: computers go to the portal (the href); phones are sent to their app store at click time
+ *  (components/CtaTracking.tsx). Plan buttons and Create Free Account still go to the portal everywhere. */
 export function getProtected(cta: string): Action {
-  return { label: 'Get Protected Now', href: signupUrl(), cta };
+  return { label: 'Get Protected Now', href: signupUrl(), cta, smart: true };
 }
