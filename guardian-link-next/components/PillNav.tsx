@@ -56,7 +56,7 @@ export default function PillNav() {
         <button className="pill__menu" onClick={() => setMenu((m) => !m)} aria-label={menu ? 'Close menu' : 'Open menu'} aria-expanded={menu}>
           <span /><span />
         </button>
-        <a href={signupUrl()} className="pill__cta" data-cta="nav">Get Protected Now</a>
+        <a href={signupUrl()} className="pill__cta" data-cta="nav" data-smart="">Get Protected Now</a>
       </nav>
 
       <div className={`menu${menu ? ' is-open' : ''}`} aria-hidden={!menu}>
@@ -70,7 +70,7 @@ export default function PillNav() {
         </div>
         <div className="menu__ctas">
           <a href={PORTAL} className="btn btn--gold">Log In</a>
-          <a href={signupUrl()} className="btn btn--cta" data-cta="menu">Get Protected Now</a>
+          <a href={signupUrl()} className="btn btn--cta" data-cta="menu" data-smart="">Get Protected Now</a>
         </div>
       </div>
     </>

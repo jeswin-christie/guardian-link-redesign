@@ -66,8 +66,9 @@ export function SplitChars({ text, line = 0, after }: { text: string; line?: num
 
 /* ---------- Buttons / links ----------
    href: internal or external link · video: opens the lightbox · open: opens a popup ("org" | "referral")
-   cta: placement name for click analytics (rendered as data-cta, see components/CtaTracking.tsx) */
-export type Action = { label: string; href?: string; video?: string; open?: 'org' | 'referral'; cta?: string };
+   cta: placement name for click analytics (rendered as data-cta, see components/CtaTracking.tsx)
+   smart: phones go to their app store instead of href (data-smart, see components/CtaTracking.tsx) */
+export type Action = { label: string; href?: string; video?: string; open?: 'org' | 'referral'; cta?: string; smart?: boolean };
 
 export function Btn({ a, variant = 'cta', className = '', arrow, play }: { a: Action; variant?: string; className?: string; arrow?: boolean; play?: boolean }) {
   const cls = `btn btn--${variant} ${className}`.trim();
@@ -80,7 +81,7 @@ export function Btn({ a, variant = 'cta', className = '', arrow, play }: { a: Ac
   );
   if (a.video) return <button type="button" className={cls} data-video={a.video} data-cta={a.cta}>{inner}</button>;
   if (a.open) return <button type="button" className={cls} data-open={a.open} data-cta={a.cta}>{inner}</button>;
-  return <SmartLink href={a.href ?? '#'} className={cls} cta={a.cta}>{inner}</SmartLink>;
+  return <SmartLink href={a.href ?? '#'} className={cls} cta={a.cta} smart={a.smart}>{inner}</SmartLink>;
 }
 
 export function TextLink({ a, className = 'ulink' }: { a: Action; className?: string }) {
@@ -91,12 +92,12 @@ export function TextLink({ a, className = 'ulink' }: { a: Action; className?: st
 
 const PORTAL_ORIGIN = new URL(PORTAL).origin;
 
-export function SmartLink({ href, className, children, cta }: { href: string; className?: string; children: ReactNode; cta?: string }) {
+export function SmartLink({ href, className, children, cta, smart }: { href: string; className?: string; children: ReactNode; cta?: string; smart?: boolean }) {
   const external = /^(https?:|mailto:|tel:)/.test(href);
   if (external) {
     // Third-party sites open in a new tab; the portal (account setup) is our own funnel, so it stays in this tab.
     const newTab = href.startsWith('http') && !href.startsWith(PORTAL_ORIGIN);
-    return <a href={href} className={className} data-cta={cta} {...(newTab ? { target: '_blank', rel: 'noopener' } : {})}>{children}</a>;
+    return <a href={href} className={className} data-cta={cta} data-smart={smart ? '' : undefined} {...(newTab ? { target: '_blank', rel: 'noopener' } : {})}>{children}</a>;
   }
   return <Link href={href} className={className} data-cta={cta}>{children}</Link>;
 }
