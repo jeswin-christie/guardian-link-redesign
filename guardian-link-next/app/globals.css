@@ -1329,9 +1329,9 @@ h1,h2,h3,h4,h5{font-weight:700}
 @media (prefers-reduced-motion:reduce){.hero__descriptor,.hero__stores{opacity:1;transform:none;transition:none}}
 
 /* Home section 2: smaller photo on the left, text, real iOS app screen on the right (client, Nov 2026) */
-.split--phone{grid-template-columns:minmax(0,.85fr) minmax(0,1fr) minmax(0,.7fr)}
+.split--phone{grid-template-columns:minmax(0,1fr) minmax(0,.95fr) auto}
 .split--phone .split__body{padding-right:clamp(24px,3vw,48px)}
-.split__phone{display:flex;align-items:center;justify-content:flex-start;margin:0;padding:clamp(40px,7vh,80px) 24px}
+.split__phone{display:flex;align-items:center;justify-content:center;margin:0;padding:clamp(40px,7vh,80px) clamp(32px,5vw,96px) clamp(40px,7vh,80px) 0}
 .split__phone img{display:block;width:auto;height:clamp(340px,50vh,460px);border:7px solid #0b1220;border-radius:34px;
   box-shadow:0 30px 70px -22px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.16),0 0 50px rgba(236,116,38,.12)}
 @media (max-width:860px){
