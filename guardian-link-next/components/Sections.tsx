@@ -14,26 +14,37 @@ export const AUDIENCES: [string, string, string?][] = [
   ['8-women-walking.webp', 'Walking, Working, Traveling, Or Living Alone.'],
 ];
 
-/** The six most likely converters, shown on the homepage (client review, Oct 2026). */
-export const HOME_AUDIENCES: [string, string, string?][] = [
+/** The six most likely converters, shown on the homepage (client review, Oct 2026).
+ *  A list of [label, link] pairs instead of one link shows each partner as its own link on the card. */
+export const HOME_AUDIENCES: [string, string, (string | [string, string][])?][] = [
   ['8-women-walking.webp', 'Women on the Move'],
   ['1-students.webp', 'Students', '/parentplan/'],
   // Full-quality original (the old lone-worker.webp was a low-res, streaked copy)
   ['whatsapp-image-2026-07-13-at-6-59-53-am.webp', 'Lone Workers'],
   ['7-seniors.webp', 'Seniors Alone & Caregivers'],
   ['2-nurse.webp', 'Healthcare Workers'],
-  ['4-runners.webp', 'Runners & Walkers', '/FALL50/'],
+  // Runners & Walkers partners: Fall50 and the Laken Hope Foundation (client, Nov 2026)
+  ['4-runners.webp', 'Runners & Walkers', [['Fall50', '/FALL50/'], ['Laken Hope Foundation', '/LAKENHOPE/']]],
 ];
 
-export function AudienceGrid({ items, six }: { items: [string, string, string?][]; six?: boolean }) {
+export function AudienceGrid({ items, six }: { items: [string, string, (string | [string, string][])?][]; six?: boolean }) {
   return (
     <div className={`who__grid${six ? ' who__grid--6' : ''}`} data-stagger>
       {items.map(([img, label, href]) => (
-        <figure className={href ? 'aud aud--link' : 'aud'} key={img + label}>
+        <figure className={Array.isArray(href) ? 'aud aud--partners' : href ? 'aud aud--link' : 'aud'} key={img + label}>
           <Img src={img} sizes={six ? '(max-width: 860px) 50vw, 33vw' : '(max-width: 860px) 50vw, 25vw'} />
-          <figcaption>{label}</figcaption>
-          {/* Plain <a>: /parentplan/ and /FALL50/ have their own root layouts, so it's a full page load anyway */}
-          {href && <a className="aud__link" href={href} aria-label={label} />}
+          {Array.isArray(href) ? (
+            <figcaption>
+              {label}
+              <span className="aud__partners">
+                {href.map(([name, url]) => <a key={url} href={url}>{name}</a>)}
+              </span>
+            </figcaption>
+          ) : (
+            <figcaption>{label}</figcaption>
+          )}
+          {/* Plain <a>: /parentplan/, /FALL50/ and /LAKENHOPE/ are separate pages, so it's a full page load anyway */}
+          {typeof href === 'string' && <a className="aud__link" href={href} aria-label={label} />}
         </figure>
       ))}
     </div>
