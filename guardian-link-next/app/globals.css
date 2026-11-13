@@ -1340,3 +1340,13 @@ h1,h2,h3,h4,h5{font-weight:700}
   .split__phone{justify-content:center;padding:0 var(--pad) 56px}
   .split__phone img{height:auto;width:min(52vw,220px);border-width:6px;border-radius:28px}
 }
+
+/* Home "Runners & Walkers" card: one link per partner (Fall50, Laken Hope Foundation) under the label (client, Nov 2026) */
+.aud__partners{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:10px}
+.aud__partners a{position:relative;z-index:2;display:inline-flex;align-items:center;min-height:32px;padding:5px 12px;border:1.5px solid rgba(255,255,255,.45);border-radius:999px;
+  background:rgba(2,12,29,.45);color:#fff;font-size:13px;font-weight:600;line-height:1.15;transition:border-color .3s,background .3s}
+.aud__partners a::after{content:"\2192";margin-left:.4em;color:var(--orange);transition:transform .4s var(--ease)}
+.aud__partners a:hover{border-color:var(--orange);background:rgba(2,12,29,.7)}
+.aud__partners a:hover::after{transform:translateX(3px)}
+.aud__partners a:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+@media (max-width:560px){.aud__partners{gap:5px}.aud__partners a{font-size:12px;min-height:30px;padding:4px 10px}}
